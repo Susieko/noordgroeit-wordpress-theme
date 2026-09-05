@@ -1,0 +1,2140 @@
+/* NOORDBUITEN ACTIVITEITEN */
+.ng-nba-page {
+    background: var(--color-cream);
+}
+/* INTRO */
+.ng-nba-intro {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(5rem, 7vw, 7rem) 0 clamp(3rem, 4vw, 4rem);
+    background: var(--color-cream);
+}
+.ng-nba-intro::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    width: 360px;
+    height: 360px;
+    border: 44px solid rgba(62, 107, 71, .035);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+/* COPY */
+
+.ng-nba-intro-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    margin: 0 0 1rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+.ng-nba-intro-kicker::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-coral);
+    box-shadow: 0 0 0 3px rgba(240, 102, 83, .1);
+}
+
+
+/* PAPER VISUAL */
+
+
+
+
+
+
+
+
+/* center */
+
+
+
+/* intro footer */
+.ng-nba-intro-bottom {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-top: 2rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(46,59,50,.11);
+}
+.ng-nba-intro-bottom p {
+    margin: 0;
+    color: rgba(46,59,50,.5);
+    font-size: .68rem;
+}
+/* FEATURED EVENT */
+.ng-nba-feature {
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: #fff;
+}
+/* heading */
+.ng-nba-feature-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .55fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(4rem, 6vw, 5rem);
+}
+.ng-nba-feature-kicker {
+    margin: 0 0 .9rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-nba-feature-heading h2 {
+    max-width: 620px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-nba-feature-heading > p {
+    max-width: 420px;
+    margin: 0;
+    color: rgba(46,59,50,.62);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* EVENT COMPOSITION */
+.ng-nba-event {
+    display: grid;
+    grid-template-columns: minmax(0, 1.08fr) 125px minmax(340px, .72fr);
+    align-items: stretch;
+    overflow: hidden;
+    border: 1px solid rgba(46,59,50,.13);
+    border-radius: 12px 58px 12px 58px;
+    background: var(--color-cream);
+}
+/* IMAGE */
+.ng-nba-event-image {
+    position: relative;
+    min-height: 490px;
+    margin: 0;
+    overflow: hidden;
+}
+.ng-nba-event-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26,39,30,.48), transparent 42%);
+    pointer-events: none;
+}
+.ng-nba-event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .6s ease;
+}
+.ng-nba-event:hover .ng-nba-event-image img {
+    transform: scale(1.02);
+}
+.ng-nba-event-image figcaption {
+    position: absolute;
+    z-index: 2;
+    left: 22px;
+    bottom: 20px;
+    color: #fff;
+    font-size: .64rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+/* DATE STRIP */
+.ng-nba-event-date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--color-coral);
+    color: #fff;
+    text-align: center;
+}
+.ng-nba-event-date span {
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ng-nba-event-date strong {
+    margin-top: .5rem;
+    font-size: clamp(3.6rem, 5vw, 5.2rem);
+    line-height: .8;
+    letter-spacing: -.07em;
+}
+.ng-nba-event-date b {
+    margin-top: .55rem;
+    font-size: .9rem;
+    letter-spacing: .12em;
+}
+.ng-nba-event-date small {
+    margin-top: .2rem;
+    opacity: .64;
+}
+/* COPY */
+.ng-nba-event-copy {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: clamp(2rem, 3.5vw, 3.5rem);
+}
+.ng-nba-event-topline {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(46,59,50,.12);
+    color: rgba(46,59,50,.48);
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.ng-nba-event-copy h3 {
+    max-width: 430px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(2rem, 2.7vw, 2.65rem);
+    font-weight: 750;
+    line-height: 1.02;
+    letter-spacing: -.045em;
+}
+.ng-nba-event-copy > p {
+    max-width: 430px;
+    margin: 1.15rem 0 0;
+    color: rgba(46,59,50,.61);
+    line-height: 1.65;
+}
+/* bullets without looking like boring bullets */
+.ng-nba-event-copy ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .55rem;
+    margin: 1.6rem 0 0;
+    padding: 0;
+    list-style: none;
+}
+.ng-nba-event-copy li {
+    padding: .5rem .72rem;
+    border: 1px solid rgba(46,59,50,.13);
+    border-radius: 999px;
+    color: rgba(46,59,50,.68);
+    background: rgba(255,255,255,.48);
+    font-size: .67rem;
+}
+/* BUTTON */
+.ng-nba-event-button {
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    gap: .9rem;
+    margin-top: 1.8rem;
+    padding: .5rem .55rem .5rem 1.15rem;
+    border-radius: 999px;
+    background: var(--color-dark);
+    color: #fff;
+    font-size: .78rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform .25s ease;
+}
+.ng-nba-event-button > span:last-child {
+    display: grid;
+    width: 36px;
+    height: 36px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-nba-event-button:hover {
+    transform: translateY(-3px);
+}
+/* NOTE */
+.ng-nba-feature-note {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    margin-top: 2rem;
+}
+.ng-nba-feature-note > span {
+    display: grid;
+    width: 34px;
+    height: 34px;
+    flex: 0 0 auto;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-green-light);
+    color: var(--color-coral);
+    font-size: .7rem;
+}
+.ng-nba-feature-note p {
+    margin: 0;
+    color: rgba(46,59,50,.48);
+    font-size: .75rem;
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-nba-feature-heading {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .ng-nba-event {
+        grid-template-columns: 1fr;
+    }
+    .ng-nba-event-image {
+        min-height: clamp(360px, 65vw, 500px);
+    }
+    .ng-nba-event-date {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+        gap: .7rem;
+        justify-content: start;
+        padding: 1rem 1.4rem;
+        text-align: left;
+    }
+    .ng-nba-event-date strong {
+        margin: 0;
+        font-size: 2rem;
+    }
+    .ng-nba-event-date b, .ng-nba-event-date small {
+        margin: 0;
+    }
+}
+@media (max-width: 560px) {
+    
+    
+    .ng-nba-feature {
+        padding: 4.5rem 0;
+    }
+    .ng-nba-event-copy {
+        padding: 1.7rem 1.4rem;
+    }
+    .ng-nba-event-topline {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .4rem;
+    }
+}
+/* ACTIVITEITEN — VERHALENBANK */
+.ng-nba-stories {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: var(--color-cream);
+    color: var(--color-dark);
+}
+/* HEADING */
+.ng-nba-stories-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .55fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(4rem, 6vw, 5rem);
+}
+.ng-nba-stories-kicker {
+    margin: 0 0 .9rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-nba-stories-heading h2 {
+    max-width: 650px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-nba-stories-heading > p {
+    max-width: 430px;
+    margin: 0;
+    color: rgba(46, 59, 50, .63);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* CONVERSATION STAGE */
+.ng-nba-stories-stage {
+    position: relative;
+    min-height: 440px;
+    border-top: 1px solid rgba(46,59,50,.12);
+    border-bottom: 1px solid rgba(46,59,50,.12);
+}
+/* BENCH */
+
+/* canopy */
+
+
+
+
+/* seat */
+
+
+/* simple people */
+
+
+
+
+/* label */
+
+
+
+/* VOICES */
+.ng-nba-story-voice {
+    position: absolute;
+    z-index: 4;
+    width: 240px;
+}
+.ng-nba-story-voice > span {
+    display: block;
+    height: 34px;
+    color: var(--color-coral);
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+}
+.ng-nba-story-voice p {
+    margin: .6rem 0 0;
+    color: var(--color-dark);
+    font-size: clamp(1.25rem, 1.7vw, 1.55rem);
+    font-weight: 750;
+    line-height: 1.08;
+    letter-spacing: -.035em;
+}
+.ng-nba-story-voice--left {
+    top: 115px;
+    left: 2%;
+}
+/* CONVERSATION PATH */
+
+
+/* ACTIVITY POSSIBILITIES */
+
+
+
+
+/* activities */
+
+
+
+/* FOOTER */
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-nba-stories-heading {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+    .ng-nba-stories-stage {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        min-height: 0;
+        padding: 3rem 0;
+    }
+    .ng-nba-story-voice {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+    }
+    
+    .ng-nba-story-voice {
+        width: min(100%, 420px);
+    }
+    .ng-nba-story-voice--right {
+        justify-self: end;
+        text-align: right;
+    }
+    
+    
+}
+
+/* ACTIVITEITEN INTRO — FOLDED POSTER */
+
+/* FOLDED STRIP */
+
+
+/* Fold separators */
+.ng-nba-fold-panel:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -1px;
+    width: 1px;
+    height: 100%;
+    background: rgba(46, 59, 50, .12);
+}
+/* alternating subtle folds */
+
+
+
+
+/* TYPOGRAPHY */
+
+
+/* Tiny directional detail */
+
+/* CENTRAL STAMP */
+
+
+
+
+/* LITTLE EDITORIAL NOTE */
+
+
+/* MOBILE */
+
+
+/* ACTIVITEITEN INTRO — MOMENTOPNAME */
+.ng-nba-intro--moment {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(5rem, 7vw, 7rem) 0 clamp(3rem, 4vw, 4rem);
+    background: var(--color-cream);
+}
+/* big quiet background circle */
+.ng-nba-intro--moment::after {
+    content: "";
+    position: absolute;
+    width: 390px;
+    height: 390px;
+    right: -190px;
+    top: 50%;
+    transform: translateY(-50%);
+    border: 42px solid rgba(46, 59, 50, .035);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-nba-moment-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(440px, 1fr);
+    align-items: center;
+    gap: clamp(4rem, 8vw, 8rem);
+    min-height: 410px;
+}
+/* COPY */
+.ng-nba-moment-copy {
+    max-width: 620px;
+}
+.ng-nba-moment-copy h1 {
+    max-width: 600px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(3.15rem, 4.4vw, 4.65rem);
+    font-weight: 760;
+    line-height: .94;
+    letter-spacing: -.055em;
+}
+/* important: NOT green */
+.ng-nba-moment-copy h1 span {
+    display: block;
+    color: var(--color-dark);
+}
+.ng-nba-moment-copy > p:not(.ng-nba-intro-kicker) {
+    max-width: 500px;
+    margin: 1.4rem 0 0;
+    color: rgba(46, 59, 50, .62);
+    font-size: .96rem;
+    line-height: 1.68;
+}
+/* LITTLE WORD ROW */
+.ng-nba-moment-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .7rem 1.3rem;
+    margin-top: 2rem;
+}
+.ng-nba-moment-tags span {
+    position: relative;
+    padding-left: 12px;
+    color: rgba(46, 59, 50, .58);
+    font-size: .69rem;
+    font-weight: 750;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+}
+.ng-nba-moment-tags span::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+/* VISUAL */
+.ng-nba-moment-visual {
+    position: relative;
+    width: min(100%, 570px);
+    height: 400px;
+    justify-self: end;
+}
+/* MAIN PHOTO */
+.ng-nba-moment-photo {
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+    width: 410px;
+    height: 330px;
+    margin: 0;
+    overflow: hidden;
+    border-radius: 90px 14px 90px 14px;
+    transform: rotate(1.5deg);
+    box-shadow: 0 24px 55px rgba(46, 59, 50, .13);
+}
+.ng-nba-moment-photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .7s ease;
+}
+.ng-nba-moment-photo:hover img {
+    transform: scale(1.025);
+}
+/* SECOND SMALL PHOTO */
+.ng-nba-moment-photo-small {
+    position: absolute;
+    z-index: 4;
+    left: 15px;
+    bottom: 15px;
+    width: 180px;
+    height: 145px;
+    margin: 0;
+    overflow: hidden;
+    border: 7px solid var(--color-cream);
+    border-radius: 14px 48px 14px 48px;
+    transform: rotate(-5deg);
+    box-shadow: 0 18px 38px rgba(46,59,50,.13);
+}
+.ng-nba-moment-photo-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* GIANT DOEN WORD */
+.ng-nba-moment-word {
+    position: absolute;
+    z-index: 1;
+    left: -8px;
+    top: 18px;
+    color: rgba(46, 59, 50, .075);
+    font-size: clamp(5rem, 8vw, 8rem);
+    font-weight: 800;
+    line-height: .8;
+    letter-spacing: -.08em;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    pointer-events: none;
+}
+/* CORAL STAMP */
+.ng-nba-moment-stamp {
+    position: absolute;
+    z-index: 5;
+    right: 1px;
+    top: 52px;
+    display: flex;
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: rotate(7deg);
+    border-radius: 50%;
+    background: var(--color-coral);
+    color: #fff;
+    box-shadow: 0 14px 28px rgba(46,59,50,.14);
+}
+.ng-nba-moment-stamp span {
+    font-size: .51rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ng-nba-moment-stamp strong {
+    margin-top: -.1rem;
+    font-size: 2rem;
+    line-height: 1;
+}
+/* NOTE */
+.ng-nba-moment-note {
+    position: absolute;
+    z-index: 5;
+    right: 22px;
+    bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: .55rem;
+    transform: rotate(-2deg);
+}
+.ng-nba-moment-note > span {
+    color: var(--color-coral);
+    font-size: 1.1rem;
+}
+.ng-nba-moment-note p {
+    margin: 0;
+    color: rgba(46, 59, 50, .47);
+    font-size: .67rem;
+    line-height: 1.35;
+}
+.ng-nba-moment-note strong {
+    display: block;
+    color: var(--color-dark);
+}
+/* BOTTOM LINE */
+.ng-nba-intro-bottom {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-top: 2.2rem;
+    padding-top: 1.35rem;
+    border-top: 1px solid rgba(46,59,50,.11);
+}
+.ng-nba-intro-bottom > span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-nba-intro-bottom p {
+    margin: 0;
+    color: rgba(46,59,50,.48);
+    font-size: .68rem;
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-nba-moment-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .ng-nba-moment-visual {
+        justify-self: start;
+    }
+}
+@media (max-width: 600px) {
+    .ng-nba-moment-visual {
+        width: 100%;
+        height: 340px;
+    }
+    .ng-nba-moment-photo {
+        right: 0;
+        width: 88%;
+        height: 285px;
+    }
+    .ng-nba-moment-photo-small {
+        width: 145px;
+        height: 115px;
+    }
+    .ng-nba-moment-word {
+        display: none;
+    }
+    .ng-nba-moment-stamp {
+        width: 72px;
+        height: 72px;
+    }
+}
+/* VERHALENBANK — VISUAL COMPOSITION */
+.ng-nba-stories-stage {
+    position: relative;
+    min-height: 470px;
+    border-top: 1px solid rgba(46, 59, 50, .12);
+    border-bottom: 1px solid rgba(46, 59, 50, .12);
+    overflow: hidden;
+}
+/* CENTER IMAGE */
+.ng-nba-story-visual {
+    position: absolute;
+    z-index: 3;
+    top: 28px;
+    left: 50%;
+    width: min(470px, 42vw);
+    margin: 0;
+    transform: translateX(-50%);
+}
+.ng-nba-story-visual img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+/* little label underneath */
+.ng-nba-story-visual figcaption {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -10px;
+    text-align: center;
+}
+.ng-nba-story-visual figcaption small {
+    color: rgba(46, 59, 50, .45);
+    font-size: .58rem;
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+.ng-nba-story-visual figcaption strong {
+    margin-top: .3rem;
+    color: var(--color-dark);
+    font-size: .82rem;
+    font-weight: 750;
+}
+.ng-nba-story-visual figcaption > span {
+    display: block;
+    width: 42px;
+    height: 2px;
+    margin-top: .75rem;
+    border-radius: 999px;
+    background: var(--color-coral);
+}
+/* QUOTES */
+.ng-nba-story-voice > span {
+    display: block;
+    height: 42px;
+    color: var(--color-coral);
+    font-size: 3.4rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.ng-nba-story-voice p {
+    margin: .5rem 0 0;
+    color: var(--color-dark);
+    font-size: clamp(1.4rem, 2vw, 1.85rem);
+    font-weight: 750;
+    line-height: 1.04;
+    letter-spacing: -.04em;
+}
+/* left quote */
+.ng-nba-story-voice--left {
+    top: 125px;
+    left: 2%;
+}
+/* right quote */
+.ng-nba-story-voice--right {
+    top: 220px;
+    right: 1%;
+}
+/* CONVERSATION LINES */
+
+
+/* left line */
+
+/* right line */
+
+/* little endpoints */
+
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-nba-stories-stage {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        min-height: 0;
+        padding: 3rem 0;
+    }
+    .ng-nba-story-visual, .ng-nba-story-voice {
+        position: relative;
+        top: auto;
+        right: auto;
+        left: auto;
+        width: 100%;
+        transform: none;
+    }
+    .ng-nba-story-visual {
+        width: min(100%, 470px);
+        justify-self: center;
+    }
+    .ng-nba-story-voice {
+        max-width: 400px;
+    }
+    .ng-nba-story-voice--right {
+        justify-self: end;
+        text-align: right;
+    }
+    
+}
+/* VERHALENBANK — QUOTE CONNECTIONS */
+.ng-nba-story-voice {
+    position: absolute;
+    z-index: 5;
+    width: 245px;
+}
+.ng-nba-story-voice--left {
+    top: 118px;
+    left: 2%;
+}
+.ng-nba-story-voice--right {
+    top: 205px;
+    right: 1%;
+}
+.ng-nba-story-quote {
+    display: block;
+    height: 38px;
+    color: var(--color-coral);
+    font-size: 3.1rem;
+    font-weight: 800;
+    line-height: 1;
+}
+.ng-nba-story-voice p {
+    position: relative;
+    z-index: 2;
+    margin: .4rem 0 0;
+    color: var(--color-dark);
+    font-size: clamp(1.35rem, 1.85vw, 1.7rem);
+    font-weight: 750;
+    line-height: 1.04;
+    letter-spacing: -.04em;
+}
+/* dotted tail belongs to the quote */
+.ng-nba-story-tail {
+    position: absolute;
+    z-index: 1;
+    width: 250px;
+    height: 90px;
+    overflow: visible;
+    pointer-events: none;
+}
+.ng-nba-story-tail path {
+    fill: none;
+    stroke: var(--color-coral);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-dasharray: 3 9;
+    opacity: .65;
+    vector-effect: non-scaling-stroke;
+}
+/* LEFT: starts directly after the text and travels to image */
+.ng-nba-story-voice--left .ng-nba-story-tail {
+    left: calc(100% - 5px);
+    top: 72px;
+}
+/* RIGHT: SVG points toward text, so place it before text */
+.ng-nba-story-voice--right .ng-nba-story-tail {
+    right: calc(100% - 5px);
+    top: -5px;
+    transform: scaleX(-1);
+}
+/* actual little connection point */
+.ng-nba-story-voice::after {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border: 3px solid var(--color-cream);
+    border-radius: 50%;
+    background: var(--color-coral);
+    box-shadow: 0 0 0 1px rgba(46,59,50,.08);
+}
+.ng-nba-story-voice--left::after {
+    right: -8px;
+    top: 88px;
+}
+.ng-nba-story-voice--right::after {
+    left: -8px;
+    top: 10px;
+}
+.ng-nba-story-visual {
+    top: 42px;
+    width: min(500px, 44vw);
+}
+.ng-nba-story-voice--right {
+    right: 2.5%;
+}
+/* VERHALENBANK — FINAL QUOTE TAILS */
+.ng-nba-story-tail {
+    position: absolute;
+    z-index: 2;
+    width: 180px;
+    height: 80px;
+    overflow: visible;
+    pointer-events: none;
+}
+.ng-nba-story-tail path {
+    fill: none;
+    stroke: var(--color-coral);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-dasharray: 3 9;
+    opacity: .62;
+    vector-effect: non-scaling-stroke;
+}
+/* LEFT: begins at quote and stops at left edge of artwork */
+.ng-nba-story-voice--left .ng-nba-story-tail {
+    left: calc(100% + 3px);
+    top: 74px;
+}
+/* RIGHT: comes from artwork into quote */
+.ng-nba-story-voice--right .ng-nba-story-tail {
+    right: calc(100% + 3px);
+    top: -4px;
+    transform: scaleX(-1);
+}
+.ng-nba-story-voice--left::after {
+    right: -9px;
+    top: 88px;
+}
+.ng-nba-story-voice--right::after {
+    left: -9px;
+    top: 10px;
+}
+/* ACTIVITEITEN — CAS DE DAS */
+.ng-nba-cas {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: var(--color-dark);
+    color: #fff;
+}
+/* quiet background circle */
+.ng-nba-cas::after {
+    content: "";
+    position: absolute;
+    right: -180px;
+    top: 50%;
+    width: 420px;
+    height: 420px;
+    transform: translateY(-50%);
+    border: 1px solid rgba(255,255,255,.055);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 55px rgba(255,255,255,.018);
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-nba-cas-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, .72fr) minmax(0, 1.15fr);
+    align-items: center;
+    gap: clamp(4rem, 8vw, 8rem);
+}
+/* COPY */
+.ng-nba-cas-copy {
+    max-width: 530px;
+}
+.ng-nba-cas-copy h2 {
+    max-width: 500px;
+    margin: 0;
+    color: #fff;
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-nba-cas-copy > p:not(.ng-nba-cas-kicker) {
+    max-width: 470px;
+    margin: 1.35rem 0 0;
+    color: rgba(255,255,255,.61);
+    font-size: var(--ng-home-body);
+    line-height: 1.7;
+}
+/* status */
+.ng-nba-cas-status {
+    display: flex;
+    align-items: flex-start;
+    gap: .8rem;
+    margin-top: 2rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.ng-nba-cas-status > span {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 auto;
+    margin-top: .35rem;
+    border-radius: 50%;
+    background: var(--color-coral);
+    box-shadow: 0 0 0 4px rgba(240,102,83,.1);
+}
+.ng-nba-cas-status p {
+    max-width: 330px;
+    margin: 0;
+    color: rgba(255,255,255,.46);
+    font-size: .75rem;
+    line-height: 1.55;
+}
+/* GAME AREA */
+
+/* subtle grid like a game map */
+
+/* CHARACTER */
+
+
+
+
+/* ROUTE */
+
+
+/* STOPS */
+
+
+
+
+
+
+/* PAWS */
+
+
+
+
+/* NOTE */
+
+
+
+
+/* BOTTOM */
+.ng-nba-cas-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.ng-nba-cas-bottom p {
+    max-width: 650px;
+    margin: 0;
+    color: rgba(255,255,255,.43);
+    font-size: .76rem;
+    line-height: 1.55;
+}
+.ng-nba-cas-bottom > span {
+    color: var(--color-coral);
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-nba-cas-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+
+/* ACTIVITEITEN — CAS DE DAS */
+.ng-nba-cas {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0 clamp(5rem, 7vw, 6.5rem);
+    background: var(--color-dark);
+    color: #fff;
+}
+/* subtle decorative circle */
+.ng-nba-cas::before {
+    content: "";
+    position: absolute;
+    top: -170px;
+    left: -170px;
+    width: 380px;
+    height: 380px;
+    border: 1px solid rgba(255, 255, 255, .045);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 48px rgba(255, 255, 255, .016);
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-nba-cas-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, .72fr) minmax(0, 1.25fr);
+    align-items: center;
+    gap: clamp(4rem, 8vw, 8rem);
+}
+/* COPY */
+.ng-nba-cas-copy {
+    max-width: 510px;
+}
+.ng-nba-cas-kicker {
+    margin: 0 0 .9rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-nba-cas-copy h2 {
+    max-width: 490px;
+    margin: 0;
+    color: #fff;
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.02;
+    letter-spacing: -.04em;
+}
+.ng-nba-cas-copy > p:not(.ng-nba-cas-kicker) {
+    max-width: 470px;
+    margin: 1.4rem 0 0;
+    color: rgba(255, 255, 255, .62);
+    font-size: var(--ng-home-body);
+    line-height: 1.7;
+}
+/* STATUS */
+.ng-nba-cas-status {
+    display: flex;
+    align-items: flex-start;
+    gap: .85rem;
+    margin-top: 2rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.ng-nba-cas-status > span {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 auto;
+    margin-top: .35rem;
+    border-radius: 50%;
+    background: var(--color-coral);
+    box-shadow: 0 0 0 4px rgba(240, 102, 83, .1);
+}
+.ng-nba-cas-status p {
+    max-width: 350px;
+    margin: 0;
+    color: rgba(255, 255, 255, .46);
+    font-size: .76rem;
+    line-height: 1.55;
+}
+/* PLAY FIELD */
+
+/* very soft grid */
+
+/* CAS */
+
+
+/* ROUTE */
+
+
+/* ROUTE STEPS */
+
+
+
+
+
+/* placements */
+
+
+
+/* CAS MESSAGE */
+
+
+
+
+
+/* LITTLE PAWS */
+
+
+
+
+
+
+
+/* BOTTOM */
+.ng-nba-cas-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    margin-top: 2rem;
+    padding-top: 1.6rem;
+    border-top: 1px solid rgba(255, 255, 255, .1);
+}
+.ng-nba-cas-bottom p {
+    max-width: 650px;
+    margin: 0;
+    color: rgba(255, 255, 255, .42);
+    font-size: .76rem;
+    line-height: 1.55;
+}
+.ng-nba-cas-bottom > span {
+    color: var(--color-coral);
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+/* HOVER — VERY SUBTLE */
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-nba-cas-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    
+}
+@media (max-width: 600px) {
+    .ng-nba-cas {
+        padding: 4.5rem 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    .ng-nba-cas-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+/* CAS DE DAS — STORYBOOK ADVENTURE */
+.ng-nba-cas-adventure {
+    position: relative;
+    min-height: 520px;
+    overflow: visible;
+}
+/* ORGANIC GROUND */
+.ng-nba-cas-ground {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 36px;
+    width: 500px;
+    height: 145px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center, rgba(125, 145, 91, .19), rgba(125, 145, 91, .07) 63%, transparent 64%);
+}
+/* subtle second layer */
+.ng-nba-cas-ground::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+    width: 390px;
+    height: 70px;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background: rgba(120, 139, 81, .07);
+}
+/* CAS — BIG STAR */
+.ng-nba-cas-figure {
+    position: absolute;
+    z-index: 5;
+    left: 52%;
+    bottom: 27px;
+    width: clamp(280px, 35vw, 380px);
+    margin: 0;
+    transform: translateX(-50%);
+    filter: drop-shadow(0 22px 24px rgba(0, 0, 0, .12));
+    transition: transform .35s ease;
+}
+.ng-nba-cas-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.ng-nba-cas-adventure:hover .ng-nba-cas-figure {
+    transform: translateX(-50%) translateY(-5px);
+}
+/* TRAIL */
+.ng-nba-cas-trail {
+    position: absolute;
+    z-index: 2;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    pointer-events: none;
+}
+.ng-nba-cas-trail path {
+    fill: none;
+    stroke: var(--color-coral);
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-dasharray: 4 11;
+    opacity: .72;
+    vector-effect: non-scaling-stroke;
+}
+/* TRAIL MARKERS */
+.ng-nba-cas-marker {
+    position: absolute;
+    z-index: 4;
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    padding: .6rem .85rem;
+    border: 1px solid rgba(255, 255, 255, .11);
+    border-radius: 999px;
+    background: rgba(38, 57, 45, .88);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .08);
+    backdrop-filter: blur(5px);
+    color: #fff;
+}
+.ng-nba-cas-marker > span {
+    color: var(--color-coral);
+    font-size: .72rem;
+}
+.ng-nba-cas-marker strong {
+    font-size: .68rem;
+    font-weight: 750;
+}
+/* positions */
+.ng-nba-cas-marker--look {
+    left: 6%;
+    bottom: 85px;
+    transform: rotate(-4deg);
+}
+.ng-nba-cas-marker--discover {
+    left: 34%;
+    top: 62px;
+    transform: rotate(2deg);
+}
+.ng-nba-cas-marker--think {
+    right: 4%;
+    bottom: 93px;
+    transform: rotate(3deg);
+}
+/* CAS NOTE */
+.ng-nba-cas-whisper {
+    position: absolute;
+    z-index: 6;
+    top: 74px;
+    right: 1%;
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+    width: 170px;
+    transform: rotate(3deg);
+}
+.ng-nba-cas-whisper > span {
+    color: var(--color-coral);
+    font-size: 1.3rem;
+}
+.ng-nba-cas-whisper p {
+    margin: 0;
+    color: rgba(255, 255, 255, .58);
+    font-size: .76rem;
+    line-height: 1.35;
+}
+.ng-nba-cas-whisper strong {
+    display: block;
+    margin-top: .12rem;
+    color: #fff;
+    font-size: .98rem;
+    font-weight: 750;
+}
+/* PAW PRINTS */
+.ng-nba-cas-footprints {
+    position: absolute;
+    z-index: 3;
+    width: 42px;
+    height: 28px;
+    opacity: .2;
+}
+.ng-nba-cas-footprints i {
+    position: absolute;
+    display: block;
+    border-radius: 50%;
+    background: #fff;
+}
+.ng-nba-cas-footprints i:nth-child(1) {
+    top: 0;
+    left: 4px;
+    width: 7px;
+    height: 9px;
+}
+.ng-nba-cas-footprints i:nth-child(2) {
+    top: 0;
+    left: 15px;
+    width: 7px;
+    height: 9px;
+}
+.ng-nba-cas-footprints i:nth-child(3) {
+    left: 7px;
+    bottom: 0;
+    width: 18px;
+    height: 13px;
+}
+.ng-nba-cas-footprints--one {
+    left: 23%;
+    bottom: 150px;
+    transform: rotate(-27deg);
+}
+.ng-nba-cas-footprints--two {
+    right: 18%;
+    bottom: 115px;
+    transform: rotate(25deg);
+}
+/* LITTLE PLANTS */
+.ng-nba-cas-sprout {
+    position: absolute;
+    z-index: 3;
+    color: rgba(169, 203, 170, .32);
+    font-size: 2rem;
+    line-height: 1;
+}
+.ng-nba-cas-sprout--one {
+    left: 25%;
+    bottom: 52px;
+    transform: rotate(-18deg);
+}
+.ng-nba-cas-sprout--two {
+    right: 20%;
+    bottom: 60px;
+    transform: rotate(20deg) scaleX(-1);
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-nba-cas-adventure {
+        min-height: 540px;
+    }
+    .ng-nba-cas-figure {
+        width: min(380px, 58vw);
+    }
+}
+@media (max-width: 600px) {
+    .ng-nba-cas-adventure {
+        min-height: 560px;
+    }
+    .ng-nba-cas-ground {
+        width: 95%;
+    }
+    .ng-nba-cas-figure {
+        width: 260px;
+        bottom: 75px;
+    }
+    .ng-nba-cas-marker {
+        padding: .5rem .7rem;
+    }
+    .ng-nba-cas-marker--look {
+        left: 2%;
+        bottom: 35px;
+    }
+    .ng-nba-cas-marker--discover {
+        top: 40px;
+        left: 3%;
+    }
+    .ng-nba-cas-marker--think {
+        right: 2%;
+        bottom: 38px;
+    }
+    .ng-nba-cas-whisper {
+        top: 35px;
+        right: 2%;
+        width: 145px;
+    }
+    .ng-nba-cas-footprints, .ng-nba-cas-sprout {
+        display: none;
+    }
+}
+.ng-nba-cas-layout {
+    grid-template-columns: minmax(320px, .62fr) minmax(0, 1.38fr);
+    gap: clamp(4rem, 7vw, 7rem);
+}
+/* ACTIVITEITEN — EEN JAAR OP NOORDBUITEN */
+.ng-nba-year {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: #e8f0e3;
+    color: var(--color-dark);
+}
+/* HEADING */
+.ng-nba-year-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .55fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(4rem, 6vw, 5.5rem);
+}
+.ng-nba-year-kicker {
+    margin: 0 0 .9rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-nba-year-heading h2 {
+    max-width: 650px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+/* don't make whole phrase green */
+.ng-nba-year-heading h2 span {
+    display: block;
+    color: var(--color-dark);
+}
+.ng-nba-year-heading > p {
+    max-width: 430px;
+    margin: 0;
+    color: rgba(46, 59, 50, .62);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* ACTIVITY TRAIL */
+.ng-nba-year-trail {
+    position: relative;
+    min-height: 520px;
+    padding: 3rem 0;
+    border-top: 1px solid rgba(46, 59, 50, .12);
+    border-bottom: 1px solid rgba(46, 59, 50, .12);
+}
+/* central wandering line */
+.ng-nba-year-line {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 3%;
+    width: 94%;
+    height: 1px;
+    background: repeating-linear-gradient(to right, rgba(240, 102, 83, .55) 0 4px, transparent 4px 13px);
+}
+.ng-nba-year-line::before, .ng-nba-year-line::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 8px;
+    height: 8px;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-nba-year-line::before {
+    left: 0;
+}
+.ng-nba-year-line::after {
+    right: 0;
+}
+/* MOMENTS */
+.ng-nba-year-moment {
+    position: absolute;
+    z-index: 3;
+    width: 205px;
+}
+.ng-nba-year-marker {
+    position: absolute;
+    width: 11px;
+    height: 11px;
+    border: 3px solid #e8f0e3;
+    border-radius: 50%;
+    background: var(--color-coral);
+    box-shadow: 0 0 0 1px rgba(46, 59, 50, .12);
+}
+/* small stem to timeline */
+.ng-nba-year-moment::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    background: rgba(240, 102, 83, .38);
+}
+.ng-nba-year-moment > p {
+    margin: 0 0 .4rem;
+    color: var(--color-coral);
+    font-size: .59rem;
+    font-weight: 800;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+.ng-nba-year-moment h3 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(1.3rem, 1.7vw, 1.65rem);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.035em;
+}
+.ng-nba-year-desc {
+    display: block;
+    margin-top: .65rem;
+    color: rgba(46, 59, 50, .55);
+    font-size: .74rem;
+    line-height: 1.5;
+}
+/* INDIVIDUAL POSITIONING */
+/* above */
+.ng-nba-year-moment--market {
+    top: 72px;
+    left: 2%;
+}
+.ng-nba-year-moment--market .ng-nba-year-marker {
+    left: 4px;
+    bottom: -62px;
+}
+.ng-nba-year-moment--market::after {
+    left: 9px;
+    bottom: -55px;
+    height: 48px;
+}
+/* below */
+.ng-nba-year-moment--trees {
+    bottom: 55px;
+    left: 21%;
+}
+.ng-nba-year-moment--trees .ng-nba-year-marker {
+    left: 4px;
+    top: -66px;
+}
+.ng-nba-year-moment--trees::after {
+    left: 9px;
+    top: -57px;
+    height: 48px;
+}
+/* above */
+.ng-nba-year-moment--bio {
+    top: 62px;
+    left: 42%;
+}
+.ng-nba-year-moment--bio .ng-nba-year-marker {
+    left: 4px;
+    bottom: -72px;
+}
+.ng-nba-year-moment--bio::after {
+    left: 9px;
+    bottom: -63px;
+    height: 55px;
+}
+/* below */
+.ng-nba-year-moment--nldoet {
+    right: 19%;
+    bottom: 48px;
+}
+.ng-nba-year-moment--nldoet .ng-nba-year-marker {
+    left: 4px;
+    top: -72px;
+}
+.ng-nba-year-moment--nldoet::after {
+    left: 9px;
+    top: -63px;
+    height: 55px;
+}
+/* above */
+.ng-nba-year-moment--music {
+    top: 82px;
+    right: 1%;
+}
+.ng-nba-year-moment--music .ng-nba-year-marker {
+    right: 7px;
+    bottom: -62px;
+}
+.ng-nba-year-moment--music::after {
+    right: 12px;
+    bottom: -53px;
+    height: 46px;
+}
+/* LITTLE NOTE */
+.ng-nba-year-note {
+    position: absolute;
+    z-index: 4;
+    left: 51%;
+    bottom: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+    transform: rotate(-2deg);
+}
+.ng-nba-year-note > span {
+    color: var(--color-coral);
+    font-size: 1rem;
+}
+.ng-nba-year-note p {
+    margin: 0;
+    color: rgba(46, 59, 50, .43);
+    font-size: .67rem;
+    line-height: 1.4;
+}
+.ng-nba-year-note strong {
+    display: block;
+    color: var(--color-dark);
+}
+/* FOOTER */
+.ng-nba-year-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+    padding-top: 1.7rem;
+}
+.ng-nba-year-footer p {
+    margin: 0;
+    color: rgba(46, 59, 50, .45);
+    font-size: .73rem;
+}
+.ng-nba-year-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: .8rem;
+    color: var(--color-dark);
+    font-size: .8rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.ng-nba-year-footer a span {
+    transition: transform .25s ease;
+}
+.ng-nba-year-footer a:hover span {
+    transform: translateX(4px);
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-nba-year-heading {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+    .ng-nba-year-trail {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2.75rem 2rem;
+        min-height: 0;
+    }
+    .ng-nba-year-line {
+        display: none;
+    }
+    .ng-nba-year-moment, .ng-nba-year-note {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        width: auto;
+        transform: none;
+    }
+    .ng-nba-year-marker, .ng-nba-year-moment::after {
+        display: none;
+    }
+    .ng-nba-year-note {
+        align-self: end;
+    }
+}
+@media (max-width: 600px) {
+    .ng-nba-year {
+        padding: 4.5rem 0;
+    }
+    .ng-nba-year-trail {
+        grid-template-columns: 1fr;
+    }
+    .ng-nba-year-footer {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+}
+/* MEEDOEN — INTRO */
+.ng-nbm-intro {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(5rem, 7vw, 7rem) 0 clamp(3rem, 4vw, 4rem);
+    background: var(--color-cream);
+}
+.ng-nbm-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(370px, .72fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 9rem);
+    min-height: 340px;
+}
+/* COPY */
+.ng-nbm-intro-copy {
+    max-width: 660px;
+}
+.ng-nbm-intro-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: .65rem;
+    margin: 0 0 1rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+.ng-nbm-intro-kicker::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-coral);
+    box-shadow: 0 0 0 3px rgba(240,102,83,.1);
+}
+.ng-nbm-intro-copy h1 {
+    max-width: 650px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(3rem, 4vw, 4.35rem);
+    font-weight: 760;
+    line-height: .96;
+    letter-spacing: -.055em;
+}
+.ng-nbm-intro-copy > p:last-child {
+    max-width: 520px;
+    margin: 1.35rem 0 0;
+    color: rgba(46,59,50,.63);
+    font-size: .96rem;
+    line-height: 1.68;
+}
+/* FLEXIBLE TIME VISUAL */
+.ng-nbm-intro-visual {
+    position: relative;
+    width: min(100%, 410px);
+    justify-self: center;
+    padding: 2.4rem 0;
+}
+.ng-nbm-intro-visual-label {
+    margin: 0 0 1.4rem;
+    color: rgba(46,59,50,.42);
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+.ng-nbm-time-row {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    margin-top: .65rem;
+}
+.ng-nbm-time-row > span {
+    min-width: 120px;
+    color: var(--color-dark);
+    font-size: .78rem;
+    font-weight: 750;
+}
+.ng-nbm-time-row i {
+    display: block;
+    height: 7px;
+    border-radius: 999px;
+    background: #3E6B47;
+}
+.ng-nbm-time-row--small i {
+    width: 55px;
+}
+.ng-nbm-time-row--regular i {
+    width: 115px;
+    opacity: .8;
+}
+.ng-nbm-time-row--often i {
+    width: 185px;
+    opacity: .65;
+}
+.ng-nbm-time-row--idea {
+    margin-top: 1.6rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid rgba(46,59,50,.12);
+}
+.ng-nbm-time-row--idea > span {
+    min-width: auto;
+    color: var(--color-coral);
+}
+.ng-nbm-time-row--idea strong {
+    display: grid;
+    width: 32px;
+    height: 32px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-coral);
+    color: #fff;
+    font-size: .7rem;
+}
+/* note */
+.ng-nbm-intro-note {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    margin-top: 1.7rem;
+    transform: rotate(-1deg);
+}
+.ng-nbm-intro-note > span {
+    color: var(--color-coral);
+}
+.ng-nbm-intro-note p {
+    margin: 0;
+    color: rgba(46,59,50,.45);
+    font-size: .67rem;
+    line-height: 1.35;
+}
+.ng-nbm-intro-note strong {
+    display: block;
+    color: var(--color-dark);
+}
+/* bottom detail */
+.ng-nbm-intro-bottom {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-top: 2rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(46,59,50,.11);
+}
+.ng-nbm-intro-bottom > span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-nbm-intro-bottom p {
+    margin: 0;
+    color: rgba(46,59,50,.5);
+    font-size: .68rem;
+}
+/* WAYS TO JOIN */
+
+/* heading */
+
+
+
+
+/* OPEN WORKTABLE */
+
+
+
+
+/* work items */
+
+
+
+
+
+
+/* OWN IDEA */
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-nbm-intro-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .ng-nbm-intro-visual {
+        justify-self: start;
+    }
+}
+
+/* MEEDOEN — BEGIN OP JOUW MANIER */
+
+/* quiet background ring */
+
+/* HEADING */
+
+
+
+
+/* ROUTE STAGE */
+
+/* YOU — CENTER START */
+
+
+
+/* ROUTE LINES */
+
+
+/* CHOICES */
+
+
+
+/* little route endpoint */
+
+/* copy */
+
+
+
+/* BUTTONS */
+
+
+
+/* MIDDLE NOTE */
+
+
+
+
+/* BOTTOM PRACTICAL NOTE */
+
+
+
+
+
+/* RESPONSIVE */
+
+
+/* MEEDOEN — VOOR JE LANGSKOMT */
+
+/* quiet background detail */
+
+/* HEADING */
+
+
+
+
+/* GUIDE */
+
+/* LOCATION */
+
+
+
+
+/* pin */
+
+
+
+/* contact */
+
+
+
+/* ROUTE */
+
+
+
+/* start */
+
+/* end */
+
+
+
+/* travel labels */
+
+
+
+/* FACTS */
+
+
+
+
+
+
+/* IMPORTANT NOTE */
+
+
+
+
+/* RESPONSIVE */
+
+

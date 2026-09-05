@@ -1,0 +1,3513 @@
+/* FINANCIËN & TRANSPARANTIE — HERO */
+.ng-transparency-page {
+    background: var(--color-cream);
+}
+
+/* quiet geometric detail */
+
+/* LAYOUT */
+
+/* COPY */
+
+
+
+
+
+
+/* FOUNDATION FACT PANEL */
+
+/* tiny coral handmade mark */
+
+/* PANEL TOP */
+
+
+
+/* FACTS */
+
+
+
+
+/* PANEL NOTE */
+
+
+
+/* BOTTOM ROUTE */
+
+
+
+
+/* RESPONSIVE */
+
+
+/* FINANCIËN & TRANSPARANTIE — MONEY FLOW */
+
+/* HEADING */
+
+
+
+
+
+/* ROUTE */
+
+/* * continuous vertical line */
+
+/* STEP */
+
+
+/* MARKER */
+
+
+
+
+/* CONTENT */
+
+
+
+
+
+/* BOTTOM NOTE */
+
+
+
+
+/* RESPONSIVE */
+
+
+/* FINANCIËN & TRANSPARANTIE — DOCUMENTEN */
+
+/* HEADING */
+
+
+
+
+
+/* LIST */
+
+/* YEAR LABEL */
+
+
+/* DOCUMENT ROW */
+
+
+/* DOCUMENT COPY */
+
+
+
+/* META / BUTTON */
+
+
+
+
+/* CONTACT NOTE */
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+/* FINANCIËN & TRANSPARANTIE — VERANTWOORDELIJKHEID */
+.ng-finance-responsibility {
+    position: relative;
+    padding: clamp(4.75rem, 7vw, 6.5rem) 0;
+    overflow: hidden;
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+/* quiet decorative circle */
+.ng-finance-responsibility::after {
+    content: "";
+    position: absolute;
+    right: -150px;
+    bottom: -185px;
+    width: 360px;
+    height: 360px;
+    border: 70px solid rgba(220, 234, 215, 0.04);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* HEADING */
+.ng-finance-responsibility-heading {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.46fr);
+    align-items: end;
+    gap: clamp(3rem, 7vw, 7rem);
+    margin-bottom: clamp(3.5rem, 6vw, 5rem);
+}
+.ng-finance-responsibility-kicker {
+    margin: 0 0 1.15rem;
+    color: #f6a390;
+    font-size: 0.74rem;
+    font-weight: 850;
+    line-height: 1.3;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.ng-finance-responsibility-heading h2 {
+    max-width: 700px;
+    margin: 0;
+    color: var(--color-white);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: 0.97;
+    letter-spacing: -0.052em;
+}
+.ng-finance-responsibility-heading h2 span {
+    display: block;
+    color: #dcead7;
+}
+.ng-finance-responsibility-heading > p {
+    max-width: 440px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.66);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* THREE COLUMN LAYOUT */
+
+/* ITEMS */
+
+
+
+
+/* TOP DETAILS */
+
+
+/* FRED INITIAL */
+
+/* small marker other columns */
+
+/* COPY */
+
+
+
+/* FOOTER LINK */
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-finance-responsibility-heading {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .ng-finance-responsibility-heading > p {
+        max-width: 600px;
+    }
+    
+    
+    
+}
+@media (max-width: 600px) {
+    .ng-finance-responsibility {
+        padding: 4rem 0;
+    }
+    
+}
+/* FINANCIËN & TRANSPARANTIE — CONTACT CTA */
+
+/* quiet decorative circle */
+
+/* LAYOUT */
+
+/* COPY */
+
+
+
+
+
+/* ACTION */
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+
+/* OVER NOORDGROEIT — STORY BRANDING POLISH */
+/* Back to our normal section-kicker language */
+body .ng-over-story-v3-badge {
+    width: auto;
+    margin: 0 0 1.15rem;
+    padding: 0;
+    color: var(--color-coral);
+    background: transparent;
+    border-radius: 0;
+    font-size: 0.74rem;
+    font-weight: 850;
+    line-height: 1.3;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+/* Normal heading colour */
+body .ng-over-story-v3-heading h2 {
+    color: var(--color-dark);
+}
+/* * Kill the old rule that made the entire * second part of the heading green. */
+body .ng-over-story-v3-heading h2 span {
+    color: inherit;
+}
+/* Reusable NoordgroeiT branding */
+body .ng-brand-word {
+    color: var(--color-green) !important;
+}
+/* OVER NOORDGROEIT — CTA REDESIGN */
+/* Kill old pill styling */
+body .ng-over-idea-action {
+    position: relative;
+    min-width: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: clamp(1.5rem, 3vw, 2.8rem);
+    padding: 0;
+}
+/* LITTLE JOURNEY INTO THE CTA */
+.ng-over-idea-route {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 125px;
+}
+.ng-over-idea-route-dot {
+    width: 7px;
+    height: 7px;
+    margin-right: 2px;
+    margin-bottom: 0.8rem;
+    background: var(--color-coral);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(240, 102, 83, 0.1);
+}
+.ng-over-idea-route p {
+    margin: 0;
+    color: rgba(46, 59, 50, 0.52);
+    font-size: 0.7rem;
+    font-weight: 700;
+    line-height: 1.45;
+    text-align: right;
+}
+.ng-over-idea-route p strong {
+    display: block;
+    color: var(--color-dark);
+    font-weight: 850;
+}
+.ng-over-idea-route-line {
+    width: 72px;
+    height: 1px;
+    margin-top: 1rem;
+    background: linear-gradient(to right, rgba(46, 59, 50, 0.12), var(--color-coral));
+}
+/* BIG ACTION CIRCLE */
+.ng-over-idea-circle {
+    position: relative;
+    width: clamp(180px, 15vw, 215px);
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 0 0 auto;
+    padding: 1.5rem;
+    overflow: hidden;
+    color: var(--color-white);
+    background: var(--color-coral);
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    transition: transform 260ms cubic-bezier(.2,.75,.25,1), box-shadow 260ms ease;
+}
+/* subtle inner ring */
+.ng-over-idea-circle::before {
+    content: "";
+    position: absolute;
+    inset: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.24);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* quiet rotating outer detail */
+.ng-over-idea-circle::after {
+    content: "";
+    position: absolute;
+    top: 18px;
+    right: 26px;
+    width: 7px;
+    height: 7px;
+    background: var(--color-white);
+    border-radius: 50%;
+    opacity: 0.85;
+}
+.ng-over-idea-circle-small {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 0.55rem;
+    color: rgba(255, 255, 255, 0.68);
+    font-size: 0.63rem;
+    font-weight: 850;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+.ng-over-idea-circle strong {
+    position: relative;
+    z-index: 2;
+    color: var(--color-white);
+    font-size: clamp(1.25rem, 1.55vw, 1.5rem);
+    font-weight: 800;
+    line-height: 1.02;
+    letter-spacing: -0.035em;
+}
+.ng-over-idea-circle-arrow {
+    position: absolute;
+    right: 27px;
+    bottom: 26px;
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    color: var(--color-coral);
+    background: var(--color-white);
+    border-radius: 50%;
+    font-size: 0.8rem;
+    transition: transform 220ms ease;
+}
+/* INTERACTION */
+.ng-over-idea-circle:hover, .ng-over-idea-circle:focus-visible {
+    color: var(--color-white);
+    transform: translateY(-4px) rotate(1deg);
+    box-shadow: 0 16px 35px rgba(46, 59, 50, 0.14);
+}
+.ng-over-idea-circle:hover .ng-over-idea-circle-arrow, .ng-over-idea-circle:focus-visible .ng-over-idea-circle-arrow {
+    transform: translate(3px, -3px);
+}
+/* RESPONSIVE */
+@media (max-width: 760px) {
+    body .ng-over-idea-action {
+        justify-content: flex-start;
+    }
+}
+@media (max-width: 520px) {
+    body .ng-over-idea-action {
+        align-items: center;
+        gap: 1.3rem;
+    }
+    .ng-over-idea-route {
+        width: 100px;
+    }
+    .ng-over-idea-circle {
+        width: 170px;
+    }
+}
+/* TEAM & BESTUUR — PEOPLE COLLAGE */
+.ng-team-people-v2 {
+    position: relative;
+    padding: clamp(4.75rem, 7vw, 6.5rem) 0;
+    overflow: hidden;
+    background: #fffdfa;
+    color: var(--color-dark);
+}
+/* HEADING */
+.ng-team-people-v2-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.45fr);
+    align-items: end;
+    gap: clamp(3rem, 7vw, 7rem);
+    margin-bottom: clamp(3.5rem, 6vw, 5rem);
+}
+.ng-team-people-v2-kicker {
+    margin: 0 0 1.15rem;
+    color: var(--color-coral);
+    font-size: 0.74rem;
+    font-weight: 850;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.ng-team-people-v2-heading h2 {
+    max-width: 690px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: 0.97;
+    letter-spacing: -0.052em;
+}
+/* ONLY ONE WORD */
+.ng-team-people-v2-heading h2 > span {
+    color: var(--color-green);
+}
+.ng-team-people-v2-heading > p {
+    max-width: 450px;
+    margin: 0;
+    color: rgba(46, 59, 50, 0.68);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* COLLAGE */
+.ng-team-people-v2-grid {
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: clamp(1.2rem, 2vw, 1.8rem);
+    align-items: stretch;
+}
+/* PROFILE */
+.ng-team-profile {
+    position: relative;
+    min-height: 290px;
+    display: grid;
+    grid-template-columns: minmax(145px, 0.42fr) minmax(0, 1fr);
+    overflow: hidden;
+    background: var(--color-cream);
+    border: 1px solid rgba(46, 59, 50, 0.1);
+    border-radius: 1.8rem 0.5rem 1.8rem 1.8rem;
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.ng-team-profile:nth-child(2) {
+    border-radius: 0.5rem 1.8rem 1.8rem 1.8rem;
+}
+.ng-team-profile:nth-child(3) {
+    border-radius: 1.8rem 1.8rem 0.5rem 1.8rem;
+}
+.ng-team-profile:nth-child(4) {
+    border-radius: 1.8rem 1.8rem 1.8rem 0.5rem;
+}
+.ng-team-profile:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 34px rgba(46, 59, 50, 0.08);
+}
+/* LARGE LEAD PROFILE */
+
+/* PORTRAIT AREA */
+.ng-team-profile-portrait {
+    position: relative;
+    min-height: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    background: linear-gradient(145deg, var(--color-green-light), #d4e4cf);
+}
+/* subtle visual ring */
+.ng-team-profile-portrait::before {
+    content: "";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border: 1px solid rgba(47, 72, 55, 0.12);
+    border-radius: 50%;
+}
+.ng-team-profile-portrait::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 8px;
+    height: 8px;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+/* INITIALS — FALLBACK WHEN NO PHOTO IS AVAILABLE */
+.ng-team-profile-initials {
+    position: relative;
+    z-index: 2;
+    width: 96px;
+    height: 96px;
+    display: grid;
+    place-items: center;
+    color: var(--color-green);
+    background: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    border-radius: 50% 50% 22% 50%;
+    font-size: 1rem;
+    font-weight: 850;
+    letter-spacing: 0.06em;
+}
+.ng-team-profile-photo-note {
+    position: absolute;
+    left: 20px;
+    bottom: 18px;
+    color: rgba(46, 59, 50, 0.42);
+    font-size: 0.58rem;
+    font-weight: 800;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+/* CORAL VARIANT */
+.ng-team-profile--coral .ng-team-profile-portrait {
+    background: linear-gradient(145deg, #f7ddd5, #f4cfc5);
+}
+.ng-team-profile--coral .ng-team-profile-initials {
+    color: var(--color-coral);
+}
+/* COPY */
+.ng-team-profile-copy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: clamp(1.7rem, 3vw, 2.5rem);
+}
+.ng-team-profile-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 1.4rem;
+}
+.ng-team-profile-top > span {
+    color: var(--color-coral);
+    font-size: 0.64rem;
+    font-weight: 850;
+    letter-spacing: 0.12em;
+}
+.ng-team-profile-top p {
+    margin: 0;
+    color: rgba(46, 59, 50, 0.44);
+    font-size: 0.62rem;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-align: right;
+    text-transform: uppercase;
+}
+.ng-team-profile h3 {
+    margin: 0 0 0.75rem;
+    color: var(--color-dark);
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-weight: 750;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+}
+.ng-team-profile-copy > p {
+    max-width: 390px;
+    margin: 0;
+    color: rgba(46, 59, 50, 0.63);
+    font-size: 0.88rem;
+    line-height: 1.64;
+}
+/* FOOTER */
+.ng-team-people-v2-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: clamp(2.5rem, 4vw, 3.5rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46, 59, 50, 0.1);
+}
+.ng-team-people-v2-footer > span {
+    width: 7px;
+    height: 7px;
+    flex: 0 0 auto;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-team-people-v2-footer p {
+    margin: 0;
+    color: rgba(46, 59, 50, 0.5);
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+/* REAL PHOTOS LATER */
+/* When we have portraits, replace initials markup with: <img class="ng-team-profile-image" src="..." alt="Yvonne Visser" > */
+
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-team-people-v2-grid {
+        grid-template-columns: 1fr;
+    }
+    .ng-team-profile {
+        min-height: 280px;
+        grid-template-columns: minmax(150px, 0.38fr) minmax(0, 1fr);
+    }
+}
+@media (max-width: 760px) {
+    .ng-team-people-v2-heading {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 560px) {
+    .ng-team-profile {
+        grid-template-columns: 1fr;
+    }
+    .ng-team-profile-portrait {
+        min-height: 230px;
+    }
+}
+/* TEAM & BESTUUR — VISUAL COLLABORATION FLOW */
+.ng-team-collab {
+    position: relative;
+    padding: clamp(5rem, 7vw, 6.5rem) 0;
+    overflow: hidden;
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+/* subtle background echo */
+.ng-team-collab::after {
+    content: "";
+    position: absolute;
+    right: -170px;
+    bottom: -190px;
+    width: 370px;
+    height: 370px;
+    border: 70px solid rgba(220, 234, 215, 0.035);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* HEADING */
+.ng-team-collab-heading {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.44fr);
+    align-items: end;
+    gap: clamp(3rem, 7vw, 7rem);
+    margin-bottom: clamp(4rem, 7vw, 6rem);
+}
+.ng-team-collab-kicker {
+    margin: 0 0 1.15rem;
+    color: #f6a390;
+    font-size: 0.74rem;
+    font-weight: 850;
+    line-height: 1.3;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.ng-team-collab-heading h2 {
+    max-width: 720px;
+    margin: 0;
+    color: var(--color-white);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: 0.97;
+    letter-spacing: -0.052em;
+}
+/* ONLY NOORDGROEIT IS GREEN */
+.ng-team-collab-heading .ng-brand-word {
+    color: #c7dfbe !important;
+}
+.ng-team-collab-heading > p {
+    max-width: 440px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.64);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* VISUAL FLOW */
+
+/* FLOWING SVG LINE */
+
+
+
+
+/* STATIONS */
+
+
+
+
+/* LARGE VISUAL ICON */
+
+
+
+
+/* COPY */
+
+
+
+
+/* CLOSING LINE */
+.ng-team-collab-end {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 1.5rem;
+    padding-top: 1.3rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.11);
+}
+.ng-team-collab-end > span {
+    width: 7px;
+    height: 7px;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-team-collab-end p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.48);
+    font-size: 0.72rem;
+    font-weight: 700;
+}
+/* ANIMATION */
+
+
+
+
+
+
+
+
+/* middle already uses translateX */
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-team-collab-heading {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    
+    
+    
+    
+}
+/* TEAM — CLEAN COLLABORATION TRACK */
+.ng-team-collab-track {
+    position: relative;
+    width: min(100%, 1080px);
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(3rem, 7vw, 6rem);
+    margin: clamp(2.5rem, 4vw, 3.5rem) auto 0;
+    padding-top: 1rem;
+}
+/* ROUTE */
+.ng-team-collab-track-line {
+    position: absolute;
+    top: 17px;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    pointer-events: none;
+}
+.ng-team-collab-track-guide, .ng-team-collab-track-live {
+    fill: none;
+    stroke-linecap: round;
+}
+.ng-team-collab-track-guide {
+    stroke: rgba(255,255,255,.09);
+    stroke-width: 1.2;
+}
+.ng-team-collab-track-live {
+    stroke: var(--color-coral);
+    stroke-width: 1.8;
+}
+/* STATIONS */
+.ng-team-collab-station {
+    position: relative;
+    z-index: 2;
+    min-width: 0;
+}
+/* slight controlled variation */
+.ng-team-collab-station--2 {
+    padding-top: 24px;
+}
+/* NODE */
+.ng-team-collab-node {
+    position: relative;
+    width: 86px;
+    height: 86px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.8rem;
+    color: var(--color-coral);
+    background: var(--color-dark);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: 50% 50% 22% 50%;
+    box-shadow: 0 0 0 10px var(--color-dark);
+}
+/* little coral connection point */
+.ng-team-collab-node::after {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: -4px;
+    width: 9px;
+    height: 9px;
+    background: var(--color-coral);
+    border: 4px solid var(--color-dark);
+    border-radius: 50%;
+}
+.ng-team-collab-node svg {
+    width: 38px;
+    height: 38px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+/* META */
+.ng-team-collab-meta {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: .7rem;
+}
+.ng-team-collab-meta span {
+    color: var(--color-coral);
+    font-size: .64rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+}
+.ng-team-collab-meta p {
+    margin: 0;
+    color: rgba(255,255,255,.42);
+    font-size: .64rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+/* COPY */
+.ng-team-collab-station h3 {
+    max-width: 270px;
+    margin: 0 0 .75rem;
+    color: var(--color-white);
+    font-size: clamp(1.45rem, 1.9vw, 1.75rem);
+    font-weight: 750;
+    line-height: 1.04;
+    letter-spacing: -.035em;
+}
+.ng-team-collab-station-copy > p:last-child {
+    max-width: 280px;
+    margin: 0;
+    color: rgba(255,255,255,.58);
+    font-size: .88rem;
+    line-height: 1.62;
+}
+/* ANIMATION */
+.ng-team-collab-track.is-animatable .ng-team-collab-track-live {
+    stroke-dasharray: 1;
+    stroke-dashoffset: 1;
+}
+.ng-team-collab-track.is-animatable .ng-team-collab-station {
+    opacity: 0;
+    transform: translateY(10px);
+}
+.ng-team-collab-track.is-in-view .ng-team-collab-track-live {
+    animation: ng-team-track-draw 2.2s ease-in-out forwards;
+}
+.ng-team-collab-track.is-in-view .ng-team-collab-station--1 {
+    animation: ng-team-track-station .45s ease-out .1s forwards;
+}
+.ng-team-collab-track.is-in-view .ng-team-collab-station--2 {
+    animation: ng-team-track-station .45s ease-out .9s forwards;
+}
+.ng-team-collab-track.is-in-view .ng-team-collab-station--3 {
+    animation: ng-team-track-station .45s ease-out 1.7s forwards;
+}
+@keyframes ng-team-track-draw {
+    from {
+        stroke-dashoffset: 1;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes ng-team-track-station {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* MOBILE */
+@media (max-width: 760px) {
+    .ng-team-collab-track {
+        grid-template-columns: 1fr;
+        gap: 2.25rem;
+    }
+    .ng-team-collab-track-line {
+        display: none;
+    }
+    .ng-team-collab-station, .ng-team-collab-station--2 {
+        padding-top: 0;
+    }
+    .ng-team-collab-station {
+        display: grid;
+        grid-template-columns: 76px minmax(0,1fr);
+        gap: 1.4rem;
+        align-items: start;
+        padding-bottom: 2rem;
+        border-bottom: 1px solid rgba(255,255,255,.1);
+    }
+    .ng-team-collab-node {
+        width: 72px;
+        height: 72px;
+        margin: 0;
+    }
+}
+/* TEAM & BESTUUR — JOIN CTA V2 */
+.ng-team-join-v2 {
+    position: relative;
+    padding: clamp(4.75rem, 7vw, 6rem) 0;
+    overflow: hidden;
+    background: var(--color-green-light);
+    color: var(--color-dark);
+}
+/* quiet page detail */
+.ng-team-join-v2::after {
+    content: "";
+    position: absolute;
+    right: -120px;
+    bottom: -130px;
+    width: 250px;
+    height: 250px;
+    border: 45px solid rgba(46, 59, 50, 0.035);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-team-join-v2-layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(390px, .72fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 9rem);
+}
+/* COPY */
+.ng-team-join-v2-copy {
+    max-width: 660px;
+}
+.ng-team-join-v2-kicker {
+    margin: 0 0 1.15rem;
+    color: var(--color-coral);
+    font-size: .74rem;
+    font-weight: 850;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-team-join-v2-copy h2 {
+    max-width: 640px;
+    margin: 0 0 1.4rem;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: .97;
+    letter-spacing: -.052em;
+}
+/* only NoordgroeiT is green */
+.ng-team-join-v2-copy .ng-brand-word {
+    color: var(--color-green) !important;
+}
+.ng-team-join-v2-copy > p:last-child {
+    max-width: 540px;
+    margin: 0;
+    color: rgba(46, 59, 50, .67);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* VISUAL */
+.ng-team-join-v2-visual {
+    position: relative;
+    width: min(100%, 420px);
+    aspect-ratio: 1.3;
+    justify-self: end;
+}
+/* connector lines */
+.ng-team-join-v2-lines {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+.ng-team-join-v2-lines path {
+    fill: none;
+    stroke: rgba(240, 102, 83, .45);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-dasharray: 3 6;
+}
+/* OPTIONS */
+.ng-team-join-v2-option {
+    position: absolute;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    padding: .9rem 1rem;
+    background: rgba(255,255,255,.48);
+    border: 1px solid rgba(46,59,50,.1);
+    backdrop-filter: blur(5px);
+}
+.ng-team-join-v2-option--1 {
+    top: 8px;
+    left: 0;
+    border-radius: 1rem 1rem .3rem 1rem;
+}
+.ng-team-join-v2-option--2 {
+    top: 18px;
+    right: 0;
+    border-radius: 1rem .3rem 1rem 1rem;
+}
+.ng-team-join-v2-option--3 {
+    left: 20px;
+    bottom: 5px;
+    border-radius: .3rem 1rem 1rem 1rem;
+}
+.ng-team-join-v2-option > span {
+    margin-bottom: .4rem;
+    color: var(--color-coral);
+    font-size: .6rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+}
+.ng-team-join-v2-option strong {
+    color: var(--color-dark);
+    font-size: .86rem;
+    font-weight: 800;
+    line-height: 1.1;
+}
+.ng-team-join-v2-option small {
+    margin-top: .2rem;
+    color: rgba(46,59,50,.43);
+    font-size: .59rem;
+    font-weight: 750;
+}
+/* CENTRAL CTA */
+.ng-team-join-v2-center {
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    width: clamp(145px, 12vw, 170px);
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    color: var(--color-white);
+    background: var(--color-coral);
+    border-radius: 50% 50% 24% 50%;
+    text-align: center;
+    text-decoration: none;
+    transform: translate(-50%, -50%);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+.ng-team-join-v2-center::before {
+    content: "";
+    position: absolute;
+    inset: 9px;
+    border: 1px solid rgba(255,255,255,.28);
+    border-radius: inherit;
+}
+.ng-team-join-v2-center > span {
+    position: relative;
+    color: rgba(255,255,255,.68);
+    font-size: .62rem;
+    font-weight: 750;
+}
+.ng-team-join-v2-center strong {
+    position: relative;
+    margin-top: .2rem;
+    color: var(--color-white);
+    font-size: 1.05rem;
+    font-weight: 850;
+    line-height: 1.05;
+}
+.ng-team-join-v2-center i {
+    position: absolute;
+    right: 18px;
+    bottom: 17px;
+    width: 30px;
+    height: 30px;
+    display: grid;
+    place-items: center;
+    color: var(--color-coral);
+    background: var(--color-white);
+    border-radius: 50%;
+    font-size: .72rem;
+    font-style: normal;
+    transition: transform 180ms ease;
+}
+.ng-team-join-v2-center:hover, .ng-team-join-v2-center:focus-visible {
+    color: var(--color-white);
+    transform: translate(-50%, -50%) translateY(-4px) rotate(1deg);
+    box-shadow: 0 15px 32px rgba(46,59,50,.13);
+}
+.ng-team-join-v2-center:hover i {
+    transform: translate(2px,-2px);
+}
+/* BOTTOM DETAIL */
+.ng-team-join-v2-bottom {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    margin-top: clamp(3rem, 5vw, 4rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46,59,50,.1);
+}
+.ng-team-join-v2-bottom > span {
+    width: 7px;
+    height: 7px;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-team-join-v2-bottom p {
+    margin: 0;
+    color: rgba(46,59,50,.5);
+    font-size: .72rem;
+    font-weight: 700;
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-team-join-v2-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .ng-team-join-v2-visual {
+        width: min(100%, 420px);
+        justify-self: center;
+    }
+}
+@media (max-width: 520px) {
+    .ng-team-join-v2 {
+        padding: 4rem 0;
+    }
+    .ng-team-join-v2-visual {
+        width: 100%;
+        min-height: 350px;
+    }
+    .ng-team-join-v2-option {
+        padding: .75rem .8rem;
+    }
+    .ng-team-join-v2-center {
+        left: 52%;
+        width: 145px;
+    }
+}
+/* INITIATIEVEN — HERO V2 */
+
+/* quiet big background echo */
+
+/* LAYOUT */
+
+/* COPY */
+
+
+
+/* only ONE intentional word */
+
+
+/* HERO BUTTON */
+
+
+
+
+/* COLLAGE */
+
+/* NOORDBUITEN PHOTO */
+
+
+
+/* slight photo fade */
+
+
+
+
+/* TALK CARD */
+
+/* speech bubble tail */
+
+/* TALK ICON */
+
+
+
+
+
+/* FLOATING NOTE */
+
+
+
+
+/* ROUTE */
+
+
+
+/* BOTTOM THEMES */
+
+
+
+/* RESPONSIVE */
+
+
+/* INITIATIEVEN — PHOTO HERO */
+
+/* IMAGE */
+
+/* OVERLAY */
+
+/* CONTAINER */
+
+/* COPY */
+
+
+
+/* only one highlighted word */
+
+
+/* NoordgroeiT still gets brand treatment */
+
+/* BUTTON */
+
+
+
+
+/* SCROLL MARK */
+
+/* RESPONSIVE */
+
+
+/* INNER PAGE HERO KICKER — Same visual language as Over NoordgroeiT */
+
+/* coral dot */
+
+/* FINANCIËN & TRANSPARANTIE — HERO V2 */
+.ng-finance-hero-v2 {
+    position: relative;
+    padding: clamp(5rem, 7vw, 6.75rem) 0 clamp(3.5rem, 5vw, 4.5rem);
+    overflow: hidden;
+    background: var(--color-cream);
+    color: var(--color-dark);
+}
+/* subtle house-style circle */
+.ng-finance-hero-v2::after {
+    content: "";
+    position: absolute;
+    top: -150px;
+    right: -135px;
+    width: 330px;
+    height: 330px;
+    border: 62px solid rgba(46,59,50,.035);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-finance-hero-v2-layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, .95fr) minmax(390px, .66fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 9rem);
+}
+/* COPY */
+.ng-finance-hero-v2-copy {
+    max-width: 720px;
+}
+.ng-finance-hero-v2-kicker {
+    position: relative;
+    width: fit-content;
+    margin: 0 0 1.15rem;
+    padding-left: 1.15rem;
+    color: var(--color-coral);
+    font-size: .74rem;
+    font-weight: 850;
+    line-height: 1.3;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+/* same coral-dot language */
+.ng-finance-hero-v2-kicker::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--color-coral);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 4px rgba(240,102,83,.11);
+}
+.ng-finance-hero-v2 h1 {
+    max-width: 700px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: .97;
+    letter-spacing: -.052em;
+}
+/* only one word */
+.ng-finance-hero-v2 h1 > span {
+    color: var(--color-green);
+}
+.ng-finance-hero-v2-intro {
+    max-width: 560px;
+    margin: 1.55rem 0 0;
+    color: rgba(46,59,50,.68);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* BUTTON */
+.ng-finance-hero-v2-button {
+    width: fit-content;
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1.8rem;
+    padding: .35rem .4rem .35rem 1.15rem;
+    color: var(--color-dark);
+    border: 1px solid rgba(46,59,50,.16);
+    border-radius: 999px;
+    font-size: .78rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 180ms ease, border-color 180ms ease;
+}
+.ng-finance-hero-v2-button-arrow {
+    width: 2.3rem;
+    height: 2.3rem;
+    display: grid;
+    place-items: center;
+    color: var(--color-white);
+    background: var(--color-coral);
+    border-radius: 50%;
+    transition: transform 180ms ease;
+}
+.ng-finance-hero-v2-button:hover {
+    color: var(--color-dark);
+    transform: translateY(-2px);
+    border-color: rgba(46,59,50,.3);
+}
+.ng-finance-hero-v2-button:hover .ng-finance-hero-v2-button-arrow {
+    transform: translateY(2px);
+}
+/* DOSSIER VISUAL */
+.ng-finance-dossier {
+    position: relative;
+    width: min(100%, 410px);
+    height: 360px;
+    justify-self: end;
+}
+/* PAPERS */
+.ng-finance-paper {
+    position: absolute;
+    width: 285px;
+    height: 245px;
+    padding: 1.6rem;
+    background: #fffdfa;
+    border: 1px solid rgba(46,59,50,.1);
+    box-shadow: 0 12px 30px rgba(46,59,50,.06);
+}
+.ng-finance-paper--back {
+    top: 20px;
+    left: 15px;
+    transform: rotate(-7deg);
+    border-radius: 1rem .3rem 1rem 1rem;
+}
+.ng-finance-paper--middle {
+    top: 12px;
+    right: 10px;
+    transform: rotate(6deg);
+    border-radius: .3rem 1rem 1rem 1rem;
+}
+/* PAPER DETAILS */
+.ng-finance-paper-tab {
+    display: inline-block;
+    margin-bottom: 2rem;
+    color: var(--color-coral);
+    font-size: .6rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.ng-finance-paper-line {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-bottom: .85rem;
+    background: rgba(46,59,50,.13);
+}
+.ng-finance-paper-line--short {
+    width: 62%;
+}
+.ng-finance-paper-check {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-bottom: .8rem;
+    color: rgba(46,59,50,.53);
+    font-size: .68rem;
+    font-weight: 700;
+}
+.ng-finance-paper-check i {
+    width: 22px;
+    height: 22px;
+    display: grid;
+    place-items: center;
+    color: var(--color-coral);
+    border: 1px solid rgba(240,102,83,.3);
+    border-radius: 50%;
+    font-size: .62rem;
+    font-style: normal;
+}
+/* FRONT DOSSIER */
+.ng-finance-dossier-front {
+    position: absolute;
+    z-index: 3;
+    top: 60px;
+    left: 50%;
+    width: 300px;
+    padding: 1.8rem 1.8rem 1.5rem;
+    color: var(--color-white);
+    background: var(--color-dark);
+    border-radius: 1.4rem 1.4rem .4rem 1.4rem;
+    transform: translateX(-50%) rotate(-1deg);
+    box-shadow: 0 20px 45px rgba(46,59,50,.16);
+}
+/* coral bookmark */
+.ng-finance-dossier-front::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 30px;
+    width: 46px;
+    height: 5px;
+    background: var(--color-coral);
+    border-radius: 999px;
+}
+/* DOSSIER TOP */
+.ng-finance-dossier-top {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+.ng-finance-dossier-top p {
+    margin: 0;
+    color: rgba(255,255,255,.5);
+    font-size: .61rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ng-finance-dossier-top strong {
+    display: block;
+    margin-top: .15rem;
+    color: #dcead7;
+    font-size: .75rem;
+}
+.ng-finance-dossier-top > span {
+    width: 31px;
+    height: 31px;
+    display: grid;
+    place-items: center;
+    color: var(--color-coral);
+    border: 1px solid rgba(240,102,83,.3);
+    border-radius: 50%;
+    font-size: .7rem;
+}
+/* FACTS */
+.ng-finance-dossier-front dl {
+    margin: 0;
+}
+.ng-finance-dossier-front dl > div {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) auto;
+    gap: 1rem;
+    padding: .85rem 0;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.ng-finance-dossier-front dt {
+    color: rgba(255,255,255,.43);
+    font-size: .65rem;
+    font-weight: 700;
+}
+.ng-finance-dossier-front dd {
+    margin: 0;
+    color: var(--color-white);
+    font-size: .72rem;
+    font-weight: 800;
+}
+/* DOSSIER BOTTOM */
+.ng-finance-dossier-bottom {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-top: 1.3rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.ng-finance-dossier-bottom span {
+    width: 6px;
+    height: 6px;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-finance-dossier-bottom p {
+    margin: 0;
+    color: rgba(255,255,255,.42);
+    font-size: .58rem;
+    font-weight: 700;
+}
+/* ANNOTATION */
+.ng-finance-dossier-note {
+    position: absolute;
+    z-index: 5;
+    right: -5px;
+    bottom: 8px;
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+}
+.ng-finance-dossier-note > span {
+    width: 7px;
+    height: 7px;
+    margin-top: .2rem;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-finance-dossier-note p {
+    margin: 0;
+    color: rgba(46,59,50,.48);
+    font-size: .61rem;
+    font-weight: 700;
+    line-height: 1.35;
+}
+.ng-finance-dossier-note strong {
+    display: block;
+    color: var(--color-dark);
+    font-weight: 850;
+}
+/* BOTTOM ROUTE */
+.ng-finance-hero-v2-route {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7rem 1rem;
+    margin-top: clamp(3.5rem, 6vw, 5rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46,59,50,.11);
+    color: rgba(46,59,50,.48);
+    font-size: .64rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+.ng-finance-hero-v2-route i {
+    color: var(--color-coral);
+    font-style: normal;
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-finance-hero-v2-layout {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .ng-finance-dossier {
+        justify-self: center;
+    }
+}
+@media (max-width: 520px) {
+    .ng-finance-hero-v2 {
+        padding: 4rem 0 3rem;
+    }
+    .ng-finance-dossier {
+        width: 100%;
+        height: 330px;
+    }
+    .ng-finance-paper {
+        width: 235px;
+    }
+    .ng-finance-dossier-front {
+        width: min(88%, 290px);
+    }
+}
+/* FINANCE HERO — DOSSIER NEATNESS PASS */
+/* Give the visual a cleaner working area */
+body .ng-finance-dossier {
+    width: min(100%, 390px);
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    justify-self: end;
+}
+/* BACK PAPERS */
+body .ng-finance-paper {
+    width: 270px;
+    height: 225px;
+    padding: 1.45rem;
+    box-shadow: 0 10px 26px rgba(46, 59, 50, 0.055);
+}
+/* left/back sheet */
+body .ng-finance-paper--back {
+    top: 34px;
+    left: 26px;
+    transform: rotate(-4deg);
+    opacity: 0.82;
+}
+/* right/back sheet */
+body .ng-finance-paper--middle {
+    top: 26px;
+    right: 22px;
+    transform: rotate(4deg);
+    opacity: 0.92;
+}
+/* Keep their labels calmer */
+body .ng-finance-paper-tab {
+    margin-bottom: 1.5rem;
+    font-size: 0.57rem;
+    letter-spacing: 0.14em;
+}
+/* MAIN GREEN DOCUMENT */
+body .ng-finance-dossier-front {
+    top: 64px;
+    left: 50%;
+    width: 285px;
+    padding: 1.65rem 1.65rem 1.4rem;
+    transform: translateX(-50%);
+    border-radius: 1.25rem 1.25rem 0.4rem 1.25rem;
+    box-shadow: 0 18px 38px rgba(46, 59, 50, 0.14);
+}
+/* bookmark becomes a deliberate tab */
+body .ng-finance-dossier-front::before {
+    top: -4px;
+    left: 28px;
+    width: 42px;
+    height: 4px;
+}
+/* TOP */
+body .ng-finance-dossier-top {
+    margin-bottom: 1.6rem;
+}
+body .ng-finance-dossier-top > span {
+    width: 29px;
+    height: 29px;
+}
+/* FACT ROWS */
+body .ng-finance-dossier-front dl > div {
+    padding: 0.75rem 0;
+}
+body .ng-finance-dossier-front dt {
+    font-size: 0.62rem;
+}
+body .ng-finance-dossier-front dd {
+    font-size: 0.7rem;
+}
+/* BOTTOM DETAIL */
+body .ng-finance-dossier-bottom {
+    margin-top: 1rem;
+    padding-top: 0.9rem;
+}
+/* NOTE — NO LONGER FLOATING RANDOMLY */
+body .ng-finance-dossier-note {
+    right: auto;
+    bottom: -3px;
+    left: 50%;
+    width: max-content;
+    align-items: center;
+    transform: translateX(-50%);
+}
+body .ng-finance-dossier-note > span {
+    margin-top: 0;
+}
+body .ng-finance-dossier-note p {
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    line-height: 1.2;
+}
+body .ng-finance-dossier-note strong {
+    display: inline;
+}
+/* TINY INTERACTION */
+body .ng-finance-dossier-front, body .ng-finance-paper {
+    transition: transform 300ms cubic-bezier(.2,.75,.25,1);
+}
+body .ng-finance-dossier:hover .ng-finance-dossier-front {
+    transform: translateX(-50%) translateY(-4px);
+}
+body .ng-finance-dossier:hover .ng-finance-paper--back {
+    transform: translate(-4px, -2px) rotate(-5deg);
+}
+body .ng-finance-dossier:hover .ng-finance-paper--middle {
+    transform: translate(4px, -2px) rotate(5deg);
+}
+/* FINANCE HERO — SIZE + CLEANUP PASS */
+/* Give the whole right visual a bit more room */
+body .ng-finance-hero-v2-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(440px, .78fr);
+}
+/* Make dossier area bigger */
+body .ng-finance-dossier {
+    width: min(100%, 430px);
+    height: 390px;
+}
+/* Back papers slightly bigger too */
+body .ng-finance-paper {
+    width: 295px;
+    height: 245px;
+}
+/* Reposition back sheets so they support the main card */
+body .ng-finance-paper--back {
+    top: 38px;
+    left: 34px;
+    transform: rotate(-4deg);
+}
+body .ng-finance-paper--middle {
+    top: 18px;
+    right: 18px;
+    transform: rotate(4deg);
+}
+/* Main green file bigger */
+body .ng-finance-dossier-front {
+    top: 56px;
+    left: 50%;
+    width: 320px;
+    padding: 1.85rem 1.8rem 1.5rem;
+    transform: translateX(-50%);
+}
+/* Slightly larger type inside so it scales with the bigger card */
+body .ng-finance-dossier-top p {
+    font-size: 0.64rem;
+}
+body .ng-finance-dossier-top strong {
+    font-size: 0.82rem;
+}
+body .ng-finance-dossier-front dt {
+    font-size: 0.66rem;
+}
+body .ng-finance-dossier-front dd {
+    font-size: 0.78rem;
+}
+/* Clean up the little note under the file */
+body .ng-finance-dossier-note {
+    position: absolute;
+    left: 50%;
+    bottom: -18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    transform: translateX(-50%);
+}
+body .ng-finance-dossier-note p {
+    white-space: nowrap;
+}
+/* If you’d rather remove the note entirely, use this instead: body .ng-finance-dossier-note { display: none; } */
+/* Prevent the hidden text from peeking out awkwardly */
+body .ng-finance-dossier {
+    overflow: visible;
+}
+/* Mobile safety */
+@media (max-width: 800px) {
+    body .ng-finance-hero-v2-layout {
+        grid-template-columns: 1fr;
+    }
+    body .ng-finance-dossier {
+        justify-self: center;
+    }
+}
+@media (max-width: 520px) {
+    body .ng-finance-dossier {
+        width: 100%;
+        height: 350px;
+    }
+    body .ng-finance-paper {
+        width: 250px;
+        height: 220px;
+    }
+    body .ng-finance-dossier-front {
+        width: min(92%, 310px);
+    }
+    body .ng-finance-dossier-note {
+        bottom: -10px;
+    }
+}
+/* FINANCIËN — VISUAL JOURNEY */
+.ng-finance-journey {
+    position: relative;
+    padding: clamp(5rem, 7vw, 6.5rem) 0;
+    overflow: hidden;
+    background: #fffdfa;
+    color: var(--color-dark);
+}
+/* HEADING */
+.ng-finance-journey-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .46fr);
+    align-items: end;
+    gap: clamp(3rem, 7vw, 7rem);
+    margin-bottom: clamp(4rem, 7vw, 5.5rem);
+}
+.ng-finance-journey-kicker {
+    margin: 0 0 1.15rem;
+    color: var(--color-coral);
+    font-size: .74rem;
+    font-weight: 850;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-finance-journey-heading h2 {
+    max-width: 690px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: .97;
+    letter-spacing: -.052em;
+}
+/* only one word */
+.ng-finance-journey-heading h2 span {
+    color: var(--color-green);
+}
+.ng-finance-journey-heading > p {
+    max-width: 440px;
+    margin: 0;
+    color: rgba(46, 59, 50, .67);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* VISUAL JOURNEY */
+
+/* ROUTE */
+
+
+
+
+/* STEPS */
+
+
+
+
+/* ICONS */
+
+
+
+/* META */
+
+
+
+/* STEP COPY */
+
+
+/* LITTLE WIJK SCENE */
+
+
+/* ground */
+
+/* HOUSES */
+
+
+
+
+
+/* TREE */
+
+
+
+
+
+/* RESULT LABEL */
+
+
+/* FOOTER NOTE */
+
+
+
+/* ANIMATION */
+
+
+
+
+
+
+
+
+
+
+
+/* MOBILE */
+@media (max-width: 850px) {
+    .ng-finance-journey-heading {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    
+    
+    
+    
+    
+}
+/* FINANCE — PAPER TRAIL */
+.ng-finance-papertrail {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: clamp(1.4rem, 3vw, 2.5rem);
+    margin-top: clamp(3rem, 5vw, 4.5rem);
+    align-items: start;
+}
+/* PAPERS */
+.ng-finance-papertrail-item {
+    position: relative;
+    z-index: 2;
+    min-height: 330px;
+    display: flex;
+    flex-direction: column;
+    padding: clamp(1.6rem, 3vw, 2.2rem);
+    background: var(--color-cream);
+    border: 1px solid rgba(46,59,50,.10);
+    box-shadow: 0 12px 30px rgba(46,59,50,.055);
+    transition: transform 220ms ease, box-shadow 220ms ease;
+}
+/* slightly different paper shapes */
+.ng-finance-papertrail-item--1 {
+    border-radius: 1.5rem .45rem 1.5rem 1.5rem;
+    transform: rotate(-1deg);
+}
+.ng-finance-papertrail-item--2 {
+    margin-top: 2.25rem;
+    border-radius: .45rem 1.5rem 1.5rem 1.5rem;
+}
+.ng-finance-papertrail-item--3 {
+    margin-top: .75rem;
+    border-radius: 1.5rem 1.5rem .45rem 1.5rem;
+    transform: rotate(1deg);
+}
+.ng-finance-papertrail-item:hover {
+    transform: translateY(-4px) rotate(0);
+    box-shadow: 0 18px 38px rgba(46,59,50,.085);
+}
+/* TOP */
+.ng-finance-papertrail-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    padding-bottom: .9rem;
+    border-bottom: 1px solid rgba(46,59,50,.1);
+}
+.ng-finance-papertrail-number {
+    color: var(--color-coral);
+    font-size: .63rem;
+    font-weight: 850;
+    letter-spacing: .13em;
+}
+.ng-finance-papertrail-status {
+    color: rgba(46,59,50,.42);
+    font-size: .61rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+/* ICON */
+.ng-finance-papertrail-icon {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-coral);
+    background: rgba(220,234,215,.45);
+    border-radius: 50% 50% 22% 50%;
+}
+.ng-finance-papertrail-icon svg {
+    width: 34px;
+    height: 34px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+/* COPY */
+.ng-finance-papertrail-item h3 {
+    max-width: 270px;
+    margin: 0 0 .8rem;
+    color: var(--color-dark);
+    font-size: clamp(1.35rem, 1.8vw, 1.65rem);
+    font-weight: 750;
+    line-height: 1.05;
+    letter-spacing: -.035em;
+}
+.ng-finance-papertrail-item > p {
+    max-width: 290px;
+    margin: 0;
+    color: rgba(46,59,50,.62);
+    font-size: .87rem;
+    line-height: 1.62;
+}
+/* PAPER FOOTER */
+.ng-finance-papertrail-bottom {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-top: auto;
+    padding-top: 1.6rem;
+}
+.ng-finance-papertrail-bottom span {
+    width: 6px;
+    height: 6px;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-finance-papertrail-bottom small {
+    color: rgba(46,59,50,.4);
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+/* RESULT STAMP */
+.ng-finance-papertrail-stamp {
+    width: fit-content;
+    margin-top: auto;
+    padding: .55rem .85rem;
+    color: var(--color-green);
+    border: 1px solid rgba(47,120,70,.28);
+    border-radius: .4rem;
+    font-size: .62rem;
+    font-weight: 850;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+    transform: rotate(-3deg);
+}
+/* CORAL THREAD */
+.ng-finance-papertrail-thread {
+    position: absolute;
+    z-index: 1;
+    top: 120px;
+    left: 0;
+    width: 100%;
+    height: 180px;
+    pointer-events: none;
+}
+.ng-finance-papertrail-thread path {
+    fill: none;
+    stroke: var(--color-coral);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-dasharray: 3 7;
+    opacity: .55;
+}
+/* END NOTE */
+.ng-finance-papertrail-note {
+    display: flex;
+    align-items: center;
+    gap: .9rem;
+    margin-top: clamp(2.5rem, 4vw, 3.5rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46,59,50,.1);
+}
+.ng-finance-papertrail-note > span {
+    width: 7px;
+    height: 7px;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-finance-papertrail-note p {
+    margin: 0;
+    color: rgba(46,59,50,.5);
+    font-size: .72rem;
+    font-weight: 700;
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-finance-papertrail {
+        grid-template-columns: 1fr;
+    }
+    .ng-finance-papertrail-item, .ng-finance-papertrail-item--1, .ng-finance-papertrail-item--2, .ng-finance-papertrail-item--3 {
+        margin-top: 0;
+        transform: none;
+    }
+    .ng-finance-papertrail-thread {
+        display: none;
+    }
+}
+/* FINANCIËN — DOCUMENT ARCHIVE */
+.ng-finance-archive {
+    position: relative;
+    padding: clamp(5rem, 7vw, 6.75rem) 0;
+    overflow: hidden;
+    background: var(--color-cream);
+    color: var(--color-dark);
+}
+/* LAYOUT */
+.ng-finance-archive-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .68fr) minmax(480px, 1fr);
+    align-items: center;
+    gap: clamp(4rem, 8vw, 8rem);
+}
+/* LEFT */
+.ng-finance-archive-copy {
+    max-width: 600px;
+}
+.ng-finance-archive-kicker {
+    margin: 0 0 1.15rem;
+    color: var(--color-coral);
+    font-size: .74rem;
+    font-weight: 850;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-finance-archive-copy h2 {
+    max-width: 590px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: .97;
+    letter-spacing: -.052em;
+}
+/* NO GREEN HEADING */
+.ng-finance-archive-intro {
+    max-width: 530px;
+    margin: 1.5rem 0 0;
+    color: rgba(46,59,50,.66);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* POINTS */
+.ng-finance-archive-points {
+    margin-top: clamp(2.3rem, 4vw, 3.2rem);
+}
+.ng-finance-archive-point {
+    display: grid;
+    grid-template-columns: 54px minmax(0,1fr);
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(46,59,50,.1);
+}
+.ng-finance-archive-point-icon {
+    width: 48px;
+    height: 48px;
+    display: grid;
+    place-items: center;
+    color: var(--color-green);
+    background: rgba(220,234,215,.65);
+    border-radius: 50% 50% 22% 50%;
+}
+.ng-finance-archive-point-icon svg {
+    width: 27px;
+    height: 27px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+.ng-finance-archive-point strong {
+    display: block;
+    margin-bottom: .2rem;
+    color: var(--color-dark);
+    font-size: .88rem;
+    font-weight: 800;
+}
+.ng-finance-archive-point p {
+    margin: 0;
+    color: rgba(46,59,50,.56);
+    font-size: .76rem;
+    line-height: 1.5;
+}
+/* HELP */
+.ng-finance-archive-help {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: .55rem .8rem;
+    margin-top: 2rem;
+    padding: 1rem 1.1rem;
+    background: rgba(255,255,255,.45);
+    border: 1px solid rgba(46,59,50,.08);
+    border-radius: .9rem .9rem .3rem .9rem;
+}
+.ng-finance-archive-help > span {
+    width: 3px;
+    height: 30px;
+    background: var(--color-coral);
+    border-radius: 999px;
+}
+.ng-finance-archive-help p {
+    margin: 0;
+    color: rgba(46,59,50,.56);
+    font-size: .72rem;
+}
+.ng-finance-archive-help a {
+    color: var(--color-green);
+    font-size: .72rem;
+    font-weight: 850;
+    text-decoration: none;
+}
+.ng-finance-archive-help i {
+    color: var(--color-coral);
+    font-style: normal;
+}
+/* FOLDER */
+
+/* BACK */
+
+/* TABS */
+
+
+
+/* DOCUMENT STACK */
+
+/* DOCUMENT */
+
+/* overlap slightly like actual files */
+
+
+/* PDF */
+
+
+
+/* DOCUMENT COPY */
+
+
+
+/* NoordgroeiT only */
+
+/* ARROW */
+
+
+/* FOLDER FRONT */
+
+
+
+
+
+/* subtle embossed mark */
+
+
+/* ANIMATION START STATE */
+
+
+
+
+/* ANIMATION IN */
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 950px) {
+    .ng-finance-archive-layout {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    
+}
+
+/* DOCUMENT ARCHIVE — LAYOUT POLISH */
+body .ng-finance-archive-layout {
+    grid-template-columns: minmax(0, .88fr) minmax(560px, 1.12fr);
+    gap: clamp(4rem, 7vw, 7rem);
+}
+body .ng-finance-archive-copy {
+    max-width: 680px;
+}
+body .ng-finance-archive-copy h2 {
+    max-width: 680px;
+}
+/* REAL FOLDER */
+
+/* BACK */
+
+/* FOLDER TABS */
+
+
+
+/* PAPER DEPTH */
+
+
+
+
+/* DOCUMENT STACK */
+
+/* EACH DOCUMENT */
+
+
+
+/* PDF ICON */
+
+
+
+/* DOCUMENT TEXT */
+
+
+
+/* only NoordgroeiT */
+
+/* ARROW */
+
+
+/* FRONT POCKET */
+
+/* slight upper lip */
+
+/* FOLDER TEXT */
+
+
+
+
+/* EMBOSSED MARK */
+
+
+/* ENTRANCE ANIMATION */
+
+
+
+/* BASE */
+
+
+/* TABS */
+
+/* BLANK PAPERS */
+
+
+
+/* DOCUMENTS */
+
+
+
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 980px) {
+    body .ng-finance-archive-layout {
+        grid-template-columns: 1fr;
+    }
+    
+}
+
+/* FINANCE — REAL INTERACTIVE FILE FOLDER */
+
+/* BACK OF FOLDER */
+
+/* ACTUAL FOLDER TABS */
+
+
+
+
+/* selected tab physically rises */
+
+/* tiny coral indicator */
+
+/* BLANK PAPER DEPTH */
+
+
+
+/* DOCUMENT AREA */
+
+
+
+/* DOCUMENT */
+
+
+/* PDF ICON */
+
+
+
+/* COPY */
+
+
+/* our branding rule */
+
+/* ARROW */
+
+
+/* FRONT POCKET — THIS MAKES IT READ AS A FOLDER */
+
+/* Actual thicker folder lip. This is what was missing before. */
+
+/* subtle seam */
+
+/* FRONT COPY */
+
+
+
+/* EMBOSSED LOGO DETAIL */
+
+
+/* CATEGORY CHANGE ANIMATION */
+
+
+
+/* LITTLE WHOLE-FOLDER HOVER */
+
+
+
+/* RESPONSIVE */
+
+
+/* FINANCE ARCHIVE — REAL FOLDER V3 */
+.ng-archive-folder {
+    position: relative;
+    width: min(100%, 660px);
+    height: 520px;
+    justify-self: end;
+}
+/* FOLDER BACK */
+.ng-archive-folder__back {
+    position: absolute;
+    z-index: 1;
+    top: 82px;
+    right: 16px;
+    bottom: 38px;
+    left: 16px;
+    background: linear-gradient(145deg, #c7d3c0, #afc0a8);
+    border: 1px solid rgba(46,59,50,.15);
+    border-radius: 1.45rem 1.45rem .65rem .65rem;
+    box-shadow: 0 20px 45px rgba(46,59,50,.10);
+}
+/* TABS — PHYSICALLY ATTACHED TO FOLDER */
+.ng-archive-folder__tabs {
+    position: absolute;
+    top: -54px;
+    right: 18px;
+    left: 18px;
+    display: grid;
+    grid-template-columns: 1fr .88fr 1.25fr;
+    align-items: end;
+}
+.ng-archive-folder__tab {
+    position: relative;
+    min-height: 58px;
+    padding: .75rem .8rem;
+    color: rgba(46,59,50,.62);
+    background: #bdcbb6;
+    border: 1px solid rgba(46,59,50,.12);
+    border-bottom: 0;
+    border-radius: 1.15rem 1.15rem 0 0;
+    font: inherit;
+    font-size: .65rem;
+    font-weight: 780;
+    cursor: pointer;
+    transition: min-height 180ms ease, background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+.ng-archive-folder__tab:nth-child(2) {
+    background: #d6ded0;
+}
+.ng-archive-folder__tab:nth-child(3) {
+    background: #adbea6;
+}
+.ng-archive-folder__tab:hover {
+    color: var(--color-dark);
+    transform: translateY(-2px);
+}
+.ng-archive-folder__tab.is-active {
+    z-index: 3;
+    min-height: 74px;
+    color: var(--color-dark);
+    background: #f0ecdf;
+    font-weight: 850;
+    transform: translateY(-2px);
+}
+.ng-archive-folder__tab.is-active::after {
+    content: "";
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+    width: 5px;
+    height: 5px;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+/* PAPER DEPTH */
+.ng-archive-folder__paper-back {
+    position: absolute;
+    z-index: 2;
+    right: 54px;
+    left: 54px;
+    height: 315px;
+    background: #fffdfa;
+    border: 1px solid rgba(46,59,50,.07);
+    border-radius: .75rem .75rem .2rem .2rem;
+    box-shadow: 0 4px 14px rgba(46,59,50,.04);
+}
+.ng-archive-folder__paper-back--2 {
+    top: 116px;
+    right: 68px;
+    left: 68px;
+    opacity: .55;
+}
+.ng-archive-folder__paper-back--1 {
+    top: 128px;
+    opacity: .78;
+}
+/* MAIN PAPER */
+.ng-archive-folder__paper {
+    position: absolute;
+    z-index: 4;
+    top: 143px;
+    right: 36px;
+    left: 36px;
+    min-height: 300px;
+    padding: 1.15rem 1.25rem 4rem;
+    background: #fffdfa;
+    border: 1px solid rgba(46,59,50,.09);
+    border-radius: .8rem .8rem .25rem .25rem;
+    box-shadow: 0 7px 22px rgba(46,59,50,.06);
+    transition: transform 260ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-archive-folder:hover .ng-archive-folder__paper {
+    transform: translateY(-5px);
+}
+/* PAPER HEADING */
+.ng-archive-folder__paper-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .35rem .25rem 1rem;
+    border-bottom: 1px solid rgba(46,59,50,.1);
+}
+.ng-archive-folder__paper-heading > span {
+    color: rgba(46,59,50,.47);
+    font-size: .62rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.ng-archive-folder__paper-heading small {
+    color: var(--color-coral);
+    font-size: .59rem;
+    font-weight: 800;
+}
+/* PANEL SWITCHING */
+.ng-archive-folder__panel[hidden] {
+    display: none;
+}
+.ng-archive-folder__panel.is-switching {
+    animation: ng-archive-paper-switch 380ms cubic-bezier(.2,.75,.25,1);
+}
+@keyframes ng-archive-paper-switch {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* DOCUMENT ROW */
+.ng-archive-document {
+    display: grid;
+    grid-template-columns: 55px minmax(0,1fr) 40px;
+    align-items: center;
+    gap: 1rem;
+    min-height: 88px;
+    padding: .9rem .2rem;
+    color: var(--color-dark);
+    border-bottom: 1px solid rgba(46,59,50,.1);
+    text-decoration: none;
+    transition: padding-left 180ms ease;
+}
+.ng-archive-document:last-child {
+    border-bottom: 0;
+}
+.ng-archive-document:hover {
+    color: var(--color-dark);
+    padding-left: .55rem;
+}
+/* PDF */
+.ng-archive-document__pdf {
+    position: relative;
+    width: 46px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+}
+.ng-archive-document__pdf svg {
+    width: 29px;
+    height: 35px;
+    fill: none;
+    stroke: rgba(46,59,50,.48);
+    stroke-width: 1.5;
+}
+.ng-archive-document__pdf b {
+    position: absolute;
+    bottom: 0;
+    color: var(--color-coral);
+    background: #fffdfa;
+    font-size: .51rem;
+    font-weight: 850;
+}
+/* DOCUMENT COPY */
+.ng-archive-document__copy strong {
+    display: block;
+    color: var(--color-dark);
+    font-size: clamp(.91rem,1.1vw,1.04rem);
+    font-weight: 800;
+    line-height: 1.15;
+}
+.ng-archive-document__copy small {
+    display: block;
+    margin-top: .3rem;
+    color: var(--color-coral);
+    font-size: .58rem;
+    font-weight: 750;
+}
+/* only NoordgroeiT remains green */
+.ng-archive-document .ng-brand-word {
+    color: var(--color-green) !important;
+}
+/* DOCUMENT ARROW */
+
+
+/* DARK FRONT POCKET */
+.ng-archive-folder__front {
+    position: absolute;
+    z-index: 7;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    min-height: 155px;
+    padding: 2rem 2.6rem;
+    overflow: hidden;
+    color: #fff;
+    background: linear-gradient(145deg, #314638, #26392f);
+    border-radius: 1.05rem 1.05rem .6rem .6rem;
+    box-shadow: 0 24px 48px rgba(46,59,50,.20);
+}
+/* thick upper lip */
+.ng-archive-folder__front::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 28px;
+    left: 28px;
+    height: 10px;
+    background: rgba(255,255,255,.055);
+    border-radius: 0 0 .65rem .65rem;
+}
+.ng-archive-folder__front > div {
+    display: flex;
+    align-items: baseline;
+    gap: .35rem;
+}
+.ng-archive-folder__front > div span {
+    color: rgba(255,255,255,.47);
+    font-size: .66rem;
+}
+.ng-archive-folder__front > div strong {
+    color: #fff;
+    font-size: 1.13rem;
+    font-weight: 800;
+}
+.ng-archive-folder__front > p {
+    margin: .65rem 0 0;
+    color: rgba(255,255,255,.51);
+    font-size: .59rem;
+    font-weight: 850;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+/* EMBOSS */
+.ng-archive-folder__logo {
+    position: absolute;
+    right: 38px;
+    bottom: 23px;
+    color: rgba(255,255,255,.05);
+    font-size: 4.4rem;
+    font-weight: 750;
+    line-height: .58;
+}
+.ng-archive-folder__logo span {
+    display: block;
+    margin-left: 18px;
+}
+/* RESPONSIVE */
+@media (max-width: 980px) {
+    .ng-archive-folder {
+        width: min(100%,660px);
+        justify-self: center;
+    }
+}
+@media (max-width: 620px) {
+    .ng-archive-folder {
+        height: 485px;
+    }
+    .ng-archive-folder__tabs {
+        right: 7px;
+        left: 7px;
+    }
+    .ng-archive-folder__tab {
+        padding: .6rem .3rem;
+        font-size: .5rem;
+    }
+    .ng-archive-folder__paper {
+        right: 15px;
+        left: 15px;
+    }
+    .ng-archive-document {
+        grid-template-columns: 40px minmax(0,1fr) 32px;
+        gap: .6rem;
+    }
+    .ng-archive-folder__front {
+        min-height: 135px;
+        padding: 1.65rem 1.3rem;
+    }
+}
+/* DOCUMENT FOLDER — SIMPLE FINAL CLEANUP */
+/* Tabs span the exact width of the folder */
+body .ng-archive-folder__tabs {
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0;
+}
+/* Each tab fills its third */
+body .ng-archive-folder__tab {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: 100%;
+    transform: none;
+    margin: 0;
+    background: #c7d3c0;
+    border-color: rgba(46, 59, 50, .1);
+    border-bottom: 0;
+}
+/* Active tab can still lift very slightly */
+body .ng-archive-folder__tab.is-active {
+    background: #c7d3c0;
+    transform: translateY(-5px);
+}
+/* FOLDER BODY — Same exact colour as tabs */
+body .ng-archive-folder__back {
+    background: #c7d3c0;
+    border-color: rgba(46, 59, 50, .1);
+}
+/* Remove any old stripes / extra folder edges */
+body .ng-archive-folder__back::before, body .ng-archive-folder__back::after {
+    display: none !important;
+}
+/* Remove any stripe underneath the tabs */
+body .ng-archive-folder__back {
+    box-shadow: 0 18px 42px rgba(46, 59, 50, .08);
+}
+/* Make tab/body connection seamless */
+body .ng-archive-folder__tabs {
+    z-index: 3;
+}
+body .ng-archive-folder__back {
+    z-index: 1;
+    border-top: 0;
+}
+body .ng-archive-folder {
+    height: 545px;
+}
+body .ng-archive-folder__back {
+    bottom: 28px;
+}
+body .ng-archive-folder__paper {
+    min-height: 325px;
+}
+/* FINANCE — RESPONSIBILITY LEDGER */
+/* PAGES */
+/* left page */
+/* right page */
+/* BOOK SPINE */
+/* LEFT PAGE — FRED */
+/* PERSON */
+/* SIGNATURE DETAIL */
+/* RIGHT PAGE — CHECKS */
+/* STAMP */
+/* BOTTOM LINK */
+/* SUBTLE OPEN ANIMATION */
+/* RESPONSIVE */
+/* FINANCE — RESPONSIBILITY LEDGER */
+.ng-finance-ledger {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    width: min(100%, 1080px);
+    margin: clamp(3.5rem, 6vw, 5rem) auto 0;
+    filter: drop-shadow(0 22px 40px rgba(0,0,0,.12));
+}
+/* PAGES */
+.ng-finance-ledger-page {
+    position: relative;
+    min-height: 380px;
+    padding: clamp(2rem, 4vw, 3rem);
+    color: var(--color-dark);
+    background: #f5f1e8;
+    border: 1px solid rgba(255,255,255,.08);
+}
+/* left page */
+.ng-finance-ledger-page--left {
+    border-radius: 1.5rem .2rem .2rem 1.5rem;
+    background: linear-gradient(90deg, #f5f1e8 0%, #f2eee4 88%, #e7e1d5 100%);
+}
+/* right page */
+.ng-finance-ledger-page--right {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 0;
+    border-radius: .2rem 1.5rem 1.5rem .2rem;
+    background: linear-gradient(90deg, #e7e1d5 0%, #f2eee4 12%, #f5f1e8 100%);
+}
+/* BOOK SPINE */
+.ng-finance-ledger-spine {
+    position: absolute;
+    z-index: 5;
+    top: 16px;
+    bottom: 16px;
+    left: 50%;
+    width: 20px;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, rgba(46,59,50,.04), rgba(46,59,50,.14), rgba(255,255,255,.4), rgba(46,59,50,.1), rgba(46,59,50,.03));
+    pointer-events: none;
+}
+/* LEFT PAGE — FRED */
+.ng-finance-ledger-page-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(46,59,50,.11);
+}
+.ng-finance-ledger-page-top span {
+    color: var(--color-coral);
+    font-size: .64rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+}
+.ng-finance-ledger-page-top small {
+    color: rgba(46,59,50,.44);
+    font-size: .62rem;
+    font-weight: 850;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+/* PERSON */
+.ng-finance-ledger-person {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: clamp(2rem, 4vw, 3rem);
+}
+.ng-finance-ledger-avatar {
+    width: 72px;
+    height: 72px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    color: var(--color-coral);
+    background: rgba(240,102,83,.1);
+    border: 1px solid rgba(240,102,83,.18);
+    border-radius: 50% 50% 20% 50%;
+    font-size: .78rem;
+    font-weight: 850;
+    letter-spacing: .08em;
+}
+.ng-finance-ledger-person p {
+    margin: 0 0 .3rem;
+    color: rgba(46,59,50,.44);
+    font-size: .62rem;
+    font-weight: 850;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ng-finance-ledger-person h3 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(1.5rem, 2vw, 1.8rem);
+    font-weight: 750;
+    line-height: 1.05;
+    letter-spacing: -.035em;
+}
+.ng-finance-ledger-text {
+    max-width: 420px;
+    margin: 1.5rem 0 0;
+    color: rgba(46,59,50,.63);
+    font-size: .88rem;
+    line-height: 1.65;
+}
+/* SIGNATURE DETAIL */
+.ng-finance-ledger-sign {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    padding-top: 1rem;
+    border-top: 1px solid rgba(46,59,50,.1);
+}
+.ng-finance-ledger-sign span {
+    width: 36px;
+    height: 2px;
+    background: var(--color-coral);
+    border-radius: 999px;
+}
+.ng-finance-ledger-sign p {
+    margin: 0;
+    color: rgba(46,59,50,.4);
+    font-size: .6rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+/* RIGHT PAGE — CHECKS */
+.ng-finance-ledger-check {
+    position: relative;
+    min-width: 0;
+    padding: 0 clamp(1.4rem, 3vw, 2.25rem);
+}
+.ng-finance-ledger-check + .ng-finance-ledger-check {
+    border-left: 1px solid rgba(46,59,50,.1);
+}
+.ng-finance-ledger-check-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: clamp(2.2rem, 4vw, 3rem);
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(46,59,50,.1);
+}
+.ng-finance-ledger-check-top span {
+    color: var(--color-coral);
+    font-size: .63rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+}
+.ng-finance-ledger-check-top i {
+    width: 28px;
+    height: 28px;
+    display: grid;
+    place-items: center;
+    color: var(--color-green);
+    background: rgba(220,234,215,.7);
+    border-radius: 50%;
+    font-size: .65rem;
+    font-style: normal;
+}
+.ng-finance-ledger-label {
+    margin: 0 0 .6rem;
+    color: rgba(46,59,50,.43);
+    font-size: .62rem;
+    font-weight: 850;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+.ng-finance-ledger-check h3 {
+    max-width: 250px;
+    margin: 0 0 .8rem;
+    color: var(--color-dark);
+    font-size: clamp(1.2rem, 1.7vw, 1.5rem);
+    font-weight: 750;
+    line-height: 1.07;
+    letter-spacing: -.03em;
+}
+.ng-finance-ledger-check > p:last-child {
+    max-width: 260px;
+    margin: 0;
+    color: rgba(46,59,50,.59);
+    font-size: .83rem;
+    line-height: 1.62;
+}
+/* STAMP */
+.ng-finance-ledger-stamp {
+    position: absolute;
+    right: 32px;
+    bottom: 24px;
+    padding: .55rem .75rem;
+    color: var(--coral, #f06653);
+    border: 1px solid rgba(240,102,83,.3);
+    border-radius: .35rem;
+    font-size: .57rem;
+    font-weight: 850;
+    letter-spacing: .1em;
+    text-align: center;
+    text-transform: uppercase;
+    transform: rotate(-4deg);
+}
+.ng-finance-ledger-stamp strong {
+    display: block;
+    margin-top: .15rem;
+    font-weight: 850;
+}
+/* BOTTOM LINK */
+.ng-finance-ledger-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: clamp(2.5rem, 4vw, 3.5rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255,255,255,.11);
+}
+.ng-finance-ledger-footer p {
+    margin: 0;
+    color: rgba(255,255,255,.48);
+    font-size: .72rem;
+    font-weight: 700;
+}
+.ng-finance-ledger-footer a {
+    display: inline-flex;
+    align-items: center;
+    gap: .7rem;
+    color: var(--color-white);
+    font-size: .74rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.ng-finance-ledger-footer a span {
+    width: 36px;
+    height: 36px;
+    display: grid;
+    place-items: center;
+    color: var(--color-coral);
+    border: 1px solid rgba(240,102,83,.3);
+    border-radius: 50%;
+    transition: transform 180ms ease, color 180ms ease, background-color 180ms ease;
+}
+.ng-finance-ledger-footer a:hover span {
+    color: #fff;
+    background: var(--color-coral);
+    transform: translate(2px,-2px);
+}
+/* SUBTLE OPEN ANIMATION */
+.ng-finance-ledger.is-animatable .ng-finance-ledger-page--left {
+    opacity: 0;
+    transform: perspective(900px) rotateY(8deg) translateX(15px);
+}
+.ng-finance-ledger.is-animatable .ng-finance-ledger-page--right {
+    opacity: 0;
+    transform: perspective(900px) rotateY(-8deg) translateX(-15px);
+}
+.ng-finance-ledger.is-in-view .ng-finance-ledger-page--left, .ng-finance-ledger.is-in-view .ng-finance-ledger-page--right {
+    opacity: 1;
+    transform: perspective(900px) rotateY(0) translateX(0);
+    transition: opacity 550ms ease, transform 700ms cubic-bezier(.2,.75,.25,1);
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-finance-ledger {
+        grid-template-columns: 1fr;
+    }
+    .ng-finance-ledger-spine {
+        display: none;
+    }
+    .ng-finance-ledger-page--left {
+        border-radius: 1.4rem 1.4rem .2rem .2rem;
+    }
+    .ng-finance-ledger-page--right {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        border-radius: .2rem .2rem 1.4rem 1.4rem;
+    }
+    .ng-finance-ledger-check {
+        padding: 0;
+    }
+    .ng-finance-ledger-check + .ng-finance-ledger-check {
+        padding-top: 2rem;
+        border-top: 1px solid rgba(46,59,50,.1);
+        border-left: 0;
+    }
+}
+/* FINANCE LEDGER — CLEAN BOOK LAYOUT */
+/* Book slightly wider / more substantial */
+body .ng-finance-ledger {
+    width: min(100%, 1120px);
+    grid-template-columns: 1fr 1fr;
+}
+/* PAGES */
+body .ng-finance-ledger-page {
+    min-height: 410px;
+}
+body .ng-finance-ledger-page--left {
+    padding: clamp(2.2rem, 4vw, 3.2rem);
+    border-radius: 1.45rem 0 0 1.45rem;
+}
+/* * RIGHT PAGE: * no more two cramped columns */
+body .ng-finance-ledger-page--right {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    padding: clamp(2rem, 3vw, 2.7rem) clamp(2.2rem, 4vw, 3.1rem);
+    border-radius: 0 1.45rem 1.45rem 0;
+}
+/* RIGHT-PAGE ENTRIES */
+body .ng-finance-ledger-check {
+    position: relative;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 60px minmax(0, 1fr);
+    column-gap: 1.35rem;
+    padding: 1.2rem 0 1.65rem;
+}
+/* divider between Bestuur / Openheid */
+body .ng-finance-ledger-check + .ng-finance-ledger-check {
+    margin-top: 0;
+    padding-top: 1.65rem;
+    border-top: 1px solid rgba(46, 59, 50, .11);
+    border-left: 0;
+}
+/* NUMBER / CHECK COLUMN */
+body .ng-finance-ledger-check-top {
+    grid-column: 1;
+    grid-row: 1 / span 4;
+    width: 52px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: .8rem;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+body .ng-finance-ledger-check-top span {
+    color: var(--color-coral);
+    font-size: .65rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+}
+body .ng-finance-ledger-check-top i {
+    width: 34px;
+    height: 34px;
+    display: grid;
+    place-items: center;
+    color: var(--color-green);
+    background: rgba(220,234,215,.72);
+    border-radius: 50%;
+    font-size: .7rem;
+}
+/* RIGHT-PAGE COPY */
+body .ng-finance-ledger-label {
+    grid-column: 2;
+    margin: 0 0 .5rem;
+    color: rgba(46, 59, 50, .42);
+}
+body .ng-finance-ledger-check h3 {
+    grid-column: 2;
+    max-width: 390px;
+    margin: 0 0 .65rem;
+    color: var(--color-dark);
+    font-size: clamp(1.25rem, 1.7vw, 1.55rem);
+    font-weight: 750;
+    line-height: 1.06;
+    letter-spacing: -.03em;
+}
+body .ng-finance-ledger-check > p:last-child {
+    grid-column: 2;
+    max-width: 390px;
+    margin: 0;
+    color: rgba(46, 59, 50, .59);
+    font-size: .84rem;
+    line-height: 1.62;
+}
+/* FRED PAGE POLISH */
+body .ng-finance-ledger-person {
+    margin-top: 2.4rem;
+}
+body .ng-finance-ledger-text {
+    max-width: 430px;
+}
+body .ng-finance-ledger-sign {
+    margin-top: 2.5rem;
+}
+/* BOOK SPINE */
+body .ng-finance-ledger-spine {
+    width: 16px;
+    top: 10px;
+    bottom: 10px;
+    background: linear-gradient(90deg, rgba(46,59,50,.035), rgba(46,59,50,.12), rgba(255,255,255,.55), rgba(46,59,50,.10), rgba(46,59,50,.025));
+}
+/* STAMP */
+body .ng-finance-ledger-stamp {
+    right: 30px;
+    bottom: 20px;
+    padding: .5rem .75rem;
+    font-size: .55rem;
+    transform: rotate(-3deg);
+}
+/* * Reserve some room so the last paragraph * doesn't run into the stamp. */
+body .ng-finance-ledger-check:last-of-type {
+    padding-bottom: 4rem;
+}
+/* SUBTLE PAGE LINES */
+body .ng-finance-ledger-page--left::after, body .ng-finance-ledger-page--right::after {
+    content: "";
+    position: absolute;
+    inset: 0 18px;
+    pointer-events: none;
+    opacity: .18;
+    background: repeating-linear-gradient(to bottom, transparent 0, transparent 49px, rgba(46,59,50,.08) 50px);
+}
+/* Keep content over those lines */
+body .ng-finance-ledger-page > * {
+    position: relative;
+    z-index: 2;
+}
+/* MOBILE */
+@media (max-width: 850px) {
+    body .ng-finance-ledger {
+        grid-template-columns: 1fr;
+    }
+    body .ng-finance-ledger-page--left {
+        border-radius: 1.4rem 1.4rem 0 0;
+    }
+    body .ng-finance-ledger-page--right {
+        border-radius: 0 0 1.4rem 1.4rem;
+    }
+    body .ng-finance-ledger-check {
+        grid-template-columns: 52px minmax(0,1fr);
+    }
+}
+/* FINANCE — QUESTION CTA */
+.ng-finance-question {
+    position: relative;
+    padding: clamp(4.75rem, 7vw, 6rem) 0;
+    overflow: hidden;
+    background: var(--color-green-light);
+    color: var(--color-dark);
+}
+/* quiet NoordgroeiT circle */
+.ng-finance-question::after {
+    content: "";
+    position: absolute;
+    right: -115px;
+    bottom: -120px;
+    width: 250px;
+    height: 250px;
+    border: 45px solid rgba(46, 59, 50, .035);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-finance-question-layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, .9fr) minmax(380px, .62fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 8rem);
+}
+/* COPY */
+.ng-finance-question-copy {
+    max-width: 680px;
+}
+.ng-finance-question-kicker {
+    margin: 0 0 1.15rem;
+    color: var(--color-coral);
+    font-size: .74rem;
+    font-weight: 850;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-finance-question-copy h2 {
+    max-width: 650px;
+    margin: 0 0 1.4rem;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: .97;
+    letter-spacing: -.052em;
+}
+/* NO random green heading */
+.ng-finance-question-copy > p:last-child {
+    max-width: 540px;
+    margin: 0;
+    color: rgba(46, 59, 50, .67);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* VISUAL */
+.ng-finance-question-visual {
+    position: relative;
+    width: min(100%, 430px);
+    justify-self: end;
+}
+/* QUESTION CARD */
+.ng-finance-question-card {
+    position: relative;
+    padding: 1.8rem 1.8rem 1.5rem;
+    overflow: hidden;
+    background: var(--color-cream);
+    border: 1px solid rgba(46, 59, 50, .11);
+    border-radius: 1.5rem .45rem 1.5rem 1.5rem;
+    box-shadow: 0 18px 38px rgba(46, 59, 50, .09);
+    transform: rotate(1deg);
+    transition: transform 260ms cubic-bezier(.2,.75,.25,1), box-shadow 260ms ease;
+}
+/* little coral tab */
+.ng-finance-question-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 34px;
+    width: 55px;
+    height: 4px;
+    background: var(--color-coral);
+    border-radius: 0 0 999px 999px;
+}
+.ng-finance-question-card:hover {
+    transform: rotate(0deg) translateY(-4px);
+    box-shadow: 0 22px 44px rgba(46, 59, 50, .12);
+}
+/* CARD TOP */
+.ng-finance-question-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    padding-bottom: 1.4rem;
+    border-bottom: 1px solid rgba(46, 59, 50, .1);
+}
+.ng-finance-question-card-top > div > span {
+    display: block;
+    margin-bottom: .2rem;
+    color: rgba(46, 59, 50, .43);
+    font-size: .61rem;
+    font-weight: 850;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ng-finance-question-card-top strong {
+    color: var(--color-dark);
+    font-size: 1rem;
+    font-weight: 800;
+}
+/* QUESTION MARK */
+.ng-finance-question-mark {
+    width: 52px;
+    height: 52px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 auto;
+    color: var(--color-coral);
+    background: rgba(240, 102, 83, .08);
+    border: 1px solid rgba(240, 102, 83, .18);
+    border-radius: 50% 50% 20% 50%;
+    font-size: 1.25rem;
+    font-weight: 850;
+    transition: transform 220ms ease;
+}
+.ng-finance-question-card:hover .ng-finance-question-mark {
+    transform: rotate(-5deg) scale(1.05);
+}
+/* FAKE MESSAGE AREA */
+.ng-finance-question-label {
+    margin: 1.5rem 0 1rem;
+    color: var(--color-dark);
+    font-size: .78rem;
+    font-weight: 800;
+}
+.ng-finance-question-lines {
+    display: grid;
+    gap: .7rem;
+}
+.ng-finance-question-lines span {
+    display: block;
+    height: 1px;
+    background: rgba(46, 59, 50, .12);
+}
+.ng-finance-question-lines span:nth-child(2) {
+    width: 88%;
+}
+.ng-finance-question-lines span:nth-child(3) {
+    width: 66%;
+}
+/* TOPICS */
+.ng-finance-question-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .45rem;
+    margin-top: 1.4rem;
+}
+.ng-finance-question-topics span {
+    padding: .4rem .65rem;
+    color: rgba(46, 59, 50, .56);
+    background: rgba(220, 234, 215, .7);
+    border-radius: 999px;
+    font-size: .57rem;
+    font-weight: 800;
+    letter-spacing: .06em;
+    text-transform: uppercase;
+}
+/* CTA BUTTON */
+.ng-finance-question-button {
+    min-height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    padding: .4rem .45rem .4rem 1.15rem;
+    color: #fff;
+    background: var(--color-coral);
+    border-radius: 999px;
+    font-size: .78rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 180ms ease;
+}
+.ng-finance-question-button:hover {
+    color: #fff;
+    transform: translateY(-2px);
+}
+.ng-finance-question-button-arrow {
+    width: 2.35rem;
+    height: 2.35rem;
+    display: grid;
+    place-items: center;
+    color: var(--color-coral);
+    background: #fff;
+    border-radius: 50%;
+    transition: transform 180ms ease;
+}
+.ng-finance-question-button:hover .ng-finance-question-button-arrow {
+    transform: translate(2px, -2px);
+}
+/* LITTLE NOTE */
+
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-finance-question-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .ng-finance-question-visual {
+        justify-self: center;
+    }
+}
+@media (max-width: 520px) {
+    .ng-finance-question {
+        padding: 4rem 0;
+    }
+    .ng-finance-question-visual {
+        width: 100%;
+    }
+    .ng-finance-question-card {
+        padding: 1.5rem;
+    }
+}

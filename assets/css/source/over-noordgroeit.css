@@ -1,0 +1,1550 @@
+/* OVER NOORDGROEIT — ONS VERHAAL */
+
+/* Introduction */
+
+
+
+
+/* Date + story */
+
+
+
+
+
+
+
+/* Reading copy */
+
+
+
+/* Quote */
+
+
+
+/* Simple story progression */
+
+
+
+
+
+
+/* RESPONSIVE */
+
+@media (max-width: 700px) {
+    .ng-inner-hero {
+        padding: 4rem 0 4.5rem;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+
+/* INNER PAGES — MATCH HOMEPAGE TYPOGRAPHY */
+/* Main inner-page title */
+
+/* Keep the green second line, but don't enlarge it */
+
+/* Intro copy = same reading size as homepage */
+
+/* Story heading = same section-title system */
+
+/* Supporting intro text */
+
+/* Story lead was also too dramatic */
+
+/* Normal reading copy */
+
+/* Quote: still special, but much calmer */
+
+/* MOBILE */
+
+/* OVER NOORDGROEIT — HERO PROPORTION FIX */
+body .ng-inner-hero {
+    padding: clamp(4rem, 6vw, 5.75rem) 0 clamp(4.5rem, 7vw, 6.5rem);
+}
+/* Give the copy more room and make the image quieter */
+
+/* Much calmer than the first version */
+
+/* Keep the green line connected to the headline */
+
+/* Copy slightly tighter */
+
+/* Facts closer to the text */
+
+/* Photo should support the hero, not dominate it */
+
+
+/* Caption was getting a bit tiny */
+
+/* Slightly smaller coral detail */
+
+/* TABLET */
+
+/* MOBILE */
+
+/* OVER NOORDGROEIT — PHOTO HERO */
+
+/* IMAGE */
+
+/* OVERLAY */
+
+/* slight grounding at bottom */
+
+/* COPY */
+
+
+
+
+/* SAME TYPOGRAPHY SCALE AS HOMEPAGE */
+
+
+
+/* BUTTON */
+
+
+
+
+/* LITTLE EDITORIAL DETAILS */
+
+
+
+/* small coral line at top of photograph */
+
+/* SCROLL MARK */
+
+/* TABLET */
+
+/* MOBILE */
+
+
+/* OVER NOORDGROEIT — HERO NEATENING PASS */
+/* Match the same centered width as the rest of the site */
+
+/* Hero doesn't need to be quite this tall */
+
+/* Give the copy a clean, deliberate width */
+
+/* Kicker */
+
+/* Headline: same visual family as homepage, but wide enough to avoid the staircase effect */
+
+/* Keep the green phrase subtle */
+
+/* Intro copy */
+
+/* Button a little closer to the text */
+
+/* IMAGE / OVERLAY BALANCE */
+
+/* Let the people on the right stay brighter */
+
+/* Make the side note feel anchored instead of floating */
+
+
+
+/* Scroll marker slightly quieter */
+
+/* TABLET */
+
+/* MOBILE */
+
+/* OVER NOORDGROEIT — STORY + CORE VALUES */
+.ng-over-story-v3 {
+    position: relative;
+    padding: clamp(4.75rem, 7vw, 6.5rem) 0 clamp(4.75rem, 7vw, 6.25rem);
+    overflow: hidden;
+    background: var(--color-cream);
+    color: var(--color-dark);
+    border-top: 1px solid rgba(46, 59, 50, 0.1);
+}
+/* STORY INTRO */
+.ng-over-story-v3-intro {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.6fr);
+    align-items: end;
+    gap: clamp(3rem, 7vw, 7rem);
+    padding-bottom: clamp(3.5rem, 5vw, 4.75rem);
+}
+.ng-over-story-v3-badge {
+    width: fit-content;
+    margin: 0 0 1.2rem;
+    padding: 0.45rem 0.75rem;
+    color: var(--color-dark);
+    background: var(--color-green-light);
+    border-radius: 999px;
+    font-size: 0.67rem;
+    font-weight: 850;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+}
+.ng-over-story-v3-heading h2 {
+    max-width: 710px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: 0.97;
+    letter-spacing: -0.052em;
+}
+.ng-over-story-v3-heading h2 span {
+    color: var(--color-green);
+}
+/* STORY COPY */
+.ng-over-story-v3-copy {
+    max-width: 480px;
+}
+.ng-over-story-v3-copy > p {
+    margin: 0 0 1.15rem;
+    color: rgba(46, 59, 50, 0.7);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+.ng-over-story-v3-copy > p:first-child {
+    color: var(--color-dark);
+    font-weight: 700;
+}
+/* FOUNDING DATE */
+.ng-over-story-v3-date {
+    display: grid;
+    grid-template-columns: 18px auto auto minmax(0, 1fr);
+    align-items: center;
+    gap: 0.7rem;
+    margin-top: 1.8rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(46, 59, 50, 0.14);
+}
+.ng-over-story-v3-date > span {
+    position: relative;
+    width: 18px;
+    height: 1px;
+    background: var(--color-coral);
+}
+.ng-over-story-v3-date > span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--color-coral);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.ng-over-story-v3-date small {
+    color: rgba(46, 59, 50, 0.48);
+    font-size: 0.62rem;
+    font-weight: 850;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.ng-over-story-v3-date strong {
+    font-size: 0.78rem;
+    letter-spacing: -0.01em;
+}
+.ng-over-story-v3-date p {
+    margin: 0;
+    color: rgba(46, 59, 50, 0.52);
+    font-size: 0.72rem;
+}
+/* THREE CORE VALUES */
+.ng-over-values {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    border-top: 1px solid rgba(46, 59, 50, 0.16);
+    border-bottom: 1px solid rgba(46, 59, 50, 0.16);
+}
+.ng-over-value {
+    position: relative;
+    min-width: 0;
+    padding: clamp(2rem, 4vw, 3rem) clamp(1.5rem, 3vw, 2.75rem);
+}
+.ng-over-value:first-child {
+    padding-left: 0;
+}
+.ng-over-value:last-child {
+    padding-right: 0;
+}
+.ng-over-value + .ng-over-value {
+    border-left: 1px solid rgba(46, 59, 50, 0.13);
+}
+/* NUMBER + ICON */
+.ng-over-value-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: clamp(2.2rem, 4vw, 3.25rem);
+}
+
+.ng-over-value-icon {
+    display: grid;
+    width: 2.5rem;
+    height: 2.5rem;
+    place-items: center;
+    color: var(--color-green);
+    background: rgba(220, 234, 215, 0.62);
+    border-radius: 50%;
+    font-size: 1rem;
+    transition: transform 220ms ease, background-color 220ms ease;
+}
+.ng-over-value:hover .ng-over-value-icon {
+    background: var(--color-green-light);
+    transform: translateY(-3px) rotate(3deg);
+}
+/* VALUE TYPOGRAPHY */
+.ng-over-value h3 {
+    max-width: 270px;
+    margin: 0 0 0.85rem;
+    color: var(--color-dark);
+    font-size: clamp(1.4rem, 2vw, 1.8rem);
+    font-weight: 740;
+    line-height: 1.05;
+    letter-spacing: -0.035em;
+}
+.ng-over-value h3 span {
+    color: var(--color-green);
+}
+.ng-over-value p {
+    max-width: 320px;
+    margin: 0;
+    color: rgba(46, 59, 50, 0.66);
+    font-size: 0.9rem;
+    line-height: 1.65;
+}
+/* LITTLE ENDING DETAIL */
+.ng-over-values-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: clamp(2.25rem, 4vw, 3.25rem);
+}
+.ng-over-values-footer span {
+    width: clamp(35px, 6vw, 80px);
+    height: 1px;
+    background: rgba(46, 59, 50, 0.18);
+}
+.ng-over-values-footer p {
+    margin: 0;
+    color: rgba(46, 59, 50, 0.55);
+    font-size: 0.65rem;
+    font-weight: 850;
+    letter-spacing: 0.11em;
+    text-transform: uppercase;
+}
+/* coral dot on the left line */
+.ng-over-values-footer span:first-child {
+    position: relative;
+}
+.ng-over-values-footer span:first-child::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--color-coral);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+/* TABLET */
+@media (max-width: 800px) {
+    .ng-over-story-v3-intro {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+    .ng-over-story-v3-copy {
+        max-width: 620px;
+    }
+    .ng-over-values {
+        grid-template-columns: 1fr;
+    }
+    .ng-over-value, .ng-over-value:first-child, .ng-over-value:last-child {
+        padding: 2rem 0;
+    }
+    .ng-over-value + .ng-over-value {
+        border-top: 1px solid rgba(46, 59, 50, 0.13);
+        border-left: 0;
+    }
+    .ng-over-value-top {
+        margin-bottom: 1.5rem;
+    }
+    .ng-over-value p {
+        max-width: 560px;
+    }
+}
+/* MOBILE */
+@media (max-width: 520px) {
+    .ng-over-story-v3 {
+        padding: 4rem 0;
+    }
+    .ng-over-story-v3-date {
+        grid-template-columns: 18px auto auto;
+        gap: 0.6rem 0.7rem;
+    }
+    .ng-over-story-v3-date p {
+        grid-column: 2 / -1;
+    }
+    .ng-over-values-footer {
+        justify-content: flex-start;
+    }
+    .ng-over-values-footer span:last-child {
+        display: none;
+    }
+}
+@media (prefers-reduced-motion: reduce) {
+    .ng-over-value-icon {
+        transition: none;
+    }
+}
+/* OVER NOORDGROEIT — PROCESS */
+.ng-over-process {
+    position: relative;
+    padding: clamp(5rem, 7vw, 6.5rem) 0;
+    overflow: hidden;
+    background: var(--color-dark);
+    color: var(--color-white);
+}
+/* subtle background detail */
+.ng-over-process::after {
+    content: "";
+    position: absolute;
+    right: -150px;
+    bottom: -180px;
+    width: 360px;
+    height: 360px;
+    border: 70px solid rgba(220, 234, 215, 0.04);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* HEADING */
+.ng-over-process-heading {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 0.48fr);
+    align-items: end;
+    gap: clamp(3rem, 7vw, 7rem);
+    margin-bottom: clamp(4rem, 6vw, 5.25rem);
+}
+.ng-over-process-kicker {
+    margin: 0 0 1.15rem;
+    color: #f6a390;
+    font-size: 0.74rem;
+    font-weight: 850;
+    line-height: 1.3;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.ng-over-process-heading h2 {
+    max-width: 680px;
+    margin: 0;
+    color: var(--color-white);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: 0.97;
+    letter-spacing: -0.052em;
+}
+.ng-over-process-heading h2 span {
+    display: block;
+    color: #dcead7;
+}
+.ng-over-process-heading > p {
+    max-width: 440px;
+    margin: 0 0 0.15rem;
+    color: rgba(255, 255, 255, 0.67);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* PROCESS MAP */
+
+
+
+
+
+/* EACH STEP */
+
+
+
+
+/* DOTS */
+
+/* positions nearest to each route segment */
+
+
+
+
+/* CONNECTING ROUTE */
+
+/* 01 → 02 */
+
+
+/* 02 ↓ 03 */
+
+
+/* 03 ← 04 */
+
+
+/* ENDING */
+.ng-over-process-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(0.65rem, 2vw, 1.1rem);
+    margin-top: clamp(3.5rem, 5vw, 4.5rem);
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.ng-over-process-footer i {
+    color: var(--color-coral);
+    font-style: normal;
+}
+.ng-over-process-footer strong {
+    color: var(--color-white);
+}
+/* TABLET */
+@media (max-width: 800px) {
+    .ng-over-process-heading {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .ng-over-process-heading > p {
+        max-width: 600px;
+    }
+    
+}
+/* MOBILE */
+@media (max-width: 620px) {
+    .ng-over-process {
+        padding: 4rem 0;
+    }
+    
+    
+    
+    /* turn route into one vertical path */
+    
+    
+    
+    .ng-over-process-footer {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
+/* OVER NOORDGROEIT — CLEAN PROCESS ROUTE */
+/* Remove the first experimental route */
+
+/* CLEAN 2 × 2 COMPOSITION */
+
+
+/* Give every step the same visual width */
+
+
+/* 01 → 02 */
+
+
+/* 02 ↓ 03 */
+
+
+/* 03 ← 04 */
+
+
+/* TYPOGRAPHY / SPACING */
+
+
+/* Keep the little summary closer to the diagram */
+.ng-over-process-footer {
+    margin-top: clamp(3rem, 5vw, 4rem);
+}
+/* TABLET / MOBILE */
+
+/* OVER NOORDGROEIT — PROCESS ROUTE FINAL STRUCTURE */
+/* * Kill all older experimental route pieces. */
+
+
+/* GRID */
+
+/* make sure the old mobile path doesn't appear here */
+
+/* STEP POSITIONS */
+
+
+
+
+/* STEP DESIGN */
+
+
+
+
+/* CONNECTOR: 01 → 02 */
+
+
+
+/* CONNECTOR: 02 ↓ 03 */
+
+
+
+/* CONNECTOR: 03 ← 04 */
+
+
+
+/* MOBILE */
+
+/* OVER NOORDGROEIT — PROCESS ROUTE VISUAL CLEANUP */
+/* Remove the horizontal card rules */
+
+/* NUMBER + NODE */
+
+/* actual route node */
+
+/* GRID */
+
+/* HORIZONTAL ROUTE */
+
+
+/* 01 → 02 */
+
+/* 03 ← 04 */
+
+/* VERTICAL ROUTE */
+
+
+
+/* TYPOGRAPHY */
+
+
+/* Give left and right steps the same visual position */
+
+
+/* MOBILE */
+
+/* OVER NOORDGROEIT — CLEAN PROCESS TIMELINE */
+/* Hide every leftover experimental process connector */
+
+/* TIMELINE */
+
+/* One continuous route */
+
+/* arrow at the end */
+
+/* STEP */
+
+/* Marker contains number + node */
+
+
+
+/* cover the line behind each node slightly */
+
+/* COPY */
+
+
+/* SUBTLE STAGGER — Keeps it playful without breaking the route */
+
+/* TABLET */
+
+/* MOBILE */
+
+/* OVER NOORDGROEIT — PROCESS ORBIT */
+/* hide previous process experiments */
+
+/* ORBIT LAYOUT */
+
+
+
+
+
+
+/* STEP CARDS */
+
+
+
+
+
+
+
+/* CENTRAL ORBIT */
+
+
+/* subtle extra orbit */
+
+/* center label */
+
+
+
+/* ORBIT ARROWS */
+
+
+
+
+/* little coral nodes where the steps connect conceptually */
+
+
+
+
+
+/* RESPONSIVE */
+
+
+/* OVER NOORDGROEIT — ANIMATED PROCESS FLOW */
+
+/* FOUR STEPS */
+
+
+
+
+
+
+
+
+
+/* CENTER ORBIT */
+
+
+/* QUIET GUIDE RING */
+
+/* THREE REAL ARCS */
+
+/* NODES */
+
+
+/* CENTER LABEL */
+
+
+
+/* ANIMATION PREPARATION — Only hide things after JS confirms it can animate. */
+
+
+
+
+/* ENTER SECTION */
+/* step 01 */
+
+
+/* arc 01 → 02 */
+
+/* step 02 */
+
+
+/* arc 02 → 03 */
+
+/* step 03 */
+
+
+/* arc 03 → 04 */
+
+/* step 04 */
+
+
+/* center arrives during the journey */
+
+/* once revealed, the dashed guide moves very slowly */
+
+/* KEYFRAMES */
+
+
+
+/* TABLET */
+
+/* MOBILE — Keep it simple rather than squashing the orbit. */
+
+/* REDUCED MOTION */
+
+/* OVER NOORDGROEIT — ANIMATED IDEA CYCLE */
+/* * Hide all previous process experiments. */
+
+/* MAIN COMPOSITION */
+.ng-over-cycle {
+    position: relative;
+    width: min(100%, 1080px);
+    min-height: 540px;
+    margin: clamp(3.5rem, 6vw, 5rem) auto 0;
+}
+/* CENTRAL VISUAL */
+.ng-over-cycle-visual {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: clamp(300px, 34vw, 390px);
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+}
+.ng-over-cycle-svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+/* QUIET GUIDE */
+.ng-over-cycle-guide {
+    fill: none;
+    stroke: rgba(220, 234, 215, 0.08);
+    stroke-width: 1;
+}
+/* THE ONE ANIMATED ROUTE */
+.ng-over-cycle-route {
+    fill: none;
+    stroke: var(--color-coral);
+    stroke-width: 1.6;
+    stroke-linecap: round;
+    /* * pathLength = 100, * so these values behave like percentages. */
+    stroke-dasharray: 100;
+    stroke-dashoffset: 0;
+    /* * SVG circles start at 3 o'clock. * Rotate -90deg so ours starts at 12 o'clock. */
+    transform: rotate(-90deg);
+    transform-origin: 160px 160px;
+}
+/* NODES */
+.ng-over-cycle-node-ring {
+    fill: var(--color-dark);
+    stroke: var(--color-coral);
+    stroke-width: 2;
+}
+.ng-over-cycle-node-core {
+    fill: var(--color-coral);
+}
+/* CENTER COPY */
+.ng-over-cycle-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 124px;
+    height: 124px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-white);
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.09);
+    border-radius: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    backdrop-filter: blur(5px);
+}
+.ng-over-cycle-center span {
+    color: rgba(255, 255, 255, 0.57);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.ng-over-cycle-center strong {
+    margin-top: 0.15rem;
+    color: var(--color-white);
+    font-size: 1rem;
+    font-weight: 800;
+}
+/* TEXT STEPS AROUND THE CIRCLE */
+.ng-over-cycle-step {
+    position: absolute;
+    z-index: 3;
+    width: min(29%, 300px);
+}
+/* 01 — upper left */
+.ng-over-cycle-step--1 {
+    top: 2.4rem;
+    left: 0;
+    text-align: right;
+}
+/* 02 — upper right */
+.ng-over-cycle-step--2 {
+    top: 2.4rem;
+    right: 0;
+}
+/* 03 — lower right */
+.ng-over-cycle-step--3 {
+    right: 0;
+    bottom: 2.4rem;
+}
+/* 04 — lower left */
+.ng-over-cycle-step--4 {
+    bottom: 2.4rem;
+    left: 0;
+    text-align: right;
+}
+/* STEP TYPOGRAPHY */
+.ng-over-cycle-number {
+    display: block;
+    margin-bottom: 0.7rem;
+    color: var(--color-coral);
+    font-size: 0.68rem;
+    font-weight: 850;
+    letter-spacing: 0.12em;
+}
+.ng-over-cycle-step h3 {
+    margin: 0 0 0.6rem;
+    color: var(--color-white);
+    font-size: clamp(1.25rem, 1.65vw, 1.5rem);
+    font-weight: 730;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+}
+.ng-over-cycle-step p {
+    max-width: 290px;
+    margin: 0;
+    color: rgba(255, 255, 255, 0.62);
+    font-size: 0.88rem;
+    line-height: 1.6;
+}
+.ng-over-cycle-step--1 p, .ng-over-cycle-step--4 p {
+    margin-left: auto;
+}
+/* ANIMATION PREPARATION */
+/* * IMPORTANT: * * Without JS everything remains visible. * Only once JS adds .is-animatable do we prepare * the animation state. */
+.ng-over-cycle.is-animatable .ng-over-cycle-route {
+    stroke-dashoffset: 100;
+}
+/* * STEP 01 REMAINS VISIBLE. * * This is exactly the starting state we want. */
+.ng-over-cycle.is-animatable .ng-over-cycle-step--2, .ng-over-cycle.is-animatable .ng-over-cycle-step--3, .ng-over-cycle.is-animatable .ng-over-cycle-step--4 {
+    opacity: 0;
+    transform: translateY(10px);
+}
+/* * Only node 01 starts visible. */
+.ng-over-cycle.is-animatable .ng-over-cycle-node--2, .ng-over-cycle.is-animatable .ng-over-cycle-node--3, .ng-over-cycle.is-animatable .ng-over-cycle-node--4 {
+    opacity: 0;
+    transform-box: fill-box;
+    transform-origin: center;
+    transform: scale(0.3);
+}
+/* center can begin slightly quieter */
+.ng-over-cycle.is-animatable .ng-over-cycle-center {
+    opacity: 0.55;
+}
+/* START DRAWING */
+.ng-over-cycle.is-in-view .ng-over-cycle-route {
+    animation: ng-over-cycle-draw 4s linear forwards;
+}
+/* * At 25% of 4 seconds = 1 second. * The line reaches node 02. */
+.ng-over-cycle.is-in-view .ng-over-cycle-node--2 {
+    animation: ng-over-cycle-node-arrive 400ms ease-out 1s forwards;
+}
+.ng-over-cycle.is-in-view .ng-over-cycle-step--2 {
+    animation: ng-over-cycle-copy-arrive 480ms ease-out 1.05s forwards;
+}
+/* * 50% = 2 seconds. * Reaches node 03. */
+.ng-over-cycle.is-in-view .ng-over-cycle-node--3 {
+    animation: ng-over-cycle-node-arrive 400ms ease-out 2s forwards;
+}
+.ng-over-cycle.is-in-view .ng-over-cycle-step--3 {
+    animation: ng-over-cycle-copy-arrive 480ms ease-out 2.05s forwards;
+}
+/* * 75% = 3 seconds. * Reaches node 04. */
+.ng-over-cycle.is-in-view .ng-over-cycle-node--4 {
+    animation: ng-over-cycle-node-arrive 400ms ease-out 3s forwards;
+}
+.ng-over-cycle.is-in-view .ng-over-cycle-step--4 {
+    animation: ng-over-cycle-copy-arrive 480ms ease-out 3.05s forwards;
+}
+/* * Center becomes fully visible during the journey. */
+.ng-over-cycle.is-in-view .ng-over-cycle-center {
+    animation: ng-over-cycle-center-in 600ms ease 650ms forwards;
+}
+/* KEYFRAMES */
+@keyframes ng-over-cycle-draw {
+    from {
+        stroke-dashoffset: 100;
+    }
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes ng-over-cycle-node-arrive {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    65% {
+        opacity: 1;
+        transform: scale(1.3);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes ng-over-cycle-copy-arrive {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@keyframes ng-over-cycle-center-in {
+    from {
+        opacity: 0.55;
+        transform: translate(-50%, -50%) scale(0.94);
+    }
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+/* MOBILE */
+@media (max-width: 700px) {
+    /* * On mobile we switch to a vertical journey. * Trying to squeeze the orbit around text would be messy. */
+    .ng-over-cycle {
+        min-height: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .ng-over-cycle-visual {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: min(100%, 310px);
+        margin: 1rem auto;
+        order: 3;
+        transform: none;
+    }
+    .ng-over-cycle-step {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        width: 100%;
+        text-align: left;
+    }
+    .ng-over-cycle-step--1 {
+        order: 1;
+    }
+    .ng-over-cycle-step--2 {
+        order: 2;
+    }
+    .ng-over-cycle-step--3 {
+        order: 4;
+    }
+    .ng-over-cycle-step--4 {
+        order: 5;
+    }
+    .ng-over-cycle-step p, .ng-over-cycle-step--1 p, .ng-over-cycle-step--4 p {
+        max-width: 500px;
+        margin-left: 0;
+    }
+}
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+    .ng-over-cycle-route {
+        stroke-dashoffset: 0 !important;
+        animation: none !important;
+    }
+    .ng-over-cycle-step, .ng-over-cycle-node, .ng-over-cycle-center {
+        opacity: 1 !important;
+        animation: none !important;
+        transform: none;
+    }
+    .ng-over-cycle-center {
+        transform: translate(-50%, -50%);
+    }
+}
+/* Start with absolutely no circle */
+.ng-over-cycle.is-animatable .ng-over-cycle-guide {
+    opacity: 0;
+}
+/* We don't actually need the guide during the reveal */
+.ng-over-cycle.is-in-view .ng-over-cycle-guide {
+    opacity: 0;
+}
+/* OVER NOORDGROEIT — IDEA CTA */
+.ng-over-idea-cta {
+    position: relative;
+    padding: clamp(4.5rem, 6vw, 5.75rem) 0;
+    overflow: hidden;
+    background: var(--color-green-light);
+    color: var(--color-dark);
+}
+/* quiet decorative circle */
+.ng-over-idea-cta::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -95px;
+    width: 230px;
+    height: 230px;
+    border: 44px solid rgba(47, 72, 55, 0.045);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-over-idea-layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+}
+/* COPY */
+.ng-over-idea-copy {
+    max-width: 720px;
+}
+.ng-over-idea-kicker {
+    margin: 0 0 1.1rem;
+    color: var(--color-coral);
+    font-size: 0.74rem;
+    font-weight: 850;
+    line-height: 1.3;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.ng-over-idea-copy h2 {
+    max-width: 670px;
+    margin: 0 0 1.4rem;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: 0.97;
+    letter-spacing: -0.052em;
+}
+.ng-over-idea-copy > p:last-child {
+    max-width: 590px;
+    margin: 0;
+    color: rgba(46, 59, 50, 0.7);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* ACTION */
+.ng-over-idea-action {
+    position: relative;
+    min-width: 245px;
+    padding-top: 2.3rem;
+}
+
+/* homepage-style CTA control */
+
+
+
+
+/* RESPONSIVE */
+@media (max-width: 760px) {
+    .ng-over-idea-layout {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 2.5rem;
+    }
+    .ng-over-idea-action {
+        min-width: 0;
+        width: fit-content;
+    }
+}
+@media (max-width: 520px) {
+    .ng-over-idea-cta {
+        padding: 4rem 0;
+    }
+    
+    .ng-over-idea-action {
+        width: 100%;
+    }
+}
+/* OVER NOORDGROEIT — CTA FINAL BALANCE */
+body .ng-over-idea-cta {
+    padding: clamp(4rem, 5.5vw, 5rem) 0;
+}
+/* Bring both sides into one stronger composition */
+body .ng-over-idea-layout {
+    grid-template-columns: minmax(0, 1fr) minmax(240px, 0.42fr);
+    align-items: center;
+    gap: clamp(3rem, 7vw, 6.5rem);
+}
+/* Headline slightly more controlled */
+body .ng-over-idea-copy h2 {
+    max-width: 650px;
+}
+/* Keep the action closer to the text */
+body .ng-over-idea-action {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    min-width: 0;
+    padding-top: 0;
+}
+/* Annotation should feel attached to the button */
+
+/* Slightly stronger CTA presence */
+
+/* Decorative circle a little quieter */
+body .ng-over-idea-cta::after {
+    right: -115px;
+    width: 215px;
+    height: 215px;
+    border-width: 38px;
+    opacity: 0.75;
+}
+@media (max-width: 760px) {
+    body .ng-over-idea-layout {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 2.5rem;
+    }
+    body .ng-over-idea-action {
+        width: fit-content;
+    }
+    
+}
+/* TEAM & BESTUUR — HERO */
+.ng-team-page {
+    background: var(--color-cream);
+}
+.ng-team-hero {
+    position: relative;
+    padding: clamp(5rem, 7vw, 6.75rem) 0 clamp(3.75rem, 5vw, 4.75rem);
+    overflow: hidden;
+    background: var(--color-cream);
+    color: var(--color-dark);
+}
+/* quiet page detail */
+.ng-team-hero::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    width: 330px;
+    height: 330px;
+    border: 56px solid rgba(47, 72, 55, 0.04);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-team-hero-layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(330px, 0.58fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 9rem);
+}
+/* COPY */
+.ng-team-hero-copy {
+    max-width: 700px;
+}
+.ng-team-hero-kicker {
+    position: relative;
+    width: fit-content;
+    margin: 0 0 1.2rem;
+    padding-left: 1.1rem;
+    color: var(--color-coral);
+    font-size: 0.74rem;
+    font-weight: 850;
+    line-height: 1.3;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+.ng-team-hero-kicker::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--color-coral);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    box-shadow: 0 0 0 4px rgba(240, 102, 83, 0.1);
+}
+/* same typography language as homepage */
+.ng-team-hero h1 {
+    max-width: 660px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-home-section-title);
+    font-weight: 750;
+    line-height: 0.97;
+    letter-spacing: -0.052em;
+}
+.ng-team-hero h1 span {
+    display: block;
+    color: var(--color-green);
+}
+.ng-team-hero-intro {
+    max-width: 560px;
+    margin: 1.6rem 0 0;
+    color: rgba(46, 59, 50, 0.7);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* PEOPLE VISUAL */
+.ng-team-hero-visual {
+    position: relative;
+    justify-self: end;
+    width: min(100%, 360px);
+}
+.ng-team-hero-orbit {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1;
+    border: 1px solid rgba(46, 59, 50, 0.12);
+    border-radius: 50%;
+}
+/* inner orbit */
+.ng-team-hero-orbit::before {
+    content: "";
+    position: absolute;
+    inset: 17%;
+    border: 1px dashed rgba(46, 59, 50, 0.11);
+    border-radius: 50%;
+}
+/* PEOPLE NODES */
+.ng-team-person {
+    position: absolute;
+    width: 54px;
+    height: 54px;
+    display: grid;
+    place-items: center;
+    background: var(--color-green-light);
+    border: 8px solid var(--color-cream);
+    border-radius: 50%;
+    box-shadow: 0 8px 22px rgba(41, 56, 47, 0.08);
+}
+.ng-team-person i {
+    position: relative;
+    width: 18px;
+    height: 18px;
+    background: var(--color-green);
+    border-radius: 50% 50% 45% 45%;
+}
+/* simple head */
+.ng-team-person i::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    background: var(--color-green);
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+.ng-team-person--1 {
+    top: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ng-team-person--2 {
+    top: 50%;
+    right: -7px;
+    transform: translateY(-50%);
+}
+.ng-team-person--3 {
+    bottom: -7px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ng-team-person--4 {
+    top: 50%;
+    left: -7px;
+    transform: translateY(-50%);
+}
+/* alternating coral detail */
+.ng-team-person--2, .ng-team-person--4 {
+    background: #f6d7cd;
+}
+.ng-team-person--2 i, .ng-team-person--4 i, .ng-team-person--2 i::before, .ng-team-person--4 i::before {
+    background: var(--color-coral);
+}
+/* CENTER MESSAGE */
+.ng-team-hero-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 126px;
+    height: 126px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-dark);
+    border-radius: 50%;
+    color: var(--color-white);
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.ng-team-hero-center span {
+    color: rgba(255, 255, 255, 0.58);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.ng-team-hero-center strong {
+    margin-top: 0.15rem;
+    font-size: 1rem;
+    font-weight: 800;
+}
+/* NOTE */
+.ng-team-hero-note {
+    margin: 0.9rem 0 0;
+    color: rgba(46, 59, 50, 0.48);
+    font-size: 0.65rem;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+/* FOOTER DETAIL */
+.ng-team-hero-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: clamp(3rem, 5vw, 4rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46, 59, 50, 0.12);
+}
+.ng-team-hero-footer > span {
+    position: relative;
+    width: 42px;
+    height: 1px;
+    background: rgba(46, 59, 50, 0.2);
+}
+.ng-team-hero-footer > span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 6px;
+    height: 6px;
+    background: var(--color-coral);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+.ng-team-hero-footer p {
+    margin: 0;
+    color: rgba(46, 59, 50, 0.54);
+    font-size: 0.7rem;
+    font-weight: 750;
+    letter-spacing: 0.04em;
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-team-hero-layout {
+        grid-template-columns: minmax(0, 1fr) minmax(270px, 0.52fr);
+        gap: 3rem;
+    }
+    .ng-team-hero-visual {
+        width: min(100%, 310px);
+    }
+}
+@media (max-width: 650px) {
+    .ng-team-hero {
+        padding: 4rem 0 3.5rem;
+    }
+    .ng-team-hero-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .ng-team-hero-visual {
+        width: min(90%, 330px);
+        justify-self: center;
+    }
+    .ng-team-hero-footer {
+        margin-top: 3rem;
+    }
+}
+/* TEAM & BESTUUR — PEOPLE */
+
+/* INTRO */
+
+
+
+
+
+/* GROUP */
+
+
+/* GROUP LABEL */
+
+
+
+
+/* PEOPLE */
+
+
+
+/* INITIALS */
+
+
+
+/* NAME */
+
+
+/* DESCRIPTION */
+
+/* END NOTE */
+
+
+
+/* RESPONSIVE */
+
+
+/* TEAM & BESTUUR — HOE WE SAMENWERKEN */
+
+/* quiet NoordgroeiT circle detail */
+
+/* HEADING */
+
+
+
+
+
+/* ROLE FLOW */
+
+/* EACH ROLE */
+
+
+
+
+
+
+
+/* ARROWS */
+
+/* CLOSING DETAIL */
+
+
+
+
+/* TABLET */
+
+
+/* TEAM & BESTUUR — JOIN CTA */
+
+/* subtle decorative detail */
+
+/* LAYOUT */
+
+/* COPY */
+
+
+
+
+
+/* ACTION */
+
+
+
+
+
+
+/* RESPONSIVE */
+
+

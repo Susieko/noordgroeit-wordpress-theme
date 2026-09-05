@@ -1,0 +1,2311 @@
+/* =========================================================
+   NOORDGROEIT — GLOBAL RESPONSIVE PASS
+   Loaded after all desktop/page styles.
+========================================================= */
+
+
+/* =========================================================
+   SAFETY NET
+========================================================= */
+
+
+
+
+img,
+video,
+svg,
+iframe {
+    max-width: 100%;
+}
+
+
+iframe {
+    width: 100%;
+}
+
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 900px) {
+
+    :root {
+        --content-padding: 24px;
+    }
+
+
+    .site-container {
+        width: min(
+            calc(100% - 48px),
+            var(--content-width)
+        );
+    }
+
+}
+
+
+
+/* =========================================================
+   HEADER — TABLET / MOBILE
+========================================================= */
+
+@media (max-width: 1180px) {
+
+    .ng-primary-navigation {
+        max-height:
+            calc(100dvh - 120px);
+
+        overflow-y: auto;
+
+        overscroll-behavior: contain;
+    }
+
+
+    .ng-navigation-list {
+        max-height: none;
+        overflow: visible;
+    }
+
+
+    .ng-navigation-list > li > a,
+    .ng-nav-parent-row > a {
+        font-size: 1rem;
+    }
+
+
+    .ng-navigation-list a {
+        min-height: 46px;
+
+        display: flex;
+        align-items: center;
+    }
+
+
+    .ng-submenu-toggle {
+        min-width: 44px;
+        min-height: 44px;
+    }
+
+}
+
+
+
+/* Mobile menu icon → X */
+
+.ng-site-header.menu-is-open
+.ng-menu-icon span:first-child {
+    transform:
+        translateY(3.5px)
+        rotate(45deg);
+}
+
+
+.ng-site-header.menu-is-open
+.ng-menu-icon span:last-child {
+    transform:
+        translateY(-3.5px)
+        rotate(-45deg);
+}
+
+
+
+/* Don't let page scroll behind menu */
+
+body.ng-menu-open {
+    overflow: hidden;
+}
+
+
+
+/* =========================================================
+   SMALL TABLET / PHONE
+========================================================= */
+
+@media (max-width: 860px) {
+
+    /*
+     * Desktop CTAs move inside the menu.
+     * Prevents logo + buttons + menu from fighting for width.
+     */
+
+    .ng-header-actions {
+        display: none;
+    }
+
+
+    .ng-mobile-support,
+    .ng-mobile-vacancies,
+    .ng-mobile-language {
+        display: block;
+    }
+
+
+    .ng-mobile-support > a {
+        color: var(--color-white) !important;
+        background: var(--color-dark) !important;
+    }
+
+
+    .ng-mobile-vacancies > a {
+        color: var(--color-white) !important;
+        background: var(--color-coral) !important;
+    }
+
+}
+
+
+
+/* =========================================================
+   PHONE
+========================================================= */
+
+@media (max-width: 620px) {
+
+    :root {
+        --content-padding: 18px;
+
+        --ng-section-title:
+            clamp(
+                1.95rem,
+                9vw,
+                2.35rem
+            );
+    }
+
+
+    .site-container {
+        width:
+            calc(100% - 36px);
+    }
+
+
+
+    /* HEADER */
+
+    .ng-site-header {
+        padding:
+            7px
+            0;
+    }
+
+
+    .ng-site-header .site-container {
+        width:
+            calc(100% - 20px);
+    }
+
+
+    .ng-header-shell {
+        min-height: 60px;
+
+        padding:
+            6px
+            7px
+            6px
+            13px;
+
+        border-radius: 15px;
+    }
+
+
+    .ng-header-logo {
+        width: 116px;
+    }
+
+
+    .ng-menu-toggle {
+        min-height: 42px;
+
+        padding:
+            8px
+            11px;
+
+        border-radius: 11px;
+
+        font-size: .82rem;
+    }
+
+
+    .ng-primary-navigation {
+        top:
+            calc(100% + 7px);
+
+        max-height:
+            calc(100dvh - 90px);
+
+        padding: 11px;
+
+        border-radius: 15px;
+    }
+
+
+    .ng-navigation-list {
+        gap: 2px;
+    }
+
+
+    .ng-navigation-list a {
+        min-height: 46px;
+
+        padding:
+            11px
+            12px;
+
+        font-size: .96rem;
+    }
+
+
+    .ng-nav-parent-row {
+        grid-template-columns:
+            minmax(0, 1fr)
+            44px;
+    }
+
+
+    .ng-submenu a {
+        min-height: 42px;
+
+        padding:
+            9px
+            11px;
+
+        font-size: .9rem;
+    }
+
+}
+
+
+
+/* =========================================================
+   VERY SMALL PHONE
+========================================================= */
+
+@media (max-width: 390px) {
+
+    :root {
+        --content-padding: 16px;
+    }
+
+
+    .site-container {
+        width:
+            calc(100% - 32px);
+    }
+
+
+    .ng-header-logo {
+        width: 108px;
+    }
+
+
+    .ng-menu-toggle {
+        padding:
+            8px
+            10px;
+    }
+
+}
+
+
+
+/* =========================================================
+   TOUCH DEVICES
+========================================================= */
+
+@media (hover: none) {
+
+    /*
+     * Desktop hover movement can feel awkward
+     * when tapping cards/buttons on phones.
+     */
+
+    a:hover,
+    button:hover {
+        transform: none;
+    }
+
+}
+
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+    }
+
+}
+
+/* =========================================================
+   PHONE HEADER — COMPACT SUPPORT BUTTON
+========================================================= */
+
+@media (max-width: 620px) {
+
+    .ng-support-link--end {
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        min-height: 50px;
+
+        padding: 0 !important;
+
+        display: inline-flex !important;
+        align-items: center;
+        justify-content: center;
+
+        border-radius: 15px !important;
+
+        font-size: 0 !important;
+    }
+
+    .ng-support-link--end span {
+        margin: 0;
+
+        font-size: 1.2rem !important;
+        line-height: 1;
+    }
+
+    .ng-menu-toggle {
+        min-height: 50px;
+    }
+}
+
+/* =========================================================
+   HOMEPAGE HERO — MOBILE TEXT POSITION
+========================================================= */
+
+@media (max-width: 620px) {
+
+    body.home .ng-editorial-hero {
+        padding:
+            125px
+            0
+            175px;
+    }
+
+}
+
+/* =========================================================
+   TEAM & BESTUUR — JOIN CTA
+   Mobile fix
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+    /* -----------------------------------------
+       SECTION / TEXT
+       ----------------------------------------- */
+
+    .ng-team-join-v2 {
+        padding:
+            3.8rem
+            0
+            3.4rem;
+
+        overflow: hidden;
+    }
+
+
+    .ng-team-join-v2-layout {
+        width: 100%;
+        min-width: 0;
+
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+
+        gap: 2.8rem;
+    }
+
+
+    .ng-team-join-v2-copy {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+    }
+
+
+    .ng-team-join-v2-kicker {
+        margin-bottom: 1rem;
+
+        font-size: .7rem;
+        line-height: 1.35;
+        letter-spacing: .13em;
+    }
+
+
+    .ng-team-join-v2-copy h2 {
+        width: 100%;
+        max-width: 100%;
+
+        margin-bottom: 1.2rem;
+
+        font-size:
+            clamp(2.15rem, 10vw, 2.8rem);
+
+        line-height: 1.02;
+        letter-spacing: -.045em;
+
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: normal;
+
+        text-wrap: balance;
+    }
+
+
+    .ng-team-join-v2-copy > p:last-child {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: .98rem;
+        line-height: 1.65;
+    }
+
+
+    /* -----------------------------------------
+       MOBILE CONTRIBUTION ROUTE
+       Desktop constellation becomes vertical
+       ----------------------------------------- */
+
+    .ng-team-join-v2-visual {
+        position: relative;
+
+        width: 100%;
+        max-width: 360px;
+        min-height: 0;
+
+        aspect-ratio: auto;
+
+        display: flex;
+        flex-direction: column;
+
+        gap: .8rem;
+
+        justify-self: center;
+
+        margin:
+            .4rem
+            auto
+            0;
+
+        padding:
+            .5rem
+            0;
+    }
+
+
+    /* Desktop SVG route does not translate
+       nicely to phone — replace with vertical line */
+
+    .ng-team-join-v2-lines {
+        display: none;
+    }
+
+
+    .ng-team-join-v2-visual::before {
+        content: "";
+
+        position: absolute;
+        z-index: 0;
+
+        top: 42px;
+        bottom: 42px;
+        left: 50%;
+
+        width: 1px;
+
+        background:
+            repeating-linear-gradient(
+                to bottom,
+                rgba(240, 102, 83, .45) 0 4px,
+                transparent 4px 10px
+            );
+
+        transform: translateX(-50%);
+        pointer-events: none;
+    }
+
+
+    /* -----------------------------------------
+       LITTLE CARDS
+       ----------------------------------------- */
+
+    .ng-team-join-v2-option,
+    .ng-team-join-v2-option--1,
+    .ng-team-join-v2-option--2,
+    .ng-team-join-v2-option--3 {
+        position: relative;
+
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+
+        z-index: 2;
+
+        width: calc(100% - 72px);
+        max-width: 240px;
+
+        padding:
+            .95rem
+            1.05rem;
+
+        background:
+            rgba(255, 255, 255, .78);
+
+        backdrop-filter: blur(6px);
+
+        transform: none;
+    }
+
+
+    /* Alternate them slightly so it stays playful */
+
+    .ng-team-join-v2-option--1 {
+        order: 1;
+
+        align-self: flex-start;
+
+        border-radius:
+            1rem
+            1rem
+            .3rem
+            1rem;
+    }
+
+
+    .ng-team-join-v2-option--2 {
+        order: 3;
+
+        align-self: flex-end;
+
+        border-radius:
+            1rem
+            .3rem
+            1rem
+            1rem;
+    }
+
+
+    .ng-team-join-v2-option--3 {
+        order: 4;
+
+        align-self: flex-start;
+
+        margin-left: 18px;
+
+        border-radius:
+            .3rem
+            1rem
+            1rem
+            1rem;
+    }
+
+
+    .ng-team-join-v2-option > span {
+        margin-bottom: .3rem;
+
+        font-size: .64rem;
+    }
+
+
+    .ng-team-join-v2-option strong {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+
+    .ng-team-join-v2-option small {
+        margin-top: .3rem;
+
+        font-size: .7rem;
+        line-height: 1.3;
+    }
+
+
+    /* -----------------------------------------
+       CENTRAL CORAL CTA
+       ----------------------------------------- */
+
+    .ng-team-join-v2-center {
+        position: relative;
+
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+
+        z-index: 3;
+
+        order: 2;
+
+        width: 158px;
+
+        align-self: center;
+
+        margin:
+            .25rem
+            auto;
+
+        transform: none;
+    }
+
+
+    .ng-team-join-v2-center:hover,
+    .ng-team-join-v2-center:focus-visible {
+        transform:
+            translateY(-3px)
+            rotate(1deg);
+    }
+
+
+    .ng-team-join-v2-center > span {
+        font-size: .64rem;
+    }
+
+
+    .ng-team-join-v2-center strong {
+        font-size: 1.05rem;
+    }
+
+
+    /* -----------------------------------------
+       BOTTOM NOTE
+       ----------------------------------------- */
+
+    .ng-team-join-v2-bottom {
+        align-items: flex-start;
+
+        gap: .75rem;
+
+        margin-top: 2.7rem;
+        padding-top: 1.2rem;
+    }
+
+
+    .ng-team-join-v2-bottom > span {
+        flex: 0 0 auto;
+
+        margin-top: .38rem;
+    }
+
+
+    .ng-team-join-v2-bottom p {
+        font-size: .74rem;
+        line-height: 1.5;
+    }
+
+}
+
+/* =========================================================
+   INITIATIEVEN — MOBILE REBUILD
+   ========================================================= */
+
+@media (max-width: 650px) {
+
+    /* =========================================
+       GENERAL SAFETY
+       ========================================= */
+
+    .ng-init-page {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: clip;
+    }
+
+    .ng-init-page .site-container {
+        min-width: 0;
+    }
+
+
+    /* =====================================================
+       JOUW IDEE VOOR DE WIJK
+       ===================================================== */
+
+    .ng-init-idea {
+        min-height: 0 !important;
+        height: auto !important;
+
+        padding:
+            4.5rem
+            0
+            4rem !important;
+
+        overflow: hidden;
+    }
+
+
+    /*
+     * IMPORTANT:
+     * style.css reintroduces the desktop
+     * two-column grid after its own mobile rules.
+     */
+    .ng-init-idea-layout {
+        width: 100%;
+        min-width: 0;
+
+        display: grid !important;
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+
+        align-items: start !important;
+
+        gap: 3rem !important;
+    }
+
+
+    /* Undo the later desktop position hacks */
+
+    .ng-init-rise + section
+    .site-container > div > :first-child {
+        position: static !important;
+
+        top: auto !important;
+    }
+
+
+    .ng-init-idea-copy {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+
+        align-self: auto !important;
+
+        margin-top: 0 !important;
+
+        position: static !important;
+
+        top: auto !important;
+    }
+
+
+    .ng-init-idea-kicker,
+    body .ng-init-idea-copy > .ng-init-idea-kicker {
+        width: auto;
+
+        margin:
+            0
+            0
+            1rem !important;
+
+        font-size: .7rem;
+        line-height: 1.4;
+        letter-spacing: .13em;
+
+        word-break: normal;
+        overflow-wrap: normal;
+    }
+
+
+    .ng-init-idea-copy h2,
+    .ng-init-idea h2 {
+        width: 100%;
+        max-width: 100%;
+
+        margin:
+            0
+            0
+            1.25rem !important;
+
+        font-size:
+            clamp(2.25rem, 10.5vw, 2.85rem) !important;
+
+        line-height: 1.02 !important;
+        letter-spacing: -.045em;
+
+        white-space: normal !important;
+        word-break: normal !important;
+        overflow-wrap: normal !important;
+
+        text-wrap: balance;
+    }
+
+
+    .ng-init-idea-copy > p {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0;
+
+        font-size: .98rem;
+        line-height: 1.65;
+
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: normal;
+    }
+
+
+    /* -----------------------------------------
+       ACTIONS
+       ----------------------------------------- */
+
+    .ng-init-idea-actions {
+        width: 100%;
+
+        align-items: stretch;
+        flex-direction: column;
+
+        gap: .9rem;
+
+        margin-top: 1.8rem !important;
+    }
+
+
+    .ng-init-idea-button {
+        width: 100%;
+
+        justify-content: space-between;
+
+        min-height: 56px;
+    }
+
+
+    .ng-init-idea-secondary {
+        width: fit-content;
+    }
+
+
+    /* -----------------------------------------
+       IDEA PAPER
+       ----------------------------------------- */
+
+    .ng-init-idea-visual {
+        width: 100%;
+        max-width: 420px;
+        min-width: 0;
+
+        justify-self: center;
+
+        margin: 0 !important;
+
+        padding:
+            12px
+            0
+            45px;
+    }
+
+
+    .ng-init-idea-paper {
+        width: 100%;
+
+        padding:
+            1.6rem
+            1.25rem
+            1.35rem;
+
+        transform: none !important;
+    }
+
+
+    .ng-init-idea-paper:hover {
+        transform:
+            translateY(-3px) !important;
+    }
+
+
+    .ng-init-idea-paper-top {
+        gap: .7rem;
+
+        padding-bottom: .85rem;
+    }
+
+
+    .ng-init-idea-paper-top span {
+        font-size: .57rem;
+        letter-spacing: .08em;
+    }
+
+
+    .ng-init-idea-question {
+        width: 100%;
+        max-width: 100%;
+
+        margin:
+            1.4rem
+            0
+            1.2rem;
+
+        font-size:
+            clamp(1.5rem, 7vw, 1.85rem);
+
+        line-height: 1.08;
+    }
+
+
+    .ng-init-idea-prompts {
+        gap: .5rem;
+
+        margin-top: 1.3rem;
+    }
+
+
+    .ng-init-idea-prompts span {
+        padding:
+            .45rem
+            .65rem;
+
+        font-size: .68rem;
+    }
+
+
+    .ng-init-idea-paper-footer {
+        margin-top: 1.4rem;
+    }
+
+
+    /*
+     * The floating desktop note becomes a
+     * normal little note under the paper.
+     */
+
+    .ng-init-idea-note {
+        position: relative;
+
+        right: auto;
+        bottom: auto;
+
+        width: fit-content;
+
+        margin:
+            1.2rem
+            0
+            0
+            auto;
+    }
+
+
+    .ng-init-idea-note p {
+        font-size: .66rem;
+    }
+
+
+    /* -----------------------------------------
+       ZIEN — DELEN — SAMEN KIJKEN
+       ----------------------------------------- */
+
+    .ng-init-idea-route {
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        gap: .55rem;
+
+        margin-top: 2.8rem !important;
+
+        padding-top: 1.3rem;
+    }
+
+
+    .ng-init-idea-route span {
+        font-size: .55rem;
+        letter-spacing: .09em;
+    }
+
+
+    .ng-init-idea-route i {
+        width: 18px;
+    }
+
+
+
+    /* =====================================================
+       HEIKANTSE TUYNEN
+       ===================================================== */
+
+    .ng-init-garden {
+        min-height: 0 !important;
+
+        padding:
+            4.5rem
+            0
+            4.5rem !important;
+
+        overflow: hidden;
+    }
+
+
+    .ng-init-garden-heading {
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+
+        align-items: start !important;
+
+        gap: 1.3rem !important;
+
+        margin-bottom:
+            3rem !important;
+    }
+
+
+    .ng-init-garden-heading h2 {
+        width: 100%;
+        max-width: 100% !important;
+
+        font-size:
+            clamp(2.2rem, 10vw, 2.8rem);
+
+        line-height: 1.02;
+
+        text-wrap: balance;
+    }
+
+
+    .ng-init-garden-heading > p {
+        width: 100%;
+        max-width: 100% !important;
+
+        font-size: .98rem;
+        line-height: 1.65;
+    }
+
+
+    /* Main project becomes vertical */
+
+    .ng-init-garden-layout {
+        width: 100%;
+        min-width: 0;
+
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+
+        align-items: start !important;
+
+        gap: 3rem !important;
+    }
+
+
+    .ng-init-garden-copy {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+    }
+
+
+    .ng-init-garden-copy h3 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size:
+            clamp(1.9rem, 8.5vw, 2.35rem) !important;
+
+        line-height: 1.05 !important;
+    }
+
+
+    .ng-init-garden-copy > p {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: .95rem;
+        line-height: 1.65;
+    }
+
+
+    .ng-init-garden-themes {
+        margin-top: 1.8rem;
+    }
+
+
+    .ng-init-garden-themes > div {
+        grid-template-columns:
+            32px
+            minmax(0, 1fr);
+
+        gap: .85rem;
+    }
+
+
+    .ng-init-garden-button {
+        width: 100%;
+
+        justify-content: space-between;
+
+        margin-top: 1.8rem;
+    }
+
+
+    /* -----------------------------------------
+       GARDEN PHOTO
+       The desktop uses a positioned canvas.
+       On mobile the photo itself becomes real
+       layout content.
+       ----------------------------------------- */
+
+    .ng-init-garden-visual {
+        position: relative;
+
+        width: 100% !important;
+        max-width: 430px;
+
+        min-height: 0 !important;
+
+        justify-self: center;
+
+        padding-bottom: 95px;
+    }
+
+
+    .ng-init-garden-photo {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 100%;
+        height: 370px;
+
+        border-radius:
+            12px
+            50px
+            12px
+            12px;
+    }
+
+
+    .ng-init-garden-photo img {
+        width: 100% !important;
+        height: 100% !important;
+
+        display: block !important;
+
+        object-fit: cover;
+        object-position: center;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+    }
+
+
+    /* -----------------------------------------
+       LITTLE GARDEN LABELS
+       ----------------------------------------- */
+
+    .ng-init-garden-tag {
+        z-index: 5;
+    }
+
+
+    .ng-init-garden-tag span {
+        height: 35px;
+    }
+
+
+    .ng-init-garden-tag p {
+        padding:
+            .35rem
+            .5rem;
+
+        font-size: .62rem;
+    }
+
+
+    .ng-init-garden-tag--1 {
+        top: -12px;
+        left: 16%;
+    }
+
+
+    .ng-init-garden-tag--2 {
+        top: 65px;
+        right: -2px;
+    }
+
+
+    .ng-init-garden-tag--3 {
+        top: 315px;
+        bottom: auto;
+        left: -2px;
+    }
+
+
+    /* Growing dotted line */
+
+    .ng-init-garden-line {
+        right: 0;
+        bottom: 14px;
+
+        width: 88%;
+        height: 105px;
+    }
+
+
+    .ng-init-garden-note {
+        right: 0;
+        bottom: 0;
+    }
+
+
+    .ng-init-garden-note p {
+        font-size: .65rem;
+    }
+
+
+    .ng-init-garden-bottom {
+        margin-top: 2.7rem;
+
+        align-items: flex-start;
+    }
+
+
+    .ng-init-garden-bottom > span {
+        flex: 0 0 auto;
+
+        margin-top: .4rem;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 390px) {
+
+    .ng-init-idea-copy h2,
+    .ng-init-garden-heading h2 {
+        font-size:
+            clamp(2.05rem, 10.5vw, 2.5rem) !important;
+    }
+
+
+    .ng-init-idea-paper {
+        padding:
+            1.45rem
+            1.05rem
+            1.25rem;
+    }
+
+
+    .ng-init-garden-photo {
+        height: 335px;
+    }
+
+
+    .ng-init-garden-tag--3 {
+        top: 282px;
+    }
+
+}
+
+/* =========================================================
+   INITIATIEVEN — VAN IDEE NAAR INITIATIEF
+   MOBILE FIX
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .ng-init-rise {
+        position: relative;
+
+        width: 100% !important;
+        height: auto !important;
+
+        display: grid !important;
+        grid-template-columns: 1fr !important;
+
+        gap: 0 !important;
+
+        margin:
+            2.5rem
+            auto
+            0 !important;
+    }
+
+
+    /* Desktop SVG route is unnecessary on phone */
+
+    .ng-init-rise-route {
+        display: none !important;
+    }
+
+
+    /* =====================================================
+       RESET ALL DESKTOP STEP POSITIONS
+    ====================================================== */
+
+    .ng-init-rise-step,
+    .ng-init-rise-step--1,
+    .ng-init-rise-step--2,
+    .ng-init-rise-step--3,
+    .ng-init-rise-step--4 {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 100% !important;
+        max-width: none !important;
+
+        display: grid;
+
+        grid-template-columns:
+            58px
+            minmax(0, 1fr);
+
+        align-items: start;
+
+        gap: 1.15rem;
+
+        padding:
+            0
+            0
+            2.6rem;
+
+        margin: 0 !important;
+
+        transform: none !important;
+    }
+
+
+    .ng-init-rise-step:last-child {
+        padding-bottom: .4rem;
+    }
+
+
+    /* =====================================================
+       NEW MOBILE ROUTE
+    ====================================================== */
+
+    .ng-init-rise-step:not(:last-child)::after {
+        content: "";
+
+        position: absolute;
+
+        top: 58px;
+        bottom: 0;
+        left: 28px;
+
+        width: 1px;
+
+        background:
+            repeating-linear-gradient(
+                to bottom,
+                rgba(240, 102, 83, .48) 0 4px,
+                transparent 4px 10px
+            );
+    }
+
+
+    /* =====================================================
+       NODE
+    ====================================================== */
+
+    .ng-init-rise-node {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        width: 58px;
+        height: 58px;
+
+        margin: 0 !important;
+
+        box-shadow:
+            0 0 0 6px
+            var(--color-dark);
+    }
+
+
+    .ng-init-rise-node svg {
+        width: 27px;
+        height: 27px;
+    }
+
+
+    /* =====================================================
+       COPY
+    ====================================================== */
+
+    .ng-init-rise-copy {
+        min-width: 0;
+
+        padding-top: .15rem !important;
+    }
+
+
+    .ng-init-rise-number {
+        margin-bottom: .35rem;
+
+        font-size: .67rem;
+    }
+
+
+    .ng-init-rise-copy small {
+        margin-bottom: .45rem;
+
+        font-size: .66rem;
+
+        color:
+            rgba(255,255,255,.48);
+    }
+
+
+    .ng-init-rise-copy h3 {
+        width: 100%;
+        max-width: none;
+
+        margin:
+            0
+            0
+            .65rem;
+
+        font-size:
+            clamp(
+                1.55rem,
+                7vw,
+                1.9rem
+            );
+
+        line-height: 1.08;
+    }
+
+
+    .ng-init-rise-copy p {
+        width: 100%;
+        max-width: none;
+
+        margin: 0;
+
+        color:
+            rgba(255,255,255,.62);
+
+        font-size: .94rem;
+        line-height: 1.6;
+    }
+
+
+    /* =====================================================
+       MOBILE: DON'T HIDE STEPS WAITING FOR ANIMATION
+    ====================================================== */
+
+    .ng-init-rise.is-animatable
+    .ng-init-rise-step {
+        opacity: 1 !important;
+    }
+
+
+    .ng-init-rise.is-in-view
+    .ng-init-rise-step--1,
+    .ng-init-rise.is-in-view
+    .ng-init-rise-step--2,
+    .ng-init-rise.is-in-view
+    .ng-init-rise-step--3,
+    .ng-init-rise.is-in-view
+    .ng-init-rise-step--4 {
+        animation: none !important;
+
+        opacity: 1 !important;
+        transform: none !important;
+    }
+
+}
+
+/* =========================================================
+   NOORDBUITEN ACTIVITEITEN
+   VERHALENBANK — MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .ng-nba-stories {
+        padding:
+            4.5rem
+            0;
+    }
+
+
+    /* Heading */
+
+    .ng-nba-stories-heading {
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+
+        align-items: start !important;
+
+        gap: 1.35rem !important;
+
+        margin-bottom: 2.8rem !important;
+    }
+
+
+    .ng-nba-stories-heading h2 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size:
+            clamp(2.05rem, 9.5vw, 2.6rem);
+
+        line-height: 1.03;
+    }
+
+
+    .ng-nba-stories-heading > p {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: .98rem;
+        line-height: 1.65;
+    }
+
+
+    /* =========================================
+       Conversation stage
+    ========================================== */
+
+    .ng-nba-stories-stage {
+        position: relative;
+
+        display: flex !important;
+
+        width: 100%;
+        min-height: 0 !important;
+
+        flex-direction: column;
+
+        gap: 2.1rem;
+
+        padding:
+            2.3rem
+            0 !important;
+
+        overflow: visible !important;
+    }
+
+
+    /* Kill every later desktop absolute rule */
+
+    .ng-nba-story-visual,
+    .ng-nba-story-voice,
+    .ng-nba-story-voice--left,
+    .ng-nba-story-voice--right {
+        position: relative !important;
+
+        top: auto !important;
+        right: auto !important;
+        bottom: auto !important;
+        left: auto !important;
+
+        transform: none !important;
+    }
+
+
+    /* -----------------------------------------
+       First quote
+    ----------------------------------------- */
+
+    .ng-nba-story-voice--left {
+        order: 1;
+
+        width: 88% !important;
+        max-width: 330px !important;
+
+        align-self: flex-start;
+
+        text-align: left !important;
+    }
+
+
+    /* -----------------------------------------
+       Illustration
+    ----------------------------------------- */
+
+    .ng-nba-story-visual {
+        order: 2;
+
+        width:
+            min(100%, 330px) !important;
+
+        max-width: 330px;
+
+        align-self: center;
+
+        margin:
+            .2rem
+            auto !important;
+    }
+
+
+    .ng-nba-story-visual img {
+        width: 100%;
+        height: auto;
+    }
+
+
+    .ng-nba-story-visual figcaption {
+        margin-top: .25rem;
+    }
+
+
+    /* -----------------------------------------
+       Second quote
+    ----------------------------------------- */
+
+    .ng-nba-story-voice--right {
+        order: 3;
+
+        width: 88% !important;
+        max-width: 330px !important;
+
+        align-self: flex-end;
+
+        text-align: right !important;
+    }
+
+
+    /* Quote size */
+
+    .ng-nba-story-quote,
+    .ng-nba-story-voice > span {
+        height: auto;
+
+        margin-bottom: .25rem;
+
+        font-size: 2.5rem;
+    }
+
+
+    .ng-nba-story-voice p {
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: .15rem;
+
+        font-size:
+            clamp(1.4rem, 7vw, 1.75rem);
+
+        line-height: 1.06;
+    }
+
+
+    /*
+     * Dotted desktop speech tails look great
+     * horizontally, but become nonsense here.
+     */
+
+    .ng-nba-story-tail,
+    .ng-nba-story-line {
+        display: none !important;
+    }
+
+
+    .ng-nba-story-voice::after {
+        display: none !important;
+    }
+
+}
+
+/* =========================================================
+   NOORDBUITEN ACTIVITEITEN
+   CAS DE DAS — MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .ng-nba-cas {
+        padding:
+            4.5rem
+            0
+            3.8rem !important;
+
+        overflow: hidden;
+    }
+
+
+    /* =========================================
+       MAIN LAYOUT
+    ========================================== */
+
+    .ng-nba-cas-layout {
+        width: 100%;
+        min-width: 0;
+
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+
+        align-items: start !important;
+
+        gap: 2.8rem !important;
+    }
+
+
+    /* =========================================
+       COPY
+    ========================================== */
+
+    .ng-nba-cas-copy {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+    }
+
+
+    .ng-nba-cas-kicker {
+        font-size: .7rem;
+        line-height: 1.35;
+    }
+
+
+    .ng-nba-cas-copy h2 {
+        width: 100%;
+        max-width: 100%;
+
+        font-size:
+            clamp(2.1rem, 9.5vw, 2.65rem);
+
+        line-height: 1.03;
+    }
+
+
+    .ng-nba-cas-copy
+    > p:not(.ng-nba-cas-kicker) {
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 1.1rem;
+
+        font-size: .98rem;
+        line-height: 1.65;
+    }
+
+
+    .ng-nba-cas-status {
+        margin-top: 1.5rem;
+        padding-top: 1.15rem;
+    }
+
+
+    .ng-nba-cas-status p {
+        max-width: none;
+
+        font-size: .8rem;
+        line-height: 1.55;
+    }
+
+
+    /* =========================================
+       ADVENTURE STAGE
+    ========================================== */
+
+    .ng-nba-cas-adventure {
+        position: relative;
+
+        width: 100%;
+        max-width: 420px;
+
+        min-height: 450px !important;
+
+        justify-self: center;
+
+        margin:
+            0
+            auto;
+
+        overflow: hidden !important;
+    }
+
+
+    /* Ground */
+
+    .ng-nba-cas-ground {
+        left: 50% !important;
+        bottom: 35px !important;
+
+        width: 92% !important;
+        max-width: 380px;
+
+        height: 115px;
+
+        transform:
+            translateX(-50%) !important;
+    }
+
+
+    .ng-nba-cas-ground::after {
+        width: 80%;
+    }
+
+
+    /* =========================================
+       CAS HIMSELF
+    ========================================== */
+
+    .ng-nba-cas-figure {
+        left: 50% !important;
+        right: auto !important;
+
+        bottom: 48px !important;
+
+        width: 235px !important;
+        max-width: 68%;
+
+        transform:
+            translateX(-50%) !important;
+    }
+
+
+    .ng-nba-cas-adventure:hover
+    .ng-nba-cas-figure {
+        transform:
+            translateX(-50%) !important;
+    }
+
+
+    .ng-nba-cas-figure img {
+        display: block;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+    /* =========================================
+       LITTLE MESSAGE
+    ========================================== */
+
+    .ng-nba-cas-whisper {
+        top: 18px !important;
+        right: 0 !important;
+
+        width: 145px;
+
+        transform:
+            rotate(2deg);
+    }
+
+
+    .ng-nba-cas-whisper p {
+        font-size: .7rem;
+    }
+
+
+    .ng-nba-cas-whisper strong {
+        font-size: .9rem;
+    }
+
+
+    /* =========================================
+       ADVENTURE MARKERS
+    ========================================== */
+
+    .ng-nba-cas-marker {
+        padding:
+            .48rem
+            .65rem;
+
+        gap: .4rem;
+    }
+
+
+    .ng-nba-cas-marker strong {
+        font-size: .64rem;
+    }
+
+
+    /* Discover — upper left */
+
+    .ng-nba-cas-marker--discover {
+        top: 25px !important;
+        left: 0 !important;
+        right: auto !important;
+
+        transform:
+            rotate(-2deg);
+    }
+
+
+    /* Look — bottom left */
+
+    .ng-nba-cas-marker--look {
+        top: auto !important;
+        left: 0 !important;
+
+        bottom: 18px !important;
+
+        transform:
+            rotate(-2deg);
+    }
+
+
+    /* Think — bottom right */
+
+    .ng-nba-cas-marker--think {
+        top: auto !important;
+        right: 0 !important;
+
+        bottom: 18px !important;
+
+        transform:
+            rotate(2deg);
+    }
+
+
+    /* Route stays, but quieter */
+
+    .ng-nba-cas-trail {
+        width: 100%;
+        height: 100%;
+
+        opacity: .45;
+    }
+
+
+    /*
+     * These are cute on desktop,
+     * but just clutter a 390px canvas.
+     */
+
+    .ng-nba-cas-footprints,
+    .ng-nba-cas-sprout {
+        display: none !important;
+    }
+
+
+    /* =========================================
+       BOTTOM NOTE
+    ========================================== */
+
+    .ng-nba-cas-bottom {
+        align-items: flex-start !important;
+
+        flex-direction: column !important;
+
+        gap: .8rem !important;
+
+        margin-top: 1.6rem;
+    }
+
+
+    .ng-nba-cas-bottom p {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: .78rem;
+        line-height: 1.55;
+    }
+
+}
+
+/* =========================================================
+   NOORDBUITEN — MEEDOEN
+   FINAL CTA — MOBILE
+========================================================= */
+
+@media (max-width: 650px) {
+
+    .ng-nbm-final {
+        padding:
+            4.5rem
+            0
+            3rem !important;
+
+        overflow: hidden;
+    }
+
+
+    /* =========================================
+       MAIN LAYOUT
+    ========================================== */
+
+    .ng-nbm-final-inner {
+        width: 100%;
+        min-width: 0;
+
+        display: grid !important;
+
+        grid-template-columns:
+            minmax(0, 1fr) !important;
+
+        align-items: start !important;
+
+        gap: 2.5rem !important;
+
+        min-height: 0 !important;
+    }
+
+
+    /* =========================================
+       COPY
+    ========================================== */
+
+    .ng-nbm-final-copy {
+        width: 100%;
+        max-width: none;
+        min-width: 0;
+    }
+
+
+    .ng-nbm-final-kicker {
+        width: auto;
+
+        margin-bottom: .9rem;
+
+        font-size: .7rem;
+        line-height: 1.35;
+
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: normal;
+    }
+
+
+    .ng-nbm-final-copy h2 {
+        width: 100%;
+        max-width: 100% !important;
+
+        margin: 0;
+
+        font-size:
+            clamp(
+                2.15rem,
+                9.5vw,
+                2.75rem
+            ) !important;
+
+        line-height: 1.02 !important;
+        letter-spacing: -.045em;
+
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: normal;
+
+        text-wrap: balance;
+    }
+
+
+    .ng-nbm-final-copy
+    > p:not(.ng-nbm-final-kicker) {
+        width: 100%;
+        max-width: 100%;
+
+        margin-top: 1.1rem;
+
+        font-size: .96rem;
+        line-height: 1.65;
+
+        white-space: normal;
+        word-break: normal;
+        overflow-wrap: normal;
+    }
+
+
+    /* =========================================
+       ACTION
+    ========================================== */
+
+    .ng-nbm-final-action {
+        width: 100%;
+
+        display: flex;
+
+        align-items: flex-start !important;
+
+        flex-direction: column;
+
+        gap: 0;
+
+        margin: 0;
+    }
+
+
+    .ng-nbm-final-mark {
+        width: 52px;
+        height: 52px;
+
+        margin:
+            0
+            0
+            1.2rem;
+
+        transform:
+            rotate(5deg);
+    }
+
+
+    /* =========================================
+       BUTTON
+    ========================================== */
+
+    .ng-nbm-final-button {
+        width: 100%;
+        max-width: 390px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-between;
+
+        gap: 1rem;
+
+        min-height: 58px;
+
+        padding:
+            .55rem
+            .6rem
+            .55rem
+            1.15rem;
+
+        font-size: .8rem;
+    }
+
+
+    .ng-nbm-final-button i {
+        width: 42px;
+        height: 42px;
+
+        flex:
+            0
+            0
+            42px;
+    }
+
+
+    /* =========================================
+       ADDRESS
+    ========================================== */
+
+    .ng-nbm-final-address {
+        width: 100%;
+
+        flex-wrap: wrap;
+
+        gap:
+            .45rem
+            .65rem;
+
+        margin-top: .9rem;
+
+        font-size: .72rem;
+    }
+
+
+    /* =========================================
+       BACKGROUND WORD
+    ========================================== */
+
+    .ng-nbm-final::before {
+        display: none !important;
+    }
+
+
+    /* =========================================
+       BOTTOM NOTE
+    ========================================== */
+
+    .ng-nbm-final-bottom {
+        width: 100%;
+
+        align-items: flex-start;
+
+        gap: .65rem;
+
+        margin-top: 2.8rem;
+        padding-top: 1.2rem;
+    }
+
+
+    .ng-nbm-final-bottom > span {
+        flex: 0 0 auto;
+
+        margin-top: .2rem;
+    }
+
+
+    .ng-nbm-final-bottom p {
+        font-size: .72rem;
+        line-height: 1.5;
+
+        transform: none;
+    }
+
+}
+
+/* =========================================================
+   MOBILE HEADER — CLICK / STACKING SAFETY
+========================================================= */
+
+/* Decorative hero layers should never receive taps */
+
+.ng-inner-hero__image,
+.ng-inner-hero__overlay {
+    pointer-events: none;
+}
+
+
+/* Header always stays above page artwork */
+
+.ng-site-header {
+    z-index: 99999;
+}
+
+
+.ng-header-shell {
+    position: relative;
+    z-index: 2;
+}
+
+
+.ng-menu-toggle {
+    position: relative;
+    z-index: 3;
+
+    pointer-events: auto;
+}
+
+
+@media (max-width: 1180px) {
+
+    .ng-primary-navigation {
+        z-index: 99999;
+
+        pointer-events: auto;
+    }
+
+}
+
+/* =========================================================
+   MOBILE MENU — LOCK PAGE BEHIND OPEN NAV
+========================================================= */
+
+@media (max-width: 1180px) {
+
+    body.ng-menu-open {
+        overflow: hidden !important;
+    }
+
+}

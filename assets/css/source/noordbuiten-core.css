@@ -1,0 +1,1372 @@
+/* PLEKKEN & PROJECTEN — PAGE */
+.ng-nbp-page {
+    background: var(--color-cream);
+}
+/* unique hero image crop ONLY */
+
+/* PROGRESS SECTION */
+.ng-nbp-progress {
+    position: relative;
+    padding: clamp(5.25rem, 7vw, 7rem) 0 clamp(5.5rem, 7vw, 7rem);
+    overflow: hidden;
+    background: var(--color-cream);
+}
+.ng-nbp-kicker {
+    margin: 0 0 .85rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+/* HEADING */
+.ng-nbp-progress-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .58fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(4rem, 6vw, 5.5rem);
+}
+.ng-nbp-progress-heading h2 {
+    max-width: 620px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.04;
+    letter-spacing: -.04em;
+}
+.ng-nbp-progress-intro {
+    max-width: 430px;
+}
+.ng-nbp-progress-intro p {
+    margin: 0;
+    color: rgba(46, 59, 50, .67);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+.ng-nbp-progress-intro p + p {
+    margin-top: .8rem;
+}
+/* SITE BOARD */
+.ng-nbp-board {
+    display: grid;
+    grid-template-columns: minmax(0, 1.12fr) minmax(360px, .72fr);
+    min-height: 610px;
+    overflow: hidden;
+    border: 1px solid rgba(46, 59, 50, .14);
+    border-radius: 12px 64px 12px 64px;
+    background: #fff;
+}
+/* IMAGE */
+.ng-nbp-board-visual {
+    position: relative;
+    min-height: 610px;
+    margin: 0;
+    overflow: hidden;
+    background: #dce5d9;
+}
+.ng-nbp-board-visual::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26, 39, 30, .5), transparent 45%);
+    pointer-events: none;
+}
+.ng-nbp-board-visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .7s ease;
+}
+.ng-nbp-board:hover .ng-nbp-board-visual img {
+    transform: scale(1.018);
+}
+/* location tag */
+.ng-nbp-board-visual figcaption {
+    position: absolute;
+    z-index: 3;
+    left: 28px;
+    bottom: 26px;
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+    color: #fff;
+    font-size: .7rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ng-nbp-board-visual figcaption span {
+    opacity: .7;
+}
+/* map-ish markers */
+
+
+
+
+/* INFORMATION SIDE */
+.ng-nbp-board-info {
+    display: flex;
+    flex-direction: column;
+    padding: clamp(2rem, 3.3vw, 3.25rem);
+}
+/* top */
+.ng-nbp-board-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(46, 59, 50, .13);
+    color: rgba(46, 59, 50, .48);
+    font-size: .66rem;
+    font-weight: 800;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+/* STATUS GROUPS */
+.ng-nbp-status-group {
+    padding: 1.65rem 0;
+    border-bottom: 1px solid rgba(46, 59, 50, .12);
+}
+.ng-nbp-status-label {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    margin: 0 0 1rem;
+    color: var(--color-dark);
+    font-size: .69rem;
+    font-weight: 800;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+.ng-nbp-status-dot {
+    width: 8px;
+    height: 8px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+}
+.ng-nbp-status-dot--here {
+    background: #3E6B47;
+}
+.ng-nbp-status-dot--building {
+    background: var(--color-coral);
+}
+/* list */
+.ng-nbp-status-group ul {
+    display: grid;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ng-nbp-status-group li {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: .55rem 0;
+    color: var(--color-dark);
+}
+.ng-nbp-status-group li span {
+    font-size: .9rem;
+    font-weight: 720;
+}
+.ng-nbp-status-group li small {
+    color: rgba(46, 59, 50, .49);
+    font-size: .69rem;
+    text-align: right;
+}
+/* WATER NOTE */
+
+
+
+
+/* BOTTOM ROUTE */
+.ng-nbp-progress-route {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr auto;
+    align-items: center;
+    gap: 1.25rem;
+    margin-top: 2rem;
+    color: rgba(46, 59, 50, .45);
+    font-size: .64rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+}
+.ng-nbp-progress-route i {
+    display: block;
+    height: 1px;
+    background: repeating-linear-gradient(to right, rgba(46, 59, 50, .25) 0 4px, transparent 4px 11px);
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-nbp-progress-heading {
+        grid-template-columns: 1fr;
+        align-items: start;
+        gap: 1.75rem;
+    }
+    .ng-nbp-board {
+        grid-template-columns: 1fr;
+    }
+    .ng-nbp-board-visual {
+        min-height: clamp(380px, 65vw, 520px);
+    }
+}
+@media (max-width: 600px) {
+    .ng-nbp-progress {
+        padding: 4.5rem 0;
+    }
+    .ng-nbp-board {
+        border-radius: 10px 38px 10px 38px;
+    }
+    .ng-nbp-board-info {
+        padding: 1.6rem 1.35rem;
+    }
+    .ng-nbp-progress-route {
+        grid-template-columns: 1fr;
+        gap: .7rem;
+    }
+    .ng-nbp-progress-route i {
+        width: 45px;
+    }
+}
+/* PLEKKEN & PROJECTEN — INTRO */
+.ng-nbp-intro {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(5rem, 7vw, 7rem) 0 clamp(3rem, 4vw, 4rem);
+    background: var(--color-cream);
+}
+/* subtle giant decorative circle like our other pages */
+.ng-nbp-intro::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -170px;
+    width: 360px;
+    height: 360px;
+    border: 44px solid rgba(62, 107, 71, .035);
+    border-radius: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-nbp-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(360px, .72fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 9rem);
+    min-height: 330px;
+}
+/* COPY */
+.ng-nbp-intro-copy {
+    max-width: 650px;
+}
+.ng-nbp-intro-kicker {
+    margin: 0 0 1rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+.ng-nbp-intro-copy h1 {
+    max-width: 620px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(3rem, 4vw, 4.35rem);
+    font-weight: 760;
+    line-height: .96;
+    letter-spacing: -.055em;
+}
+.ng-nbp-intro-copy h1 span {
+    display: block;
+    color: #3E6B47;
+}
+.ng-nbp-intro-copy > p:last-child {
+    max-width: 510px;
+    margin: 1.35rem 0 0;
+    color: rgba(46, 59, 50, .64);
+    font-size: .96rem;
+    line-height: 1.65;
+}
+/* ORBIT VISUAL */
+.ng-nbp-intro-visual {
+    position: relative;
+    width: min(100%, 390px);
+    aspect-ratio: 1;
+    justify-self: center;
+}
+.ng-nbp-orbit {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid rgba(46, 59, 50, .11);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+.ng-nbp-orbit--outer {
+    width: 88%;
+    height: 88%;
+}
+.ng-nbp-orbit--inner {
+    width: 58%;
+    height: 58%;
+}
+/* center */
+.ng-nbp-intro-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    width: 122px;
+    height: 122px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: var(--color-dark);
+    color: #fff;
+    text-align: center;
+}
+.ng-nbp-intro-center small {
+    margin-bottom: .3rem;
+    color: rgba(255, 255, 255, .55);
+    font-size: .58rem;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+.ng-nbp-intro-center strong {
+    max-width: 75px;
+    font-size: .82rem;
+    line-height: 1.1;
+}
+/* NODES */
+.ng-nbp-intro-node {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.ng-nbp-intro-node span {
+    display: block;
+    width: 28px;
+    height: 28px;
+    border: 5px solid rgba(255, 255, 255, .85);
+    border-radius: 50%;
+    box-shadow: 0 4px 14px rgba(46, 59, 50, .12);
+}
+.ng-nbp-intro-node small {
+    color: rgba(46, 59, 50, .52);
+    font-size: .57rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+.ng-nbp-intro-node--green {
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column;
+}
+.ng-nbp-intro-node--green span {
+    background: #3E6B47;
+}
+.ng-nbp-intro-node--build {
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    flex-direction: row-reverse;
+}
+.ng-nbp-intro-node--build span {
+    background: var(--color-coral);
+}
+.ng-nbp-intro-node--meet {
+    bottom: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    flex-direction: column-reverse;
+}
+.ng-nbp-intro-node--meet span {
+    background: #44606F;
+}
+.ng-nbp-intro-node--play {
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.ng-nbp-intro-node--play span {
+    background: #C87F4A;
+}
+/* BOTTOM DETAIL */
+.ng-nbp-intro-bottom {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-top: 2rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid rgba(46, 59, 50, .11);
+}
+.ng-nbp-intro-bottom > span {
+    width: 6px;
+    height: 6px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-nbp-intro-bottom p {
+    margin: 0;
+    color: rgba(46, 59, 50, .52);
+    font-size: .68rem;
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-nbp-intro-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .ng-nbp-intro-visual {
+        width: min(100%, 330px);
+        justify-self: start;
+    }
+}
+.ng-nbp-intro-kicker {
+    display: inline-flex;
+    align-items: center;
+    gap: .6rem;
+    margin: 0 0 1rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+.ng-nbp-intro-kicker::before {
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: var(--color-coral);
+    box-shadow: 0 0 0 3px rgba(240, 104, 80, 0.12);
+    flex: 0 0 auto;
+}
+.ng-nbp-intro {
+    background: #f3f0ea;
+}
+.ng-nbp-progress {
+    background: #fffdf9 !important;
+}
+/* PLEKKEN & PROJECTEN — DIT KRIJGT HIER VORM */
+
+/* quiet decorative circle */
+
+/* HEADING */
+
+
+
+/* only literal chosen word is green */
+
+
+/* PROJECT */
+
+
+/* IMAGE */
+
+
+
+
+
+
+/* COPY */
+
+
+
+
+.ng-nbp-place-copy > p:not(.ng-nbp-place-type) {
+    max-width: 440px;
+    margin: 1.3rem 0 0;
+    color: rgba(255,255,255,.64);
+    line-height: 1.7;
+}
+/* LITTLE EDITORIAL NOTE */
+
+
+
+/* FOOD FACTS */
+
+
+
+
+/* FOOTER */
+
+
+
+/* RESPONSIVE */
+
+
+/* PLEKKEN & PROJECTEN — BLUEPRINT */
+.ng-nbp-blueprint {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: var(--color-dark);
+    color: #fff;
+}
+/* HEADER */
+.ng-nbp-blueprint-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .55fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(4.5rem, 7vw, 6.5rem);
+}
+.ng-nbp-blueprint-kicker {
+    margin: 0 0 .9rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-nbp-blueprint-heading h2 {
+    max-width: 650px;
+    margin: 0;
+    color: #fff;
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-nbp-blueprint-heading > p {
+    max-width: 430px;
+    margin: 0;
+    color: rgba(255,255,255,.6);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* PLAN */
+.ng-nbp-blueprint-plan {
+    position: relative;
+    min-height: 650px;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid rgba(255,255,255,.1);
+}
+/* connecting paths */
+
+
+/* CENTER */
+.ng-nbp-plan-center {
+    position: absolute;
+    z-index: 3;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    width: 135px;
+    height: 135px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 50%;
+    background: #24362b;
+    text-align: center;
+}
+.ng-nbp-plan-center small {
+    margin-bottom: .35rem;
+    color: var(--color-coral);
+    font-size: .57rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ng-nbp-plan-center strong {
+    max-width: 85px;
+    color: #fff;
+    font-size: .86rem;
+    line-height: 1.15;
+}
+/* ITEMS */
+.ng-nbp-plan-item {
+    position: absolute;
+    z-index: 2;
+    width: 220px;
+    padding: 1.15rem 1.2rem;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 8px 24px 8px 24px;
+    background: rgba(255,255,255,.055);
+    backdrop-filter: blur(4px);
+}
+.ng-nbp-plan-item strong {
+    display: block;
+    margin-top: .35rem;
+    color: #fff;
+    font-size: 1rem;
+    line-height: 1.12;
+}
+.ng-nbp-plan-item p {
+    margin: .65rem 0 0;
+    color: rgba(255,255,255,.48);
+    font-size: .72rem;
+    line-height: 1.5;
+}
+.ng-nbp-plan-state {
+    color: var(--color-coral);
+    font-size: .57rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.ng-nbp-plan-accent {
+    color: #a9cbaa;
+    font-size: .76rem;
+    font-weight: 800;
+    letter-spacing: .05em;
+}
+/* positions */
+.ng-nbp-plan-item--kas {
+    top: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ng-nbp-plan-item--coffee {
+    top: 220px;
+    left: 4%;
+}
+.ng-nbp-plan-item--water {
+    top: 220px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.ng-nbp-plan-item--workshop {
+    top: 220px;
+    right: 4%;
+}
+.ng-nbp-plan-item--circular {
+    bottom: 25px;
+    left: 11%;
+}
+.ng-nbp-plan-item--terrace {
+    right: 11%;
+    bottom: 25px;
+}
+/* FOOTER */
+.ng-nbp-blueprint-footer {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding-top: 1.75rem;
+}
+.ng-nbp-blueprint-footer span {
+    width: 6px;
+    height: 6px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-nbp-blueprint-footer p {
+    margin: 0;
+    color: rgba(255,255,255,.42);
+    font-size: .7rem;
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-nbp-blueprint-heading {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+    .ng-nbp-blueprint-plan {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1rem;
+        min-height: 0;
+        padding: 2.5rem 0;
+    }
+    .ng-nbp-plan-center {
+        display: none;
+    }
+    .ng-nbp-plan-item {
+        position: relative;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        left: auto;
+        width: auto;
+        transform: none;
+    }
+}
+@media (max-width: 560px) {
+    .ng-nbp-blueprint-plan {
+        grid-template-columns: 1fr;
+    }
+}
+/* BLUEPRINT — CLEAN SITE PLAN */
+.ng-nbp-blueprint-plan {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-template-areas: "kas kas kas" "coffee water workshop" "circular center terrace";
+    gap: 18px;
+    min-height: 0;
+    padding: 52px clamp(24px, 4vw, 52px);
+    border: 1px solid rgba(255,255,255,.11);
+    border-radius: 10px 54px 10px 54px;
+    background: linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px), rgba(255,255,255,.018);
+    background-size: 42px 42px;
+    overflow: hidden;
+}
+/* We don't need the old SVG spaghetti anymore */
+
+/* STANDARD PLAN ITEM */
+.ng-nbp-plan-item {
+    position: relative;
+    top: auto;
+    right: auto;
+    bottom: auto;
+    left: auto;
+    width: auto;
+    min-height: 170px;
+    padding: 1.4rem 1.5rem;
+    transform: none !important;
+    border: 1px solid rgba(255,255,255,.12);
+    border-radius: 8px 28px 8px 28px;
+    background: rgba(255,255,255,.055);
+    backdrop-filter: blur(4px);
+}
+/* little blueprint corner */
+.ng-nbp-plan-item::after {
+    content: "";
+    position: absolute;
+    right: 14px;
+    bottom: 14px;
+    width: 16px;
+    height: 16px;
+    border-right: 1px solid rgba(240,102,83,.45);
+    border-bottom: 1px solid rgba(240,102,83,.45);
+}
+.ng-nbp-plan-item strong {
+    display: block;
+    margin-top: .45rem;
+    color: #fff;
+    font-size: clamp(1rem, 1.35vw, 1.15rem);
+    line-height: 1.15;
+}
+.ng-nbp-plan-item p {
+    max-width: 280px;
+    margin: .7rem 0 0;
+    color: rgba(255,255,255,.48);
+    font-size: .76rem;
+    line-height: 1.55;
+}
+/* GRID POSITIONS */
+.ng-nbp-plan-item--kas {
+    grid-area: kas;
+    width: min(360px, 100%);
+    min-height: 0;
+    justify-self: center;
+}
+.ng-nbp-plan-item--coffee {
+    grid-area: coffee;
+}
+.ng-nbp-plan-item--water {
+    grid-area: water;
+    border-color: rgba(169,203,170,.28);
+    background: rgba(169,203,170,.08);
+}
+.ng-nbp-plan-item--workshop {
+    grid-area: workshop;
+}
+.ng-nbp-plan-item--circular {
+    grid-area: circular;
+}
+.ng-nbp-plan-item--terrace {
+    grid-area: terrace;
+}
+/* WATER — MAIN FEATURE */
+.ng-nbp-plan-item--water {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ng-nbp-plan-item--water .ng-nbp-plan-accent {
+    color: #a9cbaa;
+    font-size: clamp(1.35rem, 2vw, 1.8rem);
+    font-weight: 800;
+    letter-spacing: -.025em;
+}
+.ng-nbp-plan-item--water strong {
+    font-size: clamp(1.2rem, 1.6vw, 1.45rem);
+}
+.ng-nbp-plan-item--water p {
+    max-width: 300px;
+    margin-inline: auto;
+}
+/* CENTER MESSAGE */
+.ng-nbp-plan-center {
+    position: relative;
+    grid-area: center;
+    top: auto;
+    left: auto;
+    display: flex;
+    width: 100%;
+    min-height: 170px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: none;
+    border: 1px dashed rgba(240,102,83,.38);
+    border-radius: 28px 8px 28px 8px;
+    background: rgba(240,102,83,.035);
+    text-align: center;
+}
+.ng-nbp-plan-center::before {
+    content: "↳";
+    margin-bottom: .6rem;
+    color: var(--color-coral);
+    font-size: 1.25rem;
+}
+.ng-nbp-plan-center small {
+    color: var(--color-coral);
+}
+.ng-nbp-plan-center strong {
+    max-width: 120px;
+    font-size: 1rem;
+}
+/* TOP CARD CONNECTION */
+.ng-nbp-plan-item--kas::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -19px;
+    width: 1px;
+    height: 19px;
+    background: repeating-linear-gradient(to bottom, var(--color-coral) 0 3px, transparent 3px 7px);
+}
+/* SMALL STATUS LABELS */
+.ng-nbp-plan-state, .ng-nbp-plan-accent {
+    color: var(--color-coral);
+    font-size: .62rem;
+    font-weight: 800;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-nbp-blueprint-plan {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas: "kas kas" "water water" "coffee workshop" "circular terrace" "center center";
+    }
+    .ng-nbp-plan-item--kas {
+        width: 100%;
+    }
+}
+@media (max-width: 560px) {
+    .ng-nbp-blueprint-plan {
+        grid-template-columns: 1fr;
+        grid-template-areas: "kas" "water" "coffee" "workshop" "circular" "terrace" "center";
+        padding: 28px 18px;
+    }
+    .ng-nbp-plan-item, .ng-nbp-plan-center {
+        min-height: 0;
+    }
+}
+/* PLEKKEN & PROJECTEN — NATURE FIELD */
+
+/* large quiet decorative ring */
+
+/* HEADING */
+
+
+
+/* only the literal word 'groen' gets green */
+
+
+/* FIELD */
+
+/* MAIN ORCHARD STAT */
+
+
+
+
+
+
+/* NOTES */
+
+
+
+
+
+/* icon */
+
+/* label */
+
+
+
+/* ROOT DRAWING */
+
+
+/* FOOTER */
+
+
+
+/* RESPONSIVE */
+
+
+/* PLEKKEN & PROJECTEN — GROWING LANDSCAPE */
+.ng-nbp-landscape {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: #e8f0e3;
+    color: var(--color-dark);
+}
+/* HEADER */
+.ng-nbp-landscape-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(300px, .55fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(4rem, 6vw, 5.5rem);
+}
+.ng-nbp-landscape-kicker {
+    margin: 0 0 .9rem;
+    color: var(--color-coral);
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+.ng-nbp-landscape-heading h2 {
+    max-width: 640px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+/* only groen is green */
+.ng-nbp-landscape-heading h2 span {
+    color: #3E6B47;
+}
+.ng-nbp-landscape-heading > p {
+    max-width: 430px;
+    margin: 0;
+    color: rgba(46,59,50,.63);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* LANDSCAPE STAGE */
+
+/* BIG ±40 */
+
+
+
+/* GROWING LINE */
+.ng-nbp-landscape-line {
+    position: absolute;
+    z-index: 1;
+    inset: 50px 0 0;
+    width: 100%;
+    height: 430px;
+    pointer-events: none;
+}
+.ng-nbp-landscape-line-main {
+    fill: none;
+    stroke: var(--color-coral);
+    stroke-width: 1.4;
+    stroke-linecap: round;
+    stroke-dasharray: 3 9;
+    opacity: .48;
+    vector-effect: non-scaling-stroke;
+}
+
+/* POINTS */
+
+/* NO BOXES */
+
+
+
+/* nodes */
+
+
+
+/* GROUND LINE */
+
+
+/* LITTLE NOTE */
+
+
+
+/* FOOTER */
+.ng-nbp-landscape-footer {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding-top: 1.65rem;
+}
+.ng-nbp-landscape-footer span {
+    width: 6px;
+    height: 6px;
+    flex: 0 0 auto;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-nbp-landscape-footer p {
+    margin: 0;
+    color: rgba(46,59,50,.44);
+    font-size: .7rem;
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-nbp-landscape-heading {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+    
+}
+@media (max-width: 560px) {
+    .ng-nbp-landscape {
+        padding: 4.5rem 0;
+    }
+}
+/* LANDSCAPE — POLISHED GROEIPAD */
+
+/* THE ONE DELIBERATE PATH */
+.ng-nbp-landscape-line {
+    position: absolute;
+    z-index: 1;
+    left: 5%;
+    top: 188px;
+    width: 90%;
+    height: 150px;
+    pointer-events: none;
+}
+.ng-nbp-landscape-line-main {
+    fill: none;
+    stroke: var(--color-coral);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-dasharray: 3 10;
+    opacity: .48;
+    vector-effect: non-scaling-stroke;
+}
+/* Kill the old hanging roots */
+
+/* ORCHARD — BIG ANCHOR */
+
+
+
+
+
+/* little orchard rhythm */
+
+/* POINTS */
+
+/* vertical little stem instead of random dot */
+
+
+/* POSITIONS — DELIBERATELY STAGGERED */
+
+
+
+/* COPY */
+
+
+
+/* GROUND */
+
+
+/* HANDWRITTEN-ISH NOTE */
+
+
+
+/* FOOTER */
+.ng-nbp-landscape-footer {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    padding-top: 1.5rem;
+}
+.ng-nbp-landscape-footer p {
+    margin: 0;
+    color: rgba(46,59,50,.43);
+    font-size: .7rem;
+}
+/* MOBILE */
+@media (max-width: 850px) {
+    
+    .ng-nbp-landscape-line {
+        display: none;
+    }
+    
+    
+    
+}
+
+
+/* ROOTS / LANDSCAPE SECTION — CLEANER VERSION */
+
+/* THE STAT ON THE LEFT */
+
+
+
+
+
+/* THE LINE ONLY CONNECTS THE 3 STORY POINTS */
+.ng-nbp-landscape-line {
+    position: absolute;
+    top: 205px;
+    left: 31%;
+    width: 63%;
+    height: 90px;
+    z-index: 1;
+    pointer-events: none;
+}
+.ng-nbp-landscape-line-main {
+    fill: none;
+    stroke: var(--color-coral);
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-dasharray: 4 10;
+    opacity: 0.55;
+    vector-effect: non-scaling-stroke;
+}
+/* POINTS */
+
+
+
+/* STAGGERED POSITIONS */
+
+
+
+/* TEXT */
+
+
+
+/* GROUND LINE */
+
+
+/* NOTE ON THE RIGHT */
+
+
+
+
+/* FOOTER */
+.ng-nbp-landscape-footer {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding-top: 1.4rem;
+}
+.ng-nbp-landscape-footer span {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-nbp-landscape-footer p {
+    margin: 0;
+    color: rgba(46, 59, 50, 0.46);
+    font-size: 0.78rem;
+    line-height: 1.5;
+}
+/* MOBILE */
+@media (max-width: 900px) {
+    
+    .ng-nbp-landscape-line {
+        display: none;
+    }
+    
+    
+}
+/* GROEN — BOTANICAL GROWTH MAP */
+.ng-nbp-growth-map {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(230px, .7fr) 90px minmax(260px, 1fr);
+    grid-template-rows: repeat(3, minmax(130px, auto));
+    column-gap: clamp(2.5rem, 6vw, 6rem);
+    row-gap: 1.4rem;
+    align-items: center;
+    min-height: 520px;
+    padding: 3rem 0;
+    border-top: 1px solid rgba(46,59,50,.12);
+    border-bottom: 1px solid rgba(46,59,50,.12);
+}
+/* BIG NUMBER */
+.ng-nbp-growth-main {
+    grid-column: 1;
+    grid-row: 1 / 4;
+    align-self: center;
+}
+.ng-nbp-growth-main > p {
+    margin: 0 0 .7rem;
+    color: var(--color-coral);
+    font-size: .68rem;
+    font-weight: 800;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+.ng-nbp-growth-main strong {
+    display: flex;
+    align-items: flex-end;
+    gap: .45rem;
+    color: var(--color-dark);
+    font-size: clamp(5.5rem, 8vw, 7.5rem);
+    font-weight: 800;
+    line-height: .8;
+    letter-spacing: -.075em;
+}
+.ng-nbp-growth-main strong small {
+    margin-bottom: .65rem;
+    color: rgba(46,59,50,.42);
+    font-size: .78rem;
+    font-weight: 800;
+    letter-spacing: .04em;
+}
+.ng-nbp-growth-main > span {
+    display: block;
+    margin-top: 1rem;
+    color: rgba(46,59,50,.58);
+    font-size: .9rem;
+}
+/* CENTRAL STEM */
+.ng-nbp-growth-stem {
+    position: relative;
+    grid-column: 2;
+    grid-row: 1 / 4;
+    width: 100%;
+    height: 100%;
+}
+.ng-nbp-growth-stem::before {
+    content: "";
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 50%;
+    width: 1px;
+    background: rgba(200,127,74,.45);
+}
+/* branch lines */
+.ng-nbp-growth-stem::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 42px;
+    height: 1px;
+    background: rgba(200,127,74,.45);
+}
+.ng-nbp-growth-stem span::before, .ng-nbp-growth-stem span::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    width: 42px;
+    height: 1px;
+    background: rgba(200,127,74,.45);
+}
+.ng-nbp-growth-stem span::before {
+    top: 18%;
+}
+.ng-nbp-growth-stem span::after {
+    bottom: 18%;
+}
+/* tiny joints — now they actually belong to the stem */
+.ng-nbp-growth-stem span {
+    position: absolute;
+    inset: 0;
+}
+.ng-nbp-growth-stem {
+    background: radial-gradient(circle at 50% 18%, var(--color-coral) 0 4px, #e8f0e3 4px 7px, transparent 7px), radial-gradient(circle at 50% 50%, var(--color-coral) 0 4px, #e8f0e3 4px 7px, transparent 7px), radial-gradient(circle at 50% 82%, var(--color-coral) 0 4px, #e8f0e3 4px 7px, transparent 7px);
+}
+/* FACTS */
+.ng-nbp-growth-fact {
+    grid-column: 3;
+    max-width: 390px;
+}
+.ng-nbp-growth-fact--tree {
+    grid-row: 1;
+}
+.ng-nbp-growth-fact--bees {
+    grid-row: 2;
+}
+.ng-nbp-growth-fact--garden {
+    grid-row: 3;
+}
+.ng-nbp-growth-fact > p {
+    margin: 0 0 .45rem;
+    color: var(--color-coral);
+    font-size: .63rem;
+    font-weight: 800;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.ng-nbp-growth-fact h3 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(1.65rem, 2.2vw, 2.15rem);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-nbp-growth-fact > span {
+    display: block;
+    max-width: 330px;
+    margin-top: .65rem;
+    color: rgba(46,59,50,.56);
+    font-size: .8rem;
+    line-height: 1.55;
+}
+/* LITTLE NOTE */
+.ng-nbp-growth-note {
+    position: absolute;
+    right: 0;
+    bottom: -3.1rem;
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+}
+.ng-nbp-growth-note > span {
+    color: var(--color-coral);
+}
+.ng-nbp-growth-note p {
+    margin: 0;
+    color: rgba(46,59,50,.46);
+    font-size: .7rem;
+    line-height: 1.4;
+}
+.ng-nbp-growth-note strong {
+    display: block;
+    color: var(--color-dark);
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-nbp-growth-map {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 2.5rem;
+    }
+    .ng-nbp-growth-main, .ng-nbp-growth-fact {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    .ng-nbp-growth-stem {
+        display: none;
+    }
+    .ng-nbp-growth-note {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        margin-top: 1rem;
+    }
+}
+
+.your-image-class img {
+  transform: rotate(90deg);
+}

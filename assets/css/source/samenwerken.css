@@ -1,0 +1,381 @@
+/* SAMENWERKEN — BRIDGE */
+
+/* HEADING */
+
+
+
+/* MAP */
+
+/* SIDES */
+
+
+
+/* TOP */
+
+
+
+/* COPY */
+
+
+/* CHIPS */
+
+
+/* CENTER */
+
+/* route */
+
+
+
+
+
+/* core */
+
+
+
+
+/* RESULT */
+
+/* little route mark */
+
+
+
+/* result copy */
+
+
+
+/* RESPONSIVE */
+
+
+/* SAMENWERKEN — VOOR WIE? */
+
+/* HEADING */
+
+
+
+/* LIST */
+
+
+
+/* NUMBER */
+
+/* MAIN */
+
+
+
+
+/* WHAT THEY BRING */
+
+
+
+/* BOTTOM */
+
+
+
+
+/* RESPONSIVE */
+
+
+/* SAMENWERKEN — PARTNER PROOF */
+.ng-collab-proof {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0 clamp(3rem, 5vw, 4rem);
+    background: var(--color-dark);
+    color: #fff;
+}
+/* HEADING */
+.ng-collab-proof-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, .5fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(3.5rem, 6vw, 5rem);
+}
+.ng-collab-proof .ng-collab-kicker {
+    color: var(--color-coral);
+}
+.ng-collab-proof-heading h2 {
+    max-width: 650px;
+    margin: 0;
+    color: #fff;
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+/* copy */
+.ng-collab-proof-copy {
+    max-width: 390px;
+}
+.ng-collab-proof-copy p {
+    margin: 0;
+    color: rgba(255,255,255,.48);
+    font-size: var(--ng-home-body);
+    line-height: 1.65;
+}
+.ng-collab-proof-copy a {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    margin-top: 1rem;
+    color: #fff;
+    font-size: .62rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.ng-collab-proof-copy a span {
+    color: var(--color-coral);
+    transition: transform .25s ease;
+}
+.ng-collab-proof-copy a:hover span {
+    transform: translateX(3px);
+}
+/* LOGO RAIL */
+
+/* subtle edge fades */
+
+
+
+/* track */
+
+
+/* repeated group */
+
+/* LOGO */
+
+
+
+
+/* logo image */
+
+
+
+/* ANIMATION */
+
+/* BOTTOM */
+.ng-collab-proof-bottom {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-top: clamp(2.5rem, 4vw, 3.5rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+.ng-collab-proof-bottom > span {
+    color: var(--color-coral);
+}
+.ng-collab-proof-bottom p {
+    margin: 0;
+    color: rgba(255,255,255,.33);
+    font-size: .6rem;
+}
+.ng-collab-proof-bottom strong {
+    color: rgba(255,255,255,.75);
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-collab-proof-heading {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+}
+@media (max-width: 600px) {
+    .ng-collab-proof {
+        padding: 4.5rem 0 2.8rem;
+    }
+    
+}
+/* SAMENWERKEN — FINAL CTA */
+.ng-collab-final {
+    padding: clamp(5.5rem, 7vw, 7rem) 0 clamp(3rem, 4vw, 4rem);
+    background: #e8f0e3;
+    color: var(--color-dark);
+}
+/* LAYOUT */
+.ng-collab-final-inner {
+    display: grid;
+    grid-template-columns: minmax(320px, .75fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 8rem);
+}
+/* COPY */
+.ng-collab-final-copy {
+    max-width: 590px;
+}
+.ng-collab-final-copy h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-collab-final-copy > p:not(.ng-collab-kicker) {
+    max-width: 440px;
+    margin: 1.2rem 0 0;
+    color: rgba(46, 59, 50, .52);
+    font-size: var(--ng-home-body);
+    line-height: 1.65;
+}
+/* ACTIONS */
+.ng-collab-final-actions {
+    border-top: 1px solid rgba(46,59,50,.11);
+}
+.ng-collab-final-primary, .ng-collab-final-secondary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 100px;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(46,59,50,.11);
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: padding-left .25s ease;
+}
+.ng-collab-final-primary:hover, .ng-collab-final-secondary:hover {
+    padding-left: .55rem;
+}
+/* labels */
+.ng-collab-final-actions small {
+    display: block;
+    margin-bottom: .25rem;
+    color: var(--color-coral);
+    font-size: .52rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.ng-collab-final-actions strong {
+    display: block;
+    color: var(--color-dark);
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    font-weight: 750;
+    line-height: 1.2;
+}
+/* arrows */
+.ng-collab-final-actions i {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    place-items: center;
+    border: 1px solid rgba(46,59,50,.13);
+    border-radius: 50%;
+    color: var(--color-coral);
+    font-style: normal;
+    transition: background-color .25s ease, color .25s ease, transform .25s ease;
+}
+.ng-collab-final-primary:hover i, .ng-collab-final-secondary:hover i {
+    background: var(--color-coral);
+    color: #fff;
+    transform: translateX(3px);
+}
+/* primary slightly stronger */
+.ng-collab-final-primary strong {
+    font-weight: 800;
+}
+/* BOTTOM */
+.ng-collab-final-bottom {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-top: clamp(3rem, 5vw, 4rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46,59,50,.1);
+}
+.ng-collab-final-bottom > span {
+    color: var(--color-coral);
+}
+.ng-collab-final-bottom p {
+    margin: 0;
+    color: rgba(46,59,50,.4);
+    font-size: .6rem;
+}
+.ng-collab-final-bottom strong {
+    color: var(--color-dark);
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-collab-final-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+@media (max-width: 600px) {
+    .ng-collab-final {
+        padding: 4.5rem 0 2.8rem;
+    }
+}
+/* VACATURES */
+.ng-inner-hero--vacatures .ng-inner-hero__image {
+    object-position: center 45%;
+}
+/* KICKER */
+.ng-vac-kicker {
+    display: block;
+    margin: 0 0 .8rem;
+    color: var(--color-coral);
+    font-size: .68rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+/* INTRO */
+.ng-vac-intro {
+    padding: clamp(5.5rem, 7vw, 7rem) 0;
+    background: #fff;
+    color: var(--color-dark);
+}
+.ng-vac-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, .52fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+}
+.ng-vac-intro-copy {
+    max-width: 680px;
+}
+.ng-vac-intro-copy h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-vac-intro-side {
+    max-width: 410px;
+}
+.ng-vac-intro-side > p {
+    margin: 0;
+    color: rgba(46,59,50,.52);
+    font-size: var(--ng-home-body);
+    line-height: 1.65;
+}
+.ng-vac-intro-count {
+    display: flex;
+    align-items: baseline;
+    gap: .7rem;
+    margin-top: 1.4rem;
+    padding-top: 1.1rem;
+    border-top: 1px solid rgba(46,59,50,.1);
+}
+.ng-vac-intro-count strong {
+    color: var(--color-coral);
+    font-size: clamp(1.6rem, 3vw, 2.3rem);
+    font-weight: 750;
+    line-height: 1;
+}
+.ng-vac-intro-count span {
+    color: rgba(46,59,50,.4);
+    font-size: .58rem;
+    font-weight: 700;
+}
+@media (max-width: 800px) {
+    .ng-vac-intro-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+}

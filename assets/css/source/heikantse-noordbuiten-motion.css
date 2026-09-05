@@ -1,0 +1,1855 @@
+/* HEIKANTSE TUYNEN — PAGE */
+.ng-ht-page {
+    background: var(--color-cream);
+}
+/* 01 — VISION */
+.ng-ht-vision {
+    position: relative;
+    padding: clamp(5rem, 7vw, 6.5rem) 0;
+    overflow: hidden;
+    background: var(--color-cream);
+}
+.ng-ht-vision-layout {
+    display: grid;
+    grid-template-columns: minmax(0, .82fr) minmax(420px, .72fr);
+    align-items: center;
+    gap: clamp(4rem, 8vw, 7rem);
+}
+/* COPY */
+.ng-ht-vision-copy {
+    max-width: 610px;
+}
+.ng-ht-vision-meta {
+    display: flex;
+    align-items: center;
+    gap: .75rem;
+    margin-bottom: 2.4rem;
+}
+.ng-ht-vision-meta span, .ng-ht-vision-meta small {
+    color: var(--color-coral);
+    font-size: .63rem;
+    font-weight: 850;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+}
+.ng-ht-vision-meta i {
+    width: 38px;
+    height: 1px;
+    background: rgba(46,59,50,.16);
+}
+.ng-ht-vision-kicker, .ng-ht-status-kicker {
+    margin: 0 0 1rem;
+    color: var(--color-coral);
+    font-size: .66rem;
+    font-weight: 850;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+.ng-ht-vision h2, .ng-ht-status h2 {
+    max-width: 600px;
+    margin: 0 0 1.6rem;
+    color: var(--color-dark);
+    font-size: clamp(2.35rem, 3.25vw, 3.35rem);
+    font-weight: 750;
+    line-height: 1.01;
+    letter-spacing: -.047em;
+}
+.ng-ht-vision-lead {
+    max-width: 520px;
+    margin: 0 0 1rem;
+    color: rgba(46,59,50,.8);
+    font-size: 1rem;
+    font-weight: 650;
+    line-height: 1.7;
+}
+.ng-ht-vision-text {
+    max-width: 510px;
+    margin: 0;
+    color: rgba(46,59,50,.58);
+    font-size: .9rem;
+    line-height: 1.8;
+}
+/* VISION FIELD */
+.ng-ht-vision-field {
+    position: relative;
+    min-height: 420px;
+    padding: 2rem;
+    background: var(--color-green-light);
+    border-radius: .6rem 2.6rem 2.6rem 2.6rem;
+    overflow: hidden;
+}
+.ng-ht-vision-field-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: rgba(46,59,50,.46);
+    font-size: .58rem;
+    font-weight: 800;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+/* middle */
+.ng-ht-vision-centre {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 145px;
+    height: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translate(-50%,-50%);
+    background: rgba(255,255,255,.72);
+    border: 1px solid rgba(46,59,50,.12);
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 16px 34px rgba(46,59,50,.06);
+}
+.ng-ht-vision-centre small {
+    color: var(--color-coral);
+    font-size: .54rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.ng-ht-vision-centre strong {
+    margin-top: .25rem;
+    color: var(--color-dark);
+    font-size: 1.35rem;
+    line-height: 1;
+}
+.ng-ht-vision-centre > span {
+    width: 6px;
+    height: 6px;
+    margin-top: .7rem;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+/* words */
+.ng-ht-vision-word {
+    position: absolute;
+    color: var(--color-dark);
+    font-size: clamp(.78rem,1.1vw,.95rem);
+    font-weight: 750;
+}
+.ng-ht-vision-word--1 {
+    top: 24%;
+    left: 10%;
+}
+.ng-ht-vision-word--2 {
+    top: 24%;
+    right: 9%;
+}
+.ng-ht-vision-word--3 {
+    top: 49%;
+    left: 8%;
+}
+.ng-ht-vision-word--4 {
+    top: 50%;
+    right: 12%;
+}
+.ng-ht-vision-word--5 {
+    bottom: 18%;
+    left: 22%;
+}
+.ng-ht-vision-word--6 {
+    right: 21%;
+    bottom: 18%;
+}
+/* STATUS */
+.ng-ht-status {
+    position: relative;
+    padding: clamp(4.75rem, 6.5vw, 6rem) 0;
+    overflow: hidden;
+    background: #fffdfa;
+    border-top: 1px solid rgba(46,59,50,.08);
+}
+.ng-ht-status-layout {
+    display: grid;
+    grid-template-columns: minmax(0,1fr) minmax(320px,.5fr);
+    align-items: center;
+    gap: clamp(4rem, 8vw, 7rem);
+}
+.ng-ht-status-copy {
+    max-width: 650px;
+}
+.ng-ht-status-copy > p {
+    max-width: 520px;
+    margin: 0;
+    color: rgba(46,59,50,.62);
+    font-size: .9rem;
+    line-height: 1.8;
+}
+/* ACTIONS */
+.ng-ht-status-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 1.4rem;
+    margin-top: 2rem;
+}
+.ng-ht-status-button {
+    min-height: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .35rem .4rem .35rem 1.15rem;
+    color: var(--color-dark);
+    border: 1px solid rgba(46,59,50,.15);
+    border-radius: 999px;
+    font-size: .76rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.ng-ht-status-button-arrow {
+    width: 2.25rem;
+    height: 2.25rem;
+    display: grid;
+    place-items: center;
+    color: #fff;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-ht-status-back {
+    display: inline-flex;
+    align-items: center;
+    gap: .55rem;
+    color: var(--color-dark);
+    font-size: .72rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.ng-ht-status-back span {
+    color: var(--color-coral);
+}
+/* STATUS CARD */
+.ng-ht-status-card {
+    max-width: 390px;
+    justify-self: end;
+    padding: clamp(2rem,3vw,2.6rem);
+    color: #fff;
+    background: var(--color-dark);
+    border-radius: .55rem 2rem 2rem 2rem;
+    box-shadow: 0 22px 50px rgba(46,59,50,.12);
+}
+.ng-ht-status-card-top {
+    display: flex;
+    align-items: center;
+    gap: .65rem;
+    margin-bottom: 1.5rem;
+}
+.ng-ht-status-card-top > span {
+    width: 7px;
+    height: 7px;
+    background: var(--color-coral);
+    border-radius: 50%;
+}
+.ng-ht-status-card-top small {
+    color: var(--color-coral);
+    font-size: .56rem;
+    font-weight: 850;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+}
+.ng-ht-status-card > strong {
+    display: block;
+    margin-bottom: .75rem;
+    color: #fff;
+    font-size: clamp(1.5rem,2.2vw,1.9rem);
+    line-height: 1;
+    letter-spacing: -.035em;
+}
+.ng-ht-status-card > p {
+    max-width: 300px;
+    margin: 0;
+    color: rgba(255,255,255,.53);
+    font-size: .76rem;
+    line-height: 1.65;
+}
+/* tiny project route */
+.ng-ht-status-line {
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255,255,255,.1);
+}
+.ng-ht-status-line span {
+    color: rgba(255,255,255,.65);
+    font-size: .55rem;
+    font-weight: 750;
+}
+.ng-ht-status-line i {
+    flex: 1;
+    height: 1px;
+    background: rgba(240,102,83,.55);
+}
+/* MOBILE */
+@media (max-width: 900px) {
+    .ng-ht-vision-layout, .ng-ht-status-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .ng-ht-vision-field, .ng-ht-status-card {
+        width: min(100%,520px);
+        justify-self: start;
+    }
+}
+@media (max-width: 560px) {
+    .ng-ht-vision-field {
+        min-height: 500px;
+    }
+    .ng-ht-status-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+/* FOOTER — NEWSLETTER SIGNUP */
+.footer-newsletter-form {
+    width: 100%;
+    margin-top: 1.15rem;
+}
+/* MailPoet form */
+.footer-newsletter-form .mailpoet_form {
+    padding: 0 !important;
+}
+.footer-newsletter-form .mailpoet_paragraph {
+    margin: 0 !important;
+}
+/* Email */
+.footer-newsletter-form input[type="email"] {
+    width: 100%;
+    min-height: 46px;
+    padding: .75rem 1rem;
+    color: var(--color-dark);
+    background: rgba(255,255,255,.96);
+    border: 1px solid rgba(255,255,255,.14);
+    border-radius: .65rem;
+    font: inherit;
+    font-size: .72rem;
+    outline: none;
+    transition: border-color 180ms ease, box-shadow 180ms ease;
+}
+.footer-newsletter-form input[type="email"]:focus {
+    border-color: var(--color-coral);
+    box-shadow: 0 0 0 3px rgba(240,102,83,.13);
+}
+/* Button */
+.footer-newsletter-form input[type="submit"], .footer-newsletter-form button[type="submit"] {
+    min-height: 42px;
+    margin-top: .55rem;
+    padding: .65rem 1rem;
+    color: #fff;
+    background: var(--color-coral);
+    border: 0;
+    border-radius: 999px;
+    font: inherit;
+    font-size: .7rem;
+    font-weight: 800;
+    cursor: pointer;
+    transition: transform 180ms ease;
+}
+.footer-newsletter-form input[type="submit"]:hover, .footer-newsletter-form button[type="submit"]:hover {
+    transform: translateY(-2px);
+}
+.footer-newsletter-privacy {
+    margin: .7rem 0 0 !important;
+    color: rgba(255,255,255,.36) !important;
+    font-size: .58rem !important;
+    line-height: 1.45 !important;
+}
+/* NOORDBUITEN — PAGE MOTION */
+/* 01 — WAT IS NOORDBUITEN */
+.ng-nb-story.is-nb-motion-ready .ng-nb-story__kicker, .ng-nb-story.is-nb-motion-ready h2, .ng-nb-story.is-nb-motion-ready .ng-nb-story__intro {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 450ms ease, transform 520ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 60ms;
+}
+.ng-nb-story.is-nb-visible h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 150ms;
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__intro {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 270ms;
+}
+/* Main overview photo */
+.ng-nb-story.is-nb-motion-ready .ng-nb-story__photo {
+    opacity: 0;
+    clip-path: inset(0 0 9% 0);
+    transition: opacity 600ms ease, clip-path 750ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__photo {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transition-delay: 320ms;
+}
+/* Floating themes */
+.ng-nb-story.is-nb-motion-ready .ng-nb-story__marker {
+    opacity: 0;
+    transform: scale(.88);
+    transition: opacity 300ms ease, transform 400ms cubic-bezier(.2,1.25,.3,1);
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__marker--nature {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 640ms;
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__marker--food {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 740ms;
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__marker--meet {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 840ms;
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__marker--learn {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 940ms;
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__marker--move {
+    opacity: 1;
+    transform: scale(1);
+    transition-delay: 1040ms;
+}
+/* Location */
+.ng-nb-story.is-nb-motion-ready .ng-nb-story__location {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__location {
+    opacity: 1;
+    transition-delay: 1120ms;
+}
+/* Little route underneath */
+.ng-nb-story.is-nb-motion-ready .ng-nb-story__route {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nb-story.is-nb-motion-ready .ng-nb-story__route i {
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 450ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__route {
+    opacity: 1;
+    transition-delay: 1220ms;
+}
+.ng-nb-story.is-nb-visible .ng-nb-story__route i {
+    transform: scaleX(1);
+    transition-delay: 1320ms;
+}
+/* 02 — DE PLEK GROEIT */
+.ng-nb-grow.is-nb-motion-ready .ng-nb-grow-kicker, .ng-nb-grow.is-nb-motion-ready .ng-nb-grow-heading h2, .ng-nb-grow.is-nb-motion-ready .ng-nb-grow-heading > p {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nb-grow.is-nb-visible .ng-nb-grow-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nb-grow.is-nb-visible .ng-nb-grow-heading h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nb-grow.is-nb-visible .ng-nb-grow-heading > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+/* Each project row */
+.ng-nb-grow.is-nb-motion-ready .ng-nb-grow-image {
+    opacity: 0;
+    clip-path: inset(0 0 12% 0);
+    transition: opacity 550ms ease, clip-path 700ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nb-grow.is-nb-motion-ready .ng-nb-grow-copy {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 450ms ease, transform 520ms cubic-bezier(.2,.75,.25,1);
+}
+/* 1 */
+.ng-nb-grow.is-nb-visible .ng-nb-grow-item:nth-of-type(1) .ng-nb-grow-image {
+    opacity: 1;
+    clip-path: inset(0);
+    transition-delay: 360ms;
+}
+.ng-nb-grow.is-nb-visible .ng-nb-grow-item:nth-of-type(1) .ng-nb-grow-copy {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 520ms;
+}
+/* 2 */
+.ng-nb-grow.is-nb-visible .ng-nb-grow-item:nth-of-type(2) .ng-nb-grow-image {
+    opacity: 1;
+    clip-path: inset(0);
+    transition-delay: 700ms;
+}
+.ng-nb-grow.is-nb-visible .ng-nb-grow-item:nth-of-type(2) .ng-nb-grow-copy {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 860ms;
+}
+/* 3 */
+.ng-nb-grow.is-nb-visible .ng-nb-grow-item:nth-of-type(3) .ng-nb-grow-image {
+    opacity: 1;
+    clip-path: inset(0);
+    transition-delay: 1040ms;
+}
+.ng-nb-grow.is-nb-visible .ng-nb-grow-item:nth-of-type(3) .ng-nb-grow-copy {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1200ms;
+}
+.ng-nb-grow.is-nb-motion-ready .ng-nb-grow-footer {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nb-grow.is-nb-visible .ng-nb-grow-footer {
+    opacity: 1;
+    transition-delay: 1420ms;
+}
+/* 03 — WAT GEBEURT HIER */
+
+
+
+
+/* Sticky photo */
+
+
+/* Activity rows */
+
+
+
+
+
+
+
+
+/* 04 — NOORDBUITEN LEEFT */
+.ng-nb-alive.is-nb-motion-ready .ng-nb-alive-kicker, .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-heading h2, .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-heading-row > p {
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-heading h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-heading-row > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+/* * Route gets uncovered instead of changing its * existing dashed SVG styling. */
+.ng-nb-alive.is-nb-motion-ready .ng-nb-alive-route {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 1100ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-route {
+    clip-path: inset(0);
+    transition-delay: 360ms;
+}
+/* * Photo already owns translateX + rotate, * so opacity only. No PaperGate's cousin. */
+.ng-nb-alive.is-nb-motion-ready .ng-nb-alive-photo {
+    opacity: 0;
+    transition: opacity 600ms ease;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-photo {
+    opacity: 1;
+    transition-delay: 430ms;
+}
+/* Scattered notes already use rotate transforms */
+.ng-nb-alive.is-nb-motion-ready .ng-nb-alive-note {
+    opacity: 0;
+    transition: opacity 350ms ease;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-note--meet {
+    opacity: 1;
+    transition-delay: 680ms;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-note--play {
+    opacity: 1;
+    transition-delay: 800ms;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-note--make {
+    opacity: 1;
+    transition-delay: 920ms;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-note--learn {
+    opacity: 1;
+    transition-delay: 1040ms;
+}
+.ng-nb-alive.is-nb-motion-ready .ng-nb-alive-message, .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-footer {
+    opacity: 0;
+    transition: opacity 420ms ease;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-message {
+    opacity: 1;
+    transition-delay: 1160ms;
+}
+.ng-nb-alive.is-nb-visible .ng-nb-alive-footer {
+    opacity: 1;
+    transition-delay: 1320ms;
+}
+/* 05 — WOENSDAG */
+
+/* vertical word already rotated */
+
+
+/* Copy */
+
+
+
+
+
+/* Workbench route */
+
+
+/* * Tags already own rotations. * Only fade them in. */
+
+
+
+
+
+
+
+
+
+/* 06 — SAMEN MAKEN WE DE PLEK */
+/* SAMEN already has a rotation */
+.ng-nb-together.is-nb-motion-ready .ng-nb-together-word {
+    opacity: 0;
+    transition: opacity 650ms ease;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-word {
+    opacity: .95;
+    transition-delay: 80ms;
+}
+.ng-nb-together.is-nb-motion-ready .ng-nb-together-kicker, .ng-nb-together.is-nb-motion-ready .ng-nb-together-copy h2, .ng-nb-together.is-nb-motion-ready .ng-nb-together-copy > p, .ng-nb-together.is-nb-motion-ready .ng-nb-together-button {
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 180ms;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-copy h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 280ms;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-copy > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 400ms;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-button {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 520ms;
+}
+/* Activity strip */
+.ng-nb-together.is-nb-motion-ready .ng-nb-together-strip {
+    opacity: 0;
+    transition: opacity 450ms ease;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-strip {
+    opacity: 1;
+    transition-delay: 680ms;
+}
+.ng-nb-together.is-nb-motion-ready .ng-nb-together-things > span {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 300ms ease, transform 350ms ease;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-things > span:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 820ms;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-things > span:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 920ms;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-things > span:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1020ms;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-things > span:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1120ms;
+}
+.ng-nb-together.is-nb-motion-ready .ng-nb-together-bottom {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nb-together.is-nb-visible .ng-nb-together-bottom {
+    opacity: 1;
+    transition-delay: 1260ms;
+}
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    .ng-nb-page *, .ng-nb-page *::before, .ng-nb-page *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* PLEKKEN & PROJECTEN — ANIMATION */
+@media (prefers-reduced-motion: reduce) {
+    .ng-nbp-intro, .ng-nbp-progress, .ng-nbp-blueprint, .ng-nbp-landscape {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* REVEAL BASE */
+[data-nbp-reveal].is-animatable .ng-nbp-progress-heading, [data-nbp-reveal].is-animatable .ng-nbp-blueprint-heading, [data-nbp-reveal].is-animatable .ng-nbp-landscape-heading {
+    opacity: 0;
+    transform: translateY(32px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+[data-nbp-reveal].is-in-view .ng-nbp-progress-heading, [data-nbp-reveal].is-in-view .ng-nbp-blueprint-heading, [data-nbp-reveal].is-in-view .ng-nbp-landscape-heading {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* INTRO ORBIT */
+[data-nbp-intro].is-animatable .ng-nbp-intro-copy {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity .7s ease, transform .7s ease;
+}
+[data-nbp-intro].is-animatable .ng-nbp-intro-center {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(.88);
+    transition: opacity .65s ease, transform .65s ease;
+    transition-delay: .15s;
+}
+[data-nbp-intro].is-animatable .ng-nbp-intro-node {
+    opacity: 0;
+    transition: opacity .55s ease, transform .55s ease;
+}
+[data-nbp-intro].is-animatable .ng-nbp-intro-node--green {
+    transform: translateX(-50%) translateY(-10px);
+    transition-delay: .18s;
+}
+[data-nbp-intro].is-animatable .ng-nbp-intro-node--build {
+    transform: translateY(-50%) translateX(10px);
+    transition-delay: .26s;
+}
+[data-nbp-intro].is-animatable .ng-nbp-intro-node--meet {
+    transform: translateX(-50%) translateY(10px);
+    transition-delay: .34s;
+}
+[data-nbp-intro].is-animatable .ng-nbp-intro-node--play {
+    transform: translateY(-50%) translateX(-10px);
+    transition-delay: .42s;
+}
+[data-nbp-intro].is-animatable .ng-nbp-intro-bottom {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .6s ease, transform .6s ease;
+    transition-delay: .5s;
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-copy {
+    opacity: 1;
+    transform: translateY(0);
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-center {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-node--green {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-node--build {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-node--meet {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-node--play {
+    opacity: 1;
+    transform: translateY(-50%) translateX(0);
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-bottom {
+    opacity: 1;
+    transform: translateY(0);
+}
+[data-nbp-intro].is-in-view .ng-nbp-orbit--outer {
+    animation: ngNbpOrbitSpin 24s linear infinite;
+}
+[data-nbp-intro].is-in-view .ng-nbp-orbit--inner {
+    animation: ngNbpOrbitSpinReverse 18s linear infinite;
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-center {
+    animation: ngNbpCenterFloat 4.5s ease-in-out infinite;
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-node span {
+    animation: ngNbpNodePulse 3.6s ease-in-out infinite;
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-node--build span {
+    animation-delay: .4s;
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-node--meet span {
+    animation-delay: .8s;
+}
+[data-nbp-intro].is-in-view .ng-nbp-intro-node--play span {
+    animation-delay: 1.2s;
+}
+/* PROGRESS BOARD */
+[data-nbp-board].is-animatable {
+    opacity: 0;
+    transform: translateY(34px);
+    transition: opacity .75s ease, transform .75s ease;
+}
+[data-nbp-board].is-animatable .ng-nbp-board-visual img {
+    transform: scale(1.06);
+    transition: transform 1s ease;
+}
+[data-nbp-board].is-animatable .ng-nbp-board-info > * {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .55s ease, transform .55s ease;
+}
+[data-nbp-board].is-animatable .ng-nbp-board-top {
+    transition-delay: .08s;
+}
+[data-nbp-board].is-animatable .ng-nbp-status-group:nth-of-type(1) {
+    transition-delay: .18s;
+}
+[data-nbp-board].is-animatable .ng-nbp-status-group:nth-of-type(2) {
+    transition-delay: .28s;
+}
+
+[data-nbp-board].is-in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+[data-nbp-board].is-in-view .ng-nbp-board-visual img {
+    transform: scale(1);
+}
+[data-nbp-board].is-in-view .ng-nbp-board-info > * {
+    opacity: 1;
+    transform: translateY(0);
+}
+.ng-nbp-progress-route {
+    overflow: hidden;
+}
+[data-nbp-reveal].is-animatable .ng-nbp-progress-route {
+    opacity: 0;
+    transform: translateY(18px);
+    transition: opacity .55s ease, transform .55s ease;
+    transition-delay: .35s;
+}
+[data-nbp-reveal].is-animatable .ng-nbp-progress-route i {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform .7s ease;
+    transition-delay: .5s;
+}
+[data-nbp-reveal].is-in-view .ng-nbp-progress-route {
+    opacity: 1;
+    transform: translateY(0);
+}
+[data-nbp-reveal].is-in-view .ng-nbp-progress-route i {
+    transform: scaleX(1);
+}
+/* BLUEPRINT */
+[data-nbp-blueprint].is-animatable .ng-nbp-plan-item, [data-nbp-blueprint].is-animatable .ng-nbp-plan-center {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity .55s ease, transform .55s ease;
+}
+[data-nbp-blueprint].is-animatable .ng-nbp-plan-item--kas {
+    transition-delay: .05s;
+}
+[data-nbp-blueprint].is-animatable .ng-nbp-plan-item--coffee {
+    transition-delay: .12s;
+}
+[data-nbp-blueprint].is-animatable .ng-nbp-plan-item--water {
+    transition-delay: .19s;
+}
+[data-nbp-blueprint].is-animatable .ng-nbp-plan-item--workshop {
+    transition-delay: .26s;
+}
+[data-nbp-blueprint].is-animatable .ng-nbp-plan-item--circular {
+    transition-delay: .33s;
+}
+[data-nbp-blueprint].is-animatable .ng-nbp-plan-item--terrace {
+    transition-delay: .40s;
+}
+[data-nbp-blueprint].is-animatable .ng-nbp-plan-center {
+    transition-delay: .48s;
+}
+[data-nbp-blueprint].is-in-view .ng-nbp-plan-item, [data-nbp-blueprint].is-in-view .ng-nbp-plan-center {
+    opacity: 1;
+    transform: translateY(0);
+}
+[data-nbp-blueprint].is-in-view .ng-nbp-plan-center {
+    animation: ngNbpCenterPulse 4.2s ease-in-out infinite;
+}
+/* GROWTH SECTION */
+[data-nbp-growth].is-animatable .ng-nbp-growth-main, [data-nbp-growth].is-animatable .ng-nbp-growth-fact, [data-nbp-growth].is-animatable .ng-nbp-growth-note {
+    opacity: 0;
+    transform: translateY(26px);
+    transition: opacity .6s ease, transform .6s ease;
+}
+[data-nbp-growth].is-animatable .ng-nbp-growth-main {
+    transition-delay: .05s;
+}
+[data-nbp-growth].is-animatable .ng-nbp-growth-fact--tree {
+    transition-delay: .16s;
+}
+[data-nbp-growth].is-animatable .ng-nbp-growth-fact--bees {
+    transition-delay: .27s;
+}
+[data-nbp-growth].is-animatable .ng-nbp-growth-fact--garden {
+    transition-delay: .38s;
+}
+[data-nbp-growth].is-animatable .ng-nbp-growth-note {
+    transition-delay: .48s;
+}
+[data-nbp-growth].is-in-view .ng-nbp-growth-main, [data-nbp-growth].is-in-view .ng-nbp-growth-fact, [data-nbp-growth].is-in-view .ng-nbp-growth-note {
+    opacity: 1;
+    transform: translateY(0);
+}
+[data-nbp-growth].is-animatable .ng-nbp-growth-stem span {
+    display: block;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform .85s ease;
+    transition-delay: .2s;
+}
+[data-nbp-growth].is-in-view .ng-nbp-growth-stem span {
+    transform: scaleY(1);
+}
+/* KEYFRAMES */
+@keyframes ngNbpOrbitSpin {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+@keyframes ngNbpOrbitSpinReverse {
+    from {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to {
+        transform: translate(-50%, -50%) rotate(-360deg);
+    }
+}
+@keyframes ngNbpCenterFloat {
+    0%, 100% {
+        transform: translate(-50%, -50%) translateY(0);
+    }
+    50% {
+        transform: translate(-50%, -50%) translateY(-6px);
+    }
+}
+@keyframes ngNbpNodePulse {
+    0%, 100% {
+        box-shadow: 0 4px 14px rgba(46, 59, 50, .12);
+    }
+    50% {
+        box-shadow: 0 6px 22px rgba(46, 59, 50, .22);
+    }
+}
+@keyframes ngNbpCenterPulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(240, 102, 83, 0);
+    }
+    50% {
+        box-shadow: 0 0 0 10px rgba(240, 102, 83, 0.06);
+    }
+}
+/* PLEKKEN & PROJECTEN — BOARD SIZE — Keep original compact composition with any source image */
+@media (min-width: 901px) {
+    .ng-nbp-board {
+        height: 610px;
+        min-height: 610px;
+    }
+    .ng-nbp-board-visual {
+        height: 610px;
+        min-height: 0;
+    }
+    .ng-nbp-board-visual img {
+        position: static;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .ng-nbp-board-info {
+        height: 610px;
+        min-height: 0;
+    }
+    
+}
+/* Mobile goes back to natural stacking */
+@media (max-width: 900px) {
+    .ng-nbp-board {
+        height: auto;
+        min-height: 0;
+    }
+    .ng-nbp-board-visual {
+        height: clamp(380px, 65vw, 520px);
+        min-height: 0;
+    }
+    .ng-nbp-board-info {
+        height: auto;
+    }
+}
+/* NOORDBUITEN ACTIVITEITEN — MOTION PASS */
+/* 01 — INTRO */
+.ng-nba-intro.is-nba-motion-ready .ng-nba-intro-kicker, .ng-nba-intro.is-nba-motion-ready .ng-nba-moment-copy h1, .ng-nba-intro.is-nba-motion-ready .ng-nba-moment-copy > p:not(.ng-nba-intro-kicker) {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 430ms ease, transform 520ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-intro.is-nba-visible .ng-nba-intro-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 60ms;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-copy h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 150ms;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-copy > p:not(.ng-nba-intro-kicker) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 260ms;
+}
+/* little topic words */
+.ng-nba-intro.is-nba-motion-ready .ng-nba-moment-tags span {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 320ms ease, transform 380ms ease;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-tags span:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 380ms;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-tags span:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 450ms;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-tags span:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 520ms;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-tags span:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 590ms;
+}
+/* * Main image already owns rotation through its CSS. * Reveal with clip-path instead of transform. */
+.ng-nba-intro.is-nba-motion-ready .ng-nba-moment-photo {
+    opacity: 0;
+    clip-path: inset(0 0 12% 0);
+    transition: opacity 580ms ease, clip-path 720ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-photo {
+    opacity: 1;
+    clip-path: inset(0);
+    transition-delay: 230ms;
+}
+/* * These already use transforms for their layout/rotation. * Opacity only = no PaperGate. */
+.ng-nba-intro.is-nba-motion-ready .ng-nba-moment-photo-small, .ng-nba-intro.is-nba-motion-ready .ng-nba-moment-word, .ng-nba-intro.is-nba-motion-ready .ng-nba-moment-stamp, .ng-nba-intro.is-nba-motion-ready .ng-nba-moment-note {
+    opacity: 0;
+    transition: opacity 420ms ease;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-word {
+    opacity: 1;
+    transition-delay: 350ms;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-photo-small {
+    opacity: 1;
+    transition-delay: 520ms;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-stamp {
+    opacity: 1;
+    transition-delay: 680ms;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-moment-note {
+    opacity: 1;
+    transition-delay: 820ms;
+}
+.ng-nba-intro.is-nba-motion-ready .ng-nba-intro-bottom {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity 400ms ease, transform 430ms ease;
+}
+.ng-nba-intro.is-nba-visible .ng-nba-intro-bottom {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 940ms;
+}
+/* 02 — PAUWELSDAG */
+.ng-nba-feature.is-nba-motion-ready .ng-nba-feature-kicker, .ng-nba-feature.is-nba-motion-ready .ng-nba-feature-heading h2, .ng-nba-feature.is-nba-motion-ready .ng-nba-feature-heading > p {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-feature.is-nba-visible .ng-nba-feature-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-feature-heading h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-feature-heading > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+/* whole event card */
+.ng-nba-feature.is-nba-motion-ready .ng-nba-event {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 520ms ease, transform 600ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-feature.is-nba-visible .ng-nba-event {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 350ms;
+}
+/* photograph reveals */
+.ng-nba-feature.is-nba-motion-ready .ng-nba-event-image {
+    clip-path: inset(0 0 10% 0);
+    transition: clip-path 720ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-feature.is-nba-visible .ng-nba-event-image {
+    clip-path: inset(0);
+    transition-delay: 400ms;
+}
+/* coral date strip */
+.ng-nba-feature.is-nba-motion-ready .ng-nba-event-date {
+    opacity: 0;
+    transform: translateY(-8px);
+    transition: opacity 400ms ease, transform 480ms ease;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-event-date {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 580ms;
+}
+/* information */
+.ng-nba-feature.is-nba-motion-ready .ng-nba-event-topline, .ng-nba-feature.is-nba-motion-ready .ng-nba-event-copy h3, .ng-nba-feature.is-nba-motion-ready .ng-nba-event-copy > p, .ng-nba-feature.is-nba-motion-ready .ng-nba-event-copy ul, .ng-nba-feature.is-nba-motion-ready .ng-nba-event-button {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 360ms ease, transform 430ms ease;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-event-topline {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 650ms;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-event-copy h3 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 730ms;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-event-copy > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 820ms;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-event-copy ul {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 910ms;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-event-button {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1010ms;
+}
+.ng-nba-feature.is-nba-motion-ready .ng-nba-feature-note {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nba-feature.is-nba-visible .ng-nba-feature-note {
+    opacity: 1;
+    transition-delay: 1160ms;
+}
+/* 03 — VERHALENBANK */
+.ng-nba-stories.is-nba-motion-ready .ng-nba-stories-kicker, .ng-nba-stories.is-nba-motion-ready .ng-nba-stories-heading h2, .ng-nba-stories.is-nba-motion-ready .ng-nba-stories-heading > p {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-stories.is-nba-visible .ng-nba-stories-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nba-stories.is-nba-visible .ng-nba-stories-heading h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nba-stories.is-nba-visible .ng-nba-stories-heading > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+/* * Centre artwork already owns translateX(-50%). * Never animate transform on the figure itself. */
+.ng-nba-stories.is-nba-motion-ready .ng-nba-story-visual {
+    opacity: 0;
+    transition: opacity 520ms ease;
+}
+.ng-nba-stories.is-nba-motion-ready .ng-nba-story-visual img {
+    transform: scale(.97);
+    transition: transform 650ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-stories.is-nba-visible .ng-nba-story-visual {
+    opacity: 1;
+    transition-delay: 380ms;
+}
+.ng-nba-stories.is-nba-visible .ng-nba-story-visual img {
+    transform: scale(1);
+    transition-delay: 380ms;
+}
+/* quotes */
+.ng-nba-stories.is-nba-motion-ready .ng-nba-story-voice {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity 380ms ease, transform 430ms ease;
+}
+.ng-nba-stories.is-nba-visible .ng-nba-story-voice--left {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 560ms;
+}
+.ng-nba-stories.is-nba-visible .ng-nba-story-voice--right {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 760ms;
+}
+/* * Right SVG already owns scaleX(-1), * so don't touch its transform. */
+.ng-nba-stories.is-nba-motion-ready .ng-nba-story-tail {
+    opacity: 0;
+    transition: opacity 430ms ease;
+}
+.ng-nba-stories.is-nba-visible .ng-nba-story-tail {
+    opacity: 1;
+    transition-delay: 900ms;
+}
+/* 04 — CAS DE DAS */
+.ng-nba-cas.is-nba-motion-ready .ng-nba-cas-kicker, .ng-nba-cas.is-nba-motion-ready .ng-nba-cas-copy h2, .ng-nba-cas.is-nba-motion-ready .ng-nba-cas-copy > p:not(.ng-nba-cas-kicker), .ng-nba-cas.is-nba-motion-ready .ng-nba-cas-status {
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-copy h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-copy > p:not(.ng-nba-cas-kicker) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-status {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 360ms;
+}
+/* ground */
+.ng-nba-cas.is-nba-motion-ready .ng-nba-cas-ground {
+    opacity: 0;
+    transition: opacity 480ms ease;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-ground {
+    opacity: 1;
+    transition-delay: 400ms;
+}
+/* dotted adventure route */
+.ng-nba-cas.is-nba-motion-ready .ng-nba-cas-trail {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 1100ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-trail {
+    clip-path: inset(0);
+    transition-delay: 460ms;
+}
+/* * Cas owns translateX(-50%) and a hover transform. * Opacity only on figure, scale image inside. */
+.ng-nba-cas.is-nba-motion-ready .ng-nba-cas-figure {
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+.ng-nba-cas.is-nba-motion-ready .ng-nba-cas-figure img {
+    transform: scale(.96);
+    transition: transform 650ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-figure {
+    opacity: 1;
+    transition-delay: 650ms;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-figure img {
+    transform: scale(1);
+    transition-delay: 650ms;
+}
+/* * Markers all have their own rotations. * Fade only. */
+.ng-nba-cas.is-nba-motion-ready .ng-nba-cas-marker, .ng-nba-cas.is-nba-motion-ready .ng-nba-cas-whisper, .ng-nba-cas.is-nba-motion-ready .ng-nba-cas-footprints, .ng-nba-cas.is-nba-motion-ready .ng-nba-cas-sprout {
+    opacity: 0;
+    transition: opacity 330ms ease;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-marker--look {
+    opacity: 1;
+    transition-delay: 800ms;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-marker--discover {
+    opacity: 1;
+    transition-delay: 920ms;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-marker--think {
+    opacity: 1;
+    transition-delay: 1040ms;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-whisper {
+    opacity: 1;
+    transition-delay: 1160ms;
+}
+/* footprints normally have opacity .2 */
+.ng-nba-cas.is-nba-visible .ng-nba-cas-footprints {
+    opacity: .2;
+    transition-delay: 1240ms;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-sprout {
+    opacity: 1;
+    transition-delay: 1320ms;
+}
+.ng-nba-cas.is-nba-motion-ready .ng-nba-cas-bottom {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity 400ms ease, transform 430ms ease;
+}
+.ng-nba-cas.is-nba-visible .ng-nba-cas-bottom {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1420ms;
+}
+/* 05 — DOOR HET JAAR HEEN */
+.ng-nba-year.is-nba-motion-ready .ng-nba-year-kicker, .ng-nba-year.is-nba-motion-ready .ng-nba-year-heading h2, .ng-nba-year.is-nba-motion-ready .ng-nba-year-heading > p {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-heading h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-heading > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+/* central dotted route */
+.ng-nba-year.is-nba-motion-ready .ng-nba-year-line {
+    clip-path: inset(0 100% 0 0);
+    transition: clip-path 1200ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-line {
+    clip-path: inset(0);
+    transition-delay: 370ms;
+}
+/* moments */
+.ng-nba-year.is-nba-motion-ready .ng-nba-year-moment {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 360ms ease, transform 420ms ease;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-moment--market {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 500ms;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-moment--trees {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 650ms;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-moment--bio {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 800ms;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-moment--nldoet {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 950ms;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-moment--music {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1100ms;
+}
+/* little aside */
+.ng-nba-year.is-nba-motion-ready .ng-nba-year-note, .ng-nba-year.is-nba-motion-ready .ng-nba-year-footer {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-note {
+    opacity: 1;
+    transition-delay: 1240ms;
+}
+.ng-nba-year.is-nba-visible .ng-nba-year-footer {
+    opacity: 1;
+    transition-delay: 1380ms;
+}
+/* ACTIVITEITEN — CAS SPACING FIX */
+@media (min-width: 901px) {
+    .ng-nba-cas-adventure {
+        min-height: 430px;
+    }
+    .ng-nba-cas {
+        padding-bottom: clamp(4.5rem, 6vw, 5.5rem);
+    }
+    .ng-nba-cas-bottom {
+        margin-top: 1rem;
+    }
+}
+/* ACTIVITEITEN — VERHALENBANK CAPTION FIX */
+.ng-nba-story-visual figcaption {
+    position: relative;
+    z-index: 6;
+    margin-top: 8px;
+}
+/* ACTIVITEITEN — CAS COMPACT LAYOUT */
+@media (min-width: 901px) {
+    /* less giant section padding */
+    .ng-nba-cas {
+        padding: clamp(4.5rem, 5vw, 5.5rem) 0;
+    }
+    /* compact the adventure area */
+    .ng-nba-cas-adventure {
+        min-height: 455px;
+    }
+    /* Cas — smaller so he doesn't eat the labels */
+    .ng-nba-cas-figure {
+        left: 52%;
+        bottom: 22px;
+        width: clamp(275px, 28vw, 330px);
+    }
+    /* ground follows Cas */
+    .ng-nba-cas-ground {
+        bottom: 28px;
+        width: 440px;
+        height: 125px;
+    }
+    .ng-nba-cas-ground::after {
+        width: 340px;
+        height: 62px;
+    }
+    /* adventure labels */
+    .ng-nba-cas-marker--look {
+        left: 5%;
+        bottom: 68px;
+    }
+    .ng-nba-cas-marker--discover {
+        left: 28%;
+        top: 28px;
+    }
+    .ng-nba-cas-marker--think {
+        right: 3%;
+        bottom: 76px;
+    }
+    /* little story note */
+    .ng-nba-cas-whisper {
+        top: 38px;
+        right: 1%;
+    }
+    /* paws follow the smaller composition */
+    .ng-nba-cas-footprints--one {
+        left: 25%;
+        bottom: 125px;
+    }
+    .ng-nba-cas-footprints--two {
+        right: 19%;
+        bottom: 100px;
+    }
+    /* decorative plants */
+    .ng-nba-cas-sprout--one {
+        bottom: 42px;
+    }
+    .ng-nba-cas-sprout--two {
+        bottom: 48px;
+    }
+    /* bottom note no longer lives miles away */
+    .ng-nba-cas-bottom {
+        max-width: 560px;
+        margin-top: .5rem;
+        padding-top: 1.35rem;
+    }
+}
+/* NOORDBUITEN – MEEDOEN — Subtle scroll reveal animation */
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-reveal {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0);
+    transition: opacity 620ms ease, transform 620ms ease;
+    transition-delay: var(--nbm-delay, 0ms);
+    will-change: opacity, transform;
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-reveal--left {
+    transform: translate3d(-38px, 28px, 0);
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-reveal--right {
+    transform: translate3d(38px, 28px, 0);
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-reveal--image {
+    overflow: hidden;
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-reveal--image img {
+    transform: scale(1.05);
+    transition: transform 900ms ease, filter 900ms ease;
+    filter: saturate(.96);
+    will-change: transform, filter;
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-reveal.is-visible {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-reveal--image.is-visible img {
+    transform: scale(1);
+    filter: saturate(1);
+}
+/* Intro bars */
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual .ng-nbm-time-row i {
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 700ms cubic-bezier(.22, 1, .36, 1);
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual.is-visible .ng-nbm-time-row--small i {
+    transition-delay: 120ms;
+    transform: scaleX(1);
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual.is-visible .ng-nbm-time-row--regular i {
+    transition-delay: 220ms;
+    transform: scaleX(1);
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual.is-visible .ng-nbm-time-row--often i {
+    transition-delay: 320ms;
+    transform: scaleX(1);
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual .ng-nbm-time-row--idea strong, .ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual .ng-nbm-intro-note {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 500ms ease, transform 500ms ease;
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual.is-visible .ng-nbm-time-row--idea strong {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 420ms;
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual.is-visible .ng-nbm-intro-note {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 520ms;
+}
+/* Little pop on try cards */
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-try-option {
+    transform: translateY(24px);
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-try-option.is-visible {
+    transform: translateY(0);
+}
+/* Final CTA mark */
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-final-action .ng-nbm-final-mark {
+    opacity: 0;
+    transform: scale(.82) rotate(-12deg);
+    transition: opacity 500ms ease, transform 500ms ease;
+    transition-delay: 180ms;
+}
+.ng-nbm-page.ng-nbm-motion-ready .ng-nbm-final-action.is-visible .ng-nbm-final-mark {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+}
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+    .ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual .ng-nbm-time-row i, .ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual .ng-nbm-time-row--idea strong, .ng-nbm-page.ng-nbm-motion-ready .ng-nbm-intro-visual .ng-nbm-intro-note, .ng-nbm-page.ng-nbm-motion-ready .ng-nbm-final-action .ng-nbm-final-mark {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+        animation: none !important;
+        filter: none !important;
+    }
+}
+/* NOORDBUITEN — BEZOEKEN MOTION */
+/* 01 — HERO */
+.ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-kicker, .ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-copy h1, .ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-copy > p:last-child {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 430ms ease, transform 520ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nbv-hero.is-nbv-visible .ng-nbv-hero-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 60ms;
+}
+.ng-nbv-hero.is-nbv-visible .ng-nbv-hero-copy h1 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 150ms;
+}
+.ng-nbv-hero.is-nbv-visible .ng-nbv-hero-copy > p:last-child {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 270ms;
+}
+/* Main hero photograph */
+.ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-photo {
+    opacity: 0;
+    clip-path: inset(0 0 10% 0);
+    transition: opacity 580ms ease, clip-path 760ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nbv-hero.is-nbv-visible .ng-nbv-hero-photo {
+    opacity: 1;
+    clip-path: inset(0);
+    transition-delay: 250ms;
+}
+/* Little white annotation */
+.ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-photo figcaption {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nbv-hero.is-nbv-visible .ng-nbv-hero-photo figcaption {
+    opacity: 1;
+    transition-delay: 650ms;
+}
+/* Bottom detail */
+.ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-line {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nbv-hero.is-nbv-visible .ng-nbv-hero-line {
+    opacity: 1;
+    transition-delay: 780ms;
+}
+/* 02 — VIND JE WEG */
+.ng-nbv-find.is-nbv-motion-ready .ng-nbv-find-kicker, .ng-nbv-find.is-nbv-motion-ready .ng-nbv-find-heading h2, .ng-nbv-find.is-nbv-motion-ready .ng-nbv-find-heading > p {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-find-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-find-heading h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-find-heading > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+/* Whole map board */
+.ng-nbv-find.is-nbv-motion-ready .ng-nbv-find-layout {
+    opacity: 0;
+    transform: translateY(14px);
+    transition: opacity 550ms ease, transform 650ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-find-layout {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 350ms;
+}
+/* Map label */
+.ng-nbv-find.is-nbv-motion-ready .ng-nbv-map-label {
+    opacity: 0;
+    transition: opacity 350ms ease;
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-map-label {
+    opacity: 1;
+    transition-delay: 650ms;
+}
+/* Right-hand information */
+.ng-nbv-find.is-nbv-motion-ready .ng-nbv-address, .ng-nbv-find.is-nbv-motion-ready .ng-nbv-arrival, .ng-nbv-find.is-nbv-motion-ready .ng-nbv-find-notice, .ng-nbv-find.is-nbv-motion-ready .ng-nbv-find-button {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 360ms ease, transform 430ms ease;
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-address {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 540ms;
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-arrival {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 670ms;
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-find-notice {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 800ms;
+}
+.ng-nbv-find.is-nbv-visible .ng-nbv-find-button {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 930ms;
+}
+/* 03 — EVEN RONDKIJKEN */
+.ng-nbv-look.is-nbv-motion-ready .ng-nbv-look-kicker, .ng-nbv-look.is-nbv-motion-ready .ng-nbv-look-heading h2, .ng-nbv-look.is-nbv-motion-ready .ng-nbv-look-heading > p {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-heading h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-heading > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+/* Main photo */
+.ng-nbv-look.is-nbv-motion-ready .ng-nbv-look-photo {
+    opacity: 0;
+    clip-path: inset(0 0 10% 0);
+    transition: opacity 580ms ease, clip-path 760ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-photo {
+    opacity: 1;
+    clip-path: inset(0);
+    transition-delay: 340ms;
+}
+/* * The tags ALREADY use rotations. * Opacity only. Hands off their transforms. */
+.ng-nbv-look.is-nbv-motion-ready .ng-nbv-look-tag, .ng-nbv-look.is-nbv-motion-ready .ng-nbv-look-note {
+    opacity: 0;
+    transition: opacity 350ms ease;
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-tag--one {
+    opacity: 1;
+    transition-delay: 570ms;
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-tag--two {
+    opacity: 1;
+    transition-delay: 720ms;
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-tag--three {
+    opacity: 1;
+    transition-delay: 870ms;
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-note {
+    opacity: 1;
+    transition-delay: 1020ms;
+}
+/* Bottom thought */
+.ng-nbv-look.is-nbv-motion-ready .ng-nbv-look-bottom {
+    opacity: 0;
+    transform: translateY(6px);
+    transition: opacity 400ms ease, transform 430ms ease;
+}
+.ng-nbv-look.is-nbv-visible .ng-nbv-look-bottom {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 1160ms;
+}
+/* 04 — FINAL CTA */
+.ng-nbv-end.is-nbv-motion-ready .ng-nbv-end-kicker, .ng-nbv-end.is-nbv-motion-ready .ng-nbv-end-copy h2, .ng-nbv-end.is-nbv-motion-ready .ng-nbv-end-copy > p:last-child {
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nbv-end.is-nbv-visible .ng-nbv-end-kicker {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-nbv-end.is-nbv-visible .ng-nbv-end-copy h2 {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-nbv-end.is-nbv-visible .ng-nbv-end-copy > p:last-child {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+.ng-nbv-end.is-nbv-motion-ready .ng-nbv-end-action {
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 430ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-nbv-end.is-nbv-visible .ng-nbv-end-action {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 360ms;
+}
+.ng-nbv-end.is-nbv-motion-ready .ng-nbv-end-line {
+    opacity: 0;
+    transition: opacity 400ms ease;
+}
+.ng-nbv-end.is-nbv-visible .ng-nbv-end-line {
+    opacity: 1;
+    transition-delay: 540ms;
+}
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    .ng-nbv-page *, .ng-nbv-page *::before, .ng-nbv-page *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}

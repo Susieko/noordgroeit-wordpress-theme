@@ -1,0 +1,896 @@
+/* VRIJWILLIGER WORDEN */
+/* optional crop tweak */
+.ng-inner-hero--volunteer .ng-inner-hero__image {
+    object-position: center 46%;
+}
+/* INTRO */
+.ng-vol-intro {
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: #fff;
+    color: var(--color-dark);
+}
+/* LAYOUT */
+.ng-vol-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, .78fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(5rem, 10vw, 10rem);
+}
+/* COPY */
+.ng-vol-intro-copy {
+    max-width: 570px;
+}
+.ng-vol-kicker {
+    display: block;
+    margin: 0 0 .8rem;
+    color: var(--color-coral);
+    font-size: .68rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+.ng-vol-intro-copy h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-vol-intro-lead {
+    max-width: 470px;
+    margin: 1.4rem 0 0;
+    color: var(--color-dark);
+    font-size: clamp(.9rem, 1.3vw, 1.05rem);
+    line-height: 1.7;
+}
+.ng-vol-intro-copy > p:not(.ng-vol-kicker, .ng-vol-intro-lead) {
+    max-width: 450px;
+    margin: 1rem 0 0;
+    color: rgba(46,59,50,.5);
+    font-size: .76rem;
+    line-height: 1.65;
+}
+.ng-brand-word {
+    color: var(--color-green);
+    font-weight: 700;
+}
+/* FIT SIDE */
+.ng-vol-fit {
+    max-width: 600px;
+    padding: clamp(2rem, 4vw, 3rem);
+    border: 1px solid rgba(46,59,50,.09);
+    border-radius: 12px 48px 12px 48px;
+    background: var(--color-cream);
+}
+/* heading */
+.ng-vol-fit-heading {
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+    margin-bottom: 1.4rem;
+}
+.ng-vol-fit-heading > span {
+    color: var(--color-coral);
+}
+.ng-vol-fit-heading p {
+    margin: 0;
+    color: rgba(46,59,50,.43);
+    font-size: .61rem;
+    line-height: 1.45;
+}
+/* QUESTIONS */
+.ng-vol-fit-list {
+    border-top: 1px solid rgba(46,59,50,.11);
+}
+.ng-vol-fit-row {
+    display: grid;
+    grid-template-columns: 42px minmax(0, 1fr);
+    align-items: center;
+    gap: 1.1rem;
+    min-height: 105px;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(46,59,50,.11);
+}
+/* number */
+.ng-vol-fit-number {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border: 1px solid rgba(46,59,50,.12);
+    border-radius: 50%;
+    background: #fff;
+    color: var(--color-coral);
+    font-size: .5rem;
+    font-weight: 800;
+}
+/* text */
+.ng-vol-fit-row small {
+    display: block;
+    margin-bottom: .2rem;
+    color: rgba(46,59,50,.4);
+    font-size: .52rem;
+    font-weight: 700;
+}
+.ng-vol-fit-row strong {
+    display: block;
+    max-width: 390px;
+    color: var(--color-dark);
+    font-size: .77rem;
+    font-weight: 750;
+    line-height: 1.4;
+}
+/* FOOT */
+.ng-vol-fit-foot {
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    margin-top: 1.25rem;
+}
+.ng-vol-fit-foot > span {
+    width: 6px;
+    height: 6px;
+    flex: 0 0 6px;
+    margin-top: .35rem;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-vol-fit-foot p {
+    margin: 0;
+    color: rgba(46,59,50,.4);
+    font-size: .57rem;
+    line-height: 1.45;
+}
+.ng-vol-fit-foot strong {
+    color: var(--color-dark);
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-vol-intro-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .ng-vol-fit {
+        max-width: none;
+    }
+}
+@media (max-width: 600px) {
+    .ng-vol-intro {
+        padding: 4.5rem 0;
+    }
+    .ng-vol-fit {
+        padding: 1.6rem 1.3rem;
+        border-radius: 10px 34px 10px 34px;
+    }
+}
+/* VRIJWILLIGER — MOGELIJKHEDEN */
+
+/* HEADING */
+
+
+
+/* MOMENT */
+
+
+/* reversed */
+
+
+
+/* PHOTO */
+
+
+
+
+/* NUMBER */
+
+
+/* COPY */
+
+
+
+.ng-vol-moment-copy > p:not(.ng-vol-moment-label) {
+    max-width: 410px;
+    margin: 1rem 0 0;
+    color: rgba(46,59,50,.52);
+    font-size: .76rem;
+    line-height: 1.65;
+}
+/* TAGS */
+
+
+/* BOTTOM NOTE */
+
+
+
+
+/* RESPONSIVE */
+
+
+/* VRIJWILLIGER — OPENSTAANDE VACATURES */
+
+/* HEADING */
+
+
+
+
+
+/* LIST */
+
+/* VACANCY */
+
+/* number */
+
+/* IMAGE */
+
+
+
+/* fallback */
+
+
+
+/* CONTENT */
+
+/* META */
+
+
+
+
+/* title */
+
+
+/* excerpt */
+
+/* BOTTOM */
+
+
+
+/* link */
+
+
+
+/* FOOTER */
+
+
+
+
+/* EMPTY */
+
+
+
+
+
+/* RESPONSIVE */
+
+
+/* VRIJWILLIGER — OPEN KENNISMAKING */
+.ng-vol-open {
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: #fff;
+    color: var(--color-dark);
+}
+/* LAYOUT */
+.ng-vol-open-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(330px, .75fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 8rem);
+}
+/* PHOTO */
+.ng-vol-open-photo {
+    position: relative;
+    height: clamp(390px, 42vw, 535px);
+    margin: 0;
+}
+.ng-vol-open-photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px 64px 12px 12px;
+}
+/* floating note */
+.ng-vol-open-photo figcaption {
+    position: absolute;
+    right: -24px;
+    bottom: 30px;
+    display: flex;
+    align-items: flex-start;
+    gap: .6rem;
+    max-width: 215px;
+    padding: .9rem 1rem;
+    border-radius: 9px 28px 9px 9px;
+    background: var(--color-cream);
+    box-shadow: 0 14px 36px rgba(46, 59, 50, .1);
+}
+.ng-vol-open-photo figcaption > span {
+    color: var(--color-coral);
+}
+.ng-vol-open-photo figcaption p {
+    margin: 0;
+    color: rgba(46, 59, 50, .42);
+    font-size: .58rem;
+    line-height: 1.4;
+}
+.ng-vol-open-photo figcaption strong {
+    display: block;
+    color: var(--color-dark);
+}
+/* COPY */
+.ng-vol-open-copy {
+    max-width: 500px;
+}
+.ng-vol-open-copy h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-vol-open-lead {
+    margin: 1.25rem 0 0;
+    color: var(--color-dark);
+    font-size: clamp(.9rem, 1.25vw, 1.04rem);
+    line-height: 1.65;
+}
+.ng-vol-open-copy > p:not(.ng-vol-kicker, .ng-vol-open-lead) {
+    max-width: 430px;
+    margin: .85rem 0 0;
+    color: rgba(46, 59, 50, .5);
+    font-size: .75rem;
+    line-height: 1.65;
+}
+/* LITTLE PROMPTS */
+.ng-vol-open-prompts {
+    margin-top: 2rem;
+    border-top: 1px solid rgba(46, 59, 50, .1);
+}
+.ng-vol-open-prompts > div {
+    display: grid;
+    grid-template-columns: minmax(130px, .6fr) minmax(0, 1fr);
+    gap: 1rem;
+    padding: .9rem 0;
+    border-bottom: 1px solid rgba(46, 59, 50, .1);
+}
+.ng-vol-open-prompts small {
+    color: rgba(46, 59, 50, .36);
+    font-size: .52rem;
+}
+.ng-vol-open-prompts strong {
+    color: var(--color-dark);
+    font-size: .68rem;
+    font-weight: 750;
+}
+/* ACTION */
+.ng-vol-open-action {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 1.8rem;
+}
+.ng-vol-open-action > a {
+    display: inline-flex;
+    align-items: center;
+    gap: .9rem;
+    padding: .5rem .55rem .5rem 1rem;
+    border-radius: 999px;
+    background: var(--color-dark);
+    color: #fff;
+    font-size: .68rem;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform .25s ease;
+}
+.ng-vol-open-action > a i {
+    display: grid;
+    width: 35px;
+    height: 35px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-coral);
+    color: #fff;
+    font-style: normal;
+    transition: transform .25s ease;
+}
+.ng-vol-open-action > a:hover {
+    transform: translateY(-3px);
+}
+.ng-vol-open-action > a:hover i {
+    transform: translateX(3px);
+}
+.ng-vol-open-action > p {
+    max-width: 110px;
+    margin: 0;
+    color: rgba(46, 59, 50, .37);
+    font-size: .56rem;
+    line-height: 1.4;
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-vol-open-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .ng-vol-open-copy {
+        max-width: 620px;
+    }
+}
+@media (max-width: 600px) {
+    .ng-vol-open {
+        padding: 4.5rem 0;
+    }
+    .ng-vol-open-photo {
+        height: 330px;
+    }
+    .ng-vol-open-photo figcaption {
+        right: 12px;
+        bottom: 12px;
+    }
+    .ng-vol-open-prompts > div {
+        grid-template-columns: 1fr;
+        gap: .25rem;
+    }
+    .ng-vol-open-action {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+/* VRIJWILLIGER — VERHAAL */
+.ng-vol-story {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0 clamp(3rem, 5vw, 4rem);
+    background: var(--color-dark);
+    color: #fff;
+}
+/* subtle oversized circle */
+.ng-vol-story::before {
+    content: "";
+    position: absolute;
+    right: -190px;
+    top: -190px;
+    width: 470px;
+    height: 470px;
+    border: 1px solid rgba(255,255,255,.035);
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 55px rgba(255,255,255,.012);
+    pointer-events: none;
+}
+/* LAYOUT */
+.ng-vol-story-layout {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(300px, .65fr) minmax(0, 1.1fr);
+    align-items: center;
+    gap: clamp(5rem, 10vw, 10rem);
+}
+/* INTRO */
+.ng-vol-story .ng-vol-kicker {
+    color: var(--color-coral);
+    font-size: .68rem;
+}
+.ng-vol-story-intro {
+    max-width: 520px;
+}
+.ng-vol-story-intro h2 {
+    margin: 0;
+    color: #fff;
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-vol-story-intro > p:not(.ng-vol-kicker) {
+    max-width: 410px;
+    margin: 1.2rem 0 0;
+    color: rgba(255,255,255,.48);
+    font-size: var(--ng-home-body);
+    line-height: 1.65;
+}
+/* QUOTE */
+.ng-vol-story-quote {
+    position: relative;
+    max-width: 680px;
+    padding: clamp(2.2rem, 4vw, 3.5rem);
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 10px 56px 10px 10px;
+    background: rgba(255,255,255,.025);
+}
+/* quote mark */
+.ng-vol-story-mark {
+    display: block;
+    margin-bottom: 1.2rem;
+    color: var(--color-coral);
+    font-family: Georgia, serif;
+    font-size: clamp(3.6rem, 7vw, 5.8rem);
+    line-height: .55;
+}
+/* quote */
+.ng-vol-story-quote blockquote {
+    margin: 0;
+}
+.ng-vol-story-quote blockquote p {
+    max-width: 580px;
+    margin: 0;
+    color: #fff;
+    font-size: clamp(1.35rem, 2.3vw, 2rem);
+    font-weight: 600;
+    line-height: 1.38;
+    letter-spacing: -.025em;
+}
+/* PERSON */
+.ng-vol-story-quote footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: clamp(2rem, 4vw, 3rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255,255,255,.09);
+}
+.ng-vol-story-quote footer strong {
+    display: block;
+    color: #fff;
+    font-size: .72rem;
+}
+.ng-vol-story-quote footer div > span {
+    display: block;
+    margin-top: .25rem;
+    color: rgba(255,255,255,.4);
+    font-size: .56rem;
+}
+.ng-vol-story-arrow {
+    color: var(--color-coral);
+    font-size: .85rem;
+}
+/* LITTLE DECORATIVE LINE */
+.ng-vol-story-line {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 65px;
+    height: 1px;
+    background: var(--color-coral);
+}
+.ng-vol-story-line::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -3px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+/* FOOT */
+.ng-vol-story-foot {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    gap: .55rem;
+    margin-top: clamp(3rem, 5vw, 4rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(255,255,255,.08);
+}
+.ng-vol-story-foot > span {
+    color: var(--color-coral);
+    font-size: .6rem;
+}
+.ng-vol-story-foot p {
+    margin: 0;
+    color: rgba(255,255,255,.32);
+    font-size: .59rem;
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-vol-story-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .ng-vol-story-quote {
+        max-width: none;
+    }
+}
+@media (max-width: 600px) {
+    .ng-vol-story {
+        padding: 4.5rem 0 2.8rem;
+    }
+    .ng-vol-story-quote {
+        padding: 1.8rem 1.4rem;
+        border-radius: 10px 38px 10px 10px;
+    }
+    .ng-vol-story-line {
+        right: 20px;
+        top: 22px;
+        width: 42px;
+    }
+    .ng-vol-story-quote footer {
+        align-items: flex-start;
+    }
+}
+/* VRIJWILLIGER — FINAL CTA */
+.ng-vol-final {
+    padding: clamp(5.5rem, 7vw, 7rem) 0 clamp(3rem, 4vw, 4rem);
+    background: #e8f0e3;
+    color: var(--color-dark);
+}
+/* LAYOUT */
+.ng-vol-final-inner {
+    display: grid;
+    grid-template-columns: minmax(320px, .75fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 8rem);
+}
+/* COPY */
+.ng-vol-final-copy {
+    max-width: 590px;
+}
+.ng-vol-final-copy h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-vol-final-copy > p:not(.ng-vol-kicker) {
+    max-width: 420px;
+    margin: 1.2rem 0 0;
+    color: rgba(46,59,50,.52);
+    font-size: var(--ng-home-body);
+    line-height: 1.65;
+}
+/* ACTIONS */
+.ng-vol-final-actions {
+    border-top: 1px solid rgba(46,59,50,.11);
+}
+.ng-vol-final-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 100px;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(46,59,50,.11);
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: padding-left .25s ease;
+}
+.ng-vol-final-action:hover {
+    padding-left: .55rem;
+}
+/* text */
+.ng-vol-final-action small {
+    display: block;
+    margin-bottom: .25rem;
+    color: var(--color-coral);
+    font-size: .52rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.ng-vol-final-action strong {
+    display: block;
+    color: var(--color-dark);
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    font-weight: 750;
+}
+/* arrow */
+.ng-vol-final-action i {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    place-items: center;
+    border: 1px solid rgba(46,59,50,.13);
+    border-radius: 50%;
+    color: var(--color-coral);
+    font-style: normal;
+    transition: background-color .25s ease, color .25s ease, transform .25s ease;
+}
+.ng-vol-final-action:hover i {
+    background: var(--color-coral);
+    color: #fff;
+    transform: translateX(3px);
+}
+/* primary */
+.ng-vol-final-action--primary strong {
+    font-weight: 800;
+}
+/* BOTTOM NOTE */
+.ng-vol-final-bottom {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-top: clamp(3rem, 5vw, 4rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46,59,50,.1);
+}
+.ng-vol-final-bottom > span {
+    color: var(--color-coral);
+}
+.ng-vol-final-bottom p {
+    margin: 0;
+    color: rgba(46,59,50,.4);
+    font-size: .6rem;
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-vol-final-inner {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+@media (max-width: 600px) {
+    .ng-vol-final {
+        padding: 4.5rem 0 2.8rem;
+    }
+}
+/* SAMENWERKEN */
+.ng-inner-hero--collab .ng-inner-hero__image {
+    object-position: center 48%;
+}
+/* SHARED KICKER */
+.ng-collab-kicker {
+    display: block;
+    margin: 0 0 .8rem;
+    color: var(--color-coral);
+    font-size: .68rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+/* INTRO */
+.ng-collab-intro {
+    position: relative;
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: #fff;
+    color: var(--color-dark);
+}
+/* LAYOUT */
+.ng-collab-intro-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, .72fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(5rem, 10vw, 10rem);
+}
+/* COPY */
+.ng-collab-intro-copy {
+    max-width: 560px;
+}
+.ng-collab-intro-copy h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-collab-intro-lead {
+    max-width: 470px;
+    margin: 1.4rem 0 0;
+    color: var(--color-dark);
+    font-size: clamp(.9rem, 1.3vw, 1.05rem);
+    line-height: 1.7;
+}
+.ng-collab-intro-copy > p:not(.ng-collab-kicker, .ng-collab-intro-lead) {
+    max-width: 440px;
+    margin: .9rem 0 0;
+    color: rgba(46, 59, 50, .5);
+    font-size: .76rem;
+    line-height: 1.65;
+}
+/* NOTE */
+.ng-collab-intro-note {
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46, 59, 50, .1);
+}
+.ng-collab-intro-note > span {
+    color: var(--color-coral);
+}
+.ng-collab-intro-note p {
+    margin: 0;
+    color: rgba(46, 59, 50, .4);
+    font-size: .61rem;
+    line-height: 1.45;
+}
+.ng-collab-intro-note strong {
+    display: block;
+    color: var(--color-dark);
+}
+/* CONTRIBUTIONS */
+.ng-collab-contributions {
+    max-width: 620px;
+    padding: clamp(2rem, 4vw, 3rem);
+    border: 1px solid rgba(46, 59, 50, .09);
+    border-radius: 12px 52px 12px 52px;
+    background: var(--color-cream);
+}
+/* TOP */
+.ng-collab-contributions-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    color: rgba(46, 59, 50, .4);
+    font-size: .58rem;
+    font-weight: 700;
+}
+.ng-collab-contributions-top span:last-child {
+    color: var(--color-coral);
+}
+/* ROW */
+.ng-collab-contribution {
+    display: grid;
+    grid-template-columns: 44px minmax(0, 1fr);
+    align-items: start;
+    gap: 1.1rem;
+    padding: 1.3rem 0;
+    border-top: 1px solid rgba(46, 59, 50, .1);
+}
+/* NUMBER */
+.ng-collab-contribution-number {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border: 1px solid rgba(46, 59, 50, .12);
+    border-radius: 50%;
+    background: #fff;
+    color: var(--color-coral);
+    font-size: .5rem;
+    font-weight: 800;
+}
+/* COPY */
+.ng-collab-contribution small {
+    display: block;
+    margin-bottom: .2rem;
+    color: var(--color-coral);
+    font-size: .5rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.ng-collab-contribution strong {
+    display: block;
+    color: var(--color-dark);
+    font-size: .76rem;
+    font-weight: 750;
+    line-height: 1.35;
+}
+.ng-collab-contribution p {
+    max-width: 390px;
+    margin: .35rem 0 0;
+    color: rgba(46, 59, 50, .43);
+    font-size: .61rem;
+    line-height: 1.5;
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-collab-intro-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .ng-collab-contributions {
+        max-width: none;
+    }
+}
+@media (max-width: 600px) {
+    .ng-collab-intro {
+        padding: 4.5rem 0;
+    }
+    .ng-collab-contributions {
+        padding: 1.6rem 1.3rem;
+        border-radius: 10px 36px 10px 36px;
+    }
+}

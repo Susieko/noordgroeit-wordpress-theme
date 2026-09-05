@@ -1,0 +1,642 @@
+/* STEUN NOORDGROEIT */
+.ng-inner-hero--support .ng-inner-hero__image {
+    object-position: center 48%;
+}
+/* KICKER */
+.ng-support-kicker {
+    display: block;
+    margin: 0 0 .8rem;
+    color: var(--color-coral);
+    font-size: .68rem;
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+}
+/* DONATION SECTION */
+.ng-support-give {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: #fff;
+    color: var(--color-dark);
+}
+.ng-support-give-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, .78fr) minmax(340px, .72fr);
+    align-items: center;
+    gap: clamp(5rem, 10vw, 10rem);
+}
+/* COPY */
+.ng-support-give-copy {
+    max-width: 610px;
+}
+.ng-support-give-copy h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-support-give-lead {
+    max-width: 490px;
+    margin: 1.4rem 0 0;
+    color: var(--color-dark);
+    font-size: clamp(.92rem, 1.3vw, 1.06rem);
+    line-height: 1.7;
+}
+.ng-support-give-copy > p:not(.ng-support-kicker, .ng-support-give-lead) {
+    max-width: 450px;
+    margin: .9rem 0 0;
+    color: rgba(46,59,50,.5);
+    font-size: var(--ng-home-body);
+    line-height: 1.65;
+}
+/* LITTLE NOTE */
+.ng-support-give-note {
+    display: flex;
+    align-items: flex-start;
+    gap: .7rem;
+    margin-top: 2rem;
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46,59,50,.1);
+}
+.ng-support-give-note > span {
+    color: var(--color-coral);
+}
+.ng-support-give-note p {
+    margin: 0;
+    color: rgba(46,59,50,.4);
+    font-size: .62rem;
+    line-height: 1.5;
+}
+.ng-support-give-note strong {
+    display: block;
+    color: var(--color-dark);
+}
+/* DONATION PANEL */
+.ng-support-donation {
+    position: relative;
+    max-width: 470px;
+    margin-left: auto;
+    padding: clamp(2rem, 4vw, 3rem);
+    border-radius: 12px 58px 12px 12px;
+    background: #e8f0e3;
+    box-shadow: 0 24px 70px rgba(46,59,50,.08);
+}
+/* TOP */
+.ng-support-donation-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(46,59,50,.1);
+    color: rgba(46,59,50,.42);
+    font-size: .56rem;
+    font-weight: 750;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+.ng-support-donation-top span:last-child {
+    color: var(--color-coral);
+}
+/* QR */
+.ng-support-qr-wrap {
+    position: relative;
+    width: min(100%, 270px);
+    margin: clamp(2rem, 4vw, 3rem) auto 0;
+    padding: 1.25rem;
+    border-radius: 9px 30px 9px 9px;
+    background: #fff;
+}
+.ng-support-qr {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* QR placeholder */
+.ng-support-qr-placeholder {
+    display: grid;
+    aspect-ratio: 1;
+    place-items: center;
+    align-content: center;
+    gap: .5rem;
+    padding: 1rem;
+    border: 1px dashed rgba(46,59,50,.18);
+    color: rgba(46,59,50,.35);
+    text-align: center;
+}
+.ng-support-qr-placeholder strong {
+    color: var(--color-dark);
+    font-size: 2rem;
+}
+.ng-support-qr-placeholder span {
+    max-width: 150px;
+    font-size: .55rem;
+}
+/* decorative corners */
+.ng-support-qr-corner {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-color: var(--color-coral);
+}
+.ng-support-qr-corner--one {
+    top: 7px;
+    left: 7px;
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+.ng-support-qr-corner--two {
+    right: 7px;
+    bottom: 7px;
+    border-right: 2px solid;
+    border-bottom: 2px solid;
+}
+/* QR COPY */
+.ng-support-donation-copy {
+    margin-top: 1.6rem;
+    text-align: center;
+}
+.ng-support-donation-copy small {
+    display: block;
+    margin-bottom: .3rem;
+    color: var(--color-coral);
+    font-size: .51rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+.ng-support-donation-copy strong {
+    display: block;
+    color: var(--color-dark);
+    font-size: clamp(1.2rem, 2vw, 1.55rem);
+    font-weight: 800;
+}
+.ng-support-donation-copy p {
+    max-width: 280px;
+    margin: .55rem auto 0;
+    color: rgba(46,59,50,.47);
+    font-size: .64rem;
+    line-height: 1.55;
+}
+/* FOOT */
+.ng-support-donation-foot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    margin-top: 1.6rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(46,59,50,.09);
+}
+.ng-support-donation-foot span {
+    color: var(--color-coral);
+    font-size: .55rem;
+}
+.ng-support-donation-foot p {
+    margin: 0;
+    color: rgba(46,59,50,.38);
+    font-size: .56rem;
+}
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .ng-support-give-layout {
+        grid-template-columns: 1fr;
+        gap: 3.5rem;
+    }
+    .ng-support-donation {
+        width: 100%;
+        max-width: 520px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 600px) {
+    .ng-support-give {
+        padding: 4.5rem 0;
+    }
+    .ng-support-donation {
+        padding: 1.7rem 1.4rem;
+        border-radius: 10px 40px 10px 10px;
+    }
+    .ng-support-qr-wrap {
+        width: min(100%, 240px);
+    }
+}
+/* NOORDGROEIT — FINAL TYPOGRAPHY & ACCESSIBILITY POLISH */
+/* EXISTING BODY TOKEN */
+/* SECTION KICKERS — Never microscopic. */
+/* * Keep the deliberate uppercase/editorial look, * just make it readable. */
+/* HTML SMALL / META */
+/* SUPPORTING NOTES / CAPTIONS */
+/* MAIN COPY BLOCKS */
+/* NOORDGROEIT — FINAL TYPOGRAPHY & ACCESSIBILITY POLISH */
+:root {
+    /* * Main readable text * 16px → roughly 17px on larger screens */
+    --ng-text-body: clamp(1rem, .25vw + .95rem, 1.0625rem);
+    /* Supporting copy */
+    --ng-text-support: .875rem;
+    /* Small metadata / labels */
+    --ng-text-meta: .75rem;
+    /* * Muted text should remain visibly readable. */
+    --ng-text-muted: rgba(46, 59, 50, .68);
+    --ng-text-soft: rgba(46, 59, 50, .56);
+    --ng-text-muted-light: rgba(255, 255, 255, .70);
+    --ng-text-soft-light: rgba(255, 255, 255, .58);
+}
+/* EXISTING BODY TOKEN */
+:root {
+    --ng-home-body: var(--ng-text-body);
+}
+/* SECTION KICKERS — Never microscopic. */
+main [class*="-kicker"] {
+    font-size: var(--ng-text-meta) !important;
+    line-height: 1.35;
+}
+/* * Keep the deliberate uppercase/editorial look, * just make it readable. */
+main [class*="-kicker"] {
+    letter-spacing: .12em;
+}
+/* HTML SMALL / META */
+main small {
+    font-size: var(--ng-text-meta) !important;
+    line-height: 1.45;
+}
+/* SUPPORTING NOTES / CAPTIONS */
+main [class*="-note"] p, main [class*="-caption"] p, main [class*="-meta"] small, main [class*="-meta"] span {
+    font-size: var(--ng-text-support) !important;
+    line-height: 1.5;
+}
+/* MAIN COPY BLOCKS */
+main [class*="-copy"] > p:not([class*="kicker"]) :not([class*="label"]), main [class*="-intro"] > p:not([class*="kicker"]) :not([class*="label"]), main [class*="-summary"] > p, main p[class*="-description"] {
+    font-size: var(--ng-text-body);
+    line-height: 1.65;
+}
+/* HOMEPAGE — VALUES DIRECTION CUE — SIMPLE TEXT + ARROW */
+
+
+
+/* Kill old line + dot */
+
+
+
+
+/* Ontdek wat we doen — position only */
+
+/* HOMEPAGE — VAN BINNENUIT */
+
+/* INTRO */
+
+
+
+
+
+/* PHOTO */
+
+
+
+
+
+
+
+/* JOURNEY */
+
+/* Route */
+
+
+
+/* Origin beneath photo */
+
+/* PURPOSE BLOCKS */
+
+
+
+
+/* Labels */
+
+
+
+
+
+/* CLOSING */
+
+
+
+/* TABLET */
+
+/* MOBILE */
+
+/* ACCESSIBILITY */
+
+/* HOMEPAGE — VAN BINNENUIT — COMMUNITY NOTICEBOARD */
+
+/* INTRO */
+
+
+
+
+
+/* STAGE */
+
+/* PHOTO */
+
+
+
+/* CONNECTING THREAD */
+
+
+
+/* PAPER NOTES */
+
+
+/* Mission */
+
+
+/* Vision */
+
+
+/* Little pin */
+
+/* Labels */
+
+
+
+/* PHOTO CAPTION */
+
+
+/* FOOTER */
+
+
+
+/* TABLET */
+
+/* MOBILE */
+
+/* REDUCED MOTION */
+
+/* HOMEPAGE MANIFESTO — CALMER REVEAL */
+/* * Everything remains visible if JS fails. */
+
+/* * JS adds this class once the section is ready * for scroll animation. */
+
+/* Mission starts slightly left/down */
+
+/* Vision starts slightly right/down */
+
+/* Reveal state */
+
+/* Mission first */
+
+/* Vision follows */
+
+/* THREAD — ONE QUIET REVEAL */
+
+
+
+/* HOMEPAGE — INITIATIVES — NEIGHBOURHOOD EXHIBITION CAROUSEL */
+
+/* Soft oversized background word */
+
+/* HEADING */
+
+
+/* little coral editorial mark */
+
+
+/* CAROUSEL FIELD */
+
+
+/* * Big soft field behind the cards. * Gives the carousel a shape of its own. */
+
+/* BASE CARD */
+
+/* ACTIVE CARD */
+
+/* * Little coral tab — * like a marker attached to the active story. */
+
+/* SIDE CARDS */
+
+
+/* Let side cards rise slightly when hovered */
+
+
+/* ACTIVE IMAGE */
+
+
+/* * Active card doesn't need the huge dark gradient anymore. */
+
+/* ACTIVE EDITORIAL TEXT SHEET */
+
+/* Meta */
+
+
+/* Title */
+
+/* Description */
+
+/* Link */
+
+/* ACTIVE COPY ANIMATION — Restarts each time a card becomes active */
+
+
+/* SIDE CARD COPY */
+
+
+/* ARROWS */
+
+
+
+
+/* FOOTER / DOTS */
+
+
+
+/* TABLET */
+
+/* MOBILE */
+
+/* REDUCED MOTION */
+
+/* INITIATIVES — MATCH PREVIOUS SECTION HEADING */
+
+/* HOMEPAGE — NOORDBUITEN — AUTHORITATIVE FIX + INTERACTIVE PHOTO STRIP */
+/* 1. FIX LEAKING INNER-PAGE STYLES */
+
+/* Kill decorative old circle / dot */
+
+/* Reset the inner-page .ng-nb-intro collision */
+
+/* 2. FIX HEADING / PARAGRAPH RHYTHM */
+
+
+
+body.home #noordbuiten-uitgelicht .ng-nb-copy > p:not(.ng-nb-location) {
+    max-width: 600px;
+    margin: 0 !important;
+    color: rgba(46, 59, 50, .72);
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+
+/* 3. PHOTO ACCORDION */
+
+/* SHARED PANEL */
+
+/* * Main image gets the attention initially. */
+
+/* * End image closes the composition. */
+
+/* INTERACTION */
+/* * When gallery is being explored, * all photos become slightly narrower... */
+
+/* * ...and the one you're looking at opens up. */
+
+/* IMAGES */
+
+
+/* GRADIENT */
+
+/* CAPTIONS */
+
+
+/* * Expanded image gets full caption emphasis. */
+
+/* LITTLE CORAL ACTIVE LINE */
+
+
+/* 4. SCROLL ENTRANCE */
+
+
+
+
+
+
+
+
+/* TABLET */
+
+/* MOBILE */
+
+/* REDUCED MOTION */
+
+/* HOME — MISSIE / VISIE PHOTO DRAWERS */
+
+/* DRAWER POSITION */
+
+/* DRAWER */
+
+/* Give vision opposite corner character */
+
+/* COLLAPSED HEADER */
+
+
+
+/* + BUTTON / HOVER AFFORDANCE */
+
+/* HIDDEN CONTENT */
+
+
+
+/* OPEN ON HOVER / KEYBOARD FOCUS */
+
+
+
+/* DIM THE OTHER DRAWER SLIGHTLY */
+body.home .ng-home-purpose-drawers:has(.ng-home-purpose-drawer:hover) .ng-home-purpose-drawer:not(:hover) {
+    opacity: .72;
+}
+/* MOBILE */
+
+/* REDUCED MOTION */
+
+/* HOME — VAN BINNENUIT — SPACING CLEANUP */
+/* * Match the spacing rhythm used by the other homepage * section introductions. */
+
+/* * No extra gap between intro and visual. */
+
+/* * The photo starts immediately at the top of the stage. * Previously this had top: 55px, which created that * second unwanted gap. */
+
+/* * We don't need this caption anymore now that * Missie + Visie become the interactive elements. */
+
+/* MOBILE */
+
+/* HOMEPAGE — MATCH INNER PAGE SECTION TYPOGRAPHY — HERO EXCLUDED */
+/* * Exact same H2 treatment as Over ons / Team / * Financiën / Initiatieven / NoordbuiTen. */
+body.home main section:not(.ng-editorial-hero) h2 {
+    font-family: var(--font-primary) !important;
+    font-size: var(--ng-section-title) !important;
+    font-weight: 750 !important;
+    line-height: 1.06 !important;
+    letter-spacing: -.035em !important;
+}
+/* Same mobile scale as inner pages */
+@media (max-width: 700px) {
+    body.home main section:not(.ng-editorial-hero) h2 {
+        font-size: var(--ng-section-title) !important;
+        line-height: 1.06 !important;
+        letter-spacing: -.035em !important;
+    }
+}
+/* HOMEPAGE — DOE MEE V2 — INTERACTIVE CONVERSATION */
+
+/* subtle giant background word */
+
+/* INTRO */
+
+
+
+
+/* INTERACTIVE ROWS */
+
+
+/* ROW BUTTON */
+
+/* little opening point */
+
+/* LABEL */
+
+
+
+/* PLUS */
+
+/* HIDDEN PANEL */
+
+
+
+/* OPEN STATE */
+
+
+
+
+
+
+
+/* VOLUNTEER QUOTE */
+
+
+
+
+
+
+
+
+/* FINAL CTA */
+
+
+
+/* CTA BUTTONS */
+
+
+
+
+
+
+
+
+/* TABLET / MOBILE */
+
+
+/* REDUCED MOTION */
+

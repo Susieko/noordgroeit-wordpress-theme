@@ -1,0 +1,1151 @@
+/* STEUN NOORDGROEIT — MOTION */
+/* COPY */
+.ng-support-give.is-support-motion-ready .ng-support-give-copy > * {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 420ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-support-give.is-support-visible .ng-support-give-copy > *:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-support-give.is-support-visible .ng-support-give-copy > *:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-support-give.is-support-visible .ng-support-give-copy > *:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+.ng-support-give.is-support-visible .ng-support-give-copy > *:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 360ms;
+}
+/* little thank-you note */
+.ng-support-give.is-support-motion-ready .ng-support-give-note {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity 370ms ease, transform 430ms ease;
+}
+.ng-support-give.is-support-visible .ng-support-give-note {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 470ms;
+}
+/* DONATION CARD */
+.ng-support-give.is-support-motion-ready .ng-support-donation {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: opacity 520ms ease, transform 620ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-support-give.is-support-visible .ng-support-donation {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 220ms;
+}
+/* card heading */
+.ng-support-give.is-support-motion-ready .ng-support-donation-top {
+    opacity: 0;
+    transition: opacity 350ms ease;
+}
+.ng-support-give.is-support-visible .ng-support-donation-top {
+    opacity: 1;
+    transition-delay: 420ms;
+}
+/* QR */
+/* * Open the QR area without touching the QR image itself. * Works for placeholder now + actual QR later. */
+.ng-support-give.is-support-motion-ready .ng-support-qr-wrap {
+    opacity: 0;
+    clip-path: inset(0 0 12% 0);
+    transition: opacity 480ms ease, clip-path 680ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-support-give.is-support-visible .ng-support-qr-wrap {
+    opacity: 1;
+    clip-path: inset(0);
+    transition-delay: 500ms;
+}
+/* little scanner corners */
+.ng-support-give.is-support-motion-ready .ng-support-qr-corner {
+    opacity: 0;
+    transition: opacity 300ms ease;
+}
+.ng-support-give.is-support-visible .ng-support-qr-corner--one {
+    opacity: 1;
+    transition-delay: 720ms;
+}
+.ng-support-give.is-support-visible .ng-support-qr-corner--two {
+    opacity: 1;
+    transition-delay: 820ms;
+}
+/* DONATION COPY */
+.ng-support-give.is-support-motion-ready .ng-support-donation-copy > * {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity 350ms ease, transform 420ms ease;
+}
+.ng-support-give.is-support-visible .ng-support-donation-copy > *:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 800ms;
+}
+.ng-support-give.is-support-visible .ng-support-donation-copy > *:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 890ms;
+}
+.ng-support-give.is-support-visible .ng-support-donation-copy > *:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 980ms;
+}
+/* thank-you footer */
+.ng-support-give.is-support-motion-ready .ng-support-donation-foot {
+    opacity: 0;
+    transition: opacity 370ms ease;
+}
+.ng-support-give.is-support-visible .ng-support-donation-foot {
+    opacity: 1;
+    transition-delay: 1100ms;
+}
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    .ng-support-give *, .ng-support-give *::before, .ng-support-give *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+/* SAMENWERKEN — VIER INGANGEN */
+.ng-collab-paths {
+    position: relative;
+    padding: clamp(6rem, 9vw, 8.5rem) 0;
+    overflow: hidden;
+    background: #fffdf9;
+    color: var(--color-dark);
+}
+/* quiet background detail */
+.ng-collab-paths::after {
+    content: "";
+    position: absolute;
+    right: -135px;
+    top: 40%;
+    width: 280px;
+    height: 280px;
+    border: 48px solid rgba(46,59,50,.025);
+    border-radius: 50%;
+    pointer-events: none;
+}
+/* HEADING */
+.ng-collab-paths-heading {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, .5fr);
+    gap: clamp(3rem, 8vw, 8rem);
+    align-items: end;
+    margin-bottom: clamp(4rem, 7vw, 6.5rem);
+}
+.ng-collab-paths-heading h2 {
+    max-width: 690px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.02;
+    letter-spacing: -.045em;
+}
+.ng-collab-paths-heading > p {
+    max-width: 400px;
+    margin: 0;
+    color: rgba(46,59,50,.52);
+    font-size: var(--ng-home-body);
+    line-height: 1.7;
+}
+/* ROUTE */
+.ng-collab-paths-route {
+    position: relative;
+    width: min(100%, 980px);
+    margin: 0 auto;
+}
+/* central vertical line */
+.ng-collab-paths-line {
+    position: absolute;
+    top: 28px;
+    bottom: 28px;
+    left: 50%;
+    width: 1px;
+    transform: translateX(-50%);
+    background: rgba(46,59,50,.09);
+}
+.ng-collab-paths-line span {
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(to bottom, var(--color-coral) 0, var(--color-coral) 5px, transparent 5px, transparent 11px);
+    opacity: .48;
+}
+/* EACH STOP */
+.ng-collab-path {
+    position: relative;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 62px minmax(0, 1fr);
+    gap: clamp(1.4rem, 3vw, 2.5rem);
+    align-items: center;
+    min-height: 205px;
+}
+.ng-collab-path + .ng-collab-path {
+    margin-top: clamp(1rem, 2vw, 1.8rem);
+}
+/* NODE */
+.ng-collab-path-node {
+    position: relative;
+    z-index: 3;
+    display: grid;
+    place-items: center;
+    width: 46px;
+    height: 46px;
+    margin: 0 auto;
+    border: 1px solid rgba(240,102,83,.34);
+    border-radius: 50%;
+    background: #fffdf9;
+    box-shadow: 0 8px 20px rgba(46,59,50,.04);
+}
+.ng-collab-path-node::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-coral);
+}
+.ng-collab-path-node span {
+    position: absolute;
+    top: -19px;
+    color: rgba(46,59,50,.32);
+    font-size: .5rem;
+    font-weight: 850;
+    letter-spacing: .08em;
+}
+/* COPY — NO BOXY CARD */
+.ng-collab-path-card {
+    position: relative;
+    padding: 1.8rem 0;
+    border-top: 1px solid rgba(46,59,50,.1);
+    border-bottom: 1px solid rgba(46,59,50,.1);
+}
+/* little route edge */
+.ng-collab-path--left .ng-collab-path-card::after, .ng-collab-path--right .ng-collab-path-card::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: clamp(20px, 3vw, 42px);
+    height: 1px;
+    background: var(--color-coral);
+    opacity: .36;
+}
+.ng-collab-path--left .ng-collab-path-card::after {
+    right: calc(clamp(20px, 3vw, 42px) * -1);
+}
+.ng-collab-path--right .ng-collab-path-card::before {
+    left: calc(clamp(20px, 3vw, 42px) * -1);
+}
+.ng-collab-path-card small {
+    display: block;
+    margin-bottom: .55rem;
+    color: var(--color-coral);
+    font-size: .55rem;
+    font-weight: 850;
+    letter-spacing: .11em;
+    text-transform: uppercase;
+}
+.ng-collab-path-card h3 {
+    max-width: 390px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(1.45rem, 2.3vw, 2rem);
+    font-weight: 750;
+    line-height: 1.02;
+    letter-spacing: -.04em;
+}
+.ng-collab-path-card p {
+    max-width: 430px;
+    margin: .8rem 0 0;
+    color: rgba(46,59,50,.49);
+    font-size: .74rem;
+    line-height: 1.65;
+}
+/* TAGS */
+.ng-collab-path-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .45rem;
+    margin-top: 1.15rem;
+}
+.ng-collab-path-tags span {
+    padding: .35rem .55rem;
+    border: 1px solid rgba(46,59,50,.1);
+    border-radius: 999px;
+    color: rgba(46,59,50,.52);
+    background: rgba(238,244,232,.5);
+    font-size: .53rem;
+    font-weight: 700;
+}
+/* alignment */
+.ng-collab-path--left .ng-collab-path-card {
+    text-align: right;
+}
+.ng-collab-path--left .ng-collab-path-card h3, .ng-collab-path--left .ng-collab-path-card p {
+    margin-left: auto;
+}
+.ng-collab-path--left .ng-collab-path-tags {
+    justify-content: flex-end;
+}
+/* BOTTOM NOTE */
+.ng-collab-paths-bottom {
+    display: flex;
+    align-items: flex-start;
+    gap: .65rem;
+    width: min(100%, 980px);
+    margin: clamp(3.5rem, 6vw, 5rem) auto 0;
+    padding-top: 1.3rem;
+    border-top: 1px solid rgba(46,59,50,.09);
+}
+.ng-collab-paths-bottom > span {
+    color: var(--color-coral);
+}
+.ng-collab-paths-bottom p {
+    margin: 0;
+    color: rgba(46,59,50,.42);
+    font-size: .64rem;
+    line-height: 1.5;
+}
+.ng-collab-paths-bottom strong {
+    color: var(--color-dark);
+}
+/* MOBILE */
+@media (max-width: 760px) {
+    .ng-collab-paths-heading {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .ng-collab-paths-route {
+        padding-left: 54px;
+    }
+    .ng-collab-paths-line {
+        left: 22px;
+        transform: none;
+    }
+    .ng-collab-path {
+        display: block;
+        min-height: 0;
+        margin-bottom: 2.4rem;
+    }
+    .ng-collab-path-empty {
+        display: none;
+    }
+    .ng-collab-path-node {
+        position: absolute;
+        top: 1.8rem;
+        left: -54px;
+        width: 44px;
+        height: 44px;
+        margin: 0;
+    }
+    .ng-collab-path-card, .ng-collab-path--left .ng-collab-path-card {
+        text-align: left;
+    }
+    .ng-collab-path--left .ng-collab-path-card h3, .ng-collab-path--left .ng-collab-path-card p {
+        margin-left: 0;
+    }
+    .ng-collab-path--left .ng-collab-path-tags {
+        justify-content: flex-start;
+    }
+    .ng-collab-path-card::before, .ng-collab-path-card::after {
+        display: none;
+    }
+}
+/* SAMENWERKEN — VIER INGANGEN — COMPACT EDITORIAL VERSION */
+.ng-collab-paths {
+    padding: clamp(4.75rem, 7vw, 6.5rem) 0;
+}
+/* tighter intro */
+.ng-collab-paths-heading {
+    margin-bottom: clamp(2.75rem, 4vw, 3.75rem);
+}
+/* TURN ROUTE INTO 2 × 2 FIELD */
+.ng-collab-paths-route {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    width: 100%;
+    max-width: none;
+    border-top: 1px solid rgba(46,59,50,.1);
+    border-bottom: 1px solid rgba(46,59,50,.1);
+}
+/* old vertical route is no longer needed */
+.ng-collab-paths-line {
+    display: none;
+}
+/* each path becomes one compact cell */
+.ng-collab-path, .ng-collab-path + .ng-collab-path {
+    display: grid;
+    grid-template-columns: 52px minmax(0, 1fr);
+    gap: 1.25rem;
+    min-height: 0;
+    margin: 0;
+    padding: clamp(1.8rem, 3vw, 2.5rem);
+    align-items: start;
+}
+/* vertical divider between columns */
+.ng-collab-path:nth-child(odd) {
+    border-right: 1px solid rgba(46,59,50,.1);
+}
+/* divider between rows */
+.ng-collab-path:nth-child(-n + 2) {
+    border-bottom: 1px solid rgba(46,59,50,.1);
+}
+/* REMOVE LEFT / RIGHT ALTERNATION */
+.ng-collab-path-empty {
+    display: none;
+}
+.ng-collab-path--left .ng-collab-path-card, .ng-collab-path--right .ng-collab-path-card {
+    text-align: left;
+}
+.ng-collab-path--left .ng-collab-path-card h3, .ng-collab-path--left .ng-collab-path-card p {
+    margin-left: 0;
+}
+.ng-collab-path--left .ng-collab-path-tags {
+    justify-content: flex-start;
+}
+/* NUMBER / NODE */
+.ng-collab-path-node {
+    grid-column: 1;
+    grid-row: 1;
+    width: 40px;
+    height: 40px;
+    margin: .1rem 0 0;
+    border-color: rgba(240,102,83,.28);
+    background: transparent;
+    box-shadow: none;
+}
+.ng-collab-path-node span {
+    top: auto;
+    color: var(--color-coral);
+    font-size: .55rem;
+    letter-spacing: .08em;
+}
+.ng-collab-path-node::after {
+    display: none;
+}
+/* COPY */
+.ng-collab-path-card {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 0;
+    border: 0;
+}
+/* remove old connector bits */
+.ng-collab-path-card::before, .ng-collab-path-card::after {
+    display: none !important;
+}
+.ng-collab-path-card h3 {
+    max-width: 420px;
+    font-size: clamp(1.4rem, 2vw, 1.85rem);
+}
+.ng-collab-path-card p {
+    max-width: 430px;
+    margin-top: .65rem;
+}
+/* TAGS */
+.ng-collab-path-tags {
+    margin-top: .9rem;
+}
+/* SMALL CORAL ACCENT */
+.ng-collab-path {
+    position: relative;
+}
+.ng-collab-path::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 28px;
+    height: 2px;
+    background: var(--color-coral);
+    opacity: .55;
+}
+/* BOTTOM NOTE */
+.ng-collab-paths-bottom {
+    width: 100%;
+    margin-top: clamp(2rem, 3vw, 2.75rem);
+    padding-top: 0;
+    border-top: 0;
+}
+/* MOBILE */
+@media (max-width: 760px) {
+    .ng-collab-paths-route {
+        grid-template-columns: 1fr;
+        padding-left: 0;
+    }
+    .ng-collab-path, .ng-collab-path + .ng-collab-path {
+        display: grid;
+        grid-template-columns: 46px minmax(0,1fr);
+        margin: 0;
+        padding: 1.8rem 0;
+    }
+    .ng-collab-path:nth-child(odd) {
+        border-right: 0;
+    }
+    .ng-collab-path:not(:last-child) {
+        border-bottom: 1px solid rgba(46,59,50,.1);
+    }
+    .ng-collab-path-node {
+        position: relative;
+        top: auto;
+        left: auto;
+    }
+}
+/* SAMENWERKEN — SECTION COLOUR RHYTHM */
+/* 01 — intro */
+.ng-collab-intro {
+    background: #fffdf9;
+}
+/* 02 — types / four entrances */
+.ng-collab-paths {
+    background: #eaf2e5;
+}
+/* 03 — existing partner proof */
+.ng-collab-proof {
+    background: var(--color-dark);
+}
+/* 04 — final CTA */
+.ng-collab-final {
+    background: #f7f3eb;
+}
+/* SAMENWERKEN — WE DOEN DIT AL SAMEN */
+.ng-collab-proof {
+    background: var(--color-dark);
+    color: #f8f6f0;
+    padding: 120px 0;
+}
+.ng-collab-proof .ng-collab-kicker {
+    color: var(--color-accent);
+}
+.ng-collab-proof-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(320px, 420px);
+    gap: 48px;
+    align-items: end;
+    margin-bottom: 56px;
+}
+.ng-collab-proof-heading h2 {
+    color: #fff;
+    margin: 0;
+}
+.ng-collab-proof-copy p {
+    color: rgba(255, 255, 255, 0.78);
+    margin: 0 0 18px;
+}
+.ng-collab-proof-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.ng-collab-proof-stats span {
+    display: inline-flex;
+    align-items: center;
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+}
+.ng-collab-proof-groups {
+    display: grid;
+    gap: 28px;
+}
+.ng-collab-proof-group-block {
+    padding: 28px;
+    border-radius: 28px;
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+}
+.ng-collab-proof-group-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 24px;
+}
+.ng-collab-proof-group-head h3 {
+    margin: 0 0 6px;
+    color: #fff;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+.ng-collab-proof-group-head p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.72);
+    max-width: 640px;
+}
+.ng-collab-proof-count {
+    flex: 0 0 auto;
+    min-width: 44px;
+    height: 44px;
+    padding: 0 14px;
+    border-radius: 999px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--color-accent);
+    color: #fff;
+    font-weight: 800;
+    font-size: 0.95rem;
+}
+.ng-collab-proof-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+.ng-collab-proof-card {
+    min-height: 118px;
+    border-radius: 18px;
+    background: #fffdf8;
+    border: 1px solid rgba(26, 32, 26, 0.08);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 18px;
+}
+.ng-collab-proof-card img {
+    display: block;
+    width: 100%;
+    max-width: 150px;
+    max-height: 62px;
+    object-fit: contain;
+    filter: none;
+}
+.ng-collab-proof-card--fallback {
+    text-align: center;
+}
+.ng-collab-proof-fallback {
+    max-width: 180px;
+    color: var(--color-dark);
+    font-size: 0.78rem;
+    font-weight: 750;
+    line-height: 1.35;
+}
+.ng-collab-proof-bottom {
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 0.95rem;
+}
+.ng-collab-proof-bottom strong {
+    color: #fff;
+}
+@media (max-width: 1100px) {
+    .ng-collab-proof-heading {
+        grid-template-columns: 1fr;
+    }
+    .ng-collab-proof-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+@media (max-width: 780px) {
+    .ng-collab-proof-group-head {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .ng-collab-proof-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .ng-collab-proof-card {
+        min-height: 104px;
+    }
+}
+@media (max-width: 520px) {
+    .ng-collab-proof {
+        padding: 88px 0;
+    }
+    .ng-collab-proof-group-block {
+        padding: 20px;
+        border-radius: 22px;
+    }
+    .ng-collab-proof-grid {
+        grid-template-columns: 1fr;
+    }
+}
+.ng-collab-proof-card {
+    color: var(--color-dark);
+}
+.ng-collab-proof-card span, .ng-collab-proof-card p, .ng-collab-proof-card strong {
+    color: var(--color-dark);
+}
+/* SAMENWERKEN — MOTION PASS */
+/* 01 — INTRO */
+.ng-collab-intro.is-collab-motion-ready .ng-collab-intro-copy > * {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 420ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-collab-intro.is-collab-visible .ng-collab-intro-copy > *:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-collab-intro.is-collab-visible .ng-collab-intro-copy > *:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 140ms;
+}
+.ng-collab-intro.is-collab-visible .ng-collab-intro-copy > *:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 230ms;
+}
+.ng-collab-intro.is-collab-visible .ng-collab-intro-copy > *:nth-child(4) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 320ms;
+}
+.ng-collab-intro.is-collab-visible .ng-collab-intro-note {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 410ms;
+}
+/* contribution panel */
+.ng-collab-intro.is-collab-motion-ready .ng-collab-contributions {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 500ms ease, transform 580ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-collab-intro.is-collab-visible .ng-collab-contributions {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 220ms;
+}
+.ng-collab-intro.is-collab-motion-ready .ng-collab-contribution {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity 350ms ease, transform 420ms ease;
+    transition-delay: calc(380ms + var(--collab-delay, 0ms));
+}
+.ng-collab-intro.is-collab-visible .ng-collab-contribution {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* 02 — THE BRIDGE */
+
+
+
+/* left need */
+
+
+/* route elements */
+
+
+
+/* first connection */
+
+
+/* central NoordgroeiT point */
+
+
+
+
+/* second connection */
+
+
+/* partner side */
+
+
+/* result */
+
+
+/* OPTIONAL — GREEN "FOR WHO" SECTION — Works whether you're using the old list OR compact paths. */
+.ng-collab-paths.is-collab-motion-ready .ng-collab-paths-heading > * {
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 400ms ease, transform 470ms ease;
+}
+.ng-collab-paths.is-collab-visible .ng-collab-paths-heading > div {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-collab-paths.is-collab-visible .ng-collab-paths-heading > p {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 170ms;
+}
+.ng-collab-paths.is-collab-motion-ready .ng-collab-path {
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 380ms ease, transform 450ms ease;
+    transition-delay: calc(280ms + var(--collab-delay, 0ms));
+}
+.ng-collab-paths.is-collab-visible .ng-collab-path {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* 03 — PARTNER PROOF HEADING */
+.ng-collab-proof.is-collab-motion-ready .ng-collab-proof-heading > * {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 420ms ease, transform 500ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-collab-proof.is-collab-visible .ng-collab-proof-heading > div:first-child {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-collab-proof.is-collab-visible .ng-collab-proof-copy {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 180ms;
+}
+/* PARTNER GROUPS — OBSERVED INDIVIDUALLY */
+.ng-collab-proof-group-block.is-collab-group-ready {
+    opacity: 0;
+    transform: translateY(12px);
+    transition: opacity 450ms ease, transform 520ms cubic-bezier(.2,.75,.25,1);
+}
+.ng-collab-proof-group-block.is-collab-group-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* group heading */
+.ng-collab-proof-group-block.is-collab-group-ready .ng-collab-proof-group-head {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity 340ms ease, transform 410ms ease;
+}
+.ng-collab-proof-group-block.is-collab-group-visible .ng-collab-proof-group-head {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 120ms;
+}
+/* individual logo tiles */
+.ng-collab-proof-group-block.is-collab-group-ready .ng-collab-proof-card {
+    opacity: 0;
+    transform: translateY(7px);
+    transition: opacity 320ms ease, transform 390ms ease;
+    transition-delay: calc(220ms + var(--collab-card-delay, 0ms));
+}
+.ng-collab-proof-group-block.is-collab-group-visible .ng-collab-proof-card {
+    opacity: 1;
+    transform: translateY(0);
+}
+/* closing line */
+.ng-collab-proof.is-collab-motion-ready .ng-collab-proof-bottom {
+    opacity: 0;
+    transition: opacity 380ms ease;
+}
+.ng-collab-proof.is-collab-visible .ng-collab-proof-bottom {
+    opacity: 1;
+    transition-delay: 350ms;
+}
+/* 04 — FINAL CTA */
+.ng-collab-final.is-collab-motion-ready .ng-collab-final-copy > * {
+    opacity: 0;
+    transform: translateY(9px);
+    transition: opacity 400ms ease, transform 470ms ease;
+}
+.ng-collab-final.is-collab-visible .ng-collab-final-copy > *:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 50ms;
+}
+.ng-collab-final.is-collab-visible .ng-collab-final-copy > *:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 150ms;
+}
+.ng-collab-final.is-collab-visible .ng-collab-final-copy > *:nth-child(3) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 250ms;
+}
+.ng-collab-final.is-collab-motion-ready .ng-collab-final-actions > a {
+    opacity: 0;
+    transform: translateY(8px);
+    transition: opacity 360ms ease, transform 430ms ease;
+}
+.ng-collab-final.is-collab-visible .ng-collab-final-actions > a:nth-child(1) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 340ms;
+}
+.ng-collab-final.is-collab-visible .ng-collab-final-actions > a:nth-child(2) {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: 470ms;
+}
+.ng-collab-final.is-collab-motion-ready .ng-collab-final-bottom {
+    opacity: 0;
+    transition: opacity 380ms ease;
+}
+.ng-collab-final.is-collab-visible .ng-collab-final-bottom {
+    opacity: 1;
+    transition-delay: 620ms;
+}
+/* REDUCED MOTION */
+@media (prefers-reduced-motion: reduce) {
+    .ng-collab-page *, .ng-collab-page *::before, .ng-collab-page *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+
+/* NOORDBUITEN BEZOEKEN — CORAL TARGET */
+
+.ng-nbv-hero-kicker {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+}
+
+.ng-nbv-hero-kicker::before {
+    content: "";
+
+    width: 11px;
+    height: 11px;
+
+    flex: 0 0 11px;
+
+    border-radius: 50%;
+
+    background:
+        radial-gradient(
+            circle,
+            var(--color-coral) 0 2px,
+            transparent 2px 4px,
+            var(--color-coral) 4px 5px,
+            transparent 5px
+        );
+}
+
+/* =========================================================
+   SAMENWERKEN — PARTNER HEADING MOBILE FIX
+
+   The complete partner section is extremely tall on mobile,
+   so its section-level IntersectionObserver may never reach
+   the required percentage of visibility.
+
+   Keep the heading visible on mobile. Individual partner
+   groups can still animate normally.
+========================================================= */
+
+@media (max-width: 780px) {
+
+    .ng-collab-proof.is-collab-motion-ready
+    .ng-collab-proof-heading > * {
+        opacity: 1 !important;
+        transform: none !important;
+        transition: none !important;
+    }
+
+}
+
+/* MOBILE MENU — INNER PAGE HARD FIX — Homepage already works, so leave it alone. */
+
+@media (max-width: 1180px) {
+
+    /* Keep the complete inner-page header in the viewport */
+    body:not(.home) .ng-site-header {
+        position: fixed !important;
+
+        top: 0 !important;
+        right: 0 !important;
+        left: 0 !important;
+
+        width: 100%;
+
+        z-index: 999999 !important;
+    }
+
+    /* Fixed header no longer takes up document space */
+    body:not(.home) {
+        padding-top: 100px;
+    }
+
+    /* Menu is anchored directly underneath the visible header */
+    body:not(.home)
+    .ng-site-header
+    .ng-primary-navigation {
+        position: absolute !important;
+
+        top: calc(100% + 8px) !important;
+        right: 0 !important;
+        left: 0 !important;
+
+        z-index: 1000000 !important;
+
+        max-height: calc(100dvh - 120px);
+
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+
+    /* When JS says open, it is REALLY open */
+    body:not(.home)
+    .ng-site-header.menu-is-open
+    .ng-primary-navigation {
+        display: block !important;
+
+        opacity: 1 !important;
+        visibility: visible !important;
+        pointer-events: auto !important;
+    }
+
+}
+
+/* WordPress toolbar while logged in */
+@media (max-width: 782px) {
+
+    body.admin-bar:not(.home)
+    .ng-site-header {
+        top: 46px !important;
+    }
+
+}
+
+/* ACCESSIBILITY — FINAL CONTRAST PASS — Lighthouse contrast fixes */
+
+:root {
+    /*
+     * Original coral stays available for decorative use.
+     * These two variants are for readable text/buttons.
+     */
+    --color-coral-accessible: #b84438;
+    --color-coral-on-dark: #f3a28c;
+}
+
+/* VOLUNTEER SPOTLIGHT */
+
+/* Small coral text on cream needs stronger contrast */
+
+
+/* Attribution text was too faint */
+
+
+/* HOME — JOIN / VACATURE BUTTON */
+
+/*
+ * White text on the original coral does not quite reach
+ * WCAG AA. Keep white text, slightly deepen the coral.
+ */
+
+
+/* FOOTER */
+
+/* Small footer privacy text was much too faint */
+.site-footer
+.footer-newsletter-privacy {
+    color: rgba(255, 255, 255, .62) !important;
+}
+
+/*
+ * Original coral is too dark against the dark-green footer.
+ * Use the lighter coral variant here.
+ */
+.site-footer
+.footer-small-label {
+    color: var(--color-coral-on-dark);
+}
+
+/* Newsletter submit button uses the same white/coral combo */
+.site-footer
+.footer-newsletter-form input[type="submit"],
+.site-footer
+.footer-newsletter-form button[type="submit"] {
+    color: #fff;
+    background: var(--color-coral-accessible);
+}
+
+/* =========================================================
+   FOOTER — LIVE MAILPOET
+   Global inner-page version
+========================================================= */
+
+.footer-newsletter-form {
+    width: 100%;
+    margin-top: 1.15rem;
+}
+
+.footer-newsletter-form .mailpoet_form {
+    padding: 0 !important;
+    background: transparent !important;
+}
+
+.footer-newsletter-form .mailpoet_paragraph,
+.footer-newsletter-form .mailpoet_form_paragraph {
+    margin: 0 0 .55rem !important;
+}
+
+.footer-newsletter-form input[type="email"],
+.footer-newsletter-form .mailpoet_text {
+    width: 100% !important;
+    min-height: 46px !important;
+
+    padding: .75rem 1rem !important;
+
+    color: var(--color-dark) !important;
+    background: rgba(255,255,255,.96) !important;
+
+    border: 1px solid rgba(255,255,255,.14) !important;
+    border-radius: .65rem !important;
+
+    font-family: var(--font-primary) !important;
+    font-size: .72rem !important;
+
+    box-sizing: border-box;
+    outline: none;
+}
+
+.footer-newsletter-form input[type="email"]:focus,
+.footer-newsletter-form .mailpoet_text:focus {
+    border-color: var(--color-coral) !important;
+
+    box-shadow:
+        0 0 0 3px rgba(240,102,83,.13) !important;
+}
+
+.footer-newsletter-form input[type="submit"],
+.footer-newsletter-form button[type="submit"],
+.footer-newsletter-form .mailpoet_submit {
+    width: 100% !important;
+    min-height: 42px !important;
+
+    margin-top: .1rem !important;
+    padding: .65rem 1rem !important;
+
+    color: #fff !important;
+    background: #b84438 !important;
+
+    border: 0 !important;
+    border-radius: 999px !important;
+
+    font-family: var(--font-primary) !important;
+    font-size: .7rem !important;
+    font-weight: 800 !important;
+
+    cursor: pointer;
+}
+
+.footer-newsletter-form .mailpoet_submit:hover {
+    transform: translateY(-2px);
+}
+
+.footer-newsletter-privacy {
+    margin: .7rem 0 0 !important;
+    color: rgba(255,255,255,.62) !important;
+    font-size: .58rem !important;
+    line-height: 1.45 !important;
+}

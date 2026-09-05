@@ -1,0 +1,3145 @@
+/*
+Theme Name: NoordgroeiT + NoordbuiTen
+Theme URI: https://www.noordgroeit.nl/
+Author: Susan Aben
+Description: Het gezamenlijke WordPress-thema voor NoordgroeiT en NoordbuiTen.
+Version: 1.0.0
+Text Domain: noordgroeit-merged
+*/
+
+/* NoordgroeiT + NoordbuiTen — Basis en huisstijl */
+:root {
+    --color-green: #3e6b47;
+    --color-green-light: #e6f0e1;
+    --color-orange: #c87f4a;
+    --color-coral: #f06653;
+    --color-cream: #f4f1ec;
+    --color-dark: #2e3b32;
+    --color-white: #ffffff;
+    --font-primary: "Open Sans", Arial, sans-serif;
+    --content-width: 1200px;
+    --content-padding: clamp(20px, 4vw, 56px);
+    --radius-small: 8px;
+    --radius-medium: 18px;
+    --radius-large: 32px;
+    --shadow-soft: 0 14px 40px rgba(46, 59, 50, 0.12);
+}
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    color: var(--color-dark);
+    background: var(--color-cream);
+    font-family: var(--font-primary);
+    font-size: 16px;
+    line-height: 1.65;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+a {
+    color: var(--color-green);
+}
+button, input, textarea, select {
+    font: inherit;
+}
+.site-container {
+    width: min(calc(100% - (2 * var(--content-padding))), var(--content-width));
+    margin-inline: auto;
+}
+.ng-site-header .site-container {
+    --content-width: 1400px;
+}
+/* Toegankelijkheid */
+.skip-link {
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    z-index: 9999;
+    padding: 12px 18px;
+    color: var(--color-white);
+    background: var(--color-dark);
+    border-radius: var(--radius-small);
+    transform: translateY(-150%);
+}
+.skip-link:focus {
+    transform: translateY(0);
+}
+/* Nieuwe NoordgroeiT-header */
+.ng-site-header {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    padding: 14px 0;
+    background: rgba(244, 241, 236, 0.94);
+    border-bottom: 1px solid rgba(46, 59, 50, 0.07);
+    backdrop-filter: blur(14px);
+}
+.admin-bar .ng-site-header {
+    top: 32px;
+}
+.ng-header-shell {
+    position: relative;
+    min-height: 78px;
+    display: flex;
+    align-items: center;
+    gap: clamp(22px, 3vw, 44px);
+    padding: 9px 11px 9px 22px;
+    background: var(--color-white);
+    border: 1px solid rgba(46, 59, 50, 0.09);
+    border-radius: 22px;
+    box-shadow: 0 9px 34px rgba(46, 59, 50, 0.07);
+}
+.ng-header-logo {
+    width: clamp(145px, 12vw, 180px);
+    flex: 0 0 auto;
+    display: block;
+}
+.ng-header-logo img {
+    width: 100%;
+    max-height: 58px;
+    display: block;
+    object-fit: contain;
+    object-position: left center;
+}
+.ng-primary-navigation {
+    margin-left: auto;
+}
+.ng-navigation-list {
+    display: flex;
+    align-items: center;
+    gap: clamp(17px, 1.7vw, 29px);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.ng-navigation-list a {
+    position: relative;
+    display: block;
+    padding: 18px 0;
+    color: var(--color-dark);
+    font-size: 0.94rem;
+    font-weight: 750;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.ng-navigation-list a::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 9px;
+    left: 0;
+    height: 3px;
+    background: var(--color-coral);
+    border-radius: 999px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 180ms ease;
+}
+.ng-navigation-list a:hover::after, .ng-navigation-list a:focus-visible::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+.ng-mobile-home {
+    display: none;
+}
+.ng-header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.ng-support-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    color: var(--color-dark);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.ng-support-link span {
+    color: var(--color-coral);
+    font-size: 1rem;
+    transition: transform 180ms ease;
+}
+.ng-support-link:hover span, .ng-support-link:focus-visible span {
+    transform: scale(1.18);
+}
+.ng-header-button {
+    min-height: 52px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    padding: 12px 22px;
+    color: var(--color-white);
+    background: var(--color-coral);
+    border-radius: 15px;
+    font-weight: 800;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+.ng-header-button:hover, .ng-header-button:focus-visible {
+    color: var(--color-white);
+    background: var(--color-dark);
+    transform: translateY(-2px);
+}
+.ng-menu-toggle {
+    display: none;
+}
+/* Nieuwe split hero */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ng-hero-values span:not(:last-child)::after {
+    content: "•";
+    position: absolute;
+    right: -15px;
+    color: var(--color-coral);
+}
+/* Hero image */
+
+
+
+
+/* NoordbuiTen card */
+
+
+
+
+
+
+
+
+
+/* Header and hero responsive */
+@media (max-width: 1180px) {
+    .ng-header-shell {
+        min-height: 72px;
+    }
+    .ng-menu-toggle {
+        min-height: 48px;
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        margin-left: auto;
+        padding: 10px 14px;
+        color: var(--color-dark);
+        background: var(--color-cream);
+        border: 0;
+        border-radius: 13px;
+        font: inherit;
+        font-weight: 800;
+        cursor: pointer;
+    }
+    .ng-menu-icon {
+        width: 20px;
+        display: grid;
+        gap: 5px;
+    }
+    .ng-menu-icon span {
+        width: 100%;
+        height: 2px;
+        display: block;
+        background: currentColor;
+        border-radius: 999px;
+        transition: transform 180ms ease;
+    }
+    .ng-primary-navigation {
+        position: absolute;
+        top: calc(100% + 11px);
+        right: 0;
+        left: 0;
+        display: none;
+        padding: 18px;
+        background: var(--color-white);
+        border: 1px solid rgba(46, 59, 50, 0.1);
+        border-radius: 19px;
+        box-shadow: 0 20px 50px rgba(46, 59, 50, 0.14);
+    }
+    .ng-site-header.menu-is-open .ng-primary-navigation {
+        display: block;
+    }
+    .ng-navigation-list {
+        display: grid;
+        gap: 3px;
+    }
+    .ng-navigation-list a {
+        padding: 14px 15px;
+        border-radius: 11px;
+    }
+    .ng-navigation-list a::after {
+        content: none;
+    }
+    .ng-navigation-list a:hover, .ng-navigation-list a:focus-visible {
+        background: var(--color-green-light);
+    }
+    .ng-mobile-home {
+        display: block;
+    }
+    
+}
+@media (max-width: 860px) {
+    .ng-support-link {
+        display: none;
+    }
+    
+    
+    
+    
+}
+@media (max-width: 782px) {
+    .admin-bar .ng-site-header {
+        top: 46px;
+    }
+}
+@media (max-width: 620px) {
+    .ng-site-header {
+        padding: 9px 0;
+    }
+    .ng-header-shell {
+        min-height: 65px;
+        gap: 10px;
+        padding: 7px 8px 7px 15px;
+        border-radius: 17px;
+    }
+    .ng-header-logo {
+        width: 130px;
+    }
+    .ng-header-button {
+        display: none;
+    }
+    .ng-menu-toggle {
+        margin-left: auto;
+    }
+    
+    
+    
+    
+    
+    
+    .ng-hero-values span:not(:last-child)::after {
+        content: none;
+    }
+    
+    
+    
+    
+    
+}
+/* Homepage: identiteit */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.identity-card > p:not(.identity-label) {
+    max-width: 560px;
+    margin: 0 0 30px;
+    font-size: 1.02rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Homepage responsive */
+
+
+/* Standaard WordPress-inhoud */
+.content-area {
+    padding-top: clamp(60px, 8vw, 100px);
+    padding-bottom: clamp(80px, 10vw, 140px);
+}
+.content-entry {
+    max-width: 850px;
+    margin-inline: auto;
+}
+.entry-title {
+    margin: 0 0 32px;
+    font-size: clamp(2.3rem, 5vw, 4.5rem);
+    letter-spacing: -0.05em;
+    line-height: 1.05;
+}
+.entry-image {
+    margin-bottom: 36px;
+    overflow: hidden;
+    border-radius: var(--radius-medium);
+}
+.entry-content > *:first-child {
+    margin-top: 0;
+}
+/* Footer */
+.site-footer {
+    color: var(--color-white);
+    background: var(--color-green);
+}
+
+
+
+.footer-column h2 {
+    margin: 0 0 18px;
+    color: var(--color-white);
+    font-size: 1rem;
+}
+.footer-column p {
+    color: var(--color-green-light);
+}
+.footer-column a {
+    color: var(--color-white);
+    font-weight: 700;
+}
+
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: var(--color-green-light);
+    font-size: 0.86rem;
+}
+/* Responsive */
+
+@media (max-width: 640px) {
+    
+    
+    .button {
+        width: 100%;
+    }
+    
+}
+/* Homepage: in de praktijk */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Concrete voortgang */
+
+
+
+
+.progress-copy > p:not(.eyebrow) {
+    max-width: 540px;
+    margin: 24px 0 0;
+    color: rgba(255, 255, 255, 0.82);
+}
+
+
+
+
+
+
+
+
+/* NoordgroeiT is breder dan NoordbuiTen */
+
+
+
+
+
+
+/* Responsive */
+
+
+
+/* Homepage: meedoen en vrijwilligersverhaal */
+
+
+
+
+
+
+/* Afbeelding */
+
+
+
+
+/* Vrijwilligersverhaal */
+
+
+
+
+
+
+
+
+
+
+/* Verwachtingen */
+
+
+
+
+
+
+
+
+
+/* Afsluitende oproep */
+
+
+
+.join-action p:not(.identity-label) {
+    max-width: 660px;
+    margin: 15px 0 0;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+
+
+
+/* Homepage: nieuws en agenda */
+
+
+
+
+
+/* Nieuws */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Agenda */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Lege situaties */
+
+
+
+
+
+
+/* Responsive */
+
+
+
+/* Homepage: netwerk en partners */
+
+
+
+
+
+
+/* NoordbuiTen */
+
+
+
+
+
+
+.noordbuiten-copy > p:not(.network-label) {
+    margin: 24px 0 34px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+
+
+/* Partnerwand */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Afsluitende partneroproep */
+
+
+.network-action p:not(.network-label) {
+    max-width: 700px;
+    margin: 15px 0 0;
+}
+
+
+/* Responsive */
+
+
+
+/* Homepage: afsluitende call-to-action */
+
+
+
+
+
+
+
+.closing-cta-copy > p:not(.closing-cta-label) {
+    max-width: 660px;
+    margin: 30px 0 0;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: clamp(1.05rem, 1.5vw, 1.24rem);
+    line-height: 1.7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Gezamenlijke footer */
+.site-footer {
+    padding: clamp(70px, 9vw, 110px) 0 28px;
+    color: rgba(255, 255, 255, 0.76);
+    background: var(--color-dark);
+}
+.footer-main {
+    display: grid;
+    grid-template-columns: minmax(280px, 1.3fr) minmax(150px, 0.65fr) minmax(150px, 0.65fr) minmax(230px, 0.9fr);
+    gap: clamp(35px, 5vw, 72px);
+}
+.footer-identity {
+    max-width: 420px;
+}
+.footer-logo {
+    width: min(100%, 285px);
+    min-height: 112px;
+    display: grid;
+    place-items: center;
+    margin-bottom: 28px;
+    padding: 21px 25px;
+    background: var(--color-cream);
+    border-radius: var(--radius-medium);
+}
+.footer-logo img {
+    width: 100%;
+    max-height: 82px;
+    object-fit: contain;
+}
+.footer-identity > p {
+    margin: 0;
+    line-height: 1.7;
+}
+.footer-organisation-note {
+    margin-top: 20px !important;
+    padding-left: 17px;
+    color: var(--color-green-light);
+    border-left: 3px solid var(--color-coral);
+    font-size: 0.88rem;
+}
+.footer-column h2 {
+    margin: 0 0 24px;
+    color: var(--color-white);
+    font-size: 0.76rem;
+    font-weight: 800;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+}
+.footer-column ul {
+    display: grid;
+    gap: 13px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.footer-column a {
+    color: rgba(255, 255, 255, 0.76);
+    text-decoration: none;
+    transition: color 180ms ease, transform 180ms ease;
+}
+.footer-column li a {
+    display: inline-block;
+}
+.footer-column a:hover, .footer-column a:focus-visible {
+    color: var(--color-white);
+}
+.footer-column li a:hover, .footer-column li a:focus-visible {
+    transform: translateX(4px);
+}
+.footer-newsletter p {
+    margin: 0 0 23px;
+    line-height: 1.65;
+}
+
+.footer-noordbuiten-copy a span {
+    transition: transform 180ms ease;
+}
+.footer-noordbuiten-copy a:hover span, .footer-noordbuiten-copy a:focus-visible span {
+    transform: translateX(5px);
+}
+/* NoordbuiTen in footer */
+.footer-noordbuiten {
+    display: grid;
+    grid-template-columns: minmax(230px, 0.65fr) minmax(0, 1.35fr);
+    align-items: center;
+    gap: clamp(28px, 5vw, 65px);
+    margin-top: clamp(55px, 8vw, 90px);
+    padding: clamp(28px, 5vw, 48px);
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: var(--radius-large);
+}
+.footer-noordbuiten-logo {
+    min-height: 145px;
+    display: grid;
+    place-items: center;
+    padding: 25px;
+    background: var(--color-green-light);
+    border-radius: var(--radius-medium);
+}
+.footer-noordbuiten-logo img {
+    width: 100%;
+    max-width: 285px;
+    max-height: 110px;
+    object-fit: contain;
+}
+.footer-small-label {
+    margin: 0 0 9px;
+    color: var(--color-coral);
+    font-size: 0.7rem;
+    font-weight: 800;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+.footer-noordbuiten-copy h2 {
+    max-width: 690px;
+    margin: 0 0 22px;
+    color: var(--color-white);
+    font-size: clamp(1.55rem, 3vw, 2.5rem);
+    letter-spacing: -0.04em;
+    line-height: 1.08;
+}
+.footer-noordbuiten-copy a {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    padding-bottom: 4px;
+    color: var(--color-white);
+    border-bottom: 2px solid currentColor;
+    font-weight: 800;
+    text-decoration: none;
+}
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 34px;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    font-size: 0.78rem;
+}
+.footer-bottom p {
+    margin: 0;
+}
+/* Responsive */
+@media (max-width: 1050px) {
+    
+    
+    .footer-main {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+@media (max-width: 700px) {
+    
+    
+    .footer-main, .footer-noordbuiten {
+        grid-template-columns: 1fr;
+    }
+    .footer-identity {
+        max-width: none;
+    }
+}
+@media (max-width: 520px) {
+    
+    
+    .footer-main {
+        gap: 42px;
+    }
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+/* Homepage: introductie en missie */
+
+
+
+
+
+
+
+
+
+
+
+
+/* Vier thema’s */
+/* Relatie NoordgroeiT en NoordbuiTen */
+
+
+
+
+
+
+.ng-structure-copy > p:not(.ng-structure-label) {
+    max-width: 680px;
+    margin: 27px 0 0;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 1.02rem;
+}
+
+/* Visuele organisatiestructuur */
+
+
+
+
+
+
+
+
+
+/* Responsive */
+
+
+/* Header language switcher */
+.ng-header-actions {
+    gap: 12px;
+}
+.ng-language-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+    padding: 4px;
+    background: var(--color-cream);
+    border: 1px solid rgba(46, 59, 50, 0.09);
+    border-radius: 12px;
+}
+.ng-language-switcher .ng-language-option {
+    position: static;
+    min-width: 34px;
+    min-height: 34px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 8px;
+    color: rgba(46, 59, 50, 0.58);
+    border-radius: 9px;
+    font-size: 0.72rem;
+    font-weight: 850;
+    letter-spacing: 0.05em;
+    line-height: 1;
+    text-decoration: none;
+    transition: color 180ms ease, background-color 180ms ease;
+}
+.ng-language-switcher .ng-language-option::after {
+    content: none;
+}
+.ng-language-switcher a.ng-language-option:hover, .ng-language-switcher a.ng-language-option:focus-visible {
+    color: var(--color-dark);
+    background: var(--color-green-light);
+}
+.ng-language-switcher .ng-language-option.is-current {
+    color: var(--color-white);
+    background: var(--color-dark);
+}
+.ng-language-divider {
+    color: rgba(46, 59, 50, 0.25);
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+.ng-language-option.is-disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+.ng-mobile-language {
+    display: none;
+}
+/* Language switch inside the mobile menu */
+@media (max-width: 1180px) {
+    .ng-language-switcher--desktop {
+        display: none;
+    }
+    .ng-mobile-language {
+        display: block;
+        margin-top: 10px;
+        padding-top: 14px;
+        border-top: 1px solid rgba(46, 59, 50, 0.1);
+    }
+    .ng-language-switcher--mobile {
+        width: fit-content;
+    }
+    .ng-mobile-language .ng-language-option {
+        min-width: 46px;
+        min-height: 40px;
+        padding: 9px 12px;
+    }
+    .ng-mobile-language .ng-language-option:hover, .ng-mobile-language .ng-language-option:focus-visible {
+        background: var(--color-green-light);
+    }
+    .ng-mobile-language .ng-language-option.is-current {
+        color: var(--color-white);
+        background: var(--color-dark);
+    }
+}
+/* Nieuwe open homepagehero */
+
+
+
+/* Hero text */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.ng-home-hero-themes span:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -14px;
+    width: 4px;
+    height: 4px;
+    background: var(--color-coral);
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+/* Hero photography */
+
+
+
+
+
+
+
+
+/* NoordbuiTen connection */
+
+
+
+
+
+/* Responsive hero */
+
+@media (max-width: 620px) {
+    
+    
+    
+    
+    .ng-home-hero-themes span:not(:last-child)::after {
+        right: -12px;
+    }
+    
+    
+    
+    
+    
+    
+}
+/* Rustige homepagehero */
+
+
+/* Photograph */
+
+
+/* Readability gradient */
+
+/* Hero content */
+
+
+
+
+
+
+/* Primary action */
+
+
+
+
+/* Quiet secondary action */
+
+
+/* Small scroll cue */
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+/* Respect reduced-motion settings */
+
+/* Editorial hero: tekst boven brede foto */
+
+
+
+
+
+
+
+/* Main action */
+
+
+
+
+/* Quiet secondary action */
+
+
+/* Wide photograph */
+
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+/* Homepage: foto achter tekst en header */
+/* Header floats over the hero on the homepage */
+body.home .ng-site-header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 14px 0;
+    background: transparent;
+    border-bottom-color: transparent;
+    backdrop-filter: none;
+    transition: background-color 240ms ease, border-color 240ms ease, backdrop-filter 240ms ease;
+}
+/* Slightly transparent at the top so the photo remains visible */
+body.home .ng-header-shell {
+    background: rgba(244, 241, 236, 0.72);
+    border-color: rgba(255, 255, 255, 0.42);
+    box-shadow: 0 9px 34px rgba(31, 46, 37, 0.09);
+    backdrop-filter: blur(13px);
+    transition: background-color 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+}
+/* Return to the existing header appearance after scrolling */
+/* Full photograph hero */
+
+/* The photograph fills the complete hero */
+
+/* Local light-green veil: strong behind text, open over the photo */
+
+/* Hero text */
+
+
+
+
+
+
+
+
+
+/* Existing soft curve at the bottom */
+
+
+
+/* Tablet and mobile */
+
+
+/* Homepage: editorial photo behind text and header */
+/* Transparent header at the top */
+body.home .ng-site-header {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 14px 0;
+    background: transparent;
+    border-bottom-color: transparent;
+    backdrop-filter: none;
+    transition: background-color 240ms ease, border-color 240ms ease, backdrop-filter 240ms ease;
+}
+body.home.admin-bar .ng-site-header {
+    top: 32px;
+}
+body.home .ng-header-shell {
+    background: rgba(244, 241, 236, 0.72);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 10px 35px rgba(31, 46, 37, 0.1);
+    backdrop-filter: blur(14px);
+    transition: background-color 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
+}
+/* Existing solid header after scrolling */
+body.home .ng-site-header.is-scrolled {
+    background: rgba(244, 241, 236, 0.94);
+    border-bottom-color: rgba(46, 59, 50, 0.07);
+    backdrop-filter: blur(14px);
+}
+body.home .ng-site-header.is-scrolled .ng-header-shell, body.home .ng-site-header.menu-is-open .ng-header-shell {
+    background: var(--color-white);
+    border-color: rgba(46, 59, 50, 0.09);
+    box-shadow: 0 9px 34px rgba(46, 59, 50, 0.07);
+}
+/* Complete opening hero */
+
+/* Allow the photograph to cover the complete section */
+
+
+
+
+
+/* Soft light area behind the text */
+
+/* Text remains calm and central */
+
+
+
+
+
+/* Mobile and tablet */
+
+@media (max-width: 782px) {
+    body.home.admin-bar .ng-site-header {
+        top: 46px;
+    }
+}
+@media (max-width: 560px) {
+    body.home .ng-site-header {
+        padding: 9px 0;
+    }
+    
+    
+    
+    
+}
+/* Hero refinement: clean photograph, no light spotlight */
+/* One consistent tint across the photograph */
+
+/* Strong, clear white typography */
+
+
+
+
+
+
+/* Tablet and mobile */
+
+
+/* Show more of the panorama */
+
+
+/* Keep enough height on smaller screens */
+
+
+/* Hero: calmer text, scroll cue and dotted divider */
+/* Tighter text composition */
+
+
+
+
+
+/* Animated “scroll omlaag” cue */
+
+
+
+/* Fine line and coral dot between hero and next section */
+
+/* Keep mobile calmer */
+
+
+/* Hero: asymmetric editorial composition */
+
+/* Darker toward the text, without a spotlight */
+
+/* Align content with the wider header */
+
+/* Left-hand editorial text */
+
+
+
+
+
+/* Keep scroll cue centred in the whole hero */
+
+
+/* Divider now lives below the photograph */
+
+/* Tablet and mobile */
+
+
+/* Divider exactly on the bottom edge of the hero */
+
+
+/* Keep the divider visible at the hero’s bottom edge */
+
+/* Actual divider on the exact bottom edge */
+
+/* Keep the following section behind the divider */
+
+/* Dot centred directly on the border */
+
+/* Intro section: warm editorial opening */
+
+/* Softer, more organic background shape */
+
+/* Main composition */
+
+/* Small section label */
+
+
+/* More controlled heading */
+
+
+/* Handmade coral stroke */
+
+/* Right-hand explanation */
+
+
+
+
+body.home .ng-intro-copy p:not(.ng-intro-lead) {
+    max-width: 520px;
+    line-height: 1.7;
+}
+/* Responsive */
+
+
+/* Over ons: editorial manifesto */
+
+/* Remove previous decorative experiments */
+
+/* Compact opening statement */
+
+
+
+
+
+
+body.home .ng-intro-copy p:not(.ng-intro-lead) {
+    max-width: 590px;
+    margin-top: 20px;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+/* Themes become flowing manifesto rows */
+/* Remove redundant NoordgroeiT–NoordbuiTen card */
+
+/* Responsive */
+
+/* NoordgroeiT story system: de groeilijn */
+
+/* Calm introductory composition */
+
+
+
+
+
+
+
+
+
+
+/* Quiet text link */
+
+
+
+/* The growth journey */
+
+
+
+/* Hand-drawn-feeling connecting line */
+
+
+/* Three unboxed moments */
+
+
+
+
+
+
+
+
+
+
+/* Outcomes without cards */
+
+
+
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+/* Reduced motion */
+
+/* Homepage About: civic editorial identity */
+
+/* Opening statement */
+
+
+
+
+
+
+
+/* Origin story */
+
+/* Founding-date seal */
+
+
+
+
+/* Story text */
+
+
+
+
+
+/* Text link */
+
+
+
+/* The belief: not a card, just a strong voice */
+
+
+
+/* Full-width role statement */
+
+
+
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+/* Initiatieven: typographic project index */
+/* Section introduction */
+/* Full-width project rows */
+/* Large background word */
+/* Number and type */
+/* Project title and description */
+/* Circular action */
+/* Tablet */
+/* Mobile */
+/* PHOTOGRAPHIC ABOUT + INITIATIVES */
+
+
+/* ABOUT */
+
+
+
+
+
+
+
+/* About photography */
+
+
+
+
+
+
+
+
+
+
+/* About story */
+
+
+
+
+
+
+
+
+
+
+
+
+/* INITIATIVES */
+/* Initiative rows */
+/* Initiative footer */
+/* RESPONSIVE */
+
+
+
+
+/* COMMUNITY FIELD STORY */
+
+
+
+
+
+
+
+
+
+
+
+
+/* RESPONSIVE */
+
+
+/* CALMER SECTION TYPOGRAPHY */
+
+/* Slightly calmer spacing around the headings */
+
+/* Mobile */
+
+/* NOORD IN CIJFERS */
+
+
+
+
+
+
+
+
+
+/* Subtle animation finishing state */
+
+
+
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+
+/* NOORDBUITEN STORY */
+.ng-nb-story {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(5rem, 9vw, 9rem) 0;
+    background: #dde8d8;
+    color: #29382f;
+}
+.ng-nb-story::before {
+    position: absolute;
+    top: clamp(4rem, 8vw, 8rem);
+    right: -7rem;
+    width: 19rem;
+    height: 19rem;
+    border: 1px solid rgba(72, 113, 65, 0.17);
+    border-radius: 50%;
+    content: "";
+}
+.ng-nb-story::after {
+    position: absolute;
+    top: clamp(9rem, 16vw, 16rem);
+    right: 2.5rem;
+    width: 0.8rem;
+    height: 0.8rem;
+    border-radius: 50%;
+    background: #f26452;
+    content: "";
+}
+/* Introduction */
+
+
+
+
+
+
+
+.ng-nb-copy > p:not(.ng-nb-location) {
+    max-width: 620px;
+    margin: 0;
+    color: #56675b;
+    font-size: clamp(1rem, 1.25vw, 1.13rem);
+    line-height: 1.75;
+}
+
+
+
+
+/* Photographic sequence */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Closing line */
+
+
+
+
+
+.ng-nb-footer li:not(:last-child)::after {
+    width: 0.3rem;
+    height: 0.3rem;
+    border-radius: 50%;
+    background: #f26452;
+    content: "";
+}
+/* Tablet */
+
+/* Mobile */
+@media (max-width: 680px) {
+    .ng-nb-story {
+        padding: 4.5rem 0;
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+/* Small phones */
+
+
+/* Partners now use the full available width */
+
+
+/* HOMEPAGE RHYTHM CLEANUP */
+/* * ABOUT * Remove the unnecessary empty first column. */
+
+
+
+
+
+
+
+/* * NUMBER STRIP */
+
+
+/* * INITIATIVES */
+/* One quieter link inside the active project */
+/* * NOORDBUITEN */
+.ng-nb-story {
+    padding: clamp(4rem, 6vw, 6.25rem) 0;
+}
+
+
+
+
+
+
+
+/* * Buttons should feel deliberate, not oversized. */
+
+/* Tablet */
+
+/* Mobile */
+@media (max-width: 680px) {
+    .ng-nb-story {
+        padding: 3.75rem 0;
+    }
+    
+    
+    
+    
+    
+    
+}
+/* NOORDBUITEN DESTINATION */
+
+
+
+
+
+
+
+
+
+/* MEEDOEN — EDITORIAL REDESIGN */
+
+/* Opening */
+
+
+
+
+
+/* Volunteer quote */
+
+
+
+
+
+
+/* Photography */
+
+
+
+
+
+/* Keep the clean expectation section, but tighten it */
+
+
+
+
+
+/* Final action */
+
+
+
+
+
+/* Desktop: keep the requested heading on one line */
+
+/* Tablet */
+
+/* Mobile */
+
+
+/* MEEDOEN — CALMER TYPOGRAPHY AND REAL BUTTONS */
+
+
+/* Final invitation */
+
+
+
+/* Two proper choices */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Tablet */
+/* Mobile */
+
+/* Heading */
+/* Achievement strip */
+/* Photographic proof */
+/* Two small proof points */
+/* Tablet */
+/* Mobile */
+/* Reset the broken grid behaviour */
+/* Number stays inside its own panel */
+/* Tablet */
+/* Mobile */
+/* Fully reset each card */
+/* Card colours */
+/* Fix the number inside the top-left corner */
+/* Stop the text container drifting sideways */
+/* Neater typography */
+/* Tablet */
+/* Mobile */
+/* Only hide cards once JavaScript has prepared them */
+/* Reveal cards one after another */
+/* Gentle movement after the entrance finishes */
+/* Keep the number circle subtly alive */
+/* NIEUWS, AGENDA & ACTIVITEITEN */
+
+/* Heading */
+
+
+
+/* Main layout */
+
+
+
+
+/* News */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Agenda */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Proper destination rather than hyperlink */
+
+
+
+
+
+
+
+/* Ongoing activities */
+
+
+
+
+
+
+
+
+/* Responsive */
+
+
+
+/* News category and date */
+
+
+
+/* EDITORIAL NEWS */
+
+
+
+
+
+/* Stories */
+
+
+
+
+/* Leading story */
+
+
+
+
+
+
+
+
+/* Category and date */
+
+
+
+
+
+
+/* Two compact stories */
+
+
+
+
+
+
+
+
+/* Shared photo movement */
+
+/* Empty state */
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+
+/* MOVING PARTNER RIBBON */
+
+/* Introduction */
+
+
+
+/* Marquee viewport */
+
+/* Moving track */
+
+
+/* Logo panel */
+
+
+
+
+
+
+/* Subtle interaction */
+
+
+/* * Pause so visitors can inspect a logo. */
+
+/* Seamless sideways movement */
+
+/* Closing caption */
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+/* Accessibility */
+
+/* PARTNER DESTINATION */
+
+
+
+/* Deliberate destination—not a naked hyperlink */
+
+
+
+
+
+
+
+
+
+/* Homepage: afsluiting / steun NoordgroeiT */
+
+
+/* Coral shape in the corner */
+
+/* Subtle green shape at the bottom */
+
+
+
+
+
+/* A real button, not a hyperlink-looking text link */
+
+
+
+
+/* Right-hand impact list */
+
+
+
+
+
+
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+
+/* Small visual transition from the partner section */
+
+
+/* Hero: Samen voor Noord corner mark */
+
+/* Large coral circle disappearing beyond the image */
+
+/* Pale Samen voor Noord seal */
+
+
+
+
+
+/* Keep the hero seal above the dark image overlay */
+
+
+
+
+
+
+
+
+
+
+/* Badge is now independent from the darkened photograph */
+
+
+
+/* Homepage: subtle scroll reveals */
+/* * Elements are only hidden after JavaScript prepares them. * The site therefore remains fully visible if JavaScript fails. */
+
+/* Images settle into place slightly */
+
+/* Used sparingly for split compositions */
+
+
+/* Revealed state */
+
+/* Horizontal movement becomes vertical on smaller screens */
+
+/* Accessibility */
+
+/* NoordbuiTen: compact location map */
+
+
+/* Fine inner line keeps the map visually connected to the card */
+
+
+
+
+
+
+
+
+
+
+/* FINAL HOMEPAGE RESPONSIVE PASS — Keep this at the absolute bottom of style.css */
+/* Prevent decorative elements from creating horizontal scroll */
+html, body {
+    overflow-x: clip;
+}
+/* TABLET — 900px and smaller */
+@media (max-width: 900px) {
+    /* Consistent section rhythm */
+    body.home .ng-nb-story {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+    /* Hero */
+    
+    
+    
+    /* About */
+    
+    /* Initiatives */
+    /* NoordbuiTen: map and story receive proper width */
+    
+    
+    /* Join */
+    
+    
+    
+    
+    
+    /* Impact */
+    /* News and agenda */
+    
+    
+    
+    /* Closing support chapter */
+    
+    
+}
+/* SMALL TABLET — NoordbuiTen switches to one column */
+
+/* MOBILE — 600px and smaller */
+@media (max-width: 600px) {
+    :root {
+        --content-padding: 18px;
+        --radius-large: 24px;
+    }
+    /* Header */
+    body.home .ng-site-header {
+        padding: 8px 0;
+    }
+    .ng-header-shell {
+        min-height: 62px;
+        padding: 7px 8px 7px 14px;
+        border-radius: 16px;
+    }
+    .ng-header-logo {
+        width: 122px;
+    }
+    .ng-menu-toggle {
+        min-height: 44px;
+        padding: 9px 12px;
+        font-size: 0.82rem;
+    }
+    /* Hero */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Shared section rhythm */
+    body.home .ng-nb-story {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    /* Shared typography */
+    
+    /* About */
+    
+    
+    
+    
+    
+    /* Number strip stays compact as a 2 × 2 grid */
+    
+    
+    
+    
+    
+    /* Initiatives */
+    /* NoordbuiTen */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Join */
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Impact */
+    /* News and agenda */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Partners */
+    
+    
+    
+    /* Final support chapter */
+    
+    
+    
+    
+    
+    
+    
+    
+}
+/* Very narrow phones only */
+
+/* Touch devices do not need hover jumps */
+
+/* Doe mee: more compact opening */
+
+
+
+
+
+/* Doe mee: volunteer experiences */
+
+
+
+/* Two testimonial cards */
+
+
+
+/* Quiet decorative circle */
+
+
+
+
+
+
+
+/* Keep the final action close to the testimonials */
+
+
+
+/* Doe mee: clean text-led section */
+
+
+
+
+
+/* Reviews become a quiet supporting element */
+
+
+
+
+
+
+
+
+
+/* Keep the final action nearby */
+
+
+/* SAFE SCROLL REVEALS — Content can never remain invisible */
+
+/* Start the animation only once JavaScript reveals it */
+
+
+
+
+
+
+
+
+/* The impact cards used the older pre-hidden approach */
+/* Preserve a small stagger inside the impact cards */
+
+
+/* COMPACT DESTINATION CONTROLS — Replaces the final naked text links */
+
+
+/* Hero version */
+
+
+
+/* Light-section version */
+
+
+
+/* Shared movement */
+
+
+
+
+/* FINAL CALM ANIMATION FIX — One subtle reveal system — no jumping or double animation */
+/* Prepare elements smoothly */
+
+/* Revealed state */
+
+/* Impact cards: remove the second animation */
+/* Reveal the cards */
+/* Small, controlled stagger */
+/* Prevent every individual child from animating separately */
+/* Keep hover movement subtle */
+/* Even quieter on phones */
+
+/* Accessibility */
+/* RESTORE ORIGINAL HOMEPAGE ANIMATIONS — Original movement, without the double-animation bug */
+/* Main upward reveal */
+
+/* Images gently settle into position */
+
+/* Split layouts enter from opposite directions */
+
+
+/* Final revealed position */
+
+/* Original one-by-one rhythm */
+/* Disable the conflicting inner animation */
+/* Original hover movement */
+/* MOBILE — Horizontal entrances become vertical */
+
+/* Accessibility */
+
+/* FINAL NAVIGATION WITH SUBMENUS */
+.ng-nav-parent {
+    position: relative;
+}
+.ng-nav-parent-row {
+    display: flex;
+    align-items: center;
+}
+.ng-nav-parent-row > a {
+    padding-right: 4px;
+}
+/* Small chevron control */
+.ng-submenu-toggle {
+    width: 26px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    color: var(--color-dark);
+    background: transparent;
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+}
+.ng-submenu-toggle span {
+    width: 7px;
+    height: 7px;
+    display: block;
+    border-right: 2px solid currentColor;
+    border-bottom: 2px solid currentColor;
+    transform: translateY(-2px) rotate(45deg);
+    transition: transform 180ms ease;
+}
+.ng-submenu-toggle:hover, .ng-submenu-toggle:focus-visible {
+    color: var(--color-coral);
+    background: var(--color-green-light);
+}
+.ng-nav-parent.submenu-is-open .ng-submenu-toggle span {
+    transform: translateY(2px) rotate(225deg);
+}
+/* Desktop dropdown */
+.ng-submenu {
+    position: absolute;
+    z-index: 30;
+    top: calc(100% - 5px);
+    left: -18px;
+    width: max-content;
+    min-width: 245px;
+    display: grid;
+    margin: 0;
+    padding: 13px 10px 10px;
+    overflow: hidden;
+    list-style: none;
+    background: #fbfaf7;
+    border: 1px solid rgba(46, 59, 50, 0.11);
+    border-radius: 5px 17px 17px 17px;
+    box-shadow: 0 20px 45px rgba(46, 59, 50, 0.14);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(9px);
+    transition: opacity 180ms ease, visibility 180ms ease, transform 220ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+.ng-submenu::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 46px;
+    height: 3px;
+    background: var(--color-coral);
+    border-radius: 0 999px 999px 0;
+}
+.ng-nav-doe-mee .ng-submenu {
+    right: 0;
+    left: auto;
+}
+.ng-nav-parent:hover > .ng-submenu, .ng-nav-parent:focus-within > .ng-submenu, .ng-nav-parent.submenu-is-open > .ng-submenu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.ng-submenu li + li {
+    border-top: 1px solid rgba(46, 59, 50, 0.07);
+}
+.ng-submenu a {
+    padding: 11px 12px;
+    border-radius: 8px;
+    font-size: 0.88rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.ng-submenu a::after {
+    content: none !important;
+}
+.ng-submenu a:hover, .ng-submenu a:focus-visible {
+    color: var(--color-green);
+    background: var(--color-green-light);
+}
+/* Mobile-only destinations */
+.ng-mobile-support, .ng-mobile-vacancies {
+    display: none;
+}
+/* Mobile navigation accordion */
+@media (max-width: 1180px) {
+    .ng-navigation-list {
+        max-height: calc(100vh - 145px);
+        overflow-y: auto;
+        overscroll-behavior: contain;
+    }
+    .ng-nav-parent-row {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 46px;
+        align-items: center;
+    }
+    .ng-nav-parent-row > a {
+        padding-right: 8px;
+    }
+    .ng-submenu-toggle {
+        width: 42px;
+        height: 42px;
+    }
+    .ng-nav-parent > .ng-submenu {
+        position: static;
+        width: auto;
+        min-width: 0;
+        max-height: 0;
+        margin: 0 14px;
+        padding: 0 0 0 14px;
+        overflow: hidden;
+        background: transparent;
+        border: 0;
+        border-left: 2px solid rgba(62, 107, 71, 0.2);
+        border-radius: 0;
+        box-shadow: none;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transform: none;
+        transition: max-height 280ms cubic-bezier(0.22, 1, 0.36, 1), opacity 180ms ease, margin 280ms ease, padding 280ms ease;
+    }
+    .ng-nav-parent > .ng-submenu::before {
+        display: none;
+    }
+    .ng-nav-parent.submenu-is-open > .ng-submenu {
+        max-height: 420px;
+        margin-top: 2px;
+        margin-bottom: 9px;
+        padding-top: 4px;
+        padding-bottom: 4px;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+    }
+    .ng-submenu li + li {
+        border-top: 0;
+    }
+    .ng-submenu a {
+        padding: 9px 11px;
+        font-size: 0.9rem;
+    }
+}
+@media (max-width: 860px) {
+    .ng-mobile-support {
+        display: block;
+    }
+    .ng-mobile-support > a {
+        color: var(--color-coral);
+    }
+}
+@media (max-width: 620px) {
+    .ng-mobile-vacancies {
+        display: block;
+    }
+    .ng-mobile-vacancies > a {
+        margin-top: 7px;
+        color: var(--color-white) !important;
+        background: var(--color-coral) !important;
+    }
+    .ng-mobile-vacancies > a:hover, .ng-mobile-vacancies > a:focus-visible {
+        background: var(--color-dark) !important;
+    }
+}
+/* NAVIGATION WIDTH CORRECTION */
+.ng-site-header .site-container {
+    --content-width: 1500px;
+}
+.ng-header-shell {
+    gap: clamp(14px, 1.35vw, 24px);
+}
+.ng-navigation-list {
+    gap: clamp(9px, 0.9vw, 16px);
+}
+.ng-navigation-list > li > a, .ng-nav-parent-row > a {
+    font-size: 0.91rem;
+}
+.ng-submenu-toggle {
+    width: 20px;
+    height: 36px;
+}
+.ng-header-actions {
+    flex: 0 0 auto;
+    gap: 11px;
+}
+.ng-support-link {
+    font-size: 0.87rem;
+}
+.ng-header-button {
+    min-height: 52px;
+    padding-inline: 19px;
+}
+/* BALANCED HEADER + STEUN ONS BUTTON */
+@media (min-width: 1181px) {
+    /* Three balanced areas: logo | centred navigation | actions */
+    .ng-header-shell {
+        display: grid;
+        grid-template-columns: auto minmax(0, 1fr) auto;
+        align-items: center;
+        column-gap: clamp(18px, 1.8vw, 30px);
+        padding: 9px 15px 9px 22px;
+    }
+    .ng-header-logo {
+        justify-self: start;
+    }
+    .ng-primary-navigation {
+        justify-self: center;
+        margin-left: 0;
+    }
+    .ng-header-actions {
+        justify-self: end;
+        margin-left: 0;
+        gap: 10px;
+    }
+    /* Keep the centre navigation compact */
+    .ng-navigation-list {
+        gap: clamp(8px, 0.75vw, 14px);
+    }
+    .ng-navigation-list > li > a, .ng-nav-parent-row > a {
+        font-size: 0.9rem;
+    }
+}
+/* Steun ons becomes a proper secondary CTA */
+.ng-support-link--end {
+    min-height: 52px;
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 0 18px !important;
+    color: var(--color-white) !important;
+    background: var(--color-dark) !important;
+    border: 1px solid var(--color-dark) !important;
+    border-radius: 15px !important;
+    font-size: 0.88rem;
+    font-weight: 800;
+    line-height: 1;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: color 180ms ease, background-color 180ms ease, border-color 180ms ease, transform 180ms ease, box-shadow 180ms ease;
+}
+.ng-support-link--end span {
+    color: var(--color-coral) !important;
+    font-size: 1rem;
+}
+/* Steun ons hover */
+.ng-support-link--end:hover, .ng-support-link--end:focus-visible {
+    color: var(--color-white) !important;
+    background: var(--color-green) !important;
+    border-color: var(--color-green) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(46, 59, 50, 0.18);
+}
+.ng-support-link--end:hover span, .ng-support-link--end:focus-visible span {
+    color: var(--color-coral) !important;
+    transform: scale(1.15);
+}
+/* Return to the existing mobile flex layout */
+@media (max-width: 1180px) {
+    .ng-header-shell {
+        display: flex;
+    }
+}
+/* HOMEPAGE — WAAR WE VOOR STAAN */
+
+/* Small editorial label */
+
+
+/* Four values */
+
+
+
+
+
+/* Icon circles */
+
+
+
+
+
+/* Text */
+
+
+/* VALUES — TABLET */
+
+/* VALUES — MOBILE */
+
+
+
+
+
+
+
+
+
+
+/* Makes every icon start on exactly the same line */
+
+/* Makes all four text blocks line up */
+
+
+
+
+
+
+
+
+
+/* ACCESSIBILITY — CONTRAST FIXES */
+/* Impact section */
+/* NoordbuiTen footer label */
+.footer-small-label {
+    color: #f3a28c;
+}
+/* VALUES STRIP — MOBILE CLEANUP */
+
+/* MOBILE HEADER — COMPACT STEUN ONS */
+@media (max-width: 560px) {
+    body.home .ng-header-shell {
+        gap: 10px;
+        padding: 8px 10px 8px 14px;
+    }
+    body.home .ng-header-actions {
+        flex: 0 0 auto;
+        gap: 0;
+    }
+    body.home .ng-support-link--end {
+        width: 48px;
+        min-width: 48px;
+        min-height: 48px;
+        padding: 0 !important;
+        /* Hides only the visible "Steun ons" text */
+        font-size: 0;
+        border-radius: 14px !important;
+    }
+    body.home .ng-support-link--end span {
+        font-size: 1rem;
+    }
+}
+/* FINAL HERO TYPOGRAPHY */
+
+/* Small explanatory line */
+
+/* Main statement */
+
+/* Force our deliberate line break */
+
+/* Tiny house-style detail */
+
+/* Give line two a tiny bit of breathing room */
+
+/* Tablet */
+
+/* Mobile */
+
+/* VALUES STRIP — CTA + PLAYFUL ICON MOTION */
+/* Button + values on one horizontal line */
+
+/* Ontdek wat we doen */
+
+
+
+
+/* ICON MOVEMENT — Matches the existing NoordgroeiT interaction */
+
+/* Only the little circle moves */
+
+/* The item itself stays completely still */
+
+/* VALUES CTA — RESPONSIVE */
+
+
+/* Accessibility */
+
+/* VALUES — OUTSIDE DISCOVERY BUTTON */
+/* Button lives in the empty gutter beside the strip */
+
+
+/* Hover */
+
+
+/* * Once there isn't enough room beside the 1200px container, * bring it back above the strip rather than letting it overlap. */
+
+/* Mobile */
+
+/* VALUES — DIRECTIONAL CUE */
+
+
+/* Lives in the left gutter */
+
+/* Same quiet editorial language as SCROLL OMLAAG */
+
+/* Direction line */
+
+/* Fine line */
+
+/* Coral dot */
+
+/* Tiny arrow at the end */
+
+
+/* Bring it above the strip when the side gutter gets too small */
+
+/* Mobile: quiet, no unnecessary movement */
+
+/* Respect accessibility settings */
+
+/* HERO — CALMER TEXT SCALE */
+
+
+
+/* Tablet */
+
+/* Mobile */
+
+/* OVER ONS — TIGHTER EDITORIAL INTRO */
+
+/* Kicker now actually belongs to the heading */
+
+
+
+/* Short supporting sentence */
+
+
+/* ORIGIN STORY UNDER PHOTO */
+/* Date */
+/* Main statement */
+/* Right-side explanation */
+/* Tablet */
+
+/* Mobile */
+
+
+
+
+
+/* NUMBER STRIP — FILL THE EXISTING 1200PX CONTAINER */
+
+/* Use the complete container width */
+
+/* Four genuinely equal columns */
+
+/* Keep outer edges aligned with the rest of the site */
+
+
+/* NUMBER STRIP — VISUALLY USE FULL 1200PX WIDTH */
+
+/* First one stays against the left edge */
+
+/* Middle two sit nicely inside their columns */
+
+/* Last one reaches the right edge */
+
+/* Paragraphs currently have max-width:190px, so align those as well */
+
+
+/* NUMBER STRIP — FINAL EVEN SPACING */
+
+/* Every statistic gets exactly 1/4 of the 1200px */
+
+/* Dividers exactly between the four columns */
+
+/* Text sits underneath the number consistently */
+
+/* Keep the numbers visually consistent */
+
+/* HEADING */
+/* CAROUSEL */
+/* CARDS */
+/* FRONT */
+/* RIGHT CARD */
+/* FURTHEST CARD */
+/* fourth / invisible */
+/* IMAGE */
+/* number badge */
+/* CONTENT */
+/* CAS DE DAS PLACEHOLDER */
+/* ARROWS */
+/* DOTS */
+/* QUIET INDEX */
+/* TABLET */
+/* MOBILE */
+/* REDUCED MOTION */
+/* INITIATIVES — CIRCULAR COVERFLOW CAROUSEL */
+
+/* SECTION HEADING */
+
+
+
+/* CAROUSEL SHELL */
+
+
+/* CARDS */
+
+/* ACTIVE / CENTRE */
+
+/* LEFT PREVIEW */
+
+/* RIGHT PREVIEW */
+
+/* Anything else stays outside the carousel */
+
+/* PHOTOGRAPH */
+
+/* Fine tune existing photos */
+
+
+
+/* GRADIENT OVER IMAGE */
+
+/* * Side cards are already darkened through filter, * so keep their gradient visually simple. */
+
+/* TEXT OVERLAY */
+
+/* Small project label */
+
+
+
+/* Title */
+
+/* Description */
+
+/* Link */
+
+
+
+/* SIDE PREVIEW TEXT */
+/* * Previews show only the identity, * not a full paragraph and button. */
+
+
+
+
+/* Cursor indicates side card can be selected */
+
+/* O & O / CAS DE DAS PLACEHOLDER */
+
+
+
+
+
+/* ARROWS */
+
+
+
+
+/* COUNTER + DOTS */
+
+
+
+
+
+
+/* TABLET */
+
+/* MOBILE */
+
+/* ACCESSIBILITY */
+
+/* COVERFLOW — SMALLER PREVIEWS INSIDE 1200PX */
+
+/* Centre card stays the hero of the carousel */
+
+/* Smaller left preview */
+
+/* Smaller right preview */
+
+/* Previews should feel quieter than the centre */
+
+
+/* Arrows also stay comfortably inside the carousel */
+
+
+/* Cas de Das carousel image */
+
+/* OVER ONS — MISSIE & VISIE */
+
+/* Small introduction */
+
+
+/* TWO CLEAR COLUMNS */
+
+
+/* First column aligns with page */
+
+/* Divider between mission and vision */
+
+/* Small number */
+
+/* Mission / vision label */
+
+/* Main statement */
+
+/* Explanation */
+
+/* QUOTE / CLOSING LINE */
+
+
+/* Keep existing compact button neat */
+
+/* RESPONSIVE */
+
+
+/* HOMEPAGE POLISH — CONSISTENT TYPOGRAPHY */
+:root {
+    --ng-home-section-title: clamp(2.85rem, 3.85vw, 4.15rem);
+    --ng-home-body: clamp(0.98rem, 1.05vw, 1.06rem);
+}
+/* MAIN SECTION HEADINGS */
+
+/* SECTION INTRO COPY */
+body.home .ng-nb-copy > p:not(.ng-nb-location) {
+    font-size: var(--ng-home-body);
+    line-height: 1.68;
+}
+/* SMALL SECTION KICKERS */
+
+@media (max-width: 700px) {
+    :root {
+        --ng-home-section-title: clamp(2.45rem, 10vw, 3.15rem);
+        --ng-home-body: 0.98rem;
+    }
+}
+/* HOMEPAGE POLISH — VERTICAL RHYTHM */
+/* INITIATIVES — Less empty air around the carousel */
+
+
+/* DOE MEE — Keep the dark chapter substantial, but tighter */
+
+
+/* Testimonials belong to the same story, so they don't need a giant second opening */
+
+/* NEWS & AGENDA */
+
+
+/* PARTNERS — Supporting content = slightly more compact */
+
+
+/* MOBILE */
+
+/* HOMEPAGE POLISH — CONTROL LANGUAGE */
+/* 1. COMPACT DESTINATION CONTROLS */
+
+
+/* One clean interaction everywhere */
+
+
+/* * Remove the little rotation from the older version. * Horizontal movement feels cleaner and matches the site. */
+
+/* 2. DOE MEE — TWO IMPORTANT CHOICES — Keep them larger, but bring their details into the system. */
+
+
+
+/* Same circular arrow proportions */
+
+/* * Coral primary: * white circle + coral arrow. * Makes it feel related to the final support CTA. */
+
+/* Quiet choice keeps dark circle */
+
+/* Same hover motion */
+
+
+/* 3. AGENDA DESTINATION — Same arrow language without turning it into a pill. */
+
+
+
+
+
+/* 4. FINAL SUPPORT CTA — Keep this one deliberately more important. */
+
+
+/* 5. ACCESSIBLE KEYBOARD FOCUS */
+
+/* MOBILE */
+
+/* HOMEPAGE POLISH — MICRO INTERACTIONS */
+/* 1. MAIN "VAN BINNENUIT" PHOTO — Keep this calm — tiny depth, no big zoom. */
+
+
+/* Coral marker gets a tiny response too */
+
+
+/* 2. NOORDBUITEN PHOTOS — Existing movement, just slightly calmer and unified. */
+
+
+/* Captions become a touch clearer on hover */
+
+
+/* 3. DOE MEE TESTIMONIALS — They're not buttons, so no big movement. — Just a little depth when the mouse passes over. */
+
+
+/* Let the decorative circle quietly move */
+
+
+/* Quote mark gets a little brighter */
+
+
+/* 4. NEWS CARDS — Same motion language as buttons: 2px, not 3–5px. */
+
+
+
+
+/* 5. PARTNER LOGOS — Very subtle: these shouldn't behave like product cards. */
+
+
+
+/* 6. INITIATIVE CAROUSEL — Centre card gets life; previews clearly feel selectable. */
+
+
+/* Side previews: don't move position — that could fight the carousel animation. Just wake them up slightly. */
+
+
+/* 7. CONSISTENT FOCUS — Mouse hover is cute; keyboard should get equal treatment. */
+
+/* 8. TOUCH DEVICES — No sticky fake hover effects on phones/tablets. */
+
+/* 9. REDUCED MOTION */
+
+
+/* HOMEPAGE POLISH — SURFACE DESIGN SYSTEM */
+:root {
+    /* Borders */
+    --ng-line-light: rgba(41, 56, 47, 0.14);
+    --ng-line-light-soft: rgba(41, 56, 47, 0.09);
+    --ng-line-dark: rgba(255, 255, 255, 0.17);
+    /* Shadows */
+    --ng-shadow-rest: 0 8px 26px rgba(41, 56, 47, 0.055);
+    --ng-shadow-hover: 0 14px 34px rgba(41, 56, 47, 0.10);
+    /* NoordgroeiT corner language */
+    --ng-radius-card: 1.3rem 1.3rem 0.35rem 1.3rem;
+    --ng-radius-card-large: 1.8rem 1.8rem 0.45rem 1.8rem;
+    --ng-radius-quote: 0.45rem 1.5rem 1.5rem 1.5rem;
+}
+
+/* News gets a very quiet resting shadow */
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOMEPAGE — FINAL RESPONSIVE & ACCESSIBILITY PASS — Keep this block at the VERY bottom of style.css */
+/* TABLET — 900PX */
+
+/* MOBILE — 700PX */
+@media (max-width: 700px) {
+    :root {
+        --content-padding: 18px;
+        --ng-home-section-title: clamp(2.35rem, 10vw, 3rem);
+        --ng-home-body: 0.98rem;
+    }
+    /* General headings */
+    
+    /* Supporting paragraphs */
+    body.home .ng-nb-copy > p:not(.ng-nb-location) {
+        font-size: var(--ng-home-body);
+        line-height: 1.65;
+    }
+    /* Small uppercase labels — Don't let these become microscopic. */
+    
+    /* Hero */
+    
+    
+    
+    
+    /* Values — One clean authoritative mobile layout. */
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Direction cue above values */
+    
+    
+    /* Mission / vision */
+    
+    
+    
+    
+    
+    
+    /* Numbers — retain 2 × 2 */
+    
+    
+    
+    
+    
+    /* Circular initiatives — Main card + tiny hints either side */
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    /* Doe mee */
+    
+    
+    
+    /* News */
+    
+    
+    /* Support */
+    
+}
+/* VERY SMALL PHONES — 430PX */
+@media (max-width: 430px) {
+    :root {
+        --content-padding: 16px;
+    }
+    
+    
+    
+    
+}
+/* CAROUSEL DOTS — LARGE CLICK AREA, SMALL VISUAL DOT */
+
+
+
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+    
+}
+/* INNER PAGES — SHARED EDITORIAL HERO */
+.ng-inner-hero {
+    position: relative;
+    padding: clamp(4.5rem, 7vw, 7.5rem) 0 clamp(5rem, 8vw, 8rem);
+    overflow: hidden;
+    background: var(--color-cream);
+    color: var(--color-dark);
+}
+.ng-inner-hero::before {
+    content: "";
+    position: absolute;
+    top: 11%;
+    left: -170px;
+    width: 330px;
+    height: 330px;
+    border: 65px solid rgba(62, 107, 71, 0.045);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Copy */
+
+
+
+
+
+/* Tiny information strip */
+
+
+
+
+
+
+
+/* Hero photograph */
+
+
+
+
+
+
+
+/* Handmade coral mark */
+

@@ -1,0 +1,413 @@
+/* VACATURES — LIST */
+.ng-vac-list-section {
+    padding: clamp(6rem, 8vw, 8rem) 0;
+    background: #e8f0e3;
+    color: var(--color-dark);
+}
+/* HEADING */
+.ng-vac-list-heading {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(280px, .52fr);
+    align-items: end;
+    gap: clamp(3rem, 8vw, 8rem);
+    margin-bottom: clamp(3.5rem, 6vw, 5rem);
+}
+.ng-vac-list-heading h2 {
+    max-width: 650px;
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-vac-list-heading > p {
+    max-width: 390px;
+    margin: 0;
+    color: rgba(46,59,50,.52);
+    font-size: var(--ng-home-body);
+    line-height: 1.65;
+}
+/* LIST */
+.ng-vac-list {
+    border-top: 1px solid rgba(46,59,50,.11);
+}
+.ng-vac-item {
+    display: grid;
+    grid-template-columns: 38px minmax(190px, 260px) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(1.5rem, 4vw, 4rem);
+    padding: clamp(1.8rem, 3vw, 2.6rem) 0;
+    border-bottom: 1px solid rgba(46,59,50,.11);
+}
+/* NUMBER */
+.ng-vac-item-number {
+    align-self: flex-start;
+    padding-top: .25rem;
+    color: rgba(46,59,50,.28);
+    font-size: .52rem;
+    font-weight: 800;
+}
+/* IMAGE */
+.ng-vac-item-image {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    aspect-ratio: 1.55 / 1;
+    border-radius: 8px 30px 8px 8px;
+    background: var(--color-cream);
+    text-decoration: none;
+}
+.ng-vac-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform .45s ease;
+}
+.ng-vac-item:hover .ng-vac-item-image img {
+    transform: scale(1.035);
+}
+/* placeholder */
+.ng-vac-item-placeholder {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .45rem;
+    background: var(--color-cream);
+    color: var(--color-dark);
+}
+.ng-vac-item-placeholder span {
+    color: var(--color-coral);
+    font-size: .8rem;
+}
+.ng-vac-item-placeholder strong {
+    font-size: .65rem;
+    font-weight: 800;
+}
+/* status */
+.ng-vac-item-status {
+    position: absolute;
+    top: .7rem;
+    left: .7rem;
+    padding: .33rem .6rem;
+    border-radius: 999px;
+    background: #fff;
+    color: var(--color-dark);
+    box-shadow: 0 4px 14px rgba(46,59,50,.09);
+    font-size: .47rem;
+    font-weight: 800;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+}
+
+/* CONTENT */
+.ng-vac-item-content {
+    min-width: 0;
+}
+/* metadata */
+.ng-vac-item-top {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .45rem 1rem;
+    margin-bottom: .55rem;
+}
+.ng-vac-item-category {
+    color: var(--color-coral);
+    font-size: .51rem;
+    font-weight: 800;
+    letter-spacing: .09em;
+    text-transform: uppercase;
+}
+.ng-vac-item-location {
+    position: relative;
+    padding-left: .8rem;
+    color: rgba(46,59,50,.36);
+    font-size: .52rem;
+    font-weight: 700;
+}
+.ng-vac-item-location::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(46,59,50,.25);
+    transform: translateY(-50%);
+}
+/* title */
+.ng-vac-item h3 {
+    max-width: 660px;
+    margin: 0;
+    font-size: clamp(1.35rem, 2.3vw, 2rem);
+    line-height: 1.08;
+    letter-spacing: -.035em;
+}
+.ng-vac-item h3 a {
+    color: var(--color-dark);
+    text-decoration: none;
+}
+/* excerpt */
+.ng-vac-item-excerpt {
+    max-width: 650px;
+    margin: .8rem 0 0;
+    color: rgba(46,59,50,.5);
+    font-size: .7rem;
+    line-height: 1.65;
+}
+/* BOTTOM */
+.ng-vac-item-bottom {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
+    margin-top: 1.35rem;
+}
+/* hours */
+.ng-vac-item-hours small {
+    display: block;
+    margin-bottom: .15rem;
+    color: rgba(46,59,50,.32);
+    font-size: .47rem;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+}
+.ng-vac-item-hours strong {
+    display: block;
+    color: var(--color-dark);
+    font-size: .61rem;
+    font-weight: 750;
+}
+/* link */
+.ng-vac-item-link {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    color: var(--color-dark);
+    font-size: .6rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.ng-vac-item-link span {
+    display: grid;
+    width: 31px;
+    height: 31px;
+    place-items: center;
+    border: 1px solid rgba(46,59,50,.13);
+    border-radius: 50%;
+    color: var(--color-coral);
+    transition: background-color .25s ease, color .25s ease, transform .25s ease;
+}
+.ng-vac-item-link:hover span {
+    background: var(--color-coral);
+    color: #fff;
+    transform: translateX(3px);
+}
+/* EMPTY */
+.ng-vac-empty {
+    display: grid;
+    grid-template-columns: 70px minmax(0, 550px);
+    gap: 1.5rem;
+    align-items: start;
+    padding: clamp(2.5rem, 5vw, 4rem);
+    border: 1px solid rgba(46,59,50,.09);
+    border-radius: 12px 54px 12px 12px;
+    background: rgba(255,255,255,.5);
+}
+.ng-vac-empty-mark {
+    display: grid;
+    width: 54px;
+    height: 54px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--color-dark);
+    color: var(--color-coral);
+}
+.ng-vac-empty h3 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: clamp(1.4rem, 2.4vw, 2rem);
+    line-height: 1.1;
+}
+.ng-vac-empty div > p:not(.ng-vac-kicker) {
+    max-width: 480px;
+    margin: .8rem 0 0;
+    color: rgba(46,59,50,.5);
+    font-size: .7rem;
+    line-height: 1.6;
+}
+.ng-vac-empty a {
+    display: inline-flex;
+    align-items: center;
+    gap: .5rem;
+    margin-top: 1.2rem;
+    color: var(--color-dark);
+    font-size: .61rem;
+    font-weight: 800;
+    text-decoration: none;
+}
+.ng-vac-empty a span {
+    color: var(--color-coral);
+}
+/* RESPONSIVE */
+@media (max-width: 900px) {
+    .ng-vac-list-heading {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    .ng-vac-item {
+        grid-template-columns: 30px minmax(150px, 210px) minmax(0,1fr);
+        gap: 1.4rem;
+    }
+}
+@media (max-width: 700px) {
+    .ng-vac-item {
+        grid-template-columns: 24px minmax(0,1fr);
+        align-items: start;
+    }
+    .ng-vac-item-image, .ng-vac-item-content {
+        grid-column: 2;
+    }
+    .ng-vac-item-image {
+        max-width: 420px;
+    }
+    .ng-vac-item-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .ng-vac-empty {
+        grid-template-columns: 1fr;
+    }
+}
+@media (max-width: 600px) {
+    .ng-vac-list-section {
+        padding: 4.5rem 0;
+    }
+    .ng-vac-item {
+        gap: 1rem .8rem;
+        padding: 1.6rem 0;
+    }
+}
+/* VACATURES — FINAL */
+.ng-vac-final {
+    padding: clamp(5.5rem, 7vw, 7rem) 0 clamp(3rem, 4vw, 4rem);
+    background: #fff;
+    color: var(--color-dark);
+}
+/* LAYOUT */
+.ng-vac-final-layout {
+    display: grid;
+    grid-template-columns: minmax(320px, .75fr) minmax(0, 1fr);
+    align-items: center;
+    gap: clamp(4rem, 9vw, 8rem);
+}
+/* COPY */
+.ng-vac-final-copy {
+    max-width: 590px;
+}
+.ng-vac-final-copy h2 {
+    margin: 0;
+    color: var(--color-dark);
+    font-size: var(--ng-section-title);
+    font-weight: 750;
+    line-height: 1.03;
+    letter-spacing: -.04em;
+}
+.ng-vac-final-copy > p:not(.ng-vac-kicker) {
+    max-width: 440px;
+    margin: 1.2rem 0 0;
+    color: rgba(46,59,50,.52);
+    font-size: var(--ng-home-body);
+    line-height: 1.65;
+}
+/* ACTIONS */
+.ng-vac-final-actions {
+    border-top: 1px solid rgba(46,59,50,.11);
+}
+.ng-vac-final-action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    min-height: 100px;
+    padding: 1rem 0;
+    border-bottom: 1px solid rgba(46,59,50,.11);
+    color: var(--color-dark);
+    text-decoration: none;
+    transition: padding-left .25s ease;
+}
+.ng-vac-final-action:hover {
+    padding-left: .55rem;
+}
+.ng-vac-final-action small {
+    display: block;
+    margin-bottom: .25rem;
+    color: var(--color-coral);
+    font-size: .52rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+}
+.ng-vac-final-action strong {
+    display: block;
+    color: var(--color-dark);
+    font-size: clamp(1rem, 1.6vw, 1.25rem);
+    font-weight: 750;
+}
+/* arrow */
+.ng-vac-final-action i {
+    display: grid;
+    width: 38px;
+    height: 38px;
+    flex: 0 0 38px;
+    place-items: center;
+    border: 1px solid rgba(46,59,50,.13);
+    border-radius: 50%;
+    color: var(--color-coral);
+    font-style: normal;
+    transition: background-color .25s ease, color .25s ease, transform .25s ease;
+}
+.ng-vac-final-action:hover i {
+    background: var(--color-coral);
+    color: #fff;
+    transform: translateX(3px);
+}
+.ng-vac-final-action--primary strong {
+    font-weight: 800;
+}
+/* NOTE */
+.ng-vac-final-note {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-top: clamp(3rem, 5vw, 4rem);
+    padding-top: 1.2rem;
+    border-top: 1px solid rgba(46,59,50,.09);
+}
+.ng-vac-final-note span {
+    color: var(--color-coral);
+    font-size: .6rem;
+}
+.ng-vac-final-note p {
+    margin: 0;
+    color: rgba(46,59,50,.38);
+    font-size: .6rem;
+}
+/* RESPONSIVE */
+@media (max-width: 800px) {
+    .ng-vac-final-layout {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+}
+@media (max-width: 600px) {
+    .ng-vac-final {
+        padding: 4.5rem 0 2.8rem;
+    }
+}
