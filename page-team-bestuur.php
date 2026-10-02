@@ -138,6 +138,179 @@ get_header();
 
 
 
+        <?php
+        $ng_team_fallback = [
+            'bestuur' => [
+                [
+                    'name' => 'Yvonne Visser',
+                    'role' => 'Voorzitter',
+                    'description' => 'Verbindt mensen en ideeën en bewaakt samen met het bestuur de koers van NoordgroeiT.',
+                    'note' => '',
+                    'photo' => '',
+                ],
+                [
+                    'name' => 'Fred Driessen',
+                    'role' => 'Penningmeester',
+                    'description' => 'Houdt zicht op de financiële basis en helpt plannen op een verantwoorde manier mogelijk te maken.',
+                    'note' => '',
+                    'photo' => '',
+                ],
+                [
+                    'name' => 'Nora van Griensven',
+                    'role' => 'Secretaris',
+                    'description' => 'Ondersteunt het bestuur op strategisch, organisatorisch en administratief gebied en vormt een schakel met de rest van de organisatie.',
+                    'note' => '',
+                    'photo' => '',
+                ],
+            ],
+            'kernteam' => [
+                [
+                    'name' => 'Pim Roijakkers',
+                    'role' => 'Vrijwilligerscoördinatie',
+                    'description' => 'Coördineert bewoners en vrijwilligers en ondersteunt de dagelijkse organisatie.',
+                    'note' => '',
+                    'photo' => '',
+                ],
+                [
+                    'name' => 'Gilbert van Dongen',
+                    'role' => 'Groen & uitvoering',
+                    'description' => 'Draagt verantwoordelijkheid voor het groen, inclusief de kas, en ondersteunt waar nodig bij bouwwerkzaamheden.',
+                    'note' => '',
+                    'photo' => '',
+                ],
+                [
+                    'name' => 'Herman Brand',
+                    'role' => 'Creatief organisator',
+                    'description' => 'Werkt aan innovatie, duurzaamheid, circulariteit en verbinding met het bedrijfscluster.',
+                    'note' => '',
+                    'photo' => '',
+                ],
+                [
+                    'name' => 'Jule Geeris',
+                    'role' => 'Projectcoördinatie',
+                    'description' => 'Werkt aan projecten, communicatie, fondsen en subsidies.',
+                    'note' => '',
+                    'photo' => '',
+                ],
+            ],
+            'adviseurs' => [
+                [
+                    'name' => 'Herman Brand',
+                    'role' => '',
+                    'description' => '',
+                    'note' => 'tevens kernteam',
+                    'photo' => '',
+                ],
+                [
+                    'name' => 'Simon van den Biggelaar',
+                    'role' => '',
+                    'description' => '',
+                    'note' => '',
+                    'photo' => '',
+                ],
+                [
+                    'name' => 'Wieke Bout',
+                    'role' => '',
+                    'description' => '',
+                    'note' => '',
+                    'photo' => '',
+                ],
+            ],
+        ];
+
+        $ng_get_team_members = static function ($group_slug, $fallback) {
+
+            $posts = get_posts([
+                'post_type'      => 'team_member',
+                'post_status'    => 'publish',
+                'posts_per_page' => -1,
+                'orderby'        => [
+                    'menu_order' => 'ASC',
+                    'title'      => 'ASC',
+                ],
+                'tax_query'      => [
+                    [
+                        'taxonomy' => 'team_group',
+                        'field'    => 'slug',
+                        'terms'    => $group_slug,
+                    ],
+                ],
+            ]);
+
+            if (!$posts) {
+                return $fallback;
+            }
+
+            return array_map(
+                static function ($post) {
+
+                    $description = trim(
+                        wp_strip_all_tags(
+                            strip_shortcodes(
+                                $post->post_content
+                            )
+                        )
+                    );
+
+                    return [
+                        'name' => get_the_title($post),
+                        'role' => get_post_meta(
+                            $post->ID,
+                            '_noordgroeit_team_role',
+                            true
+                        ),
+                        'description' => $description,
+                        'note' => get_post_meta(
+                            $post->ID,
+                            '_noordgroeit_team_note',
+                            true
+                        ),
+                        'photo' => get_the_post_thumbnail_url(
+                            $post,
+                            'medium_large'
+                        ) ?: '',
+                    ];
+                },
+                $posts
+            );
+        };
+
+        $ng_team_initials = static function ($name) {
+
+            $parts = preg_split(
+                '/\\s+/',
+                trim($name)
+            );
+
+            if (!$parts) {
+                return '';
+            }
+
+            $first = $parts[0];
+            $last  = $parts[count($parts) - 1];
+
+            return strtoupper(
+                substr($first, 0, 1)
+                . substr($last, 0, 1)
+            );
+        };
+
+        $ng_board_members = $ng_get_team_members(
+            'bestuur',
+            $ng_team_fallback['bestuur']
+        );
+
+        $ng_core_members = $ng_get_team_members(
+            'kernteam',
+            $ng_team_fallback['kernteam']
+        );
+
+        $ng_advisors = $ng_get_team_members(
+            'adviseurs',
+            $ng_team_fallback['adviseurs']
+        );
+        ?>
+
         <!-- =================================================
              01 — BESTUUR
         ================================================== -->
@@ -148,10 +321,7 @@ get_header();
 
                 <div>
                     <span>01</span>
-
-                    <p>
-                        Bestuur
-                    </p>
+                    <p>Bestuur</p>
                 </div>
 
                 <p>
@@ -161,158 +331,87 @@ get_header();
 
             </header>
 
-
             <div class="ng-team-people-v2-grid">
 
+                <?php foreach ($ng_board_members as $index => $member) : ?>
 
-                <!-- YVONNE -->
+                    <article
+                        class="ng-team-profile<?php echo $index % 2 ? ' ng-team-profile--coral' : ''; ?>"
+                    >
 
-                <article class="ng-team-profile">
+                        <div class="ng-team-profile-portrait">
 
-                    <div class="ng-team-profile-portrait">
+                            <?php if ($member['photo']) : ?>
 
-                        <span
-                            class="ng-team-profile-initials"
-                            aria-hidden="true"
-                        >
-                            YV
-                        </span>
+                                <img
+                                    class="ng-team-profile-image"
+                                    src="<?php echo esc_url($member['photo']); ?>"
+                                    alt="<?php echo esc_attr($member['name']); ?>"
+                                >
 
-                        <small class="ng-team-profile-photo-note">
-                            Foto volgt
-                        </small>
+                            <?php else : ?>
 
-                    </div>
+                                <span
+                                    class="ng-team-profile-initials"
+                                    aria-hidden="true"
+                                >
+                                    <?php echo esc_html(
+                                        $ng_team_initials($member['name'])
+                                    ); ?>
+                                </span>
 
+                                <small class="ng-team-profile-photo-note">
+                                    Foto volgt
+                                </small>
 
-                    <div class="ng-team-profile-copy">
-
-                        <div class="ng-team-profile-top">
-
-                            <span>
-                                01
-                            </span>
-
-                            <p>
-                                Voorzitter
-                            </p>
-
-                        </div>
-
-                        <h3>
-                            Yvonne Visser
-                        </h3>
-
-                        <p>
-                            Verbindt mensen en ideeën en bewaakt
-                            samen met het bestuur de koers van
-                            <span class="ng-brand-word">NoordgroeiT</span>.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- FRED -->
-
-                <article class="ng-team-profile ng-team-profile--coral">
-
-                    <div class="ng-team-profile-portrait">
-
-                        <span
-                            class="ng-team-profile-initials"
-                            aria-hidden="true"
-                        >
-                            FD
-                        </span>
-
-                        <small class="ng-team-profile-photo-note">
-                            Foto volgt
-                        </small>
-
-                    </div>
-
-
-                    <div class="ng-team-profile-copy">
-
-                        <div class="ng-team-profile-top">
-
-                            <span>
-                                02
-                            </span>
-
-                            <p>
-                                Penningmeester
-                            </p>
+                            <?php endif; ?>
 
                         </div>
 
-                        <h3>
-                            Fred Driessen
-                        </h3>
+                        <div class="ng-team-profile-copy">
 
-                        <p>
-                            Houdt zicht op de financiële basis en
-                            helpt plannen op een verantwoorde
-                            manier mogelijk te maken.
-                        </p>
+                            <div class="ng-team-profile-top">
 
-                    </div>
+                                <span>
+                                    <?php echo esc_html(
+                                        str_pad(
+                                            (string) ($index + 1),
+                                            2,
+                                            '0',
+                                            STR_PAD_LEFT
+                                        )
+                                    ); ?>
+                                </span>
 
-                </article>
-                
-                                <!-- Nora -->
+                                <?php if ($member['role']) : ?>
+                                    <p>
+                                        <?php echo esc_html($member['role']); ?>
+                                    </p>
+                                <?php endif; ?>
 
-                <article class="ng-team-profile ng-team-profile--coral">
+                            </div>
 
-                    <div class="ng-team-profile-portrait">
+                            <h3>
+                                <?php echo esc_html($member['name']); ?>
+                            </h3>
 
-                        <span
-                            class="ng-team-profile-initials"
-                            aria-hidden="true"
-                        >
-                            NR
-                        </span>
-
-                        <small class="ng-team-profile-photo-note">
-                            Foto volgt
-                        </small>
-
-                    </div>
-
-
-                    <div class="ng-team-profile-copy">
-
-                        <div class="ng-team-profile-top">
-
-                            <span>
-                                03
-                            </span>
-
-                            <p>
-                                Secrataris
-                            </p>
+                            <?php if ($member['description']) : ?>
+                                <p>
+                                    <?php echo esc_html(
+                                        $member['description']
+                                    ); ?>
+                                </p>
+                            <?php endif; ?>
 
                         </div>
 
-                        <h3>
-                            Nora van Griensven
-                        </h3>
+                    </article>
 
-                        <p>
-                            Ondersteunt het bestuur of de directie van een organisatie op strategisch, organisatorisch en administratief gebied, en fungeert als de spil tussen het bestuur en de rest van de organisatie
-                        </p>
-
-                    </div>
-
-                </article>
+                <?php endforeach; ?>
 
             </div>
 
         </div>
-
 
 
         <!-- =================================================
@@ -325,10 +424,7 @@ get_header();
 
                 <div>
                     <span>02</span>
-
-                    <p>
-                        Kernteam
-                    </p>
+                    <p>Kernteam</p>
                 </div>
 
                 <p>
@@ -338,206 +434,87 @@ get_header();
 
             </header>
 
-
             <div class="ng-team-people-v2-grid">
 
+                <?php foreach ($ng_core_members as $index => $member) : ?>
 
-                <!-- PIM -->
+                    <article
+                        class="ng-team-profile<?php echo $index % 2 === 0 ? ' ng-team-profile--coral' : ''; ?>"
+                    >
 
-                <article class="ng-team-profile ng-team-profile--coral">
+                        <div class="ng-team-profile-portrait">
 
-                    <div class="ng-team-profile-portrait">
+                            <?php if ($member['photo']) : ?>
 
-                        <span
-                            class="ng-team-profile-initials"
-                            aria-hidden="true"
-                        >
-                            PR
-                        </span>
+                                <img
+                                    class="ng-team-profile-image"
+                                    src="<?php echo esc_url($member['photo']); ?>"
+                                    alt="<?php echo esc_attr($member['name']); ?>"
+                                >
 
-                        <small class="ng-team-profile-photo-note">
-                            Foto volgt
-                        </small>
+                            <?php else : ?>
 
-                    </div>
+                                <span
+                                    class="ng-team-profile-initials"
+                                    aria-hidden="true"
+                                >
+                                    <?php echo esc_html(
+                                        $ng_team_initials($member['name'])
+                                    ); ?>
+                                </span>
 
+                                <small class="ng-team-profile-photo-note">
+                                    Foto volgt
+                                </small>
 
-                    <div class="ng-team-profile-copy">
-
-                        <div class="ng-team-profile-top">
-
-                            <span>
-                                01
-                            </span>
-
-                            <p>
-                                Vrijwilligerscoördinatie
-                            </p>
-
-                        </div>
-
-                        <h3>
-                            Pim Roijakkers
-                        </h3>
-
-                        <p>
-                            Coördinatie bewoners/vrijwilligers & locatie NoordbuiTem
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- GILBERT -->
-
-                <article class="ng-team-profile">
-
-                    <div class="ng-team-profile-portrait">
-
-                        <span
-                            class="ng-team-profile-initials"
-                            aria-hidden="true"
-                        >
-                            GD
-                        </span>
-
-                        <small class="ng-team-profile-photo-note">
-                            Foto volgt
-                        </small>
-
-                    </div>
-
-
-                    <div class="ng-team-profile-copy">
-
-                        <div class="ng-team-profile-top">
-
-                            <span>
-                                02
-                            </span>
-
-                            <p>
-                                Groen & uitvoering
-                            </p>
+                            <?php endif; ?>
 
                         </div>
 
-                        <h3>
-                            Gilbert van Dongen
-                        </h3>
+                        <div class="ng-team-profile-copy">
 
-                        <p>
-                            Draagt verantwoordelijkheid voor het
-                            groen, inclusief de kas, en ondersteunt
-                            waar nodig bij bouwwerkzaamheden.
-                        </p>
+                            <div class="ng-team-profile-top">
 
-                    </div>
+                                <span>
+                                    <?php echo esc_html(
+                                        str_pad(
+                                            (string) ($index + 1),
+                                            2,
+                                            '0',
+                                            STR_PAD_LEFT
+                                        )
+                                    ); ?>
+                                </span>
 
-                </article>
+                                <?php if ($member['role']) : ?>
+                                    <p>
+                                        <?php echo esc_html($member['role']); ?>
+                                    </p>
+                                <?php endif; ?>
 
+                            </div>
 
+                            <h3>
+                                <?php echo esc_html($member['name']); ?>
+                            </h3>
 
-                <!-- HERMAN -->
-
-                <article class="ng-team-profile">
-
-                    <div class="ng-team-profile-portrait">
-
-                        <span
-                            class="ng-team-profile-initials"
-                            aria-hidden="true"
-                        >
-                            HB
-                        </span>
-
-                        <small class="ng-team-profile-photo-note">
-                            Foto volgt
-                        </small>
-
-                    </div>
-
-
-                    <div class="ng-team-profile-copy">
-
-                        <div class="ng-team-profile-top">
-
-                            <span>
-                                03
-                            </span>
-
-                            <p>
-                                Creatief organisator
-                            </p>
+                            <?php if ($member['description']) : ?>
+                                <p>
+                                    <?php echo esc_html(
+                                        $member['description']
+                                    ); ?>
+                                </p>
+                            <?php endif; ?>
 
                         </div>
 
-                        <h3>
-                            Herman Brand
-                        </h3>
+                    </article>
 
-                        <p>
-                            Ontwikkeling innovatie, duurzaamheid/circularteit & bedrijfscluster
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-
-                <!-- JULE -->
-
-                <article class="ng-team-profile ng-team-profile--coral">
-
-                    <div class="ng-team-profile-portrait">
-
-                        <span
-                            class="ng-team-profile-initials"
-                            aria-hidden="true"
-                        >
-                            JG
-                        </span>
-
-                        <small class="ng-team-profile-photo-note">
-                            Foto volgt
-                        </small>
-
-                    </div>
-
-
-                    <div class="ng-team-profile-copy">
-
-                        <div class="ng-team-profile-top">
-
-                            <span>
-                                04
-                            </span>
-
-                            <p>
-                                Projectcoördinatie
-                            </p>
-
-                        </div>
-
-                        <h3>
-                            Jule Geeris
-                        </h3>
-
-                        <p>
-                            projecten & communicatie, fondsen en subsidies
-                        </p>
-
-                    </div>
-
-                </article>
+                <?php endforeach; ?>
 
             </div>
 
         </div>
-
 
 
         <!-- =================================================
@@ -550,15 +527,10 @@ get_header();
 
                 <div>
 
-                    <span>
-                        03
-                    </span>
+                    <span>03</span>
 
                     <div>
-                        <p>
-                            Adviseurs
-                        </p>
-
+                        <p>Adviseurs</p>
                         <small>
                             Denken vanuit hun kennis en ervaring mee.
                         </small>
@@ -568,61 +540,39 @@ get_header();
 
             </header>
 
-
             <div class="ng-team-advisor-list">
 
-                <div class="ng-team-advisor">
+                <?php foreach ($ng_advisors as $member) : ?>
 
-                    <span aria-hidden="true">
-                        HB
-                    </span>
+                    <div class="ng-team-advisor">
 
-                    <div>
-                        <strong>
-                            Herman Brand
-                        </strong>
+                        <span aria-hidden="true">
+                            <?php echo esc_html(
+                                $ng_team_initials($member['name'])
+                            ); ?>
+                        </span>
 
-                        <small>
-                            tevens kernteam
-                        </small>
+                        <div>
+
+                            <strong>
+                                <?php echo esc_html($member['name']); ?>
+                            </strong>
+
+                            <?php if ($member['note']) : ?>
+                                <small>
+                                    <?php echo esc_html($member['note']); ?>
+                                </small>
+                            <?php endif; ?>
+
+                        </div>
+
                     </div>
 
-                </div>
-
-
-                <div class="ng-team-advisor">
-
-                    <span aria-hidden="true">
-                        SB
-                    </span>
-
-                    <div>
-                        <strong>
-                            Simon van den Biggelaar
-                        </strong>
-                    </div>
-
-                </div>
-
-
-                <div class="ng-team-advisor">
-
-                    <span aria-hidden="true">
-                        WB
-                    </span>
-
-                    <div>
-                        <strong>
-                            Wieke Bout
-                        </strong>
-                    </div>
-
-                </div>
+                <?php endforeach; ?>
 
             </div>
 
         </div>
-
 
 
         <!-- =================================================
