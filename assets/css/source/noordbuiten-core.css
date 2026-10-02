@@ -100,11 +100,6 @@
 .ng-nbp-board-visual figcaption span {
     opacity: .7;
 }
-/* map-ish markers */
-
-
-
-
 /* INFORMATION SIDE */
 .ng-nbp-board-info {
     display: flex;
@@ -179,8 +174,6 @@
     text-align: right;
 }
 /* WATER NOTE */
-
-
 
 
 /* BOTTOM ROUTE */
@@ -459,31 +452,6 @@
 .ng-nbp-progress {
     background: #fffdf9 !important;
 }
-/* PLEKKEN & PROJECTEN — DIT KRIJGT HIER VORM */
-
-/* quiet decorative circle */
-
-/* HEADING */
-
-
-
-/* only literal chosen word is green */
-
-
-/* PROJECT */
-
-
-/* IMAGE */
-
-
-
-
-
-
-/* COPY */
-
-
-
 
 .ng-nbp-place-copy > p:not(.ng-nbp-place-type) {
     max-width: 440px;
@@ -491,22 +459,6 @@
     color: rgba(255,255,255,.64);
     line-height: 1.7;
 }
-/* LITTLE EDITORIAL NOTE */
-
-
-
-/* FOOD FACTS */
-
-
-
-
-/* FOOTER */
-
-
-
-/* RESPONSIVE */
-
-
 /* PLEKKEN & PROJECTEN — BLUEPRINT */
 .ng-nbp-blueprint {
     position: relative;
@@ -554,9 +506,6 @@
     border-top: 1px solid rgba(255,255,255,.1);
     border-bottom: 1px solid rgba(255,255,255,.1);
 }
-/* connecting paths */
-
-
 /* CENTER */
 .ng-nbp-plan-center {
     position: absolute;
@@ -703,7 +652,7 @@
         grid-template-columns: 1fr;
     }
 }
-/* BLUEPRINT — CLEAN SITE PLAN */
+/* BLUEPRINT — SITE PLAN */
 .ng-nbp-blueprint-plan {
     position: relative;
     display: grid;
@@ -718,7 +667,7 @@
     background-size: 42px 42px;
     overflow: hidden;
 }
-/* We don't need the old SVG spaghetti anymore */
+
 
 /* STANDARD PLAN ITEM */
 .ng-nbp-plan-item {
@@ -875,48 +824,6 @@
         min-height: 0;
     }
 }
-/* PLEKKEN & PROJECTEN — NATURE FIELD */
-
-/* large quiet decorative ring */
-
-/* HEADING */
-
-
-
-/* only the literal word 'groen' gets green */
-
-
-/* FIELD */
-
-/* MAIN ORCHARD STAT */
-
-
-
-
-
-
-/* NOTES */
-
-
-
-
-
-/* icon */
-
-/* label */
-
-
-
-/* ROOT DRAWING */
-
-
-/* FOOTER */
-
-
-
-/* RESPONSIVE */
-
-
 /* PLEKKEN & PROJECTEN — GROWING LANDSCAPE */
 .ng-nbp-landscape {
     position: relative;
@@ -961,12 +868,6 @@
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-/* LANDSCAPE STAGE */
-
-/* BIG ±40 */
-
-
-
 /* GROWING LINE */
 .ng-nbp-landscape-line {
     position: absolute;
@@ -985,25 +886,6 @@
     opacity: .48;
     vector-effect: non-scaling-stroke;
 }
-
-/* POINTS */
-
-/* NO BOXES */
-
-
-
-/* nodes */
-
-
-
-/* GROUND LINE */
-
-
-/* LITTLE NOTE */
-
-
-
-/* FOOTER */
 .ng-nbp-landscape-footer {
     display: flex;
     align-items: center;
@@ -1035,8 +917,6 @@
         padding: 4.5rem 0;
     }
 }
-/* LANDSCAPE — POLISHED GROEIPAD */
-
 /* THE ONE DELIBERATE PATH */
 .ng-nbp-landscape-line {
     position: absolute;
@@ -1056,36 +936,6 @@
     opacity: .48;
     vector-effect: non-scaling-stroke;
 }
-/* Kill the old hanging roots */
-
-/* ORCHARD — BIG ANCHOR */
-
-
-
-
-
-/* little orchard rhythm */
-
-/* POINTS */
-
-/* vertical little stem instead of random dot */
-
-
-/* POSITIONS — DELIBERATELY STAGGERED */
-
-
-
-/* COPY */
-
-
-
-/* GROUND */
-
-
-/* HANDWRITTEN-ISH NOTE */
-
-
-
 /* FOOTER */
 .ng-nbp-landscape-footer {
     display: flex;
@@ -1108,16 +958,6 @@
     
     
 }
-
-
-/* ROOTS / LANDSCAPE SECTION — CLEANER VERSION */
-
-/* THE STAT ON THE LEFT */
-
-
-
-
-
 /* THE LINE ONLY CONNECTS THE 3 STORY POINTS */
 .ng-nbp-landscape-line {
     position: absolute;
@@ -1137,26 +977,6 @@
     opacity: 0.55;
     vector-effect: non-scaling-stroke;
 }
-/* POINTS */
-
-
-
-/* STAGGERED POSITIONS */
-
-
-
-/* TEXT */
-
-
-
-/* GROUND LINE */
-
-
-/* NOTE ON THE RIGHT */
-
-
-
-
 /* FOOTER */
 .ng-nbp-landscape-footer {
     display: flex;

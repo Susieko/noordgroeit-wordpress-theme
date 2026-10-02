@@ -165,31 +165,6 @@
         border-radius: 10px 34px 10px 34px;
     }
 }
-/* VRIJWILLIGER — MOGELIJKHEDEN */
-
-/* HEADING */
-
-
-
-/* MOMENT */
-
-
-/* reversed */
-
-
-
-/* PHOTO */
-
-
-
-
-/* NUMBER */
-
-
-/* COPY */
-
-
-
 .ng-vol-moment-copy > p:not(.ng-vol-moment-label) {
     max-width: 410px;
     margin: 1rem 0 0;
@@ -197,73 +172,6 @@
     font-size: .76rem;
     line-height: 1.65;
 }
-/* TAGS */
-
-
-/* BOTTOM NOTE */
-
-
-
-
-/* RESPONSIVE */
-
-
-/* VRIJWILLIGER — OPENSTAANDE VACATURES */
-
-/* HEADING */
-
-
-
-
-
-/* LIST */
-
-/* VACANCY */
-
-/* number */
-
-/* IMAGE */
-
-
-
-/* fallback */
-
-
-
-/* CONTENT */
-
-/* META */
-
-
-
-
-/* title */
-
-
-/* excerpt */
-
-/* BOTTOM */
-
-
-
-/* link */
-
-
-
-/* FOOTER */
-
-
-
-
-/* EMPTY */
-
-
-
-
-
-/* RESPONSIVE */
-
-
 /* VRIJWILLIGER — OPEN KENNISMAKING */
 .ng-vol-open {
     padding: clamp(6rem, 8vw, 8rem) 0;

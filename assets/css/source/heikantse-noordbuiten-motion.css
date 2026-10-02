@@ -524,23 +524,6 @@
     opacity: 1;
     transition-delay: 1420ms;
 }
-/* 03 — WAT GEBEURT HIER */
-
-
-
-
-/* Sticky photo */
-
-
-/* Activity rows */
-
-
-
-
-
-
-
-
 /* 04 — NOORDBUITEN LEEFT */
 .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-kicker, .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-heading h2, .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-heading-row > p {
     opacity: 0;
@@ -613,31 +596,6 @@
     opacity: 1;
     transition-delay: 1320ms;
 }
-/* 05 — WOENSDAG */
-
-/* vertical word already rotated */
-
-
-/* Copy */
-
-
-
-
-
-/* Workbench route */
-
-
-/* * Tags already own rotations. * Only fade them in. */
-
-
-
-
-
-
-
-
-
-/* 06 — SAMEN MAKEN WE DE PLEK */
 /* SAMEN already has a rotation */
 .ng-nb-together.is-nb-motion-ready .ng-nb-together-word {
     opacity: 0;

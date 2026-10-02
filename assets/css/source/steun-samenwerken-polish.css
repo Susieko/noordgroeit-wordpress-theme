@@ -740,34 +740,6 @@
     opacity: 1;
     transform: translateY(0);
 }
-/* 02 — THE BRIDGE */
-
-
-
-/* left need */
-
-
-/* route elements */
-
-
-
-/* first connection */
-
-
-/* central NoordgroeiT point */
-
-
-
-
-/* second connection */
-
-
-/* partner side */
-
-
-/* result */
-
-
 /* OPTIONAL — GREEN "FOR WHO" SECTION — Works whether you're using the old list OR compact paths. */
 .ng-collab-paths.is-collab-motion-ready .ng-collab-paths-heading > * {
     opacity: 0;
@@ -953,7 +925,7 @@
 
 }
 
-/* MOBILE MENU — INNER PAGE HARD FIX — Homepage already works, so leave it alone. */
+/* INNER-PAGE MOBILE MENU */
 
 @media (max-width: 1180px) {
 
@@ -993,7 +965,7 @@
         overscroll-behavior: contain;
     }
 
-    /* When JS says open, it is REALLY open */
+    /* Open menu state */
     body:not(.home)
     .ng-site-header.menu-is-open
     .ng-primary-navigation {
@@ -1003,7 +975,6 @@
         visibility: visible !important;
         pointer-events: auto !important;
     }
-
 }
 
 /* WordPress toolbar while logged in */
@@ -1016,8 +987,6 @@
 
 }
 
-/* ACCESSIBILITY — FINAL CONTRAST PASS — Lighthouse contrast fixes */
-
 :root {
     /*
      * Original coral stays available for decorative use.
@@ -1026,24 +995,6 @@
     --color-coral-accessible: #b84438;
     --color-coral-on-dark: #f3a28c;
 }
-
-/* VOLUNTEER SPOTLIGHT */
-
-/* Small coral text on cream needs stronger contrast */
-
-
-/* Attribution text was too faint */
-
-
-/* HOME — JOIN / VACATURE BUTTON */
-
-/*
- * White text on the original coral does not quite reach
- * WCAG AA. Keep white text, slightly deepen the coral.
- */
-
-
-/* FOOTER */
 
 /* Small footer privacy text was much too faint */
 .site-footer

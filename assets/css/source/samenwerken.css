@@ -1,80 +1,3 @@
-/* SAMENWERKEN — BRIDGE */
-
-/* HEADING */
-
-
-
-/* MAP */
-
-/* SIDES */
-
-
-
-/* TOP */
-
-
-
-/* COPY */
-
-
-/* CHIPS */
-
-
-/* CENTER */
-
-/* route */
-
-
-
-
-
-/* core */
-
-
-
-
-/* RESULT */
-
-/* little route mark */
-
-
-
-/* result copy */
-
-
-
-/* RESPONSIVE */
-
-
-/* SAMENWERKEN — VOOR WIE? */
-
-/* HEADING */
-
-
-
-/* LIST */
-
-
-
-/* NUMBER */
-
-/* MAIN */
-
-
-
-
-/* WHAT THEY BRING */
-
-
-
-/* BOTTOM */
-
-
-
-
-/* RESPONSIVE */
-
-
 /* SAMENWERKEN — PARTNER PROOF */
 .ng-collab-proof {
     position: relative;
@@ -130,28 +53,6 @@
 .ng-collab-proof-copy a:hover span {
     transform: translateX(3px);
 }
-/* LOGO RAIL */
-
-/* subtle edge fades */
-
-
-
-/* track */
-
-
-/* repeated group */
-
-/* LOGO */
-
-
-
-
-/* logo image */
-
-
-
-/* ANIMATION */
-
 /* BOTTOM */
 .ng-collab-proof-bottom {
     display: flex;

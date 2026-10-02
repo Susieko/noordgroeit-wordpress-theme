@@ -377,25 +377,6 @@
     border-top: 1px solid rgba(46,59,50,.12);
     border-bottom: 1px solid rgba(46,59,50,.12);
 }
-/* BENCH */
-
-/* canopy */
-
-
-
-
-/* seat */
-
-
-/* simple people */
-
-
-
-
-/* label */
-
-
-
 /* VOICES */
 .ng-nba-story-voice {
     position: absolute;
@@ -422,25 +403,6 @@
     top: 115px;
     left: 2%;
 }
-/* CONVERSATION PATH */
-
-
-/* ACTIVITY POSSIBILITIES */
-
-
-
-
-/* activities */
-
-
-
-/* FOOTER */
-
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 850px) {
     .ng-nba-stories-heading {
@@ -472,11 +434,6 @@
     
 }
 
-/* ACTIVITEITEN INTRO — FOLDED POSTER */
-
-/* FOLDED STRIP */
-
-
 /* Fold separators */
 .ng-nba-fold-panel:not(:last-child)::after {
     content: "";
@@ -487,27 +444,6 @@
     height: 100%;
     background: rgba(46, 59, 50, .12);
 }
-/* alternating subtle folds */
-
-
-
-
-/* TYPOGRAPHY */
-
-
-/* Tiny directional detail */
-
-/* CENTRAL STAMP */
-
-
-
-
-/* LITTLE EDITORIAL NOTE */
-
-
-/* MOBILE */
-
-
 /* ACTIVITEITEN INTRO — MOMENTOPNAME */
 .ng-nba-intro--moment {
     position: relative;
@@ -839,17 +775,6 @@
     top: 220px;
     right: 1%;
 }
-/* CONVERSATION LINES */
-
-
-/* left line */
-
-/* right line */
-
-/* little endpoints */
-
-
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .ng-nba-stories-stage {
@@ -1078,34 +1003,6 @@
     font-size: .75rem;
     line-height: 1.55;
 }
-/* GAME AREA */
-
-/* subtle grid like a game map */
-
-/* CHARACTER */
-
-
-
-
-/* ROUTE */
-
-
-/* STOPS */
-
-
-
-
-
-
-/* PAWS */
-
-
-
-
-/* NOTE */
-
-
-
 
 /* BOTTOM */
 .ng-nba-cas-bottom {
@@ -1220,40 +1117,6 @@
     font-size: .76rem;
     line-height: 1.55;
 }
-/* PLAY FIELD */
-
-/* very soft grid */
-
-/* CAS */
-
-
-/* ROUTE */
-
-
-/* ROUTE STEPS */
-
-
-
-
-
-/* placements */
-
-
-
-/* CAS MESSAGE */
-
-
-
-
-
-/* LITTLE PAWS */
-
-
-
-
-
-
-
 /* BOTTOM */
 .ng-nba-cas-bottom {
     display: flex;
@@ -1278,9 +1141,6 @@
     letter-spacing: .13em;
     text-transform: uppercase;
 }
-/* HOVER — VERY SUBTLE */
-
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .ng-nba-cas-layout {
@@ -1293,14 +1153,7 @@
     .ng-nba-cas {
         padding: 4.5rem 0;
     }
-    
-    
-    
-    
-    
-    
-    
-    
+  
     .ng-nba-cas-bottom {
         align-items: flex-start;
         flex-direction: column;
@@ -2001,33 +1854,6 @@
     color: rgba(46,59,50,.5);
     font-size: .68rem;
 }
-/* WAYS TO JOIN */
-
-/* heading */
-
-
-
-
-/* OPEN WORKTABLE */
-
-
-
-
-/* work items */
-
-
-
-
-
-
-/* OWN IDEA */
-
-
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 850px) {
     .ng-nbm-intro-layout {
@@ -2038,103 +1864,3 @@
         justify-self: start;
     }
 }
-
-/* MEEDOEN — BEGIN OP JOUW MANIER */
-
-/* quiet background ring */
-
-/* HEADING */
-
-
-
-
-/* ROUTE STAGE */
-
-/* YOU — CENTER START */
-
-
-
-/* ROUTE LINES */
-
-
-/* CHOICES */
-
-
-
-/* little route endpoint */
-
-/* copy */
-
-
-
-/* BUTTONS */
-
-
-
-/* MIDDLE NOTE */
-
-
-
-
-/* BOTTOM PRACTICAL NOTE */
-
-
-
-
-
-/* RESPONSIVE */
-
-
-/* MEEDOEN — VOOR JE LANGSKOMT */
-
-/* quiet background detail */
-
-/* HEADING */
-
-
-
-
-/* GUIDE */
-
-/* LOCATION */
-
-
-
-
-/* pin */
-
-
-
-/* contact */
-
-
-
-/* ROUTE */
-
-
-
-/* start */
-
-/* end */
-
-
-
-/* travel labels */
-
-
-
-/* FACTS */
-
-
-
-
-
-
-/* IMPORTANT NOTE */
-
-
-
-
-/* RESPONSIVE */
-
-

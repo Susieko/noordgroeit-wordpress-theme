@@ -8,9 +8,6 @@
    SAFETY NET
 ========================================================= */
 
-
-
-
 img,
 video,
 svg,
@@ -18,13 +15,9 @@ iframe {
     max-width: 100%;
 }
 
-
 iframe {
     width: 100%;
 }
-
-
-
 
 /* =========================================================
    TABLET
@@ -45,8 +38,6 @@ iframe {
     }
 
 }
-
-
 
 /* =========================================================
    HEADER — TABLET / MOBILE
@@ -91,8 +82,6 @@ iframe {
 
 }
 
-
-
 /* Mobile menu icon → X */
 
 .ng-site-header.menu-is-open
@@ -102,7 +91,6 @@ iframe {
         rotate(45deg);
 }
 
-
 .ng-site-header.menu-is-open
 .ng-menu-icon span:last-child {
     transform:
@@ -110,15 +98,11 @@ iframe {
         rotate(-45deg);
 }
 
-
-
 /* Don't let page scroll behind menu */
 
 body.ng-menu-open {
     overflow: hidden;
 }
-
-
 
 /* =========================================================
    SMALL TABLET / PHONE
@@ -153,10 +137,7 @@ body.ng-menu-open {
         color: var(--color-white) !important;
         background: var(--color-coral) !important;
     }
-
 }
-
-
 
 /* =========================================================
    PHONE
@@ -175,13 +156,10 @@ body.ng-menu-open {
             );
     }
 
-
     .site-container {
         width:
             calc(100% - 36px);
     }
-
-
 
     /* HEADER */
 
@@ -191,12 +169,10 @@ body.ng-menu-open {
             0;
     }
 
-
     .ng-site-header .site-container {
         width:
             calc(100% - 20px);
     }
-
 
     .ng-header-shell {
         min-height: 60px;
@@ -210,11 +186,9 @@ body.ng-menu-open {
         border-radius: 15px;
     }
 
-
     .ng-header-logo {
         width: 116px;
     }
-
 
     .ng-menu-toggle {
         min-height: 42px;
@@ -228,7 +202,6 @@ body.ng-menu-open {
         font-size: .82rem;
     }
 
-
     .ng-primary-navigation {
         top:
             calc(100% + 7px);
@@ -241,11 +214,9 @@ body.ng-menu-open {
         border-radius: 15px;
     }
 
-
     .ng-navigation-list {
         gap: 2px;
     }
-
 
     .ng-navigation-list a {
         min-height: 46px;
@@ -257,13 +228,11 @@ body.ng-menu-open {
         font-size: .96rem;
     }
 
-
     .ng-nav-parent-row {
         grid-template-columns:
             minmax(0, 1fr)
             44px;
     }
-
 
     .ng-submenu a {
         min-height: 42px;
@@ -274,10 +243,7 @@ body.ng-menu-open {
 
         font-size: .9rem;
     }
-
 }
-
-
 
 /* =========================================================
    VERY SMALL PHONE

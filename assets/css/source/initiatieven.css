@@ -342,141 +342,6 @@
         border-left: 0;
     }
 }
-/* INITIATIEVEN — NOORDWERKTSAMEN */
-
-/* quiet background shape */
-
-/* HEADING */
-
-
-
-
-/* MAIN LAYOUT */
-
-/* VISUAL */
-
-/* IMAGE */
-
-
-
-
-/* NUMBER */
-
-/* TALK BUBBLES */
-
-/* little speech-tail */
-
-
-
-
-/* 01 */
-
-
-/* 02 */
-
-
-/* 03 */
-
-
-/* little movement */
-
-
-
-/* COPY */
-
-
-
-
-/* THEMES */
-
-
-
-
-
-/* BUTTON */
-
-
-
-
-/* BOTTOM NOTE */
-
-
-
-/* SUBTLE BUBBLE ANIMATION */
-
-
-
-
-/* RESPONSIVE */
-
-
-/* INITIATIEVEN — HEIKANTSE TUYNEN */
-
-/* subtle page motif */
-
-/* HEADING */
-
-
-
-/* allowed: the actual word green */
-
-
-/* LAYOUT */
-
-/* COPY */
-
-/* NUMBER */
-
-
-
-
-
-
-
-/* THEMES */
-
-
-
-
-
-/* BUTTON */
-
-
-
-
-/* PHOTO */
-
-
-
-
-/* GARDEN LABELS */
-
-
-
-
-
-
-
-/* GROWING LINE */
-
-
-
-/* NOTE */
-
-
-
-
-/* BOTTOM */
-
-
-
-/* SMALL MOTION */
-
-
-
-/* RESPONSIVE */
-
-
 /* INITIATIEVEN — GROWTH PROCESS */
 .ng-init-growth {
     position: relative;
@@ -535,29 +400,6 @@
     color: #dcead7 !important;
     font-weight: 750;
 }
-/* PATH */
-
-/* ROUTE */
-
-
-
-
-/* STEPS */
-
-/* alternate positions */
-
-
-
-
-/* MARKER */
-
-
-
-/* COPY */
-
-
-
-
 /* FOOTER */
 .ng-init-growth-footer {
     position: relative;
@@ -601,16 +443,6 @@
     background: var(--color-coral);
     transform: translate(2px,-2px);
 }
-/* ANIMATION */
-
-
-
-
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .ng-init-growth-heading {
@@ -1134,10 +966,6 @@
     }
 }
 /* INITIATIEVEN CTA — MATCH REST OF PAGE */
-/* same heading treatment as the other initiative sections */
-/* keep the section on the same horizontal grid as the rest */
-/* slightly rebalance the columns now that we're using the correct page container */
-/* INITIATIEVEN CTA — MATCH REST OF PAGE */
 .ng-init-idea, .ng-init-idea button, .ng-init-idea a, .ng-init-idea input, .ng-init-idea textarea {
     font-family: Inter, sans-serif;
 }
@@ -1149,8 +977,6 @@
     line-height: .97;
     letter-spacing: -.052em;
 }
-/* keep the section on the same horizontal grid as the rest */
-
 /* slightly rebalance the columns now that we're using the correct page container */
 .ng-init-idea-layout {
     grid-template-columns: minmax(0, 1fr) minmax(360px, .62fr);
@@ -1167,80 +993,6 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
     letter-spacing: .15em;
     text-transform: uppercase;
 }
-/* INITIATIEVEN HERO — RESTORE CONTENT */
-
-/* heading */
-
-/* single highlighted part */
-/* intro */
-
-/* NoordgroeiT only */
-
-/* keep kicker visible */
-
-/* CTA stays underneath the copy */
-
-/* INITIATIEVEN HERO — FINAL ALIGNMENT FIX */
-
-/* COPY BACK ON THE SITE GRID */
-
-/* KICKER */
-
-/* HEADING */
-
-
-/* INTRO */
-
-/* RESTORE THE BUTTON TOO */
-
-
-/* MOBILE */
-
-/* INITIATIEVEN HERO — MATCH SECTION ALIGNMENT */
-
-/* Make sure the copy itself does not escape the wrapper */
-
-/* INITIATIEVEN HERO — FORCE SAME LEFT ALIGNMENT AS SECTIONS */
-
-/* remove anything previously shifting the text */
-
-
-
-/* NOORDBUITEN — HERO */
-
-/* BACKGROUND IMAGE */
-
-/* OVERLAY */
-
-/* subtle depth */
-
-/* CONTENT GRID */
-
-
-/* KICKER */
-
-
-/* TITLE */
-
-/* INTRO */
-
-/* BUTTON */
-
-
-
-
-/* RELATION — NOORDGROEIT */
-
-
-
-
-/* SCROLL CUE */
-
-/* NEXT SECTION — START */
-
-
-/* MOBILE */
-
 /* NOORDBUITEN — WAT IS NOORDBUITEN */
 .ng-nb-story {
     position: relative;
@@ -1460,23 +1212,14 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
     }
 }
 /* SHARED INNER HERO */
-/* IMAGE */
-/* OVERLAY */
 .ng-inner-hero__overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, rgba(25, 40, 30, .82) 0%, rgba(25, 40, 30, .58) 42%, rgba(25, 40, 30, .22) 75%, rgba(25, 40, 30, .08) 100%);
 }
-/* CONTAINER */
-/* COPY */
 .ng-inner-hero__copy {
     max-width: 760px;
 }
-/* KICKER */
-
-
-/* TITLE */
-
 /* SCROLL ARROW */
 .ng-inner-hero__scroll {
     position: absolute;
@@ -1493,8 +1236,6 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
     font-size: .7rem;
     transform: translateX(-50%);
 }
-/* MOBILE */
-
 /* SHARED INNER HERO */
 .ng-inner-hero {
     position: relative;
@@ -1757,20 +1498,6 @@ body .ng-inner-hero h1 {
 .ng-init-rise > .site-container {
     min-height: 0 !important;
 }
-/* HEIKANTSE TUYNEN — CLEANER RHYTHM */
-
-/* Main section introduction */
-
-/* Keep the main heading compact */
-
-/* Intro paragraph on the right */
-
-/* The SECOND title shouldn't compete with the section title */
-
-/* Space between little label and second heading */
-
-/* Give the actual project content breathing room */
-
 /* JOUW IDEE VOOR DE WIJK — COMPACT */
 .ng-init-idea {
     min-height: 0 !important;
@@ -1782,18 +1509,11 @@ body .ng-inner-hero h1 {
     min-height: 0 !important;
     height: auto !important;
 }
-/* Don't let the main composition create artificial height */
-
-/* Remove old oversized vertical margins */
-
 /* Text rhythm */
 .ng-init-idea h2 {
     margin-top: 12px !important;
     margin-bottom: 18px !important;
 }
-
-/* Bottom ZIEN — DELEN — SAMEN KIJKEN line */
-
 /* JOUW IDEE — move only the left column upward */
 .ng-init-rise + section .site-container > div > :first-child {
     position: relative;
@@ -2014,43 +1734,6 @@ body .ng-inner-hero h1 {
         flex-direction: column;
     }
 }
-/* NOORDBUITEN — WAT GEBEURT HIER */
-
-/* HEADING */
-
-
-
-
-/* MAIN LAYOUT */
-
-/* IMAGE */
-
-
-
-
-
-
-
-/* ACTIVITY ROWS */
-
-
-
-
-
-
-
-
-
-/* FOOTER */
-
-
-
-
-
-
-/* RESPONSIVE */
-
-
 /* NOORDBUITEN LEEFT */
 .ng-nb-alive {
     position: relative;
@@ -2332,20 +2015,6 @@ body .ng-inner-hero h1 {
         flex-direction: column;
     }
 }
-/* NOORDBUITEN — WOENSDAG */
-
-/* TOP */
-
-/* BIG WEDNESDAY */
-
-
-
-/* little coral marker */
-
-/* COPY */
-
-
-
 .ng-nb-wednesday-copy > p:not(.ng-nb-wednesday-small) {
     max-width: 480px;
     margin: 1.4rem 0 0;
@@ -2353,38 +2022,6 @@ body .ng-inner-hero h1 {
     font-size: var(--ng-home-body);
     line-height: 1.7;
 }
-/* BUTTON */
-
-
-
-
-/* WORKBENCH */
-
-/* long wandering work line */
-
-/* TAGS */
-
-
-/* deliberately scattered */
-
-
-
-
-
-
-/* NOTE */
-
-
-
-
-/* FOOTER */
-
-
-
-
-
-/* RESPONSIVE */
-
 /* NOORDBUITEN — SAMEN MAKEN WE DE PLEK */
 .ng-nb-together {
     position: relative;

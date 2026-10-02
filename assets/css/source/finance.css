@@ -2,112 +2,6 @@
 .ng-transparency-page {
     background: var(--color-cream);
 }
-
-/* quiet geometric detail */
-
-/* LAYOUT */
-
-/* COPY */
-
-
-
-
-
-
-/* FOUNDATION FACT PANEL */
-
-/* tiny coral handmade mark */
-
-/* PANEL TOP */
-
-
-
-/* FACTS */
-
-
-
-
-/* PANEL NOTE */
-
-
-
-/* BOTTOM ROUTE */
-
-
-
-
-/* RESPONSIVE */
-
-
-/* FINANCIËN & TRANSPARANTIE — MONEY FLOW */
-
-/* HEADING */
-
-
-
-
-
-/* ROUTE */
-
-/* * continuous vertical line */
-
-/* STEP */
-
-
-/* MARKER */
-
-
-
-
-/* CONTENT */
-
-
-
-
-
-/* BOTTOM NOTE */
-
-
-
-
-/* RESPONSIVE */
-
-
-/* FINANCIËN & TRANSPARANTIE — DOCUMENTEN */
-
-/* HEADING */
-
-
-
-
-
-/* LIST */
-
-/* YEAR LABEL */
-
-
-/* DOCUMENT ROW */
-
-
-/* DOCUMENT COPY */
-
-
-
-/* META / BUTTON */
-
-
-
-
-/* CONTACT NOTE */
-
-
-
-
-
-
-/* RESPONSIVE */
-
-
 /* FINANCIËN & TRANSPARANTIE — VERANTWOORDELIJKHEID */
 .ng-finance-responsibility {
     position: relative;
@@ -167,30 +61,6 @@
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-/* THREE COLUMN LAYOUT */
-
-/* ITEMS */
-
-
-
-
-/* TOP DETAILS */
-
-
-/* FRED INITIAL */
-
-/* small marker other columns */
-
-/* COPY */
-
-
-
-/* FOOTER LINK */
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 850px) {
     .ng-finance-responsibility-heading {
@@ -210,30 +80,6 @@
     }
     
 }
-/* FINANCIËN & TRANSPARANTIE — CONTACT CTA */
-
-/* quiet decorative circle */
-
-/* LAYOUT */
-
-/* COPY */
-
-
-
-
-
-/* ACTION */
-
-
-
-
-
-
-/* RESPONSIVE */
-
-
-
-/* OVER NOORDGROEIT — STORY BRANDING POLISH */
 /* Back to our normal section-kicker language */
 body .ng-over-story-v3-badge {
     width: auto;
@@ -482,8 +328,6 @@ body .ng-over-idea-action {
     transform: translateY(-4px);
     box-shadow: 0 14px 34px rgba(46, 59, 50, 0.08);
 }
-/* LARGE LEAD PROFILE */
-
 /* PORTRAIT AREA */
 .ng-team-profile-portrait {
     position: relative;
@@ -698,29 +542,6 @@ body .ng-over-idea-action {
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-/* VISUAL FLOW */
-
-/* FLOWING SVG LINE */
-
-
-
-
-/* STATIONS */
-
-
-
-
-/* LARGE VISUAL ICON */
-
-
-
-
-/* COPY */
-
-
-
-
-/* CLOSING LINE */
 .ng-team-collab-end {
     position: relative;
     z-index: 2;
@@ -743,17 +564,6 @@ body .ng-over-idea-action {
     font-size: 0.72rem;
     font-weight: 700;
 }
-/* ANIMATION */
-
-
-
-
-
-
-
-
-/* middle already uses translateX */
-
 /* RESPONSIVE */
 @media (max-width: 800px) {
     .ng-team-collab-heading {
@@ -1187,92 +997,6 @@ body .ng-over-idea-action {
         width: 145px;
     }
 }
-/* INITIATIEVEN — HERO V2 */
-
-/* quiet big background echo */
-
-/* LAYOUT */
-
-/* COPY */
-
-
-
-/* only ONE intentional word */
-
-
-/* HERO BUTTON */
-
-
-
-
-/* COLLAGE */
-
-/* NOORDBUITEN PHOTO */
-
-
-
-/* slight photo fade */
-
-
-
-
-/* TALK CARD */
-
-/* speech bubble tail */
-
-/* TALK ICON */
-
-
-
-
-
-/* FLOATING NOTE */
-
-
-
-
-/* ROUTE */
-
-
-
-/* BOTTOM THEMES */
-
-
-
-/* RESPONSIVE */
-
-
-/* INITIATIEVEN — PHOTO HERO */
-
-/* IMAGE */
-
-/* OVERLAY */
-
-/* CONTAINER */
-
-/* COPY */
-
-
-
-/* only one highlighted word */
-
-
-/* NoordgroeiT still gets brand treatment */
-
-/* BUTTON */
-
-
-
-
-/* SCROLL MARK */
-
-/* RESPONSIVE */
-
-
-/* INNER PAGE HERO KICKER — Same visual language as Over NoordgroeiT */
-
-/* coral dot */
-
 /* FINANCIËN & TRANSPARANTIE — HERO V2 */
 .ng-finance-hero-v2 {
     position: relative;
@@ -1875,77 +1599,12 @@ body .ng-finance-dossier {
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-/* VISUAL JOURNEY */
-
-/* ROUTE */
-
-
-
-
-/* STEPS */
-
-
-
-
-/* ICONS */
-
-
-
-/* META */
-
-
-
-/* STEP COPY */
-
-
-/* LITTLE WIJK SCENE */
-
-
-/* ground */
-
-/* HOUSES */
-
-
-
-
-
-/* TREE */
-
-
-
-
-
-/* RESULT LABEL */
-
-
-/* FOOTER NOTE */
-
-
-
-/* ANIMATION */
-
-
-
-
-
-
-
-
-
-
-
 /* MOBILE */
 @media (max-width: 850px) {
     .ng-finance-journey-heading {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-    }
-    
-    
-    
-    
-    
-    
+    } 
 }
 /* FINANCE — PAPER TRAIL */
 .ng-finance-papertrail {
@@ -2254,59 +1913,6 @@ body .ng-finance-dossier {
     color: var(--color-coral);
     font-style: normal;
 }
-/* FOLDER */
-
-/* BACK */
-
-/* TABS */
-
-
-
-/* DOCUMENT STACK */
-
-/* DOCUMENT */
-
-/* overlap slightly like actual files */
-
-
-/* PDF */
-
-
-
-/* DOCUMENT COPY */
-
-
-
-/* NoordgroeiT only */
-
-/* ARROW */
-
-
-/* FOLDER FRONT */
-
-
-
-
-
-/* subtle embossed mark */
-
-
-/* ANIMATION START STATE */
-
-
-
-
-/* ANIMATION IN */
-
-
-
-
-
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 950px) {
     .ng-finance-archive-layout {
@@ -2315,7 +1921,6 @@ body .ng-finance-dossier {
     }
     
 }
-
 /* DOCUMENT ARCHIVE — LAYOUT POLISH */
 body .ng-finance-archive-layout {
     grid-template-columns: minmax(0, .88fr) minmax(560px, 1.12fr);
@@ -2327,71 +1932,6 @@ body .ng-finance-archive-copy {
 body .ng-finance-archive-copy h2 {
     max-width: 680px;
 }
-/* REAL FOLDER */
-
-/* BACK */
-
-/* FOLDER TABS */
-
-
-
-/* PAPER DEPTH */
-
-
-
-
-/* DOCUMENT STACK */
-
-/* EACH DOCUMENT */
-
-
-
-/* PDF ICON */
-
-
-
-/* DOCUMENT TEXT */
-
-
-
-/* only NoordgroeiT */
-
-/* ARROW */
-
-
-/* FRONT POCKET */
-
-/* slight upper lip */
-
-/* FOLDER TEXT */
-
-
-
-
-/* EMBOSSED MARK */
-
-
-/* ENTRANCE ANIMATION */
-
-
-
-/* BASE */
-
-
-/* TABS */
-
-/* BLANK PAPERS */
-
-
-
-/* DOCUMENTS */
-
-
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 980px) {
     body .ng-finance-archive-layout {
@@ -2399,67 +1939,6 @@ body .ng-finance-archive-copy h2 {
     }
     
 }
-
-/* FINANCE — REAL INTERACTIVE FILE FOLDER */
-
-/* BACK OF FOLDER */
-
-/* ACTUAL FOLDER TABS */
-
-
-
-
-/* selected tab physically rises */
-
-/* tiny coral indicator */
-
-/* BLANK PAPER DEPTH */
-
-
-
-/* DOCUMENT AREA */
-
-
-
-/* DOCUMENT */
-
-
-/* PDF ICON */
-
-
-
-/* COPY */
-
-
-/* our branding rule */
-
-/* ARROW */
-
-
-/* FRONT POCKET — THIS MAKES IT READ AS A FOLDER */
-
-/* Actual thicker folder lip. This is what was missing before. */
-
-/* subtle seam */
-
-/* FRONT COPY */
-
-
-
-/* EMBOSSED LOGO DETAIL */
-
-
-/* CATEGORY CHANGE ANIMATION */
-
-
-
-/* LITTLE WHOLE-FOLDER HOVER */
-
-
-
-/* RESPONSIVE */
-
-
 /* FINANCE ARCHIVE — REAL FOLDER V3 */
 .ng-archive-folder {
     position: relative;
@@ -2673,9 +2152,6 @@ body .ng-finance-archive-copy h2 {
 .ng-archive-document .ng-brand-word {
     color: var(--color-green) !important;
 }
-/* DOCUMENT ARROW */
-
-
 /* DARK FRONT POCKET */
 .ng-archive-folder__front {
     position: absolute;
@@ -2829,20 +2305,6 @@ body .ng-archive-folder__back {
 body .ng-archive-folder__paper {
     min-height: 325px;
 }
-/* FINANCE — RESPONSIBILITY LEDGER */
-/* PAGES */
-/* left page */
-/* right page */
-/* BOOK SPINE */
-/* LEFT PAGE — FRED */
-/* PERSON */
-/* SIGNATURE DETAIL */
-/* RIGHT PAGE — CHECKS */
-/* STAMP */
-/* BOTTOM LINK */
-/* SUBTLE OPEN ANIMATION */
-/* RESPONSIVE */
-/* FINANCE — RESPONSIBILITY LEDGER */
 .ng-finance-ledger {
     position: relative;
     display: grid;
@@ -3488,8 +2950,6 @@ body .ng-finance-ledger-page > * {
 .ng-finance-question-button:hover .ng-finance-question-button-arrow {
     transform: translate(2px, -2px);
 }
-/* LITTLE NOTE */
-
 /* RESPONSIVE */
 @media (max-width: 800px) {
     .ng-finance-question-layout {
