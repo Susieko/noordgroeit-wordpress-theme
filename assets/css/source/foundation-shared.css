@@ -196,8 +196,6 @@ button, input, textarea, select {
 .ng-menu-toggle {
     display: none;
 }
-/* Nieuwe split hero */
-
 
 .ng-hero-values span:not(:last-child)::after {
     content: "•";
@@ -205,7 +203,6 @@ button, input, textarea, select {
     right: -15px;
     color: var(--color-coral);
 }
-
 
 /* Header and hero responsive */
 @media (max-width: 1180px) {
@@ -272,16 +269,13 @@ button, input, textarea, select {
     .ng-mobile-home {
         display: block;
     }
-    
+
 }
 @media (max-width: 860px) {
     .ng-support-link {
         display: none;
     }
-    
-    
-    
-    
+
 }
 @media (max-width: 782px) {
     .admin-bar .ng-site-header {
@@ -307,30 +301,19 @@ button, input, textarea, select {
     .ng-menu-toggle {
         margin-left: auto;
     }
-    
-    
-    
-    
-    
-    
+
     .ng-hero-values span:not(:last-child)::after {
         content: none;
     }
-    
-    
-    
-    
-    
+
 }
 /* Homepage: identiteit */
-
 
 .identity-card > p:not(.identity-label) {
     max-width: 560px;
     margin: 0 0 30px;
     font-size: 1.02rem;
 }
-
 
 /* Standaard WordPress-inhoud */
 .content-area {
@@ -361,8 +344,6 @@ button, input, textarea, select {
     background: var(--color-green);
 }
 
-
-
 .footer-column h2 {
     margin: 0 0 18px;
     color: var(--color-white);
@@ -376,7 +357,6 @@ button, input, textarea, select {
     font-weight: 700;
 }
 
-
 .footer-bottom {
     border-top: 1px solid rgba(255, 255, 255, 0.18);
 }
@@ -386,21 +366,16 @@ button, input, textarea, select {
     color: var(--color-green-light);
     font-size: 0.86rem;
 }
-/* Responsive */
 
 @media (max-width: 640px) {
-    
-    
+
     .button {
         width: 100%;
     }
-    
+
 }
 
-
-
 /* Concrete voortgang */
-
 
 .progress-copy > p:not(.eyebrow) {
     max-width: 540px;
@@ -408,10 +383,7 @@ button, input, textarea, select {
     color: rgba(255, 255, 255, 0.82);
 }
 
-
 /* Afsluitende oproep */
-
-
 
 .join-action p:not(.identity-label) {
     max-width: 660px;
@@ -419,27 +391,21 @@ button, input, textarea, select {
     color: rgba(255, 255, 255, 0.8);
 }
 
-
 /* NoordbuiTen */
-
 
 .noordbuiten-copy > p:not(.network-label) {
     margin: 24px 0 34px;
     color: rgba(255, 255, 255, 0.76);
 }
 
-
 /* Afsluitende partneroproep */
-
 
 .network-action p:not(.network-label) {
     max-width: 700px;
     margin: 15px 0 0;
 }
 
-
 /* Homepage: afsluitende call-to-action */
-
 
 .closing-cta-copy > p:not(.closing-cta-label) {
     max-width: 660px;
@@ -448,7 +414,6 @@ button, input, textarea, select {
     font-size: clamp(1.05rem, 1.5vw, 1.24rem);
     line-height: 1.7;
 }
-
 
 /* Gezamenlijke footer */
 .site-footer {
@@ -595,17 +560,15 @@ button, input, textarea, select {
 .footer-bottom p {
     margin: 0;
 }
-/* Responsive */
+
 @media (max-width: 1050px) {
-    
-    
+
     .footer-main {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 }
 @media (max-width: 700px) {
-    
-    
+
     .footer-main, .footer-noordbuiten {
         grid-template-columns: 1fr;
     }
@@ -614,8 +577,7 @@ button, input, textarea, select {
     }
 }
 @media (max-width: 520px) {
-    
-    
+
     .footer-main {
         gap: 42px;
     }
@@ -625,9 +587,7 @@ button, input, textarea, select {
     }
 }
 
-
 /* Relatie NoordgroeiT en NoordbuiTen */
-
 
 .ng-structure-copy > p:not(.ng-structure-label) {
     max-width: 680px;
@@ -635,7 +595,6 @@ button, input, textarea, select {
     color: rgba(255, 255, 255, 0.74);
     font-size: 1.02rem;
 }
-
 
 /* Header language switcher */
 .ng-header-actions {
@@ -718,9 +677,7 @@ button, input, textarea, select {
     }
 }
 
-
 /* Hero text */
-
 
 .ng-home-hero-themes span:not(:last-child)::after {
     content: "";
@@ -734,25 +691,15 @@ button, input, textarea, select {
     transform: translateY(-50%);
 }
 
-
 /* Responsive hero */
 
 @media (max-width: 620px) {
-    
-    
-    
-    
+
     .ng-home-hero-themes span:not(:last-child)::after {
         right: -12px;
     }
-    
-    
-    
-    
-    
-    
-}
 
+}
 
 /* Header floats over the hero on the homepage */
 body.home .ng-site-header {
@@ -774,7 +721,6 @@ body.home .ng-header-shell {
     backdrop-filter: blur(13px);
     transition: background-color 240ms ease, border-color 240ms ease, box-shadow 240ms ease;
 }
-
 
 /* Transparent header at the top */
 body.home .ng-site-header {
@@ -811,7 +757,6 @@ body.home .ng-site-header.is-scrolled .ng-header-shell, body.home .ng-site-heade
     box-shadow: 0 9px 34px rgba(46, 59, 50, 0.07);
 }
 
-
 /* Mobile and tablet */
 
 @media (max-width: 782px) {
@@ -823,24 +768,17 @@ body.home .ng-site-header.is-scrolled .ng-header-shell, body.home .ng-site-heade
     body.home .ng-site-header {
         padding: 9px 0;
     }
-    
-    
-    
-    
+
 }
 
-
 /* Right-hand explanation */
-
 
 body.home .ng-intro-copy p:not(.ng-intro-lead) {
     max-width: 520px;
     line-height: 1.7;
 }
 
-
 /* Compact opening statement */
-
 
 body.home .ng-intro-copy p:not(.ng-intro-lead) {
     max-width: 590px;
@@ -848,7 +786,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
     font-size: 1rem;
     line-height: 1.75;
 }
-
 
 /* NOORDBUITEN STORY */
 .ng-nb-story {
@@ -880,7 +817,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 }
 /* Introduction */
 
-
 .ng-nb-copy > p:not(.ng-nb-location) {
     max-width: 620px;
     margin: 0;
@@ -889,9 +825,7 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
     line-height: 1.75;
 }
 
-
 /* Closing line */
-
 
 .ng-nb-footer li:not(:last-child)::after {
     width: 0.3rem;
@@ -901,44 +835,26 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
     content: "";
 }
 
-
 /* Mobile */
 @media (max-width: 680px) {
     .ng-nb-story {
         padding: 4.5rem 0;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-}
 
+}
 
 /* * NOORDBUITEN */
 .ng-nb-story {
     padding: clamp(4rem, 6vw, 6.25rem) 0;
 }
 
-
 /* Mobile */
 @media (max-width: 680px) {
     .ng-nb-story {
         padding: 3.75rem 0;
     }
-    
-    
-    
-    
-    
-    
-}
 
+}
 
 /* Prevent decorative elements from creating horizontal scroll */
 html, body {
@@ -951,32 +867,10 @@ html, body {
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /* Closing support chapter */
-    
-    
-}
 
+    /* Closing support chapter */
+
+}
 
 /* MOBILE — 600px and smaller */
 @media (max-width: 600px) {
@@ -1001,83 +895,14 @@ html, body {
         padding: 9px 12px;
         font-size: 0.82rem;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     /* Shared section rhythm */
     body.home .ng-nb-story {
         padding-top: 4rem;
         padding-bottom: 4rem;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    /* Final support chapter */
-    
-    
-    
-    
-    
-    
-    
-    
-}
 
+}
 
 /* NAVIGATION WITH SUBMENUS */
 .ng-nav-parent {
@@ -1364,12 +1189,10 @@ html, body {
     }
 }
 
-
 /* NoordbuiTen footer label */
 .footer-small-label {
     color: #f3a28c;
 }
-
 
 /* MOBILE HEADER — COMPACT STEUN ONS */
 @media (max-width: 560px) {
@@ -1395,13 +1218,11 @@ html, body {
     }
 }
 
-
 /* HOMEPAGE POLISH — CONSISTENT TYPOGRAPHY */
 :root {
     --ng-home-section-title: clamp(2.85rem, 3.85vw, 4.15rem);
     --ng-home-body: clamp(0.98rem, 1.05vw, 1.06rem);
 }
-
 
 /* SECTION INTRO COPY */
 body.home .ng-nb-copy > p:not(.ng-nb-location) {
@@ -1416,7 +1237,6 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
         --ng-home-body: 0.98rem;
     }
 }
-
 
 /* HOMEPAGE POLISH — SURFACE DESIGN SYSTEM */
 :root {
@@ -1433,7 +1253,6 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
     --ng-radius-quote: 0.45rem 1.5rem 1.5rem 1.5rem;
 }
 
-
 /* MOBILE — 700PX */
 @media (max-width: 700px) {
     :root {
@@ -1441,83 +1260,30 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
         --ng-home-section-title: clamp(2.35rem, 10vw, 3rem);
         --ng-home-body: 0.98rem;
     }
-    
-    
+
     /* Supporting paragraphs */
     body.home .ng-nb-copy > p:not(.ng-nb-location) {
         font-size: var(--ng-home-body);
         line-height: 1.65;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
     /* Support */
-    
+
 }
 /* VERY SMALL PHONES — 430PX */
 @media (max-width: 430px) {
     :root {
         --content-padding: 16px;
     }
-    
-    
-    
-    
+
 }
 /* CAROUSEL DOTS — LARGE CLICK AREA, SMALL VISUAL DOT */
-
 
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
     }
-    
+
 }
 /* INNER PAGES — SHARED EDITORIAL HERO */
 .ng-inner-hero {
@@ -1538,7 +1304,6 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
     border-radius: 50%;
     pointer-events: none;
 }
-
 
 /* Handmade coral mark */
 
