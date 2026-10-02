@@ -17,6 +17,7 @@ $modules = [
     'foundation-shared.css',
     'over-noordgroeit.css',
     'finance.css',
+    'team-bestuur.css',
     'initiatieven.css',
     'noordbuiten-core.css',
     'noordbuiten-activiteiten.css',
