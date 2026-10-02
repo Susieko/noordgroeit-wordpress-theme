@@ -92,8 +92,6 @@
     opacity: 1;
     transition-delay: 960ms;
 }
-
-
 /* PHOTO */
 .ng-inner-hero .ng-inner-hero__image {
     animation: ngInnerHeroPhotoIn 1.25s cubic-bezier(.18,.82,.25,1) backwards;
@@ -601,8 +599,6 @@
     letter-spacing: -.035em;
 }
 
-
-
 /* RESPONSIVE */
 @media (max-width: 950px) {
     .ng-nwt-clean-layout {
@@ -794,8 +790,6 @@
     padding-bottom: 0;
 }
 
-
-
 /* INITIATIEVEN — HEIKANTSE TUYNEN CLEAN */
 .ng-ht-clean {
     position: relative;
@@ -879,8 +873,6 @@
     line-height: 1.04;
     letter-spacing: -.035em;
 }
-
-
 
 /* COPY */
 .ng-ht-clean-copy {
@@ -1063,8 +1055,6 @@
 .ng-ht-clean-visual {
     padding-bottom: 42px;
 }
-
-
 /* OPTIONAL: — Make caption inside image a bit easier to read too */
 .ng-ht-clean-photo::after {
     background: linear-gradient(to top, rgba(25,33,27,.58) 0%, rgba(25,33,27,.16) 36%, transparent 60%);
@@ -1104,7 +1094,6 @@
 .ng-ht-clean-photo {
     min-height: clamp(520px, 39vw, 600px);
 }
-
 
 /* BOTTOM DETAIL — Same visual language as NoordbuiTen */
 .ng-ht-clean-bottom {
@@ -1983,7 +1972,6 @@
     background: var(--nwt-cream) !important;
 }
 
-
 /* PAGE RHYTHM */
 .ng-nwt-page {
     background: var(--color-cream);
@@ -1991,8 +1979,6 @@
 .ng-nwt-about {
     background: var(--color-cream) !important;
 }
-
-
 
 /* SECTION SPACING — Less giant empty editorial blocks */
 .ng-nwt-about {
@@ -2025,18 +2011,15 @@
     border-radius: .55rem 2.3rem 2.3rem 2.3rem;
 }
 
-
 /* 1. ONE BASE BACKGROUND — No more white / cream / white / cream. */
 body .ng-nwt-page, body .ng-nwt-page .ng-nwt-about {
     background: var(--color-cream) !important;
 }
 
-
 /* 2. SECTION 1 — Let it flow into section 2 instead of making a band. */
 body .ng-nwt-page .ng-nwt-about {
     padding-bottom: clamp(4.5rem, 6vw, 6rem) !important;
 }
-
 
 /* NOORDWERKTSAMEN — 02 — WAT LEEFT ER IN NOORD? — Fresh component — no old Topics inheritance */
 .ng-nwt-voices {
@@ -3048,7 +3031,6 @@ body .ng-nwt-page .ng-nwt-about {
         width: fit-content;
     }
 }
-
 
 /* NOORDWERKTSAMEN — 04 — DE OOGST VAN HET GESPREK */
 .ng-nwt-harvest {

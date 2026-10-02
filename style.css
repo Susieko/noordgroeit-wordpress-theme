@@ -1304,21 +1304,15 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
     border-radius: 50%;
     pointer-events: none;
 }
-
-/* RESPONSIVE */
-
 @media (max-width: 700px) {
     .ng-inner-hero {
         padding: 4rem 0 4.5rem;
-    }
-
+    }  
 }
-
 /* OVER NOORDGROEIT — HERO PROPORTION FIX */
 body .ng-inner-hero {
     padding: clamp(4rem, 6vw, 5.75rem) 0 clamp(4.5rem, 7vw, 6.5rem);
 }
-
 /* OVER NOORDGROEIT — STORY + CORE VALUES */
 .ng-over-story-v3 {
     position: relative;
@@ -1519,7 +1513,7 @@ body .ng-inner-hero {
     border-radius: 50%;
     transform: translateY(-50%);
 }
-
+/* TABLET */
 @media (max-width: 800px) {
     .ng-over-story-v3-intro {
         grid-template-columns: 1fr;
@@ -1545,7 +1539,7 @@ body .ng-inner-hero {
         max-width: 560px;
     }
 }
-
+/* MOBILE */
 @media (max-width: 520px) {
     .ng-over-story-v3 {
         padding: 4rem 0;
@@ -1628,7 +1622,6 @@ body .ng-inner-hero {
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-
 /* ENDING */
 .ng-over-process-footer {
     display: flex;
@@ -1651,7 +1644,7 @@ body .ng-inner-hero {
 .ng-over-process-footer strong {
     color: var(--color-white);
 }
-
+/* TABLET */
 @media (max-width: 800px) {
     .ng-over-process-heading {
         grid-template-columns: 1fr;
@@ -1660,27 +1653,22 @@ body .ng-inner-hero {
     .ng-over-process-heading > p {
         max-width: 600px;
     }
-
+    
 }
-
+/* MOBILE */
 @media (max-width: 620px) {
     .ng-over-process {
         padding: 4rem 0;
     }
-
-    /* turn route into one vertical path */
-
     .ng-over-process-footer {
         justify-content: flex-start;
         flex-wrap: wrap;
     }
 }
-
 /* Keep the little summary closer to the diagram */
 .ng-over-process-footer {
     margin-top: clamp(3rem, 5vw, 4rem);
 }
-
 /* MAIN COMPOSITION */
 .ng-over-cycle {
     position: relative;
@@ -1816,7 +1804,7 @@ body .ng-inner-hero {
 .ng-over-cycle-step--1 p, .ng-over-cycle-step--4 p {
     margin-left: auto;
 }
-
+/* ANIMATION PREPARATION */
 /* * IMPORTANT: * * Without JS everything remains visible. * Only once JS adds .is-animatable do we prepare * the animation state. */
 .ng-over-cycle.is-animatable .ng-over-cycle-route {
     stroke-dashoffset: 100;
@@ -1909,7 +1897,7 @@ body .ng-inner-hero {
         transform: translate(-50%, -50%) scale(1);
     }
 }
-
+/* MOBILE */
 @media (max-width: 700px) {
     /* * On mobile we switch to a vertical journey. * Trying to squeeze the orbit around text would be messy. */
     .ng-over-cycle {
@@ -2041,7 +2029,6 @@ body .ng-inner-hero {
     min-width: 245px;
     padding-top: 2.3rem;
 }
-
 /* RESPONSIVE */
 @media (max-width: 760px) {
     .ng-over-idea-layout {
@@ -2058,7 +2045,7 @@ body .ng-inner-hero {
     .ng-over-idea-cta {
         padding: 4rem 0;
     }
-
+    
     .ng-over-idea-action {
         width: 100%;
     }
@@ -2086,7 +2073,6 @@ body .ng-over-idea-action {
     min-width: 0;
     padding-top: 0;
 }
-
 /* Decorative circle a little quieter */
 body .ng-over-idea-cta::after {
     right: -115px;
@@ -2104,7 +2090,7 @@ body .ng-over-idea-cta::after {
     body .ng-over-idea-action {
         width: fit-content;
     }
-
+    
 }
 /* TEAM & BESTUUR — HERO */
 .ng-team-page {
@@ -2362,13 +2348,10 @@ body .ng-over-idea-cta::after {
     .ng-team-hero-footer {
         margin-top: 3rem;
     }
-}
-
-/* FINANCIËN & TRANSPARANTIE — HERO */
+}/* FINANCIËN & TRANSPARANTIE — HERO */
 .ng-transparency-page {
     background: var(--color-cream);
 }
-
 /* FINANCIËN & TRANSPARANTIE — VERANTWOORDELIJKHEID */
 .ng-finance-responsibility {
     position: relative;
@@ -2428,7 +2411,6 @@ body .ng-over-idea-cta::after {
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-
 /* RESPONSIVE */
 @media (max-width: 850px) {
     .ng-finance-responsibility-heading {
@@ -2438,15 +2420,16 @@ body .ng-over-idea-cta::after {
     .ng-finance-responsibility-heading > p {
         max-width: 600px;
     }
-
+    
+    
+    
 }
 @media (max-width: 600px) {
     .ng-finance-responsibility {
         padding: 4rem 0;
     }
-
+    
 }
-
 /* Back to our normal section-kicker language */
 body .ng-over-story-v3-badge {
     width: auto;
@@ -2473,7 +2456,7 @@ body .ng-over-story-v3-heading h2 span {
 body .ng-brand-word {
     color: var(--color-green) !important;
 }
-
+/* OVER NOORDGROEIT — CTA REDESIGN */
 /* Kill old pill styling */
 body .ng-over-idea-action {
     position: relative;
@@ -2695,7 +2678,6 @@ body .ng-over-idea-action {
     transform: translateY(-4px);
     box-shadow: 0 14px 34px rgba(46, 59, 50, 0.08);
 }
-
 /* PORTRAIT AREA */
 .ng-team-profile-portrait {
     position: relative;
@@ -2823,6 +2805,9 @@ body .ng-over-idea-action {
     font-size: 0.72rem;
     font-weight: 700;
 }
+/* REAL PHOTOS LATER */
+/* When we have portraits, replace initials markup with: <img class="ng-team-profile-image" src="..." alt="Yvonne Visser" > */
+
 
 /* RESPONSIVE */
 @media (max-width: 900px) {
@@ -2907,8 +2892,6 @@ body .ng-over-idea-action {
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-
-/* CLOSING LINE */
 .ng-team-collab-end {
     position: relative;
     z-index: 2;
@@ -2931,14 +2914,17 @@ body .ng-over-idea-action {
     font-size: 0.72rem;
     font-weight: 700;
 }
-
 /* RESPONSIVE */
 @media (max-width: 800px) {
     .ng-team-collab-heading {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-
+    
+    
+    
+    
+    
 }
 /* TEAM — CLEAN COLLABORATION TRACK */
 .ng-team-collab-track {
@@ -3093,7 +3079,7 @@ body .ng-over-idea-action {
         transform: translateY(0);
     }
 }
-
+/* MOBILE */
 @media (max-width: 760px) {
     .ng-team-collab-track {
         grid-template-columns: 1fr;
@@ -3361,7 +3347,6 @@ body .ng-over-idea-action {
         width: 145px;
     }
 }
-
 /* FINANCIËN & TRANSPARANTIE — HERO V2 */
 .ng-finance-hero-v2 {
     position: relative;
@@ -3719,7 +3704,7 @@ body .ng-over-idea-action {
         width: min(88%, 290px);
     }
 }
-
+/* FINANCE HERO — DOSSIER NEATNESS PASS */
 /* Give the visual a cleaner working area */
 body .ng-finance-dossier {
     width: min(100%, 390px);
@@ -3829,7 +3814,7 @@ body .ng-finance-dossier:hover .ng-finance-paper--back {
 body .ng-finance-dossier:hover .ng-finance-paper--middle {
     transform: translate(4px, -2px) rotate(5deg);
 }
-
+/* FINANCE HERO — SIZE + CLEANUP PASS */
 /* Give the whole right visual a bit more room */
 body .ng-finance-hero-v2-layout {
     grid-template-columns: minmax(0, 1fr) minmax(440px, .78fr);
@@ -3890,7 +3875,7 @@ body .ng-finance-dossier-note {
 body .ng-finance-dossier-note p {
     white-space: nowrap;
 }
-
+/* If you’d rather remove the note entirely, use this instead: body .ng-finance-dossier-note { display: none; } */
 /* Prevent the hidden text from peeking out awkwardly */
 body .ng-finance-dossier {
     overflow: visible;
@@ -3964,13 +3949,12 @@ body .ng-finance-dossier {
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-
+/* MOBILE */
 @media (max-width: 850px) {
     .ng-finance-journey-heading {
         grid-template-columns: 1fr;
         gap: 1.5rem;
-    }
-
+    } 
 }
 /* FINANCE — PAPER TRAIL */
 .ng-finance-papertrail {
@@ -4279,16 +4263,14 @@ body .ng-finance-dossier {
     color: var(--color-coral);
     font-style: normal;
 }
-
 /* RESPONSIVE */
 @media (max-width: 950px) {
     .ng-finance-archive-layout {
         grid-template-columns: 1fr;
         gap: 4rem;
     }
-
+    
 }
-
 /* DOCUMENT ARCHIVE — LAYOUT POLISH */
 body .ng-finance-archive-layout {
     grid-template-columns: minmax(0, .88fr) minmax(560px, 1.12fr);
@@ -4300,15 +4282,13 @@ body .ng-finance-archive-copy {
 body .ng-finance-archive-copy h2 {
     max-width: 680px;
 }
-
 /* RESPONSIVE */
 @media (max-width: 980px) {
     body .ng-finance-archive-layout {
         grid-template-columns: 1fr;
     }
-
+    
 }
-
 /* FINANCE ARCHIVE — REAL FOLDER V3 */
 .ng-archive-folder {
     position: relative;
@@ -4522,7 +4502,6 @@ body .ng-finance-archive-copy h2 {
 .ng-archive-document .ng-brand-word {
     color: var(--color-green) !important;
 }
-
 /* DARK FRONT POCKET */
 .ng-archive-folder__front {
     position: absolute;
@@ -4617,7 +4596,7 @@ body .ng-finance-archive-copy h2 {
         padding: 1.65rem 1.3rem;
     }
 }
-
+/* DOCUMENT FOLDER — SIMPLE FINAL CLEANUP */
 /* Tabs span the exact width of the folder */
 body .ng-archive-folder__tabs {
     left: 0;
@@ -4676,8 +4655,6 @@ body .ng-archive-folder__back {
 body .ng-archive-folder__paper {
     min-height: 325px;
 }
-
-/* FINANCE — RESPONSIBILITY LEDGER */
 .ng-finance-ledger {
     position: relative;
     display: grid;
@@ -4968,7 +4945,7 @@ body .ng-archive-folder__paper {
         border-left: 0;
     }
 }
-
+/* FINANCE LEDGER — CLEAN BOOK LAYOUT */
 /* Book slightly wider / more substantial */
 body .ng-finance-ledger {
     width: min(100%, 1120px);
@@ -5103,7 +5080,7 @@ body .ng-finance-ledger-page > * {
     position: relative;
     z-index: 2;
 }
-
+/* MOBILE */
 @media (max-width: 850px) {
     body .ng-finance-ledger {
         grid-template-columns: 1fr;
@@ -5323,7 +5300,6 @@ body .ng-finance-ledger-page > * {
 .ng-finance-question-button:hover .ng-finance-question-button-arrow {
     transform: translate(2px, -2px);
 }
-
 /* RESPONSIVE */
 @media (max-width: 800px) {
     .ng-finance-question-layout {
@@ -5689,7 +5665,6 @@ body .ng-finance-ledger-page > * {
         border-left: 0;
     }
 }
-
 /* INITIATIEVEN — GROWTH PROCESS */
 .ng-init-growth {
     position: relative;
@@ -5748,7 +5723,6 @@ body .ng-finance-ledger-page > * {
     color: #dcead7 !important;
     font-weight: 750;
 }
-
 /* FOOTER */
 .ng-init-growth-footer {
     position: relative;
@@ -5792,17 +5766,18 @@ body .ng-finance-ledger-page > * {
     background: var(--color-coral);
     transform: translate(2px,-2px);
 }
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .ng-init-growth-heading {
         grid-template-columns: 1fr;
         gap: 1.5rem;
     }
-
+    
+    
+    
 }
 @media (max-width: 600px) {
-
+    
     .ng-init-growth-footer {
         align-items: flex-start;
         flex-direction: column;
@@ -6313,7 +6288,6 @@ body .ng-finance-ledger-page > * {
         width: 20px;
     }
 }
-
 /* INITIATIEVEN CTA — MATCH REST OF PAGE */
 .ng-init-idea, .ng-init-idea button, .ng-init-idea a, .ng-init-idea input, .ng-init-idea textarea {
     font-family: Inter, sans-serif;
@@ -6326,7 +6300,6 @@ body .ng-finance-ledger-page > * {
     line-height: .97;
     letter-spacing: -.052em;
 }
-
 /* slightly rebalance the columns now that we're using the correct page container */
 .ng-init-idea-layout {
     grid-template-columns: minmax(0, 1fr) minmax(360px, .62fr);
@@ -6343,7 +6316,6 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
     letter-spacing: .15em;
     text-transform: uppercase;
 }
-
 /* NOORDBUITEN — WAT IS NOORDBUITEN */
 .ng-nb-story {
     position: relative;
@@ -6516,7 +6488,7 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
     height: 1px;
     background: rgba(46,59,50,.18);
 }
-
+/* MOBILE */
 @media (max-width: 760px) {
     .ng-nb-story__heading {
         grid-template-columns: 1fr;
@@ -6562,19 +6534,15 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
         row-gap: .6rem;
     }
 }
-
-/* OVERLAY */
+/* SHARED INNER HERO */
 .ng-inner-hero__overlay {
     position: absolute;
     inset: 0;
     background: linear-gradient(90deg, rgba(25, 40, 30, .82) 0%, rgba(25, 40, 30, .58) 42%, rgba(25, 40, 30, .22) 75%, rgba(25, 40, 30, .08) 100%);
 }
-
-/* COPY */
 .ng-inner-hero__copy {
     max-width: 760px;
 }
-
 /* SCROLL ARROW */
 .ng-inner-hero__scroll {
     position: absolute;
@@ -6591,7 +6559,6 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
     font-size: .7rem;
     transform: translateX(-50%);
 }
-
 /* SHARED INNER HERO */
 .ng-inner-hero {
     position: relative;
@@ -6708,7 +6675,7 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
         transform: translateX(-50%) translateY(4px);
     }
 }
-
+/* MOBILE */
 @media (max-width: 700px) {
     .ng-inner-hero {
         min-height: 500px;
@@ -6816,7 +6783,7 @@ body .ng-inner-hero h1 {
         font-size: clamp(2.55rem, 11vw, 3.2rem) !important;
     }
 }
-
+/* INITIATIEVEN — RHYTHM CLEANUP — Smaller headings = tighter, cleaner spacing */
 /* 1. Consistent section breathing room */
 .ng-init-page section:not(.ng-inner-hero) {
     padding-top: clamp(5.5rem, 7vw, 7rem);
@@ -6854,7 +6821,6 @@ body .ng-inner-hero h1 {
 .ng-init-rise > .site-container {
     min-height: 0 !important;
 }
-
 /* JOUW IDEE VOOR DE WIJK — COMPACT */
 .ng-init-idea {
     min-height: 0 !important;
@@ -6866,13 +6832,11 @@ body .ng-inner-hero h1 {
     min-height: 0 !important;
     height: auto !important;
 }
-
 /* Text rhythm */
 .ng-init-idea h2 {
     margin-top: 12px !important;
     margin-bottom: 18px !important;
 }
-
 /* JOUW IDEE — move only the left column upward */
 .ng-init-rise + section .site-container > div > :first-child {
     position: relative;
@@ -7093,7 +7057,6 @@ body .ng-inner-hero h1 {
         flex-direction: column;
     }
 }
-
 /* NOORDBUITEN LEEFT */
 .ng-nb-alive {
     position: relative;
@@ -7375,9 +7338,6 @@ body .ng-inner-hero h1 {
         flex-direction: column;
     }
 }
-
-/* COPY */
-
 .ng-nb-wednesday-copy > p:not(.ng-nb-wednesday-small) {
     max-width: 480px;
     margin: 1.4rem 0 0;
@@ -7385,7 +7345,6 @@ body .ng-inner-hero h1 {
     font-size: var(--ng-home-body);
     line-height: 1.7;
 }
-
 /* NOORDBUITEN — SAMEN MAKEN WE DE PLEK */
 .ng-nb-together {
     position: relative;
@@ -7649,6 +7608,7 @@ body .ng-inner-hero h1 {
 .ng-nbp-page {
     background: var(--color-cream);
 }
+/* unique hero image crop ONLY */
 
 /* PROGRESS SECTION */
 .ng-nbp-progress {
@@ -7746,7 +7706,6 @@ body .ng-inner-hero h1 {
 .ng-nbp-board-visual figcaption span {
     opacity: .7;
 }
-
 /* INFORMATION SIDE */
 .ng-nbp-board-info {
     display: flex;
@@ -7820,6 +7779,8 @@ body .ng-inner-hero h1 {
     font-size: .69rem;
     text-align: right;
 }
+/* WATER NOTE */
+
 
 /* BOTTOM ROUTE */
 .ng-nbp-progress-route {
@@ -8098,15 +8059,12 @@ body .ng-inner-hero h1 {
     background: #fffdf9 !important;
 }
 
-/* COPY */
-
 .ng-nbp-place-copy > p:not(.ng-nbp-place-type) {
     max-width: 440px;
     margin: 1.3rem 0 0;
     color: rgba(255,255,255,.64);
     line-height: 1.7;
 }
-
 /* PLEKKEN & PROJECTEN — BLUEPRINT */
 .ng-nbp-blueprint {
     position: relative;
@@ -8154,7 +8112,6 @@ body .ng-inner-hero h1 {
     border-top: 1px solid rgba(255,255,255,.1);
     border-bottom: 1px solid rgba(255,255,255,.1);
 }
-
 /* CENTER */
 .ng-nbp-plan-center {
     position: absolute;
@@ -8317,6 +8274,7 @@ body .ng-inner-hero h1 {
     overflow: hidden;
 }
 
+
 /* STANDARD PLAN ITEM */
 .ng-nbp-plan-item {
     position: relative;
@@ -8472,7 +8430,6 @@ body .ng-inner-hero h1 {
         min-height: 0;
     }
 }
-
 /* PLEKKEN & PROJECTEN — GROWING LANDSCAPE */
 .ng-nbp-landscape {
     position: relative;
@@ -8517,7 +8474,6 @@ body .ng-inner-hero h1 {
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-
 /* GROWING LINE */
 .ng-nbp-landscape-line {
     position: absolute;
@@ -8536,8 +8492,6 @@ body .ng-inner-hero h1 {
     opacity: .48;
     vector-effect: non-scaling-stroke;
 }
-
-/* FOOTER */
 .ng-nbp-landscape-footer {
     display: flex;
     align-items: center;
@@ -8562,14 +8516,13 @@ body .ng-inner-hero h1 {
         grid-template-columns: 1fr;
         gap: 1.75rem;
     }
-
+    
 }
 @media (max-width: 560px) {
     .ng-nbp-landscape {
         padding: 4.5rem 0;
     }
 }
-
 /* THE ONE DELIBERATE PATH */
 .ng-nbp-landscape-line {
     position: absolute;
@@ -8589,7 +8542,6 @@ body .ng-inner-hero h1 {
     opacity: .48;
     vector-effect: non-scaling-stroke;
 }
-
 /* FOOTER */
 .ng-nbp-landscape-footer {
     display: flex;
@@ -8602,15 +8554,16 @@ body .ng-inner-hero h1 {
     color: rgba(46,59,50,.43);
     font-size: .7rem;
 }
-
+/* MOBILE */
 @media (max-width: 850px) {
-
+    
     .ng-nbp-landscape-line {
         display: none;
     }
-
+    
+    
+    
 }
-
 /* THE LINE ONLY CONNECTS THE 3 STORY POINTS */
 .ng-nbp-landscape-line {
     position: absolute;
@@ -8630,7 +8583,6 @@ body .ng-inner-hero h1 {
     opacity: 0.55;
     vector-effect: non-scaling-stroke;
 }
-
 /* FOOTER */
 .ng-nbp-landscape-footer {
     display: flex;
@@ -8650,13 +8602,14 @@ body .ng-inner-hero h1 {
     font-size: 0.78rem;
     line-height: 1.5;
 }
-
+/* MOBILE */
 @media (max-width: 900px) {
-
+    
     .ng-nbp-landscape-line {
         display: none;
     }
-
+    
+    
 }
 /* GROEN — BOTANICAL GROWTH MAP */
 .ng-nbp-growth-map {
@@ -8839,7 +8792,10 @@ body .ng-inner-hero h1 {
         margin-top: 1rem;
     }
 }
-/* NOORDBUITEN ACTIVITEITEN */
+
+.your-image-class img {
+  transform: rotate(90deg);
+}/* NOORDBUITEN ACTIVITEITEN */
 .ng-nba-page {
     background: var(--color-cream);
 }
@@ -8884,6 +8840,20 @@ body .ng-inner-hero h1 {
     background: var(--color-coral);
     box-shadow: 0 0 0 3px rgba(240, 102, 83, .1);
 }
+
+
+/* PAPER VISUAL */
+
+
+
+
+
+
+
+
+/* center */
+
+
 
 /* intro footer */
 .ng-nba-intro-bottom {
@@ -9119,7 +9089,7 @@ body .ng-inner-hero h1 {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
+    
     .ng-nba-event {
         grid-template-columns: 1fr;
     }
@@ -9143,7 +9113,8 @@ body .ng-inner-hero h1 {
     }
 }
 @media (max-width: 560px) {
-
+    
+    
     .ng-nba-feature {
         padding: 4.5rem 0;
     }
@@ -9203,7 +9174,6 @@ body .ng-inner-hero h1 {
     border-top: 1px solid rgba(46,59,50,.12);
     border-bottom: 1px solid rgba(46,59,50,.12);
 }
-
 /* VOICES */
 .ng-nba-story-voice {
     position: absolute;
@@ -9230,7 +9200,6 @@ body .ng-inner-hero h1 {
     top: 115px;
     left: 2%;
 }
-
 /* RESPONSIVE */
 @media (max-width: 850px) {
     .ng-nba-stories-heading {
@@ -9250,7 +9219,7 @@ body .ng-inner-hero h1 {
         right: auto;
         left: auto;
     }
-
+    
     .ng-nba-story-voice {
         width: min(100%, 420px);
     }
@@ -9258,7 +9227,8 @@ body .ng-inner-hero h1 {
         justify-self: end;
         text-align: right;
     }
-
+    
+    
 }
 
 /* Fold separators */
@@ -9271,7 +9241,6 @@ body .ng-inner-hero h1 {
     height: 100%;
     background: rgba(46, 59, 50, .12);
 }
-
 /* ACTIVITEITEN INTRO — MOMENTOPNAME */
 .ng-nba-intro--moment {
     position: relative;
@@ -9603,7 +9572,6 @@ body .ng-inner-hero h1 {
     top: 220px;
     right: 1%;
 }
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .ng-nba-stories-stage {
@@ -9632,7 +9600,7 @@ body .ng-inner-hero h1 {
         justify-self: end;
         text-align: right;
     }
-
+    
 }
 /* VERHALENBANK — QUOTE CONNECTIONS */
 .ng-nba-story-voice {
@@ -9946,7 +9914,6 @@ body .ng-inner-hero h1 {
     font-size: .76rem;
     line-height: 1.55;
 }
-
 /* BOTTOM */
 .ng-nba-cas-bottom {
     display: flex;
@@ -9971,20 +9938,19 @@ body .ng-inner-hero h1 {
     letter-spacing: .13em;
     text-transform: uppercase;
 }
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .ng-nba-cas-layout {
         grid-template-columns: 1fr;
         gap: 3rem;
     }
-
+    
 }
 @media (max-width: 600px) {
     .ng-nba-cas {
         padding: 4.5rem 0;
     }
-
+  
     .ng-nba-cas-bottom {
         align-items: flex-start;
         flex-direction: column;
@@ -10360,7 +10326,7 @@ body .ng-inner-hero h1 {
     font-size: .74rem;
     line-height: 1.5;
 }
-
+/* INDIVIDUAL POSITIONING */
 /* above */
 .ng-nba-year-moment--market {
     top: 72px;
@@ -10685,7 +10651,6 @@ body .ng-inner-hero h1 {
     color: rgba(46,59,50,.5);
     font-size: .68rem;
 }
-
 /* RESPONSIVE */
 @media (max-width: 850px) {
     .ng-nbm-intro-layout {
@@ -10695,13 +10660,10 @@ body .ng-inner-hero h1 {
     .ng-nbm-intro-visual {
         justify-self: start;
     }
-}
-
-/* NOORDBUITEN — BEZOEKEN */
+}/* NOORDBUITEN — BEZOEKEN */
 .ng-nbv-page {
     background: var(--color-cream);
 }
-
 /* FIND US */
 .ng-nbv-find {
     padding: clamp(6rem, 8vw, 8rem) 0;
@@ -10922,7 +10884,7 @@ body .ng-inner-hero h1 {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
+    
     .ng-nbv-find-layout {
         grid-template-columns: 1fr;
     }
@@ -10931,7 +10893,7 @@ body .ng-inner-hero h1 {
     }
 }
 @media (max-width: 600px) {
-
+    
     .ng-nbv-find {
         padding: 4.5rem 0;
     }
@@ -10942,8 +10904,6 @@ body .ng-inner-hero h1 {
         padding: 1.8rem 1.4rem;
     }
 }
-
-/* COPY */
 
 .ng-nbv-final-copy > p:not(.ng-nbv-final-kicker) {
     max-width: 470px;
@@ -12279,6 +12239,31 @@ body .ng-inner-hero h1 {
 .ng-na-page {
     background: var(--color-cream);
 }
+/* HERO */
+
+
+/* HERO COPY */
+
+
+
+
+/* HERO BOARD */
+
+
+
+
+
+
+
+
+/* NOTE */
+
+
+
+
+/* HERO BOTTOM */
+
+
 
 /* NEXT EVENT */
 .ng-na-next {
@@ -12490,7 +12475,7 @@ body .ng-inner-hero h1 {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
-
+    
     .ng-na-feature {
         grid-template-columns: 1fr;
     }
@@ -12717,7 +12702,6 @@ body .ng-inner-hero h1 {
     margin-left: 1rem;
     background: repeating-linear-gradient(to right, rgba(240, 102, 83, .45) 0 4px, transparent 4px 12px);
 }
-
 /* RESPONSIVE */
 @media (max-width: 900px) {
     .ng-na-agenda-heading {
@@ -12764,7 +12748,7 @@ body .ng-inner-hero h1 {
     .ng-na-agenda-coming-line {
         display: none;
     }
-
+    
 }
 /* NIEUWS & AGENDA — NIEUWS UIT NOORD */
 .ng-na-news {
@@ -13192,7 +13176,6 @@ body .ng-inner-hero h1 {
 .ng-na-lookback-item {
     min-width: 0;
 }
-
 /* IMAGE */
 .ng-na-lookback-image {
     display: block;
@@ -13306,8 +13289,7 @@ body .ng-inner-hero h1 {
     }
     .ng-na-lookback-gallery {
         grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
+    }  
 }
 @media (max-width: 600px) {
     .ng-na-lookback {
@@ -13316,7 +13298,6 @@ body .ng-inner-hero h1 {
     .ng-na-lookback-gallery {
         grid-template-columns: 1fr;
     }
-
 }
 /* NIEUWS & AGENDA — NIEUWSBRIEF */
 .ng-na-letter {
@@ -13470,7 +13451,6 @@ body .ng-inner-hero h1 {
         display: none;
     }
 }
-
 /* CONTACT */
 .ng-contact-main {
     padding: clamp(6rem, 8vw, 8rem) 0;
@@ -15106,7 +15086,7 @@ body .ng-inner-hero h1 {
         flex-wrap: wrap;
     }
 }
-
+/* VRIJWILLIGER WORDEN */
 /* optional crop tweak */
 .ng-inner-hero--volunteer .ng-inner-hero__image {
     object-position: center 46%;
@@ -15273,9 +15253,6 @@ body .ng-inner-hero h1 {
         border-radius: 10px 34px 10px 34px;
     }
 }
-
-/* COPY */
-
 .ng-vol-moment-copy > p:not(.ng-vol-moment-label) {
     max-width: 410px;
     margin: 1rem 0 0;
@@ -15283,7 +15260,6 @@ body .ng-inner-hero h1 {
     font-size: .76rem;
     line-height: 1.65;
 }
-
 /* VRIJWILLIGER — OPEN KENNISMAKING */
 .ng-vol-open {
     padding: clamp(6rem, 8vw, 8rem) 0;
@@ -15914,7 +15890,6 @@ body .ng-inner-hero h1 {
         border-radius: 10px 36px 10px 36px;
     }
 }
-
 /* SAMENWERKEN — PARTNER PROOF */
 .ng-collab-proof {
     position: relative;
@@ -15970,7 +15945,6 @@ body .ng-inner-hero h1 {
 .ng-collab-proof-copy a:hover span {
     transform: translateX(3px);
 }
-
 /* BOTTOM */
 .ng-collab-proof-bottom {
     display: flex;
@@ -16002,7 +15976,7 @@ body .ng-inner-hero h1 {
     .ng-collab-proof {
         padding: 4.5rem 0 2.8rem;
     }
-
+    
 }
 /* SAMENWERKEN — FINAL CTA */
 .ng-collab-final {
@@ -16838,7 +16812,13 @@ body .ng-inner-hero h1 {
         width: min(100%, 240px);
     }
 }
-
+/* NOORDGROEIT — FINAL TYPOGRAPHY & ACCESSIBILITY POLISH */
+/* EXISTING BODY TOKEN */
+/* SECTION KICKERS — Never microscopic. */
+/* * Keep the deliberate uppercase/editorial look, * just make it readable. */
+/* HTML SMALL / META */
+/* SUPPORTING NOTES / CAPTIONS */
+/* MAIN COPY BLOCKS */
 /* NOORDGROEIT — FINAL TYPOGRAPHY & ACCESSIBILITY POLISH */
 :root {
     /* * Main readable text * 16px → roughly 17px on larger screens */
@@ -16881,9 +16861,6 @@ main [class*="-copy"] > p:not([class*="kicker"]) :not([class*="label"]), main [c
     font-size: var(--ng-text-body);
     line-height: 1.65;
 }
-
-/* 2. FIX HEADING / PARAGRAPH RHYTHM */
-
 body.home #noordbuiten-uitgelicht .ng-nb-copy > p:not(.ng-nb-location) {
     max-width: 600px;
     margin: 0 !important;
@@ -16891,7 +16868,6 @@ body.home #noordbuiten-uitgelicht .ng-nb-copy > p:not(.ng-nb-location) {
     font-size: var(--ng-home-body);
     line-height: 1.68;
 }
-
 /* DIM THE OTHER DRAWER SLIGHTLY */
 body.home .ng-home-purpose-drawers:has(.ng-home-purpose-drawer:hover) .ng-home-purpose-drawer:not(:hover) {
     opacity: .72;
@@ -16912,9 +16888,7 @@ body.home main section:not(.ng-editorial-hero) h2 {
         line-height: 1.06 !important;
         letter-spacing: -.035em !important;
     }
-}
-
-/* SITE FOOTER — FINAL EDITORIAL POLISH */
+}/* SITE FOOTER — FINAL EDITORIAL POLISH */
 .site-footer {
     padding: clamp(4.5rem, 6vw, 5.75rem) 0 1.5rem;
     color: rgba(255,255,255,.72);
@@ -17002,7 +16976,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
     font-size: .87rem;
     line-height: 1.65;
 }
-
 /* NOORDBUITEN — FLAT EDITORIAL STRIP */
 .site-footer .footer-noordbuiten {
     display: grid;
@@ -17118,7 +17091,7 @@ body.home main section:not(.ng-editorial-hero) h2 {
     border-radius: 50%;
     background: var(--color-coral);
 }
-
+/* TABLET */
 @media (max-width: 1050px) {
     .site-footer .footer-main {
         grid-template-columns: repeat(2, minmax(0,1fr));
@@ -17128,7 +17101,7 @@ body.home main section:not(.ng-editorial-hero) h2 {
         max-width: 360px;
     }
 }
-
+/* MOBILE */
 @media (max-width: 700px) {
     .site-footer {
         padding: 4rem 0 1.5rem;
@@ -17169,10 +17142,10 @@ body.home main section:not(.ng-editorial-hero) h2 {
         grid-column: auto;
     }
 }
-
 /* MOBILE — Keep the reveal simpler */
 @media (max-width: 700px) {
-
+    
+    
     @keyframes ngOriginPhotoMobile {
         from {
             clip-path: inset(0 0 35% 0 round 1.5rem);
@@ -17182,7 +17155,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
         }
     }
 }
-
 /* * While waiting: * active card is slightly smaller, * previews hide close behind it. */
 body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-visible) .ng-coverflow-card.is-active {
     opacity: 0;
@@ -17198,9 +17170,10 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
     opacity: 0;
     transform: translate(-50%, -50%) scale(.68);
 }
-
+/* MOBILE */
 @media (max-width: 700px) {
-
+    
+    
     @keyframes ngNbStageMobile {
         from {
             opacity: 0;
@@ -17214,10 +17187,11 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
         }
     }
 }
-
+/* MOBILE */
 @media (max-width: 760px) {
     /* * No sideways agenda movement on mobile. */
-
+    
+    
     @keyframes ngPulseAgendaMobile {
         from {
             opacity: 0;
@@ -17230,14 +17204,14 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
     }
 }
 
-/* DON'T LET LOGOS MOVE BEFORE THEY ARE VISIBLE */
 body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .ng-partner-track {
     animation-play-state: paused;
 }
-
+/* MOBILE */
 @media (max-width: 700px) {
     /* * Simpler ribbon opening on small screens. */
-
+    
+    
     @keyframes ngPartnerRibbonMobile {
         from {
             opacity: 0;
@@ -17249,10 +17223,10 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         }
     }
 }
-
 /* TABLET — Border becomes horizontal in existing layout. */
 @media (max-width: 900px) {
-
+    
+    
     @keyframes ngSupportDividerMobile {
         from {
             border-top-color: transparent;
@@ -17262,7 +17236,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         }
     }
 }
-
+/* OVER NOORDGROEIT MOTION — 01 HERO — Correct selectors */
 /* PHOTO */
 .ng-over-page .ng-inner-hero--over .ng-inner-hero__image {
     animation: ngOverInnerPhotoIn 1.25s cubic-bezier(.18,.82,.25,1) backwards;
@@ -17377,14 +17351,14 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         transform: translateY(0) scale(1);
     }
 }
-
+/* IMPORTANT: — DO NOT animate .ng-inner-hero__scroll here. — It ALREADY has its own continuous scroll animation. */
 /* REDUCED MOTION */
 @media (prefers-reduced-motion: reduce) {
     .ng-over-page .ng-inner-hero--over .ng-inner-hero__image, .ng-over-page .ng-inner-hero--over .ng-inner-hero__overlay, .ng-over-page .ng-inner-hero--over .ng-inner-hero__detail, .ng-over-page .ng-inner-hero--over .ng-inner-hero__detail span, .ng-over-page .ng-inner-hero--over .ng-inner-hero__detail i, .ng-over-page .ng-inner-hero--over h1, .ng-over-page .ng-inner-hero--over .ng-inner-hero__meta, .ng-over-page .ng-inner-hero--over .ng-inner-hero__meta span {
         animation: none !important;
     }
 }
-
+/* OVER NOORDGROEIT — VALUES V2 — Interactive editorial triptych */
 /* WHOLE STRIP */
 .ng-over-page .ng-over-story-v3 .ng-over-values {
     display: grid;
@@ -17614,7 +17588,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     width: 2.65rem;
     height: 2.65rem;
 }
-
+/* OVER NOORDGROEIT MOTION — 02 STORY */
 /* BADGE */
 .ng-over-page .ng-over-story-v3.is-story-motion-ready .ng-over-story-v3-badge {
     opacity: 0;
@@ -17831,7 +17805,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         animation: none !important;
     }
 }
-
+/* OVER NOORDGROEIT MOTION — 03 PROCESS */
 /* SECTION INTRO */
 .ng-over-page .ng-over-process.is-process-motion-ready .ng-over-process-kicker, .ng-over-page .ng-over-process.is-process-motion-ready .ng-over-process-heading h2, .ng-over-page .ng-over-process.is-process-motion-ready .ng-over-process-heading > p {
     opacity: 0;
@@ -17959,7 +17933,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         animation: none !important;
     }
 }
-
+/* OVER NOORDGROEIT MOTION — 04 IDEA CTA */
 /* LEFT COPY */
 .ng-over-page .ng-over-idea-cta.is-idea-motion-ready .ng-over-idea-kicker, .ng-over-page .ng-over-idea-cta.is-idea-motion-ready .ng-over-idea-copy h2, .ng-over-page .ng-over-idea-cta.is-idea-motion-ready .ng-over-idea-copy > p:last-child {
     opacity: 0;
@@ -18141,7 +18115,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         animation: none !important;
     }
 }
-
+/* TEAM & BESTUUR MOTION — 01 HERO — People coming together */
 /* KICKER */
 .ng-team-page .ng-team-hero-kicker {
     animation: ngTeamHeroTextIn .46s .12s cubic-bezier(.2,.75,.25,1) backwards;
@@ -18252,7 +18226,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         transform: translate(-50%, -50%) scale(1);
     }
 }
-
+/* PEOPLE — Clockwise: top → right → bottom → left */
 /* * Fade the actual node in. * We avoid replacing their positioning transforms. */
 .ng-team-page .ng-team-person {
     opacity: 0;
@@ -18381,7 +18355,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         opacity: 1 !important;
     }
 }
-
+/* TEAM & BESTUUR — PEOPLE STRUCTURE V3 */
 /* GROUPS */
 .ng-team-page .ng-team-people-group {
     margin-top: clamp(3.5rem, 6vw, 5.5rem);
@@ -18627,7 +18601,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         grid-column: auto;
     }
 }
-
+/* TEAM PEOPLE — FINAL SPACING POLISH */
 /* Slightly tighter gap between groups */
 .ng-team-page .ng-team-people-group {
     margin-top: clamp(3rem, 5vw, 4.5rem);
@@ -18645,7 +18619,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 .ng-team-page .ng-team-volunteer-thanks-copy > p:last-child {
     line-height: 1.68;
 }
-
+/* TEAM & BESTUUR MOTION — 02 PEOPLE */
 /* INTRO */
 .ng-team-page .ng-team-people-v2.is-team-people-motion-ready .ng-team-people-v2-kicker, .ng-team-page .ng-team-people-v2.is-team-people-motion-ready .ng-team-people-v2-heading h2, .ng-team-page .ng-team-people-v2.is-team-people-motion-ready .ng-team-people-v2-heading > p {
     opacity: 0;
@@ -18944,7 +18918,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         animation: none !important;
     }
 }
-
+/* TEAM & BESTUUR MOTION — 03 COLLABORATION */
 /* Less giant empty-green-section energy */
 .ng-team-page .ng-team-collab {
     padding: clamp(4rem, 5.5vw, 5.25rem) 0;
@@ -19017,7 +18991,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         transform: none !important;
     }
 }
-
+/* TEAM & BESTUUR MOTION — 04 CTA */
 /* COPY */
 .ng-team-join-v2.is-team-join-ready .ng-team-join-v2-copy {
     opacity: 0;
@@ -19094,7 +19068,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         transition: none !important;
     }
 }
-
 /* PREPARE — Only active when JavaScript confirms animation is available. */
 .ng-finance-hero-v2.is-finance-hero-motion-ready .ng-finance-hero-v2-kicker, .ng-finance-hero-v2.is-finance-hero-motion-ready .ng-finance-hero-v2 h1, .ng-finance-hero-v2.is-finance-hero-motion-ready .ng-finance-hero-v2-intro, .ng-finance-hero-v2.is-finance-hero-motion-ready .ng-finance-hero-v2-button, .ng-finance-hero-v2.is-finance-hero-motion-ready .ng-finance-dossier, .ng-finance-hero-v2.is-finance-hero-motion-ready .ng-finance-hero-v2-route {
     opacity: 0;
@@ -19130,7 +19103,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 .ng-finance-hero-v2.is-finance-hero-motion-ready .ng-finance-hero-v2-route {
     transition: opacity 520ms cubic-bezier(.2,.75,.25,1), transform 520ms cubic-bezier(.2,.75,.25,1);
 }
-
+/* PLAY */
 /* Kicker first */
 .ng-finance-hero-v2.is-finance-hero-visible .ng-finance-hero-v2-kicker {
     opacity: 1;
@@ -19165,7 +19138,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     transform: translateY(0);
     transition-delay: 480ms;
 }
-
+/* DOSSIER MICRO DETAILS — Animate INSIDE the paper instead of moving the papers. */
 /* Back-sheet document lines */
 .ng-finance-hero-v2.is-finance-hero-motion-ready .ng-finance-paper-line {
     opacity: 0;
@@ -19235,7 +19208,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         animation: none !important;
     }
 }
-
+/* FINANCE MOTION — 02 JOURNEY — Middelen → inzet → resultaat */
 /* PREPARE — No positioning transforms on the paper cards themselves. */
 .ng-finance-journey.is-finance-journey-motion-ready .ng-finance-journey-heading, .ng-finance-journey.is-finance-journey-motion-ready .ng-finance-papertrail-item, .ng-finance-journey.is-finance-journey-motion-ready .ng-finance-papertrail-thread, .ng-finance-journey.is-finance-journey-motion-ready .ng-finance-papertrail-note {
     opacity: 0;
@@ -19258,7 +19231,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     transform: translateY(7px);
     transition: opacity 450ms ease, transform 450ms cubic-bezier(.2,.75,.25,1);
 }
-
+/* INTERNAL DETAILS */
 /* * Icons are safe to animate because their transform * isn't responsible for the card layout. */
 .ng-finance-journey.is-finance-journey-motion-ready .ng-finance-papertrail-icon {
     opacity: 0;
@@ -19361,7 +19334,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         animation: none !important;
     }
 }
-
+/* FINANCE ARCHIVE — PENDING DOCUMENTS */
 /* Pending rows are information, not links */
 .ng-archive-document--pending {
     grid-template-columns: 55px minmax(0, 1fr) auto;
@@ -19399,7 +19372,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 .ng-archive-document--pending .ng-archive-document__pdf {
     opacity: .72;
 }
-
+/* MOBILE */
 @media (max-width: 620px) {
     .ng-archive-document--pending {
         grid-template-columns: 40px minmax(0, 1fr);
@@ -19426,6 +19399,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     transform: translateY(13px);
     transition: opacity 650ms ease, transform 650ms cubic-bezier(.2,.75,.25,1);
 }
+/* Relationship note */
 
 /* PLAY */
 .ng-finance-archive.is-archive-visible .ng-finance-archive-copy {
@@ -19447,7 +19421,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     opacity: 1;
     transition-delay: 600ms;
 }
-
+/* FINANCE MOTION — 04 RESPONSIBILITY — Details after the book opens */
 /* * Book opening remains the MAIN animation. * * These only reveal the content shortly afterwards. */
 .ng-finance-ledger.is-animatable .ng-finance-ledger-person, .ng-finance-ledger.is-animatable .ng-finance-ledger-text, .ng-finance-ledger.is-animatable .ng-finance-ledger-sign, .ng-finance-ledger.is-animatable .ng-finance-ledger-check, .ng-finance-ledger.is-animatable .ng-finance-ledger-stamp {
     opacity: 0;
@@ -19487,7 +19461,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     transform: scale(1);
     transition-delay: 760ms;
 }
-
+/* FINAL STAMP */
 /* * OPACITY ONLY. * * The stamp already has rotate(-3deg) as part of * its design, so we deliberately don't animate transform. */
 .ng-finance-ledger.is-in-view .ng-finance-ledger-stamp {
     opacity: 1;
@@ -19587,7 +19561,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     opacity: 1;
     transition-delay: 960ms;
 }
-
 /* PHOTO */
 .ng-inner-hero .ng-inner-hero__image {
     animation: ngInnerHeroPhotoIn 1.25s cubic-bezier(.18,.82,.25,1) backwards;
@@ -20128,7 +20101,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     .ng-nwt-clean-photo {
         min-height: 480px;
     }
-
+    
 }
 
 /* ALIGN THE TEXT WITH THE IMAGE */
@@ -20551,12 +20524,11 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 .ng-ht-clean-visual {
     padding-bottom: 42px;
 }
-
 /* OPTIONAL: — Make caption inside image a bit easier to read too */
 .ng-ht-clean-photo::after {
     background: linear-gradient(to top, rgba(25,33,27,.58) 0%, rgba(25,33,27,.16) 36%, transparent 60%);
 }
-
+/* MOBILE */
 @media (max-width: 950px) {
     .ng-ht-clean-copy {
         padding-top: 0;
@@ -21436,6 +21408,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     }
 }
 
+
 /* NOORDWERKTSAMEN — VISUAL SYSTEM RESET */
 .ng-nwt-page {
     --nwt-section-title: var(--ng-home-section-title);
@@ -21713,7 +21686,7 @@ body .ng-nwt-page .ng-nwt-about {
         transform: translateY(-2px);
     }
 }
-
+/* TABLET */
 @media (max-width: 850px) {
     .ng-nwt-voices-heading {
         grid-template-columns: 1fr;
@@ -21987,7 +21960,7 @@ body .ng-nwt-page .ng-nwt-about {
     color: rgba(46,59,50,.48);
     font-size: .67rem;
 }
-
+/* MOBILE */
 @media (max-width: 700px) {
     .ng-nwt-voices-heading {
         grid-template-columns: 1fr;
@@ -22091,7 +22064,7 @@ body .ng-nwt-page .ng-nwt-about {
     width: 165px;
     transform: rotate(-90deg);
 }
-
+/* MOBILE */
 @media (max-width: 700px) {
     .ng-nwt-voice-link {
         display: none;
@@ -22495,7 +22468,7 @@ body .ng-nwt-page .ng-nwt-about {
     color: rgba(255,255,255,.4);
     font-size: .67rem;
 }
-
+/* MOBILE */
 @media (max-width: 850px) {
     .ng-nwt-dialogue-heading {
         grid-template-columns: 1fr;
@@ -23444,7 +23417,7 @@ body .ng-nwt-page .ng-nwt-about {
     height: 1px;
     background: rgba(240,102,83,.55);
 }
-
+/* MOBILE */
 @media (max-width: 900px) {
     .ng-ht-vision-layout, .ng-ht-status-layout {
         grid-template-columns: 1fr;
@@ -23518,7 +23491,7 @@ body .ng-nwt-page .ng-nwt-about {
     font-size: .58rem !important;
     line-height: 1.45 !important;
 }
-
+/* NOORDBUITEN — PAGE MOTION */
 /* 01 — WAT IS NOORDBUITEN */
 .ng-nb-story.is-nb-motion-ready .ng-nb-story__kicker, .ng-nb-story.is-nb-motion-ready h2, .ng-nb-story.is-nb-motion-ready .ng-nb-story__intro {
     opacity: 0;
@@ -23682,7 +23655,6 @@ body .ng-nwt-page .ng-nwt-about {
     opacity: 1;
     transition-delay: 1420ms;
 }
-
 /* 04 — NOORDBUITEN LEEFT */
 .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-kicker, .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-heading h2, .ng-nb-alive.is-nb-motion-ready .ng-nb-alive-heading-row > p {
     opacity: 0;
@@ -23755,7 +23727,6 @@ body .ng-nwt-page .ng-nwt-about {
     opacity: 1;
     transition-delay: 1320ms;
 }
-
 /* SAMEN already has a rotation */
 .ng-nb-together.is-nb-motion-ready .ng-nb-together-word {
     opacity: 0;
@@ -24131,7 +24102,7 @@ body .ng-nwt-page .ng-nwt-about {
         height: 610px;
         min-height: 0;
     }
-
+    
 }
 /* Mobile goes back to natural stacking */
 @media (max-width: 900px) {
@@ -24147,7 +24118,7 @@ body .ng-nwt-page .ng-nwt-about {
         height: auto;
     }
 }
-
+/* NOORDBUITEN ACTIVITEITEN — MOTION PASS */
 /* 01 — INTRO */
 .ng-nba-intro.is-nba-motion-ready .ng-nba-intro-kicker, .ng-nba-intro.is-nba-motion-ready .ng-nba-moment-copy h1, .ng-nba-intro.is-nba-motion-ready .ng-nba-moment-copy > p:not(.ng-nba-intro-kicker) {
     opacity: 0;
@@ -24743,7 +24714,7 @@ body .ng-nwt-page .ng-nwt-about {
         filter: none !important;
     }
 }
-
+/* NOORDBUITEN — BEZOEKEN MOTION */
 /* 01 — HERO */
 .ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-kicker, .ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-copy h1, .ng-nbv-hero.is-nbv-motion-ready .ng-nbv-hero-copy > p:last-child {
     opacity: 0;
@@ -25288,7 +25259,7 @@ body .ng-nwt-page .ng-nwt-about {
 .ng-agenda-end a:hover i {
     transform: translateX(3px);
 }
-
+/* MOBILE */
 @media (max-width: 850px) {
     .ng-agenda-hero-layout, .ng-agenda-content-layout {
         grid-template-columns: 1fr;
@@ -25694,7 +25665,7 @@ body .ng-nwt-page .ng-nwt-about {
 .ng-news-end a:hover i {
     transform: translateX(3px);
 }
-
+/* MOBILE */
 @media (max-width: 850px) {
     .ng-news-hero-layout {
         grid-template-columns: 1fr;
@@ -25730,7 +25701,7 @@ body .ng-nwt-page .ng-nwt-about {
         background: #f5f1e9;
     }
 }
-
+/* SINGLE CONTENT — SHARED MOTION — Agenda + News */
 /* AGENDA — HERO */
 .ng-single-agenda.is-single-motion-ready .ng-agenda-back, .ng-single-agenda.is-single-motion-ready .ng-agenda-kicker, .ng-single-agenda.is-single-motion-ready .ng-agenda-hero-copy h1, .ng-single-agenda.is-single-motion-ready .ng-agenda-intro, .ng-single-agenda.is-single-motion-ready .ng-agenda-hero-detail {
     opacity: 0;
@@ -25918,7 +25889,7 @@ body .ng-nwt-page .ng-nwt-about {
         transition: none !important;
     }
 }
-
+/* NIEUWS & AGENDA — MOTION PASS */
 /* SHARED HEADING REVEALS */
 .ng-na-page .is-na-motion-ready .ng-na-next-kicker, .ng-na-page .is-na-motion-ready .ng-na-next-heading h2, .ng-na-page .is-na-motion-ready .ng-na-next-heading > p, .ng-na-page .is-na-motion-ready .ng-na-agenda-kicker, .ng-na-page .is-na-motion-ready .ng-na-agenda-heading h2, .ng-na-page .is-na-motion-ready .ng-na-agenda-heading > p, .ng-na-page .is-na-motion-ready .ng-na-news-kicker, .ng-na-page .is-na-motion-ready .ng-na-news-heading h2, .ng-na-page .is-na-motion-ready .ng-na-news-heading > p, .ng-na-page .is-na-motion-ready .ng-na-lookback-kicker, .ng-na-page .is-na-motion-ready .ng-na-lookback-heading h2, .ng-na-page .is-na-motion-ready .ng-na-lookback-heading > p, .ng-na-page .is-na-motion-ready .ng-na-letter-kicker, .ng-na-page .is-na-motion-ready .ng-na-letter-copy h2, .ng-na-page .is-na-motion-ready .ng-na-letter-copy > p:not(.ng-na-letter-kicker) {
     opacity: 0;
@@ -26153,6 +26124,8 @@ body .ng-nwt-page .ng-nwt-about {
     transition: opacity 430ms ease, transform 520ms cubic-bezier(.2,.75,.25,1);
 }
 
+
+
 /* Image opens inside its already-shaped container */
 .ng-na-lookback.is-na-motion-ready .ng-na-lookback-image {
     clip-path: inset(0 0 8% 0);
@@ -26225,7 +26198,7 @@ body .ng-nwt-page .ng-nwt-about {
         transition: none !important;
     }
 }
-
+/* DOE MEE — MOTION PASS */
 /* 01 — ENTRY / THREE WAYS IN */
 .ng-dm-entry.is-dm-motion-ready .ng-dm-entry-copy > * {
     opacity: 0;
@@ -26785,7 +26758,7 @@ body .ng-nwt-page .ng-nwt-about {
         padding: 1.6rem 0;
     }
 }
-
+/* VRIJWILLIGER WORDEN — MOTION PASS */
 /* 01 — EERST KIJKEN NAAR JOU */
 .ng-vol-intro.is-vol-motion-ready .ng-vol-intro-copy > * {
     opacity: 0;
@@ -26921,7 +26894,7 @@ body .ng-nwt-page .ng-nwt-about {
     transform: translateY(0);
     transition-delay: 900ms;
 }
-
+/* 03 — OPEN KENNISMAKING */
 /* photo reveal without touching its layout */
 .ng-vol-open.is-vol-motion-ready .ng-vol-open-photo {
     opacity: 0;
@@ -27109,7 +27082,7 @@ body .ng-nwt-page .ng-nwt-about {
         transition: none !important;
     }
 }
-
+/* CONTACT — MOTION PASS */
 /* 01 — MAIN HEADING */
 .ng-contact-main.is-contact-motion-ready .ng-contact-heading > * {
     opacity: 0;
@@ -27171,7 +27144,7 @@ body .ng-nwt-page .ng-nwt-about {
     opacity: 1;
     transition-delay: 820ms;
 }
-
+/* 03 — CONTACT FORM */
 /* * JS gives each direct form child its own --contact-step. * We animate wrappers only, so input focus/hover styling * remains completely untouched. */
 .ng-contact-main.is-contact-motion-ready .ng-contact-form > .is-contact-form-step {
     opacity: 0;
@@ -27225,7 +27198,7 @@ body .ng-nwt-page .ng-nwt-about {
         transition: none !important;
     }
 }
-
+/* VACATURES — MOTION PASS */
 /* 01 — INTRO */
 .ng-vac-intro.is-vac-motion-ready .ng-vac-intro-copy > *, .ng-vac-intro.is-vac-motion-ready .ng-vac-intro-side > * {
     opacity: 0;
@@ -27374,7 +27347,7 @@ body .ng-nwt-page .ng-nwt-about {
         transition: none !important;
     }
 }
-
+/* STEUN NOORDGROEIT — MOTION */
 /* COPY */
 .ng-support-give.is-support-motion-ready .ng-support-give-copy > * {
     opacity: 0;
@@ -27432,7 +27405,7 @@ body .ng-nwt-page .ng-nwt-about {
     opacity: 1;
     transition-delay: 420ms;
 }
-
+/* QR */
 /* * Open the QR area without touching the QR image itself. * Works for placeholder now + actual QR later. */
 .ng-support-give.is-support-motion-ready .ng-support-qr-wrap {
     opacity: 0;
@@ -27700,7 +27673,7 @@ body .ng-nwt-page .ng-nwt-about {
 .ng-collab-paths-bottom strong {
     color: var(--color-dark);
 }
-
+/* MOBILE */
 @media (max-width: 760px) {
     .ng-collab-paths-heading {
         grid-template-columns: 1fr;
@@ -27858,7 +27831,7 @@ body .ng-nwt-page .ng-nwt-about {
     padding-top: 0;
     border-top: 0;
 }
-
+/* MOBILE */
 @media (max-width: 760px) {
     .ng-collab-paths-route {
         grid-template-columns: 1fr;
@@ -27882,7 +27855,7 @@ body .ng-nwt-page .ng-nwt-about {
         left: auto;
     }
 }
-
+/* SAMENWERKEN — SECTION COLOUR RHYTHM */
 /* 01 — intro */
 .ng-collab-intro {
     background: #fffdf9;
@@ -28063,7 +28036,7 @@ body .ng-nwt-page .ng-nwt-about {
 .ng-collab-proof-card span, .ng-collab-proof-card p, .ng-collab-proof-card strong {
     color: var(--color-dark);
 }
-
+/* SAMENWERKEN — MOTION PASS */
 /* 01 — INTRO */
 .ng-collab-intro.is-collab-motion-ready .ng-collab-intro-copy > * {
     opacity: 0;
@@ -28116,7 +28089,6 @@ body .ng-nwt-page .ng-nwt-about {
     opacity: 1;
     transform: translateY(0);
 }
-
 /* OPTIONAL — GREEN "FOR WHO" SECTION — Works whether you're using the old list OR compact paths. */
 .ng-collab-paths.is-collab-motion-ready .ng-collab-paths-heading > * {
     opacity: 0;
@@ -28352,7 +28324,6 @@ body .ng-nwt-page .ng-nwt-about {
         visibility: visible !important;
         pointer-events: auto !important;
     }
-
 }
 
 /* WordPress toolbar while logged in */
@@ -28364,8 +28335,6 @@ body .ng-nwt-page .ng-nwt-about {
     }
 
 }
-
-/* ACCESSIBILITY — CONTRAST */
 
 :root {
     /*
