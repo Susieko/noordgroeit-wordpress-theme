@@ -757,8 +757,6 @@
 /* central NoordgroeiT point */
 
 
-
-
 /* second connection */
 
 
@@ -953,7 +951,7 @@
 
 }
 
-/* MOBILE MENU — INNER PAGE HARD FIX — Homepage already works, so leave it alone. */
+/* INNER-PAGE MOBILE MENU */
 
 @media (max-width: 1180px) {
 
@@ -993,7 +991,7 @@
         overscroll-behavior: contain;
     }
 
-    /* When JS says open, it is REALLY open */
+    /* Open menu state */
     body:not(.home)
     .ng-site-header.menu-is-open
     .ng-primary-navigation {
@@ -1016,7 +1014,7 @@
 
 }
 
-/* ACCESSIBILITY — FINAL CONTRAST PASS — Lighthouse contrast fixes */
+/* ACCESSIBILITY — CONTRAST */
 
 :root {
     /*

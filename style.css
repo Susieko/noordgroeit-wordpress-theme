@@ -199,20 +199,6 @@ button, input, textarea, select {
 /* Nieuwe split hero */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ng-hero-values span:not(:last-child)::after {
     content: "•";
     position: absolute;
@@ -222,16 +208,7 @@ button, input, textarea, select {
 /* Hero image */
 
 
-
-
 /* NoordbuiTen card */
-
-
-
-
-
-
-
 
 
 /* Header and hero responsive */
@@ -352,35 +329,11 @@ button, input, textarea, select {
 /* Homepage: identiteit */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .identity-card > p:not(.identity-label) {
     max-width: 560px;
     margin: 0 0 30px;
     font-size: 1.02rem;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Homepage responsive */
@@ -453,22 +406,7 @@ button, input, textarea, select {
 /* Homepage: in de praktijk */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Concrete voortgang */
-
-
 
 
 .progress-copy > p:not(.eyebrow) {
@@ -478,17 +416,7 @@ button, input, textarea, select {
 }
 
 
-
-
-
-
-
-
 /* NoordgroeiT is breder dan NoordbuiTen */
-
-
-
-
 
 
 /* Responsive */
@@ -498,34 +426,13 @@ button, input, textarea, select {
 /* Homepage: meedoen en vrijwilligersverhaal */
 
 
-
-
-
-
 /* Afbeelding */
-
-
 
 
 /* Vrijwilligersverhaal */
 
 
-
-
-
-
-
-
-
-
 /* Verwachtingen */
-
-
-
-
-
-
-
 
 
 /* Afsluitende oproep */
@@ -545,55 +452,13 @@ button, input, textarea, select {
 /* Homepage: nieuws en agenda */
 
 
-
-
-
 /* Nieuws */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Agenda */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Lege situaties */
-
-
-
-
 
 
 /* Responsive */
@@ -603,15 +468,7 @@ button, input, textarea, select {
 /* Homepage: netwerk en partners */
 
 
-
-
-
-
 /* NoordbuiTen */
-
-
-
-
 
 
 .noordbuiten-copy > p:not(.network-label) {
@@ -622,16 +479,6 @@ button, input, textarea, select {
 
 
 /* Partnerwand */
-
-
-
-
-
-
-
-
-
-
 
 
 /* Afsluitende partneroproep */
@@ -650,11 +497,6 @@ button, input, textarea, select {
 /* Homepage: afsluitende call-to-action */
 
 
-
-
-
-
-
 .closing-cta-copy > p:not(.closing-cta-label) {
     max-width: 660px;
     margin: 30px 0 0;
@@ -662,16 +504,6 @@ button, input, textarea, select {
     font-size: clamp(1.05rem, 1.5vw, 1.24rem);
     line-height: 1.7;
 }
-
-
-
-
-
-
-
-
-
-
 
 
 /* Gezamenlijke footer */
@@ -851,22 +683,8 @@ button, input, textarea, select {
 /* Homepage: introductie en missie */
 
 
-
-
-
-
-
-
-
-
-
-
 /* Vier thema’s */
 /* Relatie NoordgroeiT en NoordbuiTen */
-
-
-
-
 
 
 .ng-structure-copy > p:not(.ng-structure-label) {
@@ -877,13 +695,6 @@ button, input, textarea, select {
 }
 
 /* Visuele organisatiestructuur */
-
-
-
-
-
-
-
 
 
 /* Responsive */
@@ -976,19 +787,6 @@ button, input, textarea, select {
 /* Hero text */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 .ng-home-hero-themes span:not(:last-child)::after {
     content: "";
     position: absolute;
@@ -1003,16 +801,7 @@ button, input, textarea, select {
 /* Hero photography */
 
 
-
-
-
-
-
-
 /* NoordbuiTen connection */
-
-
-
 
 
 /* Responsive hero */
@@ -1043,13 +832,7 @@ button, input, textarea, select {
 /* Hero content */
 
 
-
-
-
-
 /* Primary action */
-
-
 
 
 /* Quiet secondary action */
@@ -1068,22 +851,13 @@ button, input, textarea, select {
 /* Editorial hero: tekst boven brede foto */
 
 
-
-
-
-
-
 /* Main action */
-
-
 
 
 /* Quiet secondary action */
 
 
 /* Wide photograph */
-
-
 
 
 /* Tablet */
@@ -1119,13 +893,6 @@ body.home .ng-header-shell {
 /* Local light-green veil: strong behind text, open over the photo */
 
 /* Hero text */
-
-
-
-
-
-
-
 
 
 /* Existing soft curve at the bottom */
@@ -1175,15 +942,9 @@ body.home .ng-site-header.is-scrolled .ng-header-shell, body.home .ng-site-heade
 /* Allow the photograph to cover the complete section */
 
 
-
-
-
 /* Soft light area behind the text */
 
 /* Text remains calm and central */
-
-
-
 
 
 /* Mobile and tablet */
@@ -1208,10 +969,6 @@ body.home .ng-site-header.is-scrolled .ng-header-shell, body.home .ng-site-heade
 /* Strong, clear white typography */
 
 
-
-
-
-
 /* Tablet and mobile */
 
 
@@ -1223,9 +980,6 @@ body.home .ng-site-header.is-scrolled .ng-header-shell, body.home .ng-site-heade
 
 /* Hero: calmer text, scroll cue and dotted divider */
 /* Tighter text composition */
-
-
-
 
 
 /* Animated “scroll omlaag” cue */
@@ -1244,9 +998,6 @@ body.home .ng-site-header.is-scrolled .ng-header-shell, body.home .ng-site-heade
 /* Align content with the wider header */
 
 /* Left-hand editorial text */
-
-
-
 
 
 /* Keep scroll cue centred in the whole hero */
@@ -1285,8 +1036,6 @@ body.home .ng-site-header.is-scrolled .ng-header-shell, body.home .ng-site-heade
 /* Right-hand explanation */
 
 
-
-
 body.home .ng-intro-copy p:not(.ng-intro-lead) {
     max-width: 520px;
     line-height: 1.7;
@@ -1299,10 +1048,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Remove previous decorative experiments */
 
 /* Compact opening statement */
-
-
-
-
 
 
 body.home .ng-intro-copy p:not(.ng-intro-lead) {
@@ -1321,14 +1066,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Calm introductory composition */
 
 
-
-
-
-
-
-
-
-
 /* Quiet text link */
 
 
@@ -1343,19 +1080,7 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Three unboxed moments */
 
 
-
-
-
-
-
-
-
-
 /* Outcomes without cards */
-
-
-
-
 
 
 /* Tablet */
@@ -1369,22 +1094,12 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Opening statement */
 
 
-
-
-
-
-
 /* Origin story */
 
 /* Founding-date seal */
 
 
-
-
 /* Story text */
-
-
-
 
 
 /* Text link */
@@ -1396,10 +1111,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 
 
 /* Full-width role statement */
-
-
-
-
 
 
 /* Tablet */
@@ -1421,33 +1132,10 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* ABOUT */
 
 
-
-
-
-
-
 /* About photography */
 
 
-
-
-
-
-
-
-
-
 /* About story */
-
-
-
-
-
-
-
-
-
-
 
 
 /* INITIATIVES */
@@ -1456,19 +1144,7 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* RESPONSIVE */
 
 
-
-
 /* COMMUNITY FIELD STORY */
-
-
-
-
-
-
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -1483,18 +1159,7 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* NOORD IN CIJFERS */
 
 
-
-
-
-
-
-
-
 /* Subtle animation finishing state */
-
-
-
-
 
 
 /* Tablet */
@@ -1533,11 +1198,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Introduction */
 
 
-
-
-
-
-
 .ng-nb-copy > p:not(.ng-nb-location) {
     max-width: 620px;
     margin: 0;
@@ -1547,26 +1207,10 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 }
 
 
-
-
 /* Photographic sequence */
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Closing line */
-
-
-
 
 
 .ng-nb-footer li:not(:last-child)::after {
@@ -1604,11 +1248,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* * ABOUT * Remove the unnecessary empty first column. */
 
 
-
-
-
-
-
 /* * NUMBER STRIP */
 
 
@@ -1618,11 +1257,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 .ng-nb-story {
     padding: clamp(4rem, 6vw, 6.25rem) 0;
 }
-
-
-
-
-
 
 
 /* * Buttons should feel deliberate, not oversized. */
@@ -1644,44 +1278,21 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* NOORDBUITEN DESTINATION */
 
 
-
-
-
-
-
-
-
 /* MEEDOEN — EDITORIAL REDESIGN */
 
 /* Opening */
 
 
-
-
-
 /* Volunteer quote */
-
-
-
-
 
 
 /* Photography */
 
 
-
-
-
 /* Keep the clean expectation section, but tighten it */
 
 
-
-
-
 /* Final action */
-
-
-
 
 
 /* Desktop: keep the requested heading on one line */
@@ -1699,20 +1310,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 
 
 /* Two proper choices */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Tablet */
@@ -1748,58 +1345,16 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Main layout */
 
 
-
-
 /* News */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* Agenda */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Proper destination rather than hyperlink */
 
 
-
-
-
-
-
 /* Ongoing activities */
-
-
-
-
-
-
 
 
 /* Responsive */
@@ -1813,37 +1368,16 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* EDITORIAL NEWS */
 
 
-
-
-
 /* Stories */
-
-
 
 
 /* Leading story */
 
 
-
-
-
-
-
-
 /* Category and date */
 
 
-
-
-
-
 /* Two compact stories */
-
-
-
-
-
-
 
 
 /* Shared photo movement */
@@ -1871,10 +1405,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Logo panel */
 
 
-
-
-
-
 /* Subtle interaction */
 
 
@@ -1899,13 +1429,6 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Deliberate destination—not a naked hyperlink */
 
 
-
-
-
-
-
-
-
 /* Homepage: afsluiting / steun NoordgroeiT */
 
 
@@ -1914,22 +1437,10 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Subtle green shape at the bottom */
 
 
-
-
-
 /* A real button, not a hyperlink-looking text link */
 
 
-
-
 /* Right-hand impact list */
-
-
-
-
-
-
-
 
 
 /* Tablet */
@@ -1947,18 +1458,7 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Pale Samen voor Noord seal */
 
 
-
-
-
 /* Keep the hero seal above the dark image overlay */
-
-
-
-
-
-
-
-
 
 
 /* Badge is now independent from the darkened photograph */
@@ -1985,15 +1485,7 @@ body.home .ng-intro-copy p:not(.ng-intro-lead) {
 /* Fine inner line keeps the map visually connected to the card */
 
 
-
-
-
-
-
-
-
-
-/* FINAL HOMEPAGE RESPONSIVE PASS — Keep this at the absolute bottom of style.css */
+/* HOMEPAGE RESPONSIVE */
 /* Prevent decorative elements from creating horizontal scroll */
 html, body {
     overflow-x: clip;
@@ -2138,9 +1630,6 @@ html, body {
 /* Doe mee: more compact opening */
 
 
-
-
-
 /* Doe mee: volunteer experiences */
 
 
@@ -2152,11 +1641,6 @@ html, body {
 /* Quiet decorative circle */
 
 
-
-
-
-
-
 /* Keep the final action close to the testimonials */
 
 
@@ -2164,17 +1648,7 @@ html, body {
 /* Doe mee: clean text-led section */
 
 
-
-
-
 /* Reviews become a quiet supporting element */
-
-
-
-
-
-
-
 
 
 /* Keep the final action nearby */
@@ -2183,12 +1657,6 @@ html, body {
 /* SAFE SCROLL REVEALS — Content can never remain invisible */
 
 /* Start the animation only once JavaScript reveals it */
-
-
-
-
-
-
 
 
 /* The impact cards used the older pre-hidden approach */
@@ -2209,9 +1677,7 @@ html, body {
 /* Shared movement */
 
 
-
-
-/* FINAL CALM ANIMATION FIX — One subtle reveal system — no jumping or double animation */
+/* HOMEPAGE REVEAL ANIMATION */
 /* Prepare elements smoothly */
 
 /* Revealed state */
@@ -2224,7 +1690,7 @@ html, body {
 /* Even quieter on phones */
 
 /* Accessibility */
-/* RESTORE ORIGINAL HOMEPAGE ANIMATIONS — Original movement, without the double-animation bug */
+/* HOMEPAGE REVEAL VARIANTS */
 /* Main upward reveal */
 
 /* Images gently settle into position */
@@ -2241,7 +1707,7 @@ html, body {
 
 /* Accessibility */
 
-/* FINAL NAVIGATION WITH SUBMENUS */
+/* NAVIGATION WITH SUBMENUS */
 .ng-nav-parent {
     position: relative;
 }
@@ -2426,7 +1892,7 @@ html, body {
         background: var(--color-dark) !important;
     }
 }
-/* NAVIGATION WIDTH CORRECTION */
+/* NAVIGATION WIDTH */
 .ng-site-header .site-container {
     --content-width: 1500px;
 }
@@ -2454,7 +1920,7 @@ html, body {
     min-height: 52px;
     padding-inline: 19px;
 }
-/* BALANCED HEADER + STEUN ONS BUTTON */
+/* DESKTOP HEADER + SUPPORT ACTION */
 @media (min-width: 1181px) {
     /* Three balanced areas: logo | centred navigation | actions */
     .ng-header-shell {
@@ -2533,13 +1999,7 @@ html, body {
 /* Four values */
 
 
-
-
-
 /* Icon circles */
-
-
-
 
 
 /* Text */
@@ -2550,24 +2010,9 @@ html, body {
 /* VALUES — MOBILE */
 
 
-
-
-
-
-
-
-
-
 /* Makes every icon start on exactly the same line */
 
 /* Makes all four text blocks line up */
-
-
-
-
-
-
-
 
 
 /* ACCESSIBILITY — CONTRAST FIXES */
@@ -2621,8 +2066,6 @@ html, body {
 /* Button + values on one horizontal line */
 
 /* Ontdek wat we doen */
-
-
 
 
 /* ICON MOVEMENT — Matches the existing NoordgroeiT interaction */
@@ -2693,9 +2136,6 @@ html, body {
 /* Tablet */
 
 /* Mobile */
-
-
-
 
 
 /* NUMBER STRIP — FILL THE EXISTING 1200PX CONTAINER */
@@ -2792,26 +2232,15 @@ html, body {
 /* * Previews show only the identity, * not a full paragraph and button. */
 
 
-
-
 /* Cursor indicates side card can be selected */
 
 /* O & O / CAS DE DAS PLACEHOLDER */
 
 
-
-
-
 /* ARROWS */
 
 
-
-
 /* COUNTER + DOTS */
-
-
-
-
 
 
 /* TABLET */
@@ -2926,9 +2355,6 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
 /* 3. AGENDA DESTINATION — Same arrow language without turning it into a pill. */
 
 
-
-
-
 /* 4. FINAL SUPPORT CTA — Keep this one deliberately more important. */
 
 
@@ -2959,8 +2385,6 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
 
 
 /* 4. NEWS CARDS — Same motion language as buttons: 2px, not 3–5px. */
-
-
 
 
 /* 5. PARTNER LOGOS — Very subtle: these shouldn't behave like product cards. */
@@ -2998,18 +2422,7 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
 /* News gets a very quiet resting shadow */
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* HOMEPAGE — FINAL RESPONSIVE & ACCESSIBILITY PASS — Keep this block at the VERY bottom of style.css */
+/* HOMEPAGE RESPONSIVE & ACCESSIBILITY */
 /* TABLET — 900PX */
 
 /* MOBILE — 700PX */
@@ -3091,8 +2504,6 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
 /* CAROUSEL DOTS — LARGE CLICK AREA, SMALL VISUAL DOT */
 
 
-
-
 @media (prefers-reduced-motion: reduce) {
     html {
         scroll-behavior: auto;
@@ -3122,23 +2533,10 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
 /* Copy */
 
 
-
-
-
 /* Tiny information strip */
 
 
-
-
-
-
-
 /* Hero photograph */
-
-
-
-
-
 
 
 /* Handmade coral mark */
@@ -3148,14 +2546,7 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
 /* Introduction */
 
 
-
-
 /* Date + story */
-
-
-
-
-
 
 
 /* Reading copy */
@@ -3167,10 +2558,6 @@ body.home .ng-nb-copy > p:not(.ng-nb-location) {
 
 
 /* Simple story progression */
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -3251,15 +2638,11 @@ body .ng-inner-hero {
 /* COPY */
 
 
-
-
 /* SAME TYPOGRAPHY SCALE AS HOMEPAGE */
 
 
 
 /* BUTTON */
-
-
 
 
 /* LITTLE EDITORIAL DETAILS */
@@ -3618,19 +3001,12 @@ body .ng-inner-hero {
 /* PROCESS MAP */
 
 
-
-
-
 /* EACH STEP */
-
-
 
 
 /* DOTS */
 
 /* positions nearest to each route segment */
-
-
 
 
 /* CONNECTING ROUTE */
@@ -3732,11 +3108,7 @@ body .ng-inner-hero {
 /* STEP POSITIONS */
 
 
-
-
 /* STEP DESIGN */
-
-
 
 
 /* CONNECTOR: 01 → 02 */
@@ -3813,16 +3185,7 @@ body .ng-inner-hero {
 /* ORBIT LAYOUT */
 
 
-
-
-
-
 /* STEP CARDS */
-
-
-
-
-
 
 
 /* CENTRAL ORBIT */
@@ -3837,12 +3200,7 @@ body .ng-inner-hero {
 /* ORBIT ARROWS */
 
 
-
-
 /* little coral nodes where the steps connect conceptually */
-
-
-
 
 
 /* RESPONSIVE */
@@ -3851,13 +3209,6 @@ body .ng-inner-hero {
 /* OVER NOORDGROEIT — ANIMATED PROCESS FLOW */
 
 /* FOUR STEPS */
-
-
-
-
-
-
-
 
 
 /* CENTER ORBIT */
@@ -3875,8 +3226,6 @@ body .ng-inner-hero {
 
 
 /* ANIMATION PREPARATION — Only hide things after JS confirms it can animate. */
-
-
 
 
 /* ENTER SECTION */
@@ -4279,8 +3628,6 @@ body .ng-inner-hero {
 /* homepage-style CTA control */
 
 
-
-
 /* RESPONSIVE */
 @media (max-width: 760px) {
     .ng-over-idea-layout {
@@ -4610,15 +3957,10 @@ body .ng-over-idea-cta::after {
 /* INTRO */
 
 
-
-
-
 /* GROUP */
 
 
 /* GROUP LABEL */
-
-
 
 
 /* PEOPLE */
@@ -4648,24 +3990,14 @@ body .ng-over-idea-cta::after {
 /* HEADING */
 
 
-
-
-
 /* ROLE FLOW */
 
 /* EACH ROLE */
 
 
-
-
-
-
-
 /* ARROWS */
 
 /* CLOSING DETAIL */
-
-
 
 
 /* TABLET */
@@ -4680,14 +4012,7 @@ body .ng-over-idea-cta::after {
 /* COPY */
 
 
-
-
-
 /* ACTION */
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -4705,10 +4030,6 @@ body .ng-over-idea-cta::after {
 /* COPY */
 
 
-
-
-
-
 /* FOUNDATION FACT PANEL */
 
 /* tiny coral handmade mark */
@@ -4720,15 +4041,11 @@ body .ng-over-idea-cta::after {
 /* FACTS */
 
 
-
-
 /* PANEL NOTE */
 
 
 
 /* BOTTOM ROUTE */
-
-
 
 
 /* RESPONSIVE */
@@ -4737,9 +4054,6 @@ body .ng-over-idea-cta::after {
 /* FINANCIËN & TRANSPARANTIE — MONEY FLOW */
 
 /* HEADING */
-
-
-
 
 
 /* ROUTE */
@@ -4752,17 +4066,10 @@ body .ng-over-idea-cta::after {
 /* MARKER */
 
 
-
-
 /* CONTENT */
 
 
-
-
-
 /* BOTTOM NOTE */
-
-
 
 
 /* RESPONSIVE */
@@ -4771,9 +4078,6 @@ body .ng-over-idea-cta::after {
 /* FINANCIËN & TRANSPARANTIE — DOCUMENTEN */
 
 /* HEADING */
-
-
-
 
 
 /* LIST */
@@ -4791,13 +4095,7 @@ body .ng-over-idea-cta::after {
 /* META / BUTTON */
 
 
-
-
 /* CONTACT NOTE */
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -4867,8 +4165,6 @@ body .ng-over-idea-cta::after {
 /* ITEMS */
 
 
-
-
 /* TOP DETAILS */
 
 
@@ -4881,9 +4177,6 @@ body .ng-over-idea-cta::after {
 
 
 /* FOOTER LINK */
-
-
-
 
 
 /* RESPONSIVE */
@@ -4914,14 +4207,7 @@ body .ng-over-idea-cta::after {
 /* COPY */
 
 
-
-
-
 /* ACTION */
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -5398,21 +4684,13 @@ body .ng-over-idea-action {
 /* FLOWING SVG LINE */
 
 
-
-
 /* STATIONS */
-
-
 
 
 /* LARGE VISUAL ICON */
 
 
-
-
 /* COPY */
-
-
 
 
 /* CLOSING LINE */
@@ -5439,12 +4717,6 @@ body .ng-over-idea-action {
     font-weight: 700;
 }
 /* ANIMATION */
-
-
-
-
-
-
 
 
 /* middle already uses translateX */
@@ -5898,8 +5170,6 @@ body .ng-over-idea-action {
 /* HERO BUTTON */
 
 
-
-
 /* COLLAGE */
 
 /* NOORDBUITEN PHOTO */
@@ -5909,8 +5179,6 @@ body .ng-over-idea-action {
 /* slight photo fade */
 
 
-
-
 /* TALK CARD */
 
 /* speech bubble tail */
@@ -5918,12 +5186,7 @@ body .ng-over-idea-action {
 /* TALK ICON */
 
 
-
-
-
 /* FLOATING NOTE */
-
-
 
 
 /* ROUTE */
@@ -5955,8 +5218,6 @@ body .ng-over-idea-action {
 /* NoordgroeiT still gets brand treatment */
 
 /* BUTTON */
-
-
 
 
 /* SCROLL MARK */
@@ -6575,11 +5836,7 @@ body .ng-finance-dossier {
 /* ROUTE */
 
 
-
-
 /* STEPS */
-
-
 
 
 /* ICONS */
@@ -6601,13 +5858,7 @@ body .ng-finance-dossier {
 /* HOUSES */
 
 
-
-
-
 /* TREE */
-
-
-
 
 
 /* RESULT LABEL */
@@ -6618,15 +5869,6 @@ body .ng-finance-dossier {
 
 
 /* ANIMATION */
-
-
-
-
-
-
-
-
-
 
 
 /* MOBILE */
@@ -6980,26 +6222,13 @@ body .ng-finance-dossier {
 /* FOLDER FRONT */
 
 
-
-
-
 /* subtle embossed mark */
 
 
 /* ANIMATION START STATE */
 
 
-
-
 /* ANIMATION IN */
-
-
-
-
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -7033,8 +6262,6 @@ body .ng-finance-archive-copy h2 {
 /* PAPER DEPTH */
 
 
-
-
 /* DOCUMENT STACK */
 
 /* EACH DOCUMENT */
@@ -7061,8 +6288,6 @@ body .ng-finance-archive-copy h2 {
 /* FOLDER TEXT */
 
 
-
-
 /* EMBOSSED MARK */
 
 
@@ -7082,11 +6307,6 @@ body .ng-finance-archive-copy h2 {
 /* DOCUMENTS */
 
 
-
-
-
-
-
 /* RESPONSIVE */
 @media (max-width: 980px) {
     body .ng-finance-archive-layout {
@@ -7100,8 +6320,6 @@ body .ng-finance-archive-copy h2 {
 /* BACK OF FOLDER */
 
 /* ACTUAL FOLDER TABS */
-
-
 
 
 /* selected tab physically rises */
@@ -8557,8 +7775,6 @@ body .ng-finance-ledger-page > * {
 /* HEADING */
 
 
-
-
 /* MAIN LAYOUT */
 
 /* VISUAL */
@@ -8566,15 +7782,11 @@ body .ng-finance-ledger-page > * {
 /* IMAGE */
 
 
-
-
 /* NUMBER */
 
 /* TALK BUBBLES */
 
 /* little speech-tail */
-
-
 
 
 /* 01 */
@@ -8593,17 +7805,10 @@ body .ng-finance-ledger-page > * {
 /* COPY */
 
 
-
-
 /* THEMES */
 
 
-
-
-
 /* BUTTON */
-
-
 
 
 /* BOTTOM NOTE */
@@ -8611,8 +7816,6 @@ body .ng-finance-ledger-page > * {
 
 
 /* SUBTLE BUBBLE ANIMATION */
-
-
 
 
 /* RESPONSIVE */
@@ -8636,33 +7839,16 @@ body .ng-finance-ledger-page > * {
 /* NUMBER */
 
 
-
-
-
-
-
 /* THEMES */
-
-
-
 
 
 /* BUTTON */
 
 
-
-
 /* PHOTO */
 
 
-
-
 /* GARDEN LABELS */
-
-
-
-
-
 
 
 /* GROWING LINE */
@@ -8670,8 +7856,6 @@ body .ng-finance-ledger-page > * {
 
 
 /* NOTE */
-
-
 
 
 /* BOTTOM */
@@ -8748,13 +7932,9 @@ body .ng-finance-ledger-page > * {
 /* ROUTE */
 
 
-
-
 /* STEPS */
 
 /* alternate positions */
-
-
 
 
 /* MARKER */
@@ -8762,8 +7942,6 @@ body .ng-finance-ledger-page > * {
 
 
 /* COPY */
-
-
 
 
 /* FOOTER */
@@ -8810,13 +7988,6 @@ body .ng-finance-ledger-page > * {
     transform: translate(2px,-2px);
 }
 /* ANIMATION */
-
-
-
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -9435,11 +8606,7 @@ body .ng-init-idea-copy > .ng-init-idea-kicker {
 /* BUTTON */
 
 
-
-
 /* RELATION — NOORDGROEIT */
-
-
 
 
 /* SCROLL CUE */
@@ -10227,33 +9394,15 @@ body .ng-inner-hero h1 {
 /* HEADING */
 
 
-
-
 /* MAIN LAYOUT */
 
 /* IMAGE */
 
 
-
-
-
-
-
 /* ACTIVITY ROWS */
 
 
-
-
-
-
-
-
-
 /* FOOTER */
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -10564,8 +9713,6 @@ body .ng-inner-hero h1 {
 /* BUTTON */
 
 
-
-
 /* WORKBENCH */
 
 /* long wandering work line */
@@ -10576,19 +9723,10 @@ body .ng-inner-hero h1 {
 /* deliberately scattered */
 
 
-
-
-
-
 /* NOTE */
 
 
-
-
 /* FOOTER */
-
-
-
 
 
 /* RESPONSIVE */
@@ -10957,8 +10095,6 @@ body .ng-inner-hero h1 {
 /* map-ish markers */
 
 
-
-
 /* INFORMATION SIDE */
 .ng-nbp-board-info {
     display: flex;
@@ -11033,8 +10169,6 @@ body .ng-inner-hero h1 {
     text-align: right;
 }
 /* WATER NOTE */
-
-
 
 
 /* BOTTOM ROUTE */
@@ -11330,13 +10464,7 @@ body .ng-inner-hero h1 {
 /* IMAGE */
 
 
-
-
-
-
 /* COPY */
-
-
 
 
 .ng-nbp-place-copy > p:not(.ng-nbp-place-type) {
@@ -11350,8 +10478,6 @@ body .ng-inner-hero h1 {
 
 
 /* FOOD FACTS */
-
-
 
 
 /* FOOTER */
@@ -11557,7 +10683,7 @@ body .ng-inner-hero h1 {
         grid-template-columns: 1fr;
     }
 }
-/* BLUEPRINT — CLEAN SITE PLAN */
+/* BLUEPRINT — SITE PLAN */
 .ng-nbp-blueprint-plan {
     position: relative;
     display: grid;
@@ -11572,7 +10698,7 @@ body .ng-inner-hero h1 {
     background-size: 42px 42px;
     overflow: hidden;
 }
-/* We don't need the old SVG spaghetti anymore */
+
 
 /* STANDARD PLAN ITEM */
 .ng-nbp-plan-item {
@@ -11745,14 +10871,7 @@ body .ng-inner-hero h1 {
 /* MAIN ORCHARD STAT */
 
 
-
-
-
-
 /* NOTES */
-
-
-
 
 
 /* icon */
@@ -11910,12 +11029,9 @@ body .ng-inner-hero h1 {
     opacity: .48;
     vector-effect: non-scaling-stroke;
 }
-/* Kill the old hanging roots */
+
 
 /* ORCHARD — BIG ANCHOR */
-
-
-
 
 
 /* little orchard rhythm */
@@ -11964,12 +11080,9 @@ body .ng-inner-hero h1 {
 }
 
 
-/* ROOTS / LANDSCAPE SECTION — CLEANER VERSION */
+/* ROOTS / LANDSCAPE SECTION */
 
 /* THE STAT ON THE LEFT */
-
-
-
 
 
 /* THE LINE ONLY CONNECTS THE 3 STORY POINTS */
@@ -12007,8 +11120,6 @@ body .ng-inner-hero h1 {
 
 
 /* NOTE ON THE RIGHT */
-
-
 
 
 /* FOOTER */
@@ -12268,12 +11379,6 @@ body .ng-inner-hero h1 {
 
 
 /* PAPER VISUAL */
-
-
-
-
-
-
 
 
 /* center */
@@ -12604,14 +11709,10 @@ body .ng-inner-hero h1 {
 /* canopy */
 
 
-
-
 /* seat */
 
 
 /* simple people */
-
-
 
 
 /* label */
@@ -12650,17 +11751,11 @@ body .ng-inner-hero h1 {
 /* ACTIVITY POSSIBILITIES */
 
 
-
-
 /* activities */
 
 
 
 /* FOOTER */
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -12712,16 +11807,12 @@ body .ng-inner-hero h1 {
 /* alternating subtle folds */
 
 
-
-
 /* TYPOGRAPHY */
 
 
 /* Tiny directional detail */
 
 /* CENTRAL STAMP */
-
-
 
 
 /* LITTLE EDITORIAL NOTE */
@@ -13307,26 +12398,16 @@ body .ng-inner-hero h1 {
 /* CHARACTER */
 
 
-
-
 /* ROUTE */
 
 
 /* STOPS */
 
 
-
-
-
-
 /* PAWS */
 
 
-
-
 /* NOTE */
-
-
 
 
 /* BOTTOM */
@@ -13455,9 +12536,6 @@ body .ng-inner-hero h1 {
 /* ROUTE STEPS */
 
 
-
-
-
 /* placements */
 
 
@@ -13465,15 +12543,7 @@ body .ng-inner-hero h1 {
 /* CAS MESSAGE */
 
 
-
-
-
 /* LITTLE PAWS */
-
-
-
-
-
 
 
 /* BOTTOM */
@@ -14228,26 +13298,13 @@ body .ng-inner-hero h1 {
 /* heading */
 
 
-
-
 /* OPEN WORKTABLE */
-
-
 
 
 /* work items */
 
 
-
-
-
-
 /* OWN IDEA */
-
-
-
-
-
 
 
 /* RESPONSIVE */
@@ -14266,8 +13323,6 @@ body .ng-inner-hero h1 {
 /* quiet background ring */
 
 /* HEADING */
-
-
 
 
 /* ROUTE STAGE */
@@ -14296,12 +13351,7 @@ body .ng-inner-hero h1 {
 /* MIDDLE NOTE */
 
 
-
-
 /* BOTTOM PRACTICAL NOTE */
-
-
-
 
 
 /* RESPONSIVE */
@@ -14314,13 +13364,9 @@ body .ng-inner-hero h1 {
 /* HEADING */
 
 
-
-
 /* GUIDE */
 
 /* LOCATION */
-
-
 
 
 /* pin */
@@ -14348,13 +13394,7 @@ body .ng-inner-hero h1 {
 /* FACTS */
 
 
-
-
-
-
 /* IMPORTANT NOTE */
-
-
 
 
 /* RESPONSIVE */
@@ -14370,14 +13410,7 @@ body .ng-inner-hero h1 {
 /* INTRO COPY */
 
 
-
-
-
-
 /* JOURNEY */
-
-
-
 
 
 /* start */
@@ -14386,20 +13419,10 @@ body .ng-inner-hero h1 {
 /* travel labels */
 
 
-
-
-
 /* DESTINATION */
 
 
-
-
-
-
-
 /* note */
-
-
 
 
 /* INTRO BOTTOM */
@@ -14651,8 +13674,6 @@ body .ng-inner-hero h1 {
 /* HEADING */
 
 
-
-
 /* STAGE */
 
 /* WANDERING ROUTE */
@@ -14661,16 +13682,10 @@ body .ng-inner-hero h1 {
 /* START */
 
 
-
-
 /* IMAGE STOPS */
 
 
-
-
 /* captions */
-
-
 
 
 /* ORCHARD — LARGE LEFT */
@@ -14685,19 +13700,10 @@ body .ng-inner-hero h1 {
 /* ROUTE DOTS */
 
 
-
-
 /* LITTLE NOTES */
 
 
-
-
-
-
 /* BOTTOM */
-
-
-
 
 
 /* RESPONSIVE */
@@ -14708,8 +13714,6 @@ body .ng-inner-hero h1 {
 /* BACKGROUND DETAIL */
 
 /* TOP */
-
-
 
 
 /* NOTES */
@@ -14726,8 +13730,6 @@ body .ng-inner-hero h1 {
 
 
 /* BOTTOM NOTE */
-
-
 
 
 /* RESPONSIVE */
@@ -14751,13 +13753,9 @@ body .ng-inner-hero h1 {
 /* BUTTON */
 
 
-
-
 /* VISUAL */
 
 /* ADDRESS */
-
-
 
 
 /* ARROW */
@@ -14769,8 +13767,6 @@ body .ng-inner-hero h1 {
 
 
 /* LITTLE NOTE */
-
-
 
 
 /* BOTTOM */
@@ -14785,17 +13781,9 @@ body .ng-inner-hero h1 {
 /* HEADING */
 
 
-
-
-
-
 /* COLLAGE */
 
 /* SHARED PHOTO */
-
-
-
-
 
 
 /* MAIN IMAGE */
@@ -14808,8 +13796,6 @@ body .ng-inner-hero h1 {
 
 
 /* MESSAGE */
-
-
 
 
 /* STAMP */
@@ -14831,8 +13817,6 @@ body .ng-inner-hero h1 {
 /* SAME SCALE AS THE OTHER INNER SECTIONS */
 
 
-
-
 /* GALLERY */
 
 /* ITEMS */
@@ -14849,16 +13833,12 @@ body .ng-inner-hero h1 {
 /* BOTTOM NOTE */
 
 
-
-
 /* RESPONSIVE */
 
 
 /* MEEDOEN — GALLERY, SMALLER + PLAYFUL */
 
 /* SHARED */
-
-
 
 
 /* MAIN PHOTO */
@@ -16215,20 +15195,10 @@ body .ng-inner-hero h1 {
 /* HERO COPY */
 
 
-
-
 /* HERO BOARD */
 
 
-
-
-
-
-
-
 /* NOTE */
-
-
 
 
 /* HERO BOTTOM */
@@ -16673,9 +15643,6 @@ body .ng-inner-hero h1 {
     background: repeating-linear-gradient(to right, rgba(240, 102, 83, .45) 0 4px, transparent 4px 12px);
 }
 /* BOTTOM */
-
-
-
 
 
 /* RESPONSIVE */
@@ -17444,10 +16411,6 @@ body .ng-inner-hero h1 {
 /* dark image wash */
 
 /* soft darker vignette on left like screenshot */
-
-
-
-
 
 
 /* slight spacing after hero before next section if needed */
@@ -19273,8 +18236,6 @@ body .ng-inner-hero h1 {
 /* PHOTO */
 
 
-
-
 /* NUMBER */
 
 
@@ -19295,17 +18256,12 @@ body .ng-inner-hero h1 {
 /* BOTTOM NOTE */
 
 
-
-
 /* RESPONSIVE */
 
 
 /* VRIJWILLIGER — OPENSTAANDE VACATURES */
 
 /* HEADING */
-
-
-
 
 
 /* LIST */
@@ -19327,8 +18283,6 @@ body .ng-inner-hero h1 {
 /* META */
 
 
-
-
 /* title */
 
 
@@ -19345,12 +18299,7 @@ body .ng-inner-hero h1 {
 /* FOOTER */
 
 
-
-
 /* EMPTY */
-
-
-
 
 
 /* RESPONSIVE */
@@ -20013,12 +18962,7 @@ body .ng-inner-hero h1 {
 /* route */
 
 
-
-
-
 /* core */
-
-
 
 
 /* RESULT */
@@ -20049,15 +18993,11 @@ body .ng-inner-hero h1 {
 /* MAIN */
 
 
-
-
 /* WHAT THEY BRING */
 
 
 
 /* BOTTOM */
-
-
 
 
 /* RESPONSIVE */
@@ -20130,8 +19070,6 @@ body .ng-inner-hero h1 {
 /* repeated group */
 
 /* LOGO */
-
-
 
 
 /* logo image */
@@ -21063,8 +20001,6 @@ main [class*="-copy"] > p:not([class*="kicker"]) :not([class*="label"]), main [c
 /* Kill old line + dot */
 
 
-
-
 /* Ontdek wat we doen — position only */
 
 /* HOMEPAGE — VAN BINNENUIT */
@@ -21072,15 +20008,7 @@ main [class*="-copy"] > p:not([class*="kicker"]) :not([class*="label"]), main [c
 /* INTRO */
 
 
-
-
-
 /* PHOTO */
-
-
-
-
-
 
 
 /* JOURNEY */
@@ -21094,12 +20022,7 @@ main [class*="-copy"] > p:not([class*="kicker"]) :not([class*="label"]), main [c
 /* PURPOSE BLOCKS */
 
 
-
-
 /* Labels */
-
-
-
 
 
 /* CLOSING */
@@ -21115,9 +20038,6 @@ main [class*="-copy"] > p:not([class*="kicker"]) :not([class*="label"]), main [c
 /* HOMEPAGE — VAN BINNENUIT — COMMUNITY NOTICEBOARD */
 
 /* INTRO */
-
-
-
 
 
 /* STAGE */
@@ -21229,8 +20149,6 @@ main [class*="-copy"] > p:not([class*="kicker"]) :not([class*="label"]), main [c
 /* ARROWS */
 
 
-
-
 /* FOOTER / DOTS */
 
 
@@ -21289,12 +20207,6 @@ body.home #noordbuiten-uitgelicht .ng-nb-copy > p:not(.ng-nb-location) {
 
 
 /* 4. SCROLL ENTRANCE */
-
-
-
-
-
-
 
 
 /* TABLET */
@@ -21368,8 +20280,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* INTRO */
 
 
-
-
 /* INTERACTIVE ROWS */
 
 
@@ -21390,18 +20300,7 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* OPEN STATE */
 
 
-
-
-
-
-
 /* VOLUNTEER QUOTE */
-
-
-
-
-
-
 
 
 /* FINAL CTA */
@@ -21409,12 +20308,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 
 
 /* CTA BUTTONS */
-
-
-
-
-
-
 
 
 /* TABLET / MOBILE */
@@ -21435,23 +20328,7 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* when the row opens, keep contrast nice on cream */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* positions */
-
-
-
-
 
 
 /* HOMEPAGE — DOE MEE — CIRCULAR CONVERSATION JOURNEY */
@@ -21459,8 +20336,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* subtle background texture */
 
 /* INTRO */
-
-
 
 
 /* STAGE */
@@ -21523,23 +20398,11 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* QUOTE */
 
 
-
-
-
-
-
-
 /* CTA */
 
 
 
 /* CTA BUTTONS */
-
-
-
-
-
-
 
 
 /* TABLET */
@@ -21633,13 +20496,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* third */
 
 
-
-
-
-
-
-
-
 /* HOME — DOE MEE — FINAL CLEANUP / CALMER ORBIT COMPOSITION */
 /* REMOVE THE RANDOM DOTS BESIDE THE TEXT — The travelling orbit dot is the ONLY coral dot. */
 
@@ -21658,8 +20514,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* BOTTOM */
 
 /* COPY */
-
-
 
 
 /* SPEECH BUBBLES */
@@ -21700,11 +20554,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* QUOTE CONTENT */
 
 
-
-
-
-
-
 /* RIGHT-SIDE LABEL */
 
 /* POP ANIMATION */
@@ -21724,16 +20573,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* MOBILE */
 
 /* REDUCED MOTION */
-
-
-
-
-
-
-
-
-
-
 
 
 /* HOME — VRIJWILLIGERSERVARING — CLEAN SPEECH BUBBLE */
@@ -21759,8 +20598,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* SUBTLE POP-IN */
 
 
-
-
 /* MOBILE */
 
 /* HOME — WAT SPEELT ER IN NOORD — EDITORIAL WIJKKRANT */
@@ -21770,22 +20607,12 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* INTRO */
 
 
-
-
 /* MAIN LAYOUT */
 
 /* NEWS HEADING */
 
 
-
-
-
-
 /* FEATURE STORY */
-
-
-
-
 
 
 /* round arrow */
@@ -21794,44 +20621,16 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* EDITORIAL PAPER SHEET */
 
 
-
-
-
-
 /* TWO SMALL STORIES */
-
-
-
-
-
-
-
-
-
 
 
 /* AGENDA */
 
 
-
-
 /* VERTICAL TIMELINE */
 
 
-
-
-
-
-
-
-
-
-
 /* AGENDA CTA */
-
-
-
-
 
 
 /* EMPTY STATES */
@@ -21844,8 +20643,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* HOME — PARTNERS POLISH */
 
 /* slightly calmer logo cards */
-
-
 
 
 /* bottom information area */
@@ -21867,8 +20664,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* LEFT COPY */
 
 
-
-
 /* CTA slightly closer to the message */
 
 
@@ -21884,8 +20679,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* * Make list separators less prominent. */
 
 /* SUBTLE INTERACTION */
-
-
 
 
 /* TABLET */
@@ -21905,24 +20698,12 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* INTRO */
 
 
-
-
-
 /* VISUAL COMPOSITION */
 
 /* LEFT STORY MARKER */
 
 
-
-
-
-
-
-
 /* PHOTO */
-
-
-
 
 
 /* MISSION / VISION DRAWERS */
@@ -21933,8 +20714,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 
 
 /* trigger */
-
-
 
 
 /* + */
@@ -21956,11 +20735,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* CTA */
 
 
-
-
-
-
-
 /* TABLET */
 
 /* MOBILE */
@@ -21974,9 +20748,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* IDENTITY */
 
 
-
-
-
 /* BIG EXPERIENCE */
 
 /* IMAGES */
@@ -21988,31 +20759,13 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* STORY */
 
 
-
-
-
 /* DESTINATION */
-
-
-
-
-
 
 
 /* IMAGE SELECTORS */
 
 
-
-
-
-
-
 /* LOCATION TICKET */
-
-
-
-
-
 
 
 /* TABLET */
@@ -22022,9 +20775,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* HOME — NOORDBUITEN — EDITORIAL LANDSCAPE */
 
 /* INTRO */
-
-
-
 
 
 /* COPY */
@@ -22037,35 +20787,18 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* PHOTO STAGE */
 
 
-
-
 /* very gentle shade only at bottom */
 
 /* IMAGE SWITCHER */
 
 
-
-
-
 /* LOCATION TICKET */
-
-
-
-
-
 
 
 /* FOOTER */
 
 
-
-
 /* MAIN CTA */
-
-
-
-
-
 
 
 /* MOBILE */
@@ -22077,8 +20810,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 
 
 /* ALL NEWS LINK */
-
-
 
 
 /* MOBILE */
@@ -22355,8 +21086,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* TITLE — LINE BY LINE */
 
 
-
-
 /* SMALL LABEL MOTION */
 
 /* CORAL DOT AFTER "GEZOND" */
@@ -22390,30 +21119,16 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* ARROW — Stop the old infinite pulse. */
 
 
-
-
 /* VALUE ITEMS */
 
 
-
-
-
-
-
 /* ICON POP */
-
-
-
-
 
 
 /* REDUCED MOTION */
 
 /* HOME MOTION — 03 OVER NOORDGROEIT */
 /* INTRO */
-
-
-
 
 
 /* 2023 STORY MARKER */
@@ -22435,16 +21150,10 @@ body.home main section:not(.ng-editorial-hero) h2 {
 /* MISSIE / VISIE — Arrive after the photograph */
 
 
-
-
 /* tiny + pop */
 
 
-
-
 /* CLOSING STATEMENT */
-
-
 
 
 /* CTA arrow gets one little nudge */
@@ -22467,9 +21176,6 @@ body.home main section:not(.ng-editorial-hero) h2 {
 
 /* HOME MOTION — 04 INITIATIVES */
 /* HEADING */
-
-
-
 
 
 /* CAROUSEL STAGE — Starts slightly lower. */
@@ -22505,11 +21211,6 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
 /* ARROW CONTROLS */
 
 
-
-
-
-
-
 /* COUNTER + PAGINATION STROKES */
 
 
@@ -22532,17 +21233,11 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
 /* HEADING + COPY */
 
 
-
-
-
 /* BIG PHOTO — Opens like a wide landscape. */
 
 
 
 /* ONTMOETEN / MAKEN / GROEIEN */
-
-
-
 
 
 /* LOCATION TICKET */
@@ -22554,8 +21249,6 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
 
 
 /* FOOTER STORY + CTA */
-
-
 
 
 /* CTA ARROW — ONE LITTLE NUDGE */
@@ -22584,9 +21277,6 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
 /* MAIN INTRO */
 
 
-
-
-
 /* "NIEUWS UIT NOORD" MINI HEADER */
 
 
@@ -22609,8 +21299,6 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
 /* SMALLER NEWS STORIES */
 
 
-
-
 /* AGENDA COLUMN */
 
 
@@ -22618,16 +21306,7 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
 /* AGENDA EVENTS */
 
 
-
-
-
-
 /* LITTLE TIMELINE DOTS */
-
-
-
-
-
 
 
 /* AGENDA CTA */
@@ -22654,9 +21333,6 @@ body.home .ng-coverflow-section.is-initiatives-motion-ready:not(.is-initiatives-
 
 /* HOME MOTION — 08 PARTNERS */
 /* INTRO */
-
-
-
 
 
 /* MARQUEE — Keep its own horizontal transform untouched. */
@@ -22719,8 +21395,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* Bottom content follows shortly after */
 
 
-
-
 /* HOME MOTION — 09 FINAL SUPPORT CTA */
 /* PANEL */
 
@@ -22735,9 +21409,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 
 
 /* LEFT COPY */
-
-
-
 
 
 /* SUPPORT BUTTON */
@@ -22765,13 +21436,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* IMPACT ROWS */
 
 
-
-
-
 /* 01 / 02 / 03 */
-
-
-
 
 
 /* TABLET — Border becomes horizontal in existing layout. */
@@ -25426,71 +24091,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         animation: none !important;
     }
 }
-/* INITIATIEVEN — NOORDWERKTSAMEN V2 — Doorlopende buurt- en wijkgesprekken */
-
-/* quiet background ring */
-
-/* HEADING */
-
-
-
-/* right-side intro */
-
-
-
-/* MAIN LAYOUT */
-
-/* VISUAL */
-
-/* BIG PHOTO */
-
-
-
-
-/* NUMBER */
-
-
-
-
-/* MAIN QUESTION */
-
-
-
-
-
-/* CONTINUATION NOTE */
-
-
-
-
-/* COPY */
-
-
-
-
-
-/* CONVERSATION FLOW */
-
-
-
-
-
-
-
-
-/* PARTICIPANTS */
-
-
-
-/* BUTTON */
-
-
-
-
-/* RESPONSIVE */
-
-
-/* INITIATIEVEN — NOORDWERKTSAMEN CLEAN */
+/* INITIATIEVEN — NOORDWERKTSAMEN */
 .ng-nwt-clean {
     position: relative;
     padding: clamp(6rem, 9vw, 8.5rem) 0;
@@ -25696,8 +24297,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* LITTLE CONTINUATION ANNOTATION */
 
 
-
-
 /* RESPONSIVE */
 @media (max-width: 950px) {
     .ng-nwt-clean-layout {
@@ -25733,7 +24332,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     }
     
 }
-/* NOORDWERKTSAMEN — SPACING / ALIGNMENT POLISH */
+/* NOORDWERKTSAMEN — SPACING & ALIGNMENT */
 /* ALIGN THE TEXT WITH THE IMAGE */
 .ng-nwt-clean-layout {
     align-items: start;
@@ -25792,7 +24391,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
         padding-top: 0;
     }
 }
-/* NOORDWERKTSAMEN — FINAL SPACING FIX */
+/* NOORDWERKTSAMEN — RESPONSIVE SPACING */
 /* SECTION HEIGHT — Less dead space top/bottom */
 .ng-nwt-clean {
     padding: clamp(4.75rem, 7vw, 6.5rem) 0 clamp(4.25rem, 6vw, 5.75rem);
@@ -25880,7 +24479,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 .ng-nwt-clean-flow i {
     width: 18px;
 }
-/* NOORDWERKTSAMEN — REMOVE EXCESS BOTTOM SPACE */
+/* NOORDWERKTSAMEN — SECTION SPACING */
 .ng-nwt-clean {
     padding: clamp(4.75rem, 7vw, 6.5rem) 0 clamp(2.5rem, 3.5vw, 3.5rem);
 }
@@ -25975,8 +24574,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
     letter-spacing: -.035em;
 }
 /* little note */
-
-
 
 
 /* COPY */
@@ -26160,8 +24757,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 .ng-ht-clean-visual {
     padding-bottom: 42px;
 }
-
-
 
 
 /* OPTIONAL: — Make caption inside image a bit easier to read too */
@@ -27055,9 +25650,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* HEADING */
 
 
-
-
-
 /* TOPIC LIST */
 
 
@@ -27071,8 +25663,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 
 
 /* SMALL FINISHING NOTE */
-
-
 
 
 /* HOVER — VERY SUBTLE */
@@ -27089,15 +25679,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* LEFT */
 
 
-
-
-
-
-
-
 /* NOT / BUT */
-
-
 
 
 /* PROCESS */
@@ -27118,8 +25700,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* BOTTOM DETAIL */
 
 
-
-
 /* RESPONSIVE */
 
 
@@ -27130,12 +25710,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* HEADING */
 
 
-
-
-
 /* BIG STATEMENT */
-
-
 
 
 /* IMPACT LIST */
@@ -27148,8 +25723,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 
 
 /* BOTTOM DETAIL */
-
-
 
 
 /* HOVER */
@@ -27166,24 +25739,13 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* COPY */
 
 
-
-
 /* ACTIONS */
-
-
-
-
-
-
-
 
 
 /* CONVERSATION VISUAL */
 
 
 /* person */
-
-
 
 
 /* connecting conversation */
@@ -27194,8 +25756,6 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 
 
 /* BOTTOM SIGNATURE */
-
-
 
 
 /* RESPONSIVE */
@@ -27234,23 +25794,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 }
 
 
-
-
 /* NWT TOPICS — LIGHT EDITORIAL VERSION */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* NOORDWERKTSAMEN — FINAL VISUAL DIRECTION — Match the rest of NoordgroeiT */
@@ -27297,21 +25841,10 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* SECTION 2 — TOPICS — Editorial, quiet, not another huge statement section */
 
 
-
-
-
 /* SECTION 3 — METHOD — Dark belongs INSIDE the panel only */
 
 
-
-
-
-
-
 /* SECTION 4 — IMPACT — THIS was too big / too green / too dramatic */
-
-
-
 
 
 /* remove giant decorative mint-circle feeling */
@@ -27327,15 +25860,7 @@ body.home .ng-partner-section.is-partner-motion-ready:not(.is-partner-visible) .
 /* ACTIONS */
 
 
-
-
-
 /* RIGHT CARD */
-
-
-
-
-
 
 
 /* SMALL SIGNATURE */
@@ -27369,8 +25894,6 @@ body .ng-nwt-page .ng-nwt-about {
 /* 4. METHOD — Keep dark panel as the contrast. — Same background around it. */
 
 /* 5. IMPACT — Stop giving the whole section another background. — Make only the KEY MESSAGE green. */
-
-
 
 
 /* 6. FINAL CTA — Use the SAME soft green family as Over ons. — This becomes the only major full-width colour change. */
@@ -28408,13 +26931,9 @@ body .ng-nwt-page .ng-nwt-about {
 /* HEADING */
 
 
-
-
 /* JOURNEY */
 
 /* CURVED ROUTE */
-
-
 
 
 /* ITEMS */
@@ -28436,8 +26955,6 @@ body .ng-nwt-page .ng-nwt-about {
 /* * This is one of the rare places where the green language * actually makes semantic sense: trust can "grow". */
 
 /* CLOSING THOUGHT */
-
-
 
 
 /* MOBILE — Route becomes vertical */
@@ -29599,18 +28116,10 @@ body .ng-nwt-page .ng-nwt-about {
 /* 03 — WAT GEBEURT HIER */
 
 
-
-
 /* Sticky photo */
 
 
 /* Activity rows */
-
-
-
-
-
-
 
 
 /* 04 — NOORDBUITEN LEEFT */
@@ -29693,20 +28202,10 @@ body .ng-nwt-page .ng-nwt-about {
 /* Copy */
 
 
-
-
-
 /* Workbench route */
 
 
 /* * Tags already own rotations. * Only fade them in. */
-
-
-
-
-
-
-
 
 
 /* 06 — SAMEN MAKEN WE DE PLEK */
@@ -34089,8 +32588,6 @@ body .ng-nwt-page .ng-nwt-about {
 /* central NoordgroeiT point */
 
 
-
-
 /* second connection */
 
 
@@ -34285,7 +32782,7 @@ body .ng-nwt-page .ng-nwt-about {
 
 }
 
-/* MOBILE MENU — INNER PAGE HARD FIX — Homepage already works, so leave it alone. */
+/* INNER-PAGE MOBILE MENU */
 
 @media (max-width: 1180px) {
 
@@ -34325,7 +32822,7 @@ body .ng-nwt-page .ng-nwt-about {
         overscroll-behavior: contain;
     }
 
-    /* When JS says open, it is REALLY open */
+    /* Open menu state */
     body:not(.home)
     .ng-site-header.menu-is-open
     .ng-primary-navigation {
@@ -34348,7 +32845,7 @@ body .ng-nwt-page .ng-nwt-about {
 
 }
 
-/* ACCESSIBILITY — FINAL CONTRAST PASS — Lighthouse contrast fixes */
+/* ACCESSIBILITY — CONTRAST */
 
 :root {
     /*

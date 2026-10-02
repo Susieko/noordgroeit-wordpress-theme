@@ -103,8 +103,6 @@
 /* map-ish markers */
 
 
-
-
 /* INFORMATION SIDE */
 .ng-nbp-board-info {
     display: flex;
@@ -179,8 +177,6 @@
     text-align: right;
 }
 /* WATER NOTE */
-
-
 
 
 /* BOTTOM ROUTE */
@@ -476,13 +472,7 @@
 /* IMAGE */
 
 
-
-
-
-
 /* COPY */
-
-
 
 
 .ng-nbp-place-copy > p:not(.ng-nbp-place-type) {
@@ -496,8 +486,6 @@
 
 
 /* FOOD FACTS */
-
-
 
 
 /* FOOTER */
@@ -703,7 +691,7 @@
         grid-template-columns: 1fr;
     }
 }
-/* BLUEPRINT — CLEAN SITE PLAN */
+/* BLUEPRINT — SITE PLAN */
 .ng-nbp-blueprint-plan {
     position: relative;
     display: grid;
@@ -718,7 +706,7 @@
     background-size: 42px 42px;
     overflow: hidden;
 }
-/* We don't need the old SVG spaghetti anymore */
+
 
 /* STANDARD PLAN ITEM */
 .ng-nbp-plan-item {
@@ -891,14 +879,7 @@
 /* MAIN ORCHARD STAT */
 
 
-
-
-
-
 /* NOTES */
-
-
-
 
 
 /* icon */
@@ -1056,12 +1037,9 @@
     opacity: .48;
     vector-effect: non-scaling-stroke;
 }
-/* Kill the old hanging roots */
+
 
 /* ORCHARD — BIG ANCHOR */
-
-
-
 
 
 /* little orchard rhythm */
@@ -1110,12 +1088,9 @@
 }
 
 
-/* ROOTS / LANDSCAPE SECTION — CLEANER VERSION */
+/* ROOTS / LANDSCAPE SECTION */
 
 /* THE STAT ON THE LEFT */
-
-
-
 
 
 /* THE LINE ONLY CONNECTS THE 3 STORY POINTS */
@@ -1153,8 +1128,6 @@
 
 
 /* NOTE ON THE RIGHT */
-
-
 
 
 /* FOOTER */

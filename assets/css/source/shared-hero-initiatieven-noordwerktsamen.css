@@ -399,71 +399,7 @@
         animation: none !important;
     }
 }
-/* INITIATIEVEN — NOORDWERKTSAMEN V2 — Doorlopende buurt- en wijkgesprekken */
-
-/* quiet background ring */
-
-/* HEADING */
-
-
-
-/* right-side intro */
-
-
-
-/* MAIN LAYOUT */
-
-/* VISUAL */
-
-/* BIG PHOTO */
-
-
-
-
-/* NUMBER */
-
-
-
-
-/* MAIN QUESTION */
-
-
-
-
-
-/* CONTINUATION NOTE */
-
-
-
-
-/* COPY */
-
-
-
-
-
-/* CONVERSATION FLOW */
-
-
-
-
-
-
-
-
-/* PARTICIPANTS */
-
-
-
-/* BUTTON */
-
-
-
-
-/* RESPONSIVE */
-
-
-/* INITIATIEVEN — NOORDWERKTSAMEN CLEAN */
+/* INITIATIEVEN — NOORDWERKTSAMEN */
 .ng-nwt-clean {
     position: relative;
     padding: clamp(6rem, 9vw, 8.5rem) 0;
@@ -669,8 +605,6 @@
 /* LITTLE CONTINUATION ANNOTATION */
 
 
-
-
 /* RESPONSIVE */
 @media (max-width: 950px) {
     .ng-nwt-clean-layout {
@@ -706,7 +640,7 @@
     }
     
 }
-/* NOORDWERKTSAMEN — SPACING / ALIGNMENT POLISH */
+/* NOORDWERKTSAMEN — SPACING & ALIGNMENT */
 /* ALIGN THE TEXT WITH THE IMAGE */
 .ng-nwt-clean-layout {
     align-items: start;
@@ -765,7 +699,7 @@
         padding-top: 0;
     }
 }
-/* NOORDWERKTSAMEN — FINAL SPACING FIX */
+/* NOORDWERKTSAMEN — RESPONSIVE SPACING */
 /* SECTION HEIGHT — Less dead space top/bottom */
 .ng-nwt-clean {
     padding: clamp(4.75rem, 7vw, 6.5rem) 0 clamp(4.25rem, 6vw, 5.75rem);
@@ -853,7 +787,7 @@
 .ng-nwt-clean-flow i {
     width: 18px;
 }
-/* NOORDWERKTSAMEN — REMOVE EXCESS BOTTOM SPACE */
+/* NOORDWERKTSAMEN — SECTION SPACING */
 .ng-nwt-clean {
     padding: clamp(4.75rem, 7vw, 6.5rem) 0 clamp(2.5rem, 3.5vw, 3.5rem);
 }
@@ -948,8 +882,6 @@
     letter-spacing: -.035em;
 }
 /* little note */
-
-
 
 
 /* COPY */
@@ -1133,8 +1065,6 @@
 .ng-ht-clean-visual {
     padding-bottom: 42px;
 }
-
-
 
 
 /* OPTIONAL: — Make caption inside image a bit easier to read too */
@@ -2028,9 +1958,6 @@
 /* HEADING */
 
 
-
-
-
 /* TOPIC LIST */
 
 
@@ -2044,8 +1971,6 @@
 
 
 /* SMALL FINISHING NOTE */
-
-
 
 
 /* HOVER — VERY SUBTLE */
@@ -2062,15 +1987,7 @@
 /* LEFT */
 
 
-
-
-
-
-
-
 /* NOT / BUT */
-
-
 
 
 /* PROCESS */
@@ -2091,8 +2008,6 @@
 /* BOTTOM DETAIL */
 
 
-
-
 /* RESPONSIVE */
 
 
@@ -2103,12 +2018,7 @@
 /* HEADING */
 
 
-
-
-
 /* BIG STATEMENT */
-
-
 
 
 /* IMPACT LIST */
@@ -2121,8 +2031,6 @@
 
 
 /* BOTTOM DETAIL */
-
-
 
 
 /* HOVER */
@@ -2139,24 +2047,13 @@
 /* COPY */
 
 
-
-
 /* ACTIONS */
-
-
-
-
-
-
-
 
 
 /* CONVERSATION VISUAL */
 
 
 /* person */
-
-
 
 
 /* connecting conversation */
@@ -2167,8 +2064,6 @@
 
 
 /* BOTTOM SIGNATURE */
-
-
 
 
 /* RESPONSIVE */
@@ -2207,23 +2102,7 @@
 }
 
 
-
-
 /* NWT TOPICS — LIGHT EDITORIAL VERSION */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* NOORDWERKTSAMEN — FINAL VISUAL DIRECTION — Match the rest of NoordgroeiT */
@@ -2270,21 +2149,10 @@
 /* SECTION 2 — TOPICS — Editorial, quiet, not another huge statement section */
 
 
-
-
-
 /* SECTION 3 — METHOD — Dark belongs INSIDE the panel only */
 
 
-
-
-
-
-
 /* SECTION 4 — IMPACT — THIS was too big / too green / too dramatic */
-
-
-
 
 
 /* remove giant decorative mint-circle feeling */
@@ -2300,15 +2168,7 @@
 /* ACTIONS */
 
 
-
-
-
 /* RIGHT CARD */
-
-
-
-
-
 
 
 /* SMALL SIGNATURE */
@@ -2342,8 +2202,6 @@ body .ng-nwt-page .ng-nwt-about {
 /* 4. METHOD — Keep dark panel as the contrast. — Same background around it. */
 
 /* 5. IMPACT — Stop giving the whole section another background. — Make only the KEY MESSAGE green. */
-
-
 
 
 /* 6. FINAL CTA — Use the SAME soft green family as Over ons. — This becomes the only major full-width colour change. */
@@ -3381,13 +3239,9 @@ body .ng-nwt-page .ng-nwt-about {
 /* HEADING */
 
 
-
-
 /* JOURNEY */
 
 /* CURVED ROUTE */
-
-
 
 
 /* ITEMS */
@@ -3409,8 +3263,6 @@ body .ng-nwt-page .ng-nwt-about {
 /* * This is one of the rare places where the green language * actually makes semantic sense: trust can "grow". */
 
 /* CLOSING THOUGHT */
-
-
 
 
 /* MOBILE — Route becomes vertical */
