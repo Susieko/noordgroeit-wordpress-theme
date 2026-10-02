@@ -440,6 +440,229 @@ add_action(
     'noordgroeit_register_vacatures'
 );
 
+
+/* =========================================================
+   TEAMLEDEN — CONTENT MODEL
+========================================================= */
+
+function noordgroeit_register_team_members() {
+
+    $labels = [
+        'name'               => 'Teamleden',
+        'singular_name'      => 'Teamlid',
+        'menu_name'          => 'Teamleden',
+        'name_admin_bar'     => 'Teamlid',
+        'add_new'            => 'Nieuw teamlid',
+        'add_new_item'       => 'Nieuw teamlid toevoegen',
+        'new_item'           => 'Nieuw teamlid',
+        'edit_item'          => 'Teamlid bewerken',
+        'view_item'          => 'Teamlid bekijken',
+        'all_items'          => 'Alle teamleden',
+        'search_items'       => 'Teamleden zoeken',
+        'not_found'          => 'Geen teamleden gevonden',
+        'not_found_in_trash' => 'Geen teamleden in de prullenbak',
+    ];
+
+    register_post_type(
+        'team_member',
+        [
+            'labels'             => $labels,
+            'public'             => false,
+            'show_ui'            => true,
+            'show_in_menu'       => true,
+            'show_in_rest'       => true,
+            'publicly_queryable' => false,
+            'exclude_from_search'=> true,
+            'menu_icon'          => 'dashicons-groups',
+            'supports'           => [
+                'title',
+                'editor',
+                'thumbnail',
+                'page-attributes',
+                'revisions',
+            ],
+        ]
+    );
+
+    register_taxonomy(
+        'team_group',
+        ['team_member'],
+        [
+            'labels' => [
+                'name'          => 'Teamgroepen',
+                'singular_name' => 'Teamgroep',
+                'search_items'  => 'Teamgroepen zoeken',
+                'all_items'     => 'Alle teamgroepen',
+                'edit_item'     => 'Teamgroep bewerken',
+                'update_item'   => 'Teamgroep bijwerken',
+                'add_new_item'  => 'Nieuwe teamgroep toevoegen',
+                'new_item_name' => 'Naam nieuwe teamgroep',
+                'menu_name'     => 'Teamgroepen',
+            ],
+            'public'            => false,
+            'show_ui'           => true,
+            'show_in_rest'      => true,
+            'show_admin_column' => true,
+            'hierarchical'      => true,
+            'rewrite'           => false,
+        ]
+    );
+}
+
+add_action(
+    'init',
+    'noordgroeit_register_team_members'
+);
+
+
+function noordgroeit_add_team_member_metabox() {
+
+    add_meta_box(
+        'noordgroeit_team_member_details',
+        'Teamdetails',
+        'noordgroeit_team_member_metabox_content',
+        'team_member',
+        'normal',
+        'default'
+    );
+}
+
+add_action(
+    'add_meta_boxes',
+    'noordgroeit_add_team_member_metabox'
+);
+
+
+function noordgroeit_team_member_metabox_content($post) {
+
+    wp_nonce_field(
+        'noordgroeit_save_team_member_details',
+        'noordgroeit_team_member_nonce'
+    );
+
+    $role = get_post_meta(
+        $post->ID,
+        '_noordgroeit_team_role',
+        true
+    );
+
+    $note = get_post_meta(
+        $post->ID,
+        '_noordgroeit_team_note',
+        true
+    );
+    ?>
+
+    <p>
+        <label for="noordgroeit-team-role">
+            <strong>Rol / functie</strong>
+        </label>
+    </p>
+
+    <p>
+        <input
+            id="noordgroeit-team-role"
+            name="noordgroeit_team_role"
+            type="text"
+            value="<?php echo esc_attr($role); ?>"
+            class="widefat"
+            placeholder="Bijvoorbeeld: Voorzitter"
+        >
+    </p>
+
+    <p>
+        <label for="noordgroeit-team-note">
+            <strong>Korte notitie</strong>
+        </label>
+    </p>
+
+    <p>
+        <input
+            id="noordgroeit-team-note"
+            name="noordgroeit_team_note"
+            type="text"
+            value="<?php echo esc_attr($note); ?>"
+            class="widefat"
+            placeholder="Bijvoorbeeld: tevens kernteam"
+        >
+    </p>
+
+    <p>
+        <small>
+            Gebruik de inhoudseditor voor de korte omschrijving,
+            de uitgelichte afbeelding voor de foto en
+            'Volgorde' bij Pagina-attributen voor de sortering.
+        </small>
+    </p>
+
+    <?php
+}
+
+
+function noordgroeit_save_team_member_details($post_id) {
+
+    if (
+        !isset($_POST['noordgroeit_team_member_nonce'])
+        || !wp_verify_nonce(
+            sanitize_text_field(
+                wp_unslash(
+                    $_POST['noordgroeit_team_member_nonce']
+                )
+            ),
+            'noordgroeit_save_team_member_details'
+        )
+    ) {
+        return;
+    }
+
+    if (
+        defined('DOING_AUTOSAVE')
+        && DOING_AUTOSAVE
+    ) {
+        return;
+    }
+
+    if (
+        get_post_type($post_id) !== 'team_member'
+        || !current_user_can('edit_post', $post_id)
+    ) {
+        return;
+    }
+
+    $role = isset($_POST['noordgroeit_team_role'])
+        ? sanitize_text_field(
+            wp_unslash(
+                $_POST['noordgroeit_team_role']
+            )
+        )
+        : '';
+
+    $note = isset($_POST['noordgroeit_team_note'])
+        ? sanitize_text_field(
+            wp_unslash(
+                $_POST['noordgroeit_team_note']
+            )
+        )
+        : '';
+
+    update_post_meta(
+        $post_id,
+        '_noordgroeit_team_role',
+        $role
+    );
+
+    update_post_meta(
+        $post_id,
+        '_noordgroeit_team_note',
+        $note
+    );
+}
+
+add_action(
+    'save_post_team_member',
+    'noordgroeit_save_team_member_details'
+);
+
 /* =========================================================
    GLOBAL RESPONSIVE CSS
 ========================================================= */
