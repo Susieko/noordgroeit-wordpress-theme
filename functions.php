@@ -687,3 +687,40 @@ add_action(
     'admin_post_nopriv_ng_submit_contact',
     'noordgroeit_handle_contact_form'
 );
+
+
+/**
+ * LiNC feedback follow-up: contact-page-only responsive fixes and
+ * accessible inline validation. Core theme bundles remain untouched.
+ */
+function noordgroeit_contact_polish_assets(): void
+{
+    if (!is_page('contact') && !is_page_template('page-contact.php')) {
+        return;
+    }
+
+    $css_relative = '/assets/css/contact-polish.css';
+    $js_relative  = '/assets/js/contact-validation.js';
+    $css_path     = get_theme_file_path($css_relative);
+    $js_path      = get_theme_file_path($js_relative);
+
+    if (is_file($css_path)) {
+        wp_enqueue_style(
+            'noordgroeit-contact-polish',
+            get_theme_file_uri($css_relative),
+            array('noordgroeit-merged-style'),
+            (string) filemtime($css_path)
+        );
+    }
+
+    if (is_file($js_path)) {
+        wp_enqueue_script(
+            'noordgroeit-contact-validation',
+            get_theme_file_uri($js_relative),
+            array(),
+            (string) filemtime($js_path),
+            true
+        );
+    }
+}
+add_action('wp_enqueue_scripts', 'noordgroeit_contact_polish_assets', 20);
