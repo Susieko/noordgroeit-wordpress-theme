@@ -1,0 +1,102 @@
+/* Contact page polish — scoped to the Contact template. */
+
+/* Allow grid items and long addresses to shrink instead of overflowing. */
+.ng-contact-page .ng-contact-heading,
+.ng-contact-page .ng-contact-layout,
+.ng-contact-page .ng-contact-noordbuiten-inner,
+.ng-contact-page .ng-contact-form,
+.ng-contact-page .ng-contact-form-row,
+.ng-contact-page .ng-contact-info,
+.ng-contact-page .ng-contact-form-wrap {
+    min-width: 0;
+}
+
+.ng-contact-page .ng-contact-heading > *,
+.ng-contact-page .ng-contact-layout > *,
+.ng-contact-page .ng-contact-noordbuiten-inner > *,
+.ng-contact-page .ng-contact-form-row > * {
+    min-width: 0;
+}
+
+.ng-contact-page .ng-contact-info-row a,
+.ng-contact-page .ng-contact-noordbuiten-action,
+.ng-contact-page .ng-contact-heading h2,
+.ng-contact-page .ng-contact-noordbuiten h2 {
+    overflow-wrap: anywhere;
+}
+
+.ng-contact-page .ng-contact-field input,
+.ng-contact-page .ng-contact-field select,
+.ng-contact-page .ng-contact-field textarea {
+    box-sizing: border-box;
+    min-width: 0;
+    max-width: 100%;
+}
+
+/* Clear, accessible errors that match the website's existing coral accent. */
+.ng-contact-page .ng-contact-field [aria-invalid="true"] {
+    border-color: #b73729;
+    background-color: #fff9f7;
+    box-shadow: 0 0 0 2px rgba(183, 55, 41, .08);
+}
+
+.ng-contact-page .ng-contact-field [aria-invalid="true"]:focus {
+    outline: 2px solid #b73729;
+    outline-offset: 2px;
+}
+
+.ng-contact-page .ng-contact-field-error {
+    margin: .1rem 0 0;
+    color: #a62d24;
+    font-size: .78rem;
+    line-height: 1.45;
+    font-weight: 650;
+}
+
+/* Use a single column earlier, before the two-column content gets cramped. */
+@media (max-width: 1024px) {
+    .ng-contact-page .ng-contact-heading,
+    .ng-contact-page .ng-contact-layout,
+    .ng-contact-page .ng-contact-noordbuiten-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .ng-contact-page .ng-contact-heading {
+        gap: 1.5rem;
+    }
+
+    .ng-contact-page .ng-contact-layout {
+        gap: clamp(2rem, 6vw, 3rem);
+    }
+
+    .ng-contact-page .ng-contact-noordbuiten-inner {
+        gap: 2rem;
+    }
+
+    .ng-contact-page .ng-contact-form-wrap {
+        max-width: 720px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 640px) {
+    .ng-contact-page .ng-contact-form-row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .ng-contact-page .ng-contact-form-bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.25rem;
+    }
+
+    .ng-contact-page .ng-contact-heading h2,
+    .ng-contact-page .ng-contact-noordbuiten h2 {
+        font-size: clamp(1.8rem, 8vw, 2.8rem);
+        line-height: 1.12;
+    }
+
+    .ng-contact-page .ng-contact-submit {
+        max-width: 100%;
+    }
+}
